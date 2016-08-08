@@ -13,13 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int a[] = new int[4];
-        a[1] = 1;
-        a[2] = 2;
-        StdOut.print(a);
-
-        Std.swap(a,1,2);
-        StdOut.print(a);
+        int a = 1;
+        int b = 2;
 
     }
 }
