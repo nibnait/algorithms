@@ -1,8 +1,8 @@
 package a_Sorting;
 
-import Standard.Std;
-import Standard.StdOut;
-import Standard.StdRandom;
+import Standard.std;
+import Standard.stdOut;
+import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/7.
@@ -10,11 +10,11 @@ import Standard.StdRandom;
 public class c_Shell {
     public static void main(String[] args) {
         int[] a = new int[15];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = stdRandom.random(a);
+        stdOut.print(a);
 
         a = Shell_Sort(a);
-        StdOut.print(a);
+        stdOut.print(a);
     }
 
     //对于大规模乱序数组
@@ -31,10 +31,10 @@ public class c_Shell {
         while (h>=1){
             for (int i = h; i < length; i++) {//将数组整理成【h有序数组】，
                 for (int j = i; j > 0 && a[j]<a[j-h]; j--) {
-                    Std.swap(a,j,j-h);
+                    std.exch(a,j,j-h);
                 }
             }
-//            StdOut.print(a);
+//            stdOut.print(a);
             h = h/3;
         }
 

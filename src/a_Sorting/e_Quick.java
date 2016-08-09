@@ -1,8 +1,8 @@
 package a_Sorting;
 
-import Standard.Std;
-import Standard.StdOut;
-import Standard.StdRandom;
+import Standard.std;
+import Standard.stdOut;
+import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/9.
@@ -10,11 +10,11 @@ import Standard.StdRandom;
 public class e_Quick {
     public static void main(String[] args) {
         int[] a = new int[15];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = stdRandom.random(a);
+        stdOut.print(a);
 
         a = Quick_Sort(a, 0, a.length-1);
-        StdOut.print(a);
+        stdOut.print(a);
     }
 
     /**
@@ -35,7 +35,7 @@ public class e_Quick {
         int flag = lo;  //以第一个元素为基准
         for (int i = lo+1; i < hi; i++) {
             if (a[i] < a[lo]){
-                Std.swap(a, i, lo);
+                std.exch(a, i, lo);
                 lo = i;
             }
         }

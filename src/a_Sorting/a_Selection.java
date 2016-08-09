@@ -1,8 +1,8 @@
 package a_Sorting;
 
-import Standard.Std;
-import Standard.StdOut;
-import Standard.StdRandom;
+import Standard.std;
+import Standard.stdOut;
+import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/5.
@@ -10,11 +10,11 @@ import Standard.StdRandom;
 public class a_Selection {
     public static void main(String[] args) {
         int[] a = new int[10];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = stdRandom.random(a);
+        stdOut.print(a);
 
         a = Selection_Sort(a);
-        StdOut.print(a);
+        stdOut.print(a);
     }
 
     /**
@@ -34,7 +34,7 @@ public class a_Selection {
                     min = j;
                 }
             }
-            Std.swap(a, i, min);
+            std.exch(a, i, min);
         }
         return a;
     }

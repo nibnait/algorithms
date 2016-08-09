@@ -1,6 +1,6 @@
 package others;
 
-import Standard.StdOut;
+import Standard.stdOut;
 
 /**
  * Created by nibnait on 2016/8/9.
@@ -13,7 +13,7 @@ public class BitMap1 {
 
         for(i=0;i<5;){
             if(b[a[i]]==1){
-                StdOut.print("数组含有重复值");
+                stdOut.print("数组含有重复值");
                 break;
             }
             else{
@@ -23,7 +23,7 @@ public class BitMap1 {
         }
 
         if(i==5){
-            StdOut.print("数组含没有重复值");
+            stdOut.print("数组含没有重复值");
         }
     }
 }

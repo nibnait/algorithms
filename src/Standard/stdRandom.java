@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 /**
  * Created by nibnait on 2016/8/5.
  */
-public class StdRandom {
+public class stdRandom {
 
     private static Random random = new Random();   //伪随机数发生器
 

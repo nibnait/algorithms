@@ -1,7 +1,7 @@
 package a_Sorting;
 
-import Standard.StdOut;
-import Standard.StdRandom;
+import Standard.stdOut;
+import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/8.
@@ -10,11 +10,11 @@ public class d_Merge {
 
     public static void main(String[] args) {
         int[] a = new int[15];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = stdRandom.random(a);
+        stdOut.print(a);
 
         a = Merge_Sort(a, 0, a.length-1);
-        StdOut.print(a);
+        stdOut.print(a);
     }
 
     /**

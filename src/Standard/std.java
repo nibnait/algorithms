@@ -3,9 +3,9 @@ package Standard;
 /**
  * Created by nibnait on 2016/8/5.
  */
-public class Std {
+public class std {
 
-    public static void swap(int a[], int i, int j){
+    public static void exch(int[] a, int i, int j){
 
         int temp;
         temp = a[i];
@@ -15,4 +15,5 @@ public class Std {
         a[j] ^= a[i];
         a[i] ^= a[j];*/
     }
+
 }
