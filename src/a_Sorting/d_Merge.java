@@ -13,21 +13,31 @@ public class d_Merge {
         a = StdRandom.random(a);
         StdOut.print(a);
 
-        a = Merge_Sort(a);
+        a = Merge_Sort(a, 0, a.length-1);
         StdOut.print(a);
     }
 
-    public static int[] Merge_Sort(int[] a) {
-
+    /**
+     * 时间复杂度：N*lgN
+     * 但是 需要辅助数组。
+     */
+//    private static int[] aux = new int[100];   //避免时间都浪费到 创建数组上。
+    public static int[] Merge_Sort(int[] a, int lo, int hi) {
+        if (lo>=hi){    //lo > == hi 的时候，就说明 不能再分了，可以开始归并了
+            return a;
+        }
+        int mid = (lo+hi)/2;
         int N = a.length;
         //递归的将数组分到不能再分
-        Sort(a, 0, N/2);
-        Sort(a, N/2+1, N-1);
+        Merge_Sort(a, lo, mid);
+        Merge_Sort(a, mid+1, hi);
 
+        //开始Merge
+        Merge(a, lo, mid, hi);
         return a;
     }
 
-    private static void Sort(int[] a, int lo, int hi) {
+    /*private static void Sort(int[] a, int lo, int hi) {
         if (lo>=hi){    //lo > == hi 的时候，就说明 不能再分了，可以开始归并了
             return;
         }
@@ -37,7 +47,8 @@ public class d_Merge {
 
         //开始Merge
         Merge(a, lo, mid, hi);
-    }
+    }*/
+
 
     private static void Merge(int[] a, int lo, int mid, int hi) {
         //新建一个辅助数组
