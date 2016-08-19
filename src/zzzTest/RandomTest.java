@@ -1,4 +1,4 @@
-package aaaTest;
+package zzzTest;
 
 import Standard.stdOut;
 import Standard.stdRandom;

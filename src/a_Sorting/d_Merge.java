@@ -9,7 +9,7 @@ import Standard.stdRandom;
 public class d_Merge {
 
     public static void main(String[] args) {
-        int[] a = new int[15];
+        int[] a = new int[7];
         a = stdRandom.random(a);
         stdOut.print(a);
 

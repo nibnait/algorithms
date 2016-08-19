@@ -9,8 +9,9 @@ import Standard.stdRandom;
  */
 public class e_Quick {
     public static void main(String[] args) {
-        int[] a = new int[15];
-        a = stdRandom.random(a);
+//        int[] a = new int[10];
+//        a = stdRandom.random(a);
+        int[] a = {3,4,0,1,6,2,5,1};
         stdOut.print(a);
 
         a = Quick_Sort(a, 0, a.length-1);
@@ -32,13 +33,21 @@ public class e_Quick {
 
     private static int partition(int[] a, int lo, int hi) {
 
-        int flag = lo;  //以第一个元素为基准
-        for (int i = lo+1; i < hi; i++) {
-            if (a[i] < a[lo]){
-                std.exch(a, i, lo);
-                lo = i;
+//        int flag = lo;
+//        for (int i = lo; i <= hi; i++) {
+//            if (a[i] < a[hi]){      //以a[hi]为基准
+//                std.exch(a, i, flag++);
+//            }
+//        }
+//        std.exch(a,flag,hi);
+
+        int flag = lo+1;    //以a[lo]为基准
+        for (int i = lo+1; i <= hi; i++) {
+            if (a[i]<a[lo]) {
+                std.exch(a,i,flag++);
             }
         }
+        std.exch(a,--flag,lo);
         return flag;
     }
 }
