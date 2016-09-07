@@ -21,28 +21,28 @@ import java.util.Locale;
  *  To use this class, you must have <tt>stdOut.class</tt> in your
  *  Java classpath. If you used our autoinstaller, you should be all set.
  *  Otherwise, download
- *  <a href = "http://introcs.cs.princeton.edu/java/stdlib/StdOut.java">stdOut.java</a>
- *  and put a copy in your working directory.
+ *  <Algorithms_4thEdition href = "http://introcs.cs.princeton.edu/java/stdlib/StdOut.java">stdOut.java</Algorithms_4thEdition>
+ *  and put Algorithms_4thEdition copy in your working directory.
  *  <p>
  *  Here is an example program that uses <code>stdOut</code>:
  *  <pre>
  *   public class TestStdOut {
  *       public static void main(String[] args) {
- *           int a = 17;
+ *           int Algorithms_4thEdition = 17;
  *           int b = 23;
- *           int sum = a + b;
+ *           int sum = Algorithms_4thEdition + b;
  *           stdOut.println("Hello, World");
- *           stdOut.printf("%d + %d = %d\n", a, b, sum);
+ *           stdOut.printf("%d + %d = %d\n", Algorithms_4thEdition, b, sum);
  *       }
  *   }
  *  </pre>
  *  <p>
  *  <b>Differences with System.out.</b>
  *  The behavior of <code>stdOut</code> is similar to that of {@link System#out},
- *  but there are a few subtle differences:
+ *  but there are Algorithms_4thEdition few subtle differences:
  *  <ul>
  *  <li> <code>stdOut</code> coerces the character-set encoding to UTF-8,
- *       which is a standard character encoding for Unicode.
+ *       which is Algorithms_4thEdition standard character encoding for Unicode.
  *  <li> <code>stdOut</code> coerces the locale to {@link Locale#US},
  *       for consistency with {@link StdIn}, {@link Double#parseDouble(String)},
  *       and floating-point literals.
@@ -52,7 +52,7 @@ import java.util.Locale;
  *  <p>
  *  <b>Reference.</b>
  *  For additional documentation,
- *  see <a href="http://introcs.cs.princeton.edu/15inout">Section 1.5</a> of
+ *  see <Algorithms_4thEdition href="http://introcs.cs.princeton.edu/15inout">Section 1.5</Algorithms_4thEdition> of
  *  <em>Introduction to Programming in Java: An Interdisciplinary Approach</em>
  *  by Robert Sedgewick and Kevin Wayne.
  *
@@ -107,7 +107,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a boolean to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition boolean to standard output and then terminates the line.
      *
      * @param x the boolean to print
      */
@@ -116,7 +116,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a character to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition character to standard output and then terminates the line.
      *
      * @param x the character to print
      */
@@ -125,7 +125,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a double to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition double to standard output and then terminates the line.
      *
      * @param x the double to print
      */
@@ -152,7 +152,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a long to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition long to standard output and then terminates the line.
      *
      * @param x the long to print
      */
@@ -161,7 +161,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a short integer to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition short integer to standard output and then terminates the line.
      *
      * @param x the short to print
      */
@@ -170,7 +170,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a byte to standard output and then terminates the line.
+     * Prints Algorithms_4thEdition byte to standard output and then terminates the line.
      * <p>
      * To write binary data, see {@link BinaryStdOut}.
      *
@@ -198,7 +198,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a boolean to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition boolean to standard output and flushes standard output.
      * 
      * @param x the boolean to print
      */
@@ -208,7 +208,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a character to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition character to standard output and flushes standard output.
      * 
      * @param x the character to print
      */
@@ -218,7 +218,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a double to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition double to standard output and flushes standard output.
      * 
      * @param x the double to print
      */
@@ -228,7 +228,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a float to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition float to standard output and flushes standard output.
      * 
      * @param x the float to print
      */
@@ -248,7 +248,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a long integer to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition long integer to standard output and flushes standard output.
      * 
      * @param x the long integer to print
      */
@@ -258,7 +258,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a short integer to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition short integer to standard output and flushes standard output.
      * 
      * @param x the short integer to print
      */
@@ -268,7 +268,7 @@ public final class stdOut {
     }
 
    /**
-     * Prints a byte to standard output and flushes standard output.
+     * Prints Algorithms_4thEdition byte to standard output and flushes standard output.
      *
      * @param x the byte to print
      */
@@ -278,11 +278,11 @@ public final class stdOut {
     }
 
    /**
-     * Prints a formatted string to standard output, using the specified format
+     * Prints Algorithms_4thEdition formatted string to standard output, using the specified format
      * string and arguments, and then flushes standard output.
      *
      *
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the <Algorithms_4thEdition href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</Algorithms_4thEdition>
      * @param args   the arguments accompanying the format string
      */
     public static void printf(String format, Object... args) {
@@ -291,11 +291,11 @@ public final class stdOut {
     }
 
    /**
-     * Prints a formatted string to standard output, using the locale and
+     * Prints Algorithms_4thEdition formatted string to standard output, using the locale and
      * the specified format string and arguments; then flushes standard output.
      *
      * @param locale the locale
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the <Algorithms_4thEdition href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</Algorithms_4thEdition>
      * @param args   the arguments accompanying the format string
      */
     public static void printf(Locale locale, String format, Object... args) {

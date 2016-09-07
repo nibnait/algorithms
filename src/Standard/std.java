@@ -11,9 +11,9 @@ public class std {
         temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-/*        a[i] ^= a[j];
-        a[j] ^= a[i];
-        a[i] ^= a[j];*/
+/*        Algorithms_4thEdition[i] ^= Algorithms_4thEdition[j];
+        Algorithms_4thEdition[j] ^= Algorithms_4thEdition[i];
+        Algorithms_4thEdition[i] ^= Algorithms_4thEdition[j];*/
     }
 
 }

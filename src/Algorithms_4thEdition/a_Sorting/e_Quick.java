@@ -1,4 +1,4 @@
-package a_Sorting;
+package Algorithms_4thEdition.a_Sorting;
 
 import Standard.std;
 import Standard.stdOut;
@@ -9,8 +9,8 @@ import Standard.stdRandom;
  */
 public class e_Quick {
     public static void main(String[] args) {
-//        int[] a = new int[10];
-//        a = stdRandom.random(a);
+//        int[] Algorithms_4thEdition = new int[10];
+//        Algorithms_4thEdition = stdRandom.random(Algorithms_4thEdition);
         int[] a = {3,4,0,1,6,2,5,1};
         stdOut.print(a);
 

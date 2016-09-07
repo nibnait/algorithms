@@ -1,4 +1,4 @@
-package a_Sorting;
+package Algorithms_4thEdition.a_Sorting;
 
 import Standard.std;
 import Standard.stdOut;

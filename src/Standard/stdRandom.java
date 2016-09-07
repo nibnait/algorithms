@@ -27,7 +27,7 @@ public class stdRandom {
     }
 
     /**
-     *  随机返回 [a,b)之间的一个double值
+     *  随机返回 [Algorithms_4thEdition,b)之间的一个double值
      * @param a
      * @param b
      * @return
@@ -38,7 +38,7 @@ public class stdRandom {
     }
 
     /**
-     *  随机返回 [a,b)之间的一个int值
+     *  随机返回 [Algorithms_4thEdition,b)之间的一个int值
      * @param a
      * @param b
      * @return
@@ -60,14 +60,14 @@ public class stdRandom {
         }
         return a;
     }
-/*    public static int[] random(int[] a){
-        int length = a.length;
+/*    public static int[] random(int[] Algorithms_4thEdition){
+        int length = Algorithms_4thEdition.length;
         IntStream intStream = random.ints(0,100);   //创建一个int型 [0,100)范围的数字流
 
         List<Integer> list = intStream.limit(length).boxed().collect(Collectors.toList());
         for (int i = 0; i < length; i++) {
-            a[i] = list.get(i);
+            Algorithms_4thEdition[i] = list.get(i);
         }
-        return a;
+        return Algorithms_4thEdition;
     }*/
 }

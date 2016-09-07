@@ -13,9 +13,9 @@ public class Odd_forward {
         int[] a = {1, 2, 2, 3, 4, 5};
         stdOut.print(a);
 
-        /*for (int i = 1; i < a.length; i++) {
-            for (int j = i; j > 0 && IsOdd(a[j]) && !IsOdd(a[j-1]); j--) {
-                std.swap(a,j,j-1);
+        /*for (int i = 1; i < Algorithms_4thEdition.length; i++) {
+            for (int j = i; j > 0 && IsOdd(Algorithms_4thEdition[j]) && !IsOdd(Algorithms_4thEdition[j-1]); j--) {
+                std.swap(Algorithms_4thEdition,j,j-1);
             }
         }*/
 

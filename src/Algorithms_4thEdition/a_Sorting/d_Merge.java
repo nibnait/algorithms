@@ -1,4 +1,4 @@
-package a_Sorting;
+package Algorithms_4thEdition.a_Sorting;
 
 import Standard.stdOut;
 import Standard.stdRandom;
@@ -37,16 +37,16 @@ public class d_Merge {
         return a;
     }
 
-    /*private static void Sort(int[] a, int lo, int hi) {
+    /*private static void Sort(int[] Algorithms_4thEdition, int lo, int hi) {
         if (lo>=hi){    //lo > == hi 的时候，就说明 不能再分了，可以开始归并了
             return;
         }
         int mid = (lo+hi)/2;
-        Sort(a, lo, mid);
-        Sort(a, mid+1, hi);
+        Sort(Algorithms_4thEdition, lo, mid);
+        Sort(Algorithms_4thEdition, mid+1, hi);
 
         //开始Merge
-        Merge(a, lo, mid, hi);
+        Merge(Algorithms_4thEdition, lo, mid, hi);
     }*/
 
 
