@@ -16,4 +16,9 @@ public class std {
         Algorithms_4thEdition[i] ^= Algorithms_4thEdition[j];*/
     }
 
+    public static void swap(int a, int b){
+        int t;
+        t = a; a = b; b = t;
+    }
+
 }
