@@ -21,7 +21,7 @@ public class c_MaxLength {
      * @param k     求arr所有的子数组中累加和 <= k的最长子数组长度。
      * @return
      *
-     * 时间复杂度(N*logN)
+     * 时间复杂度(N* logN)
      */
     public static int getMaxLength3(int[] arr, int k) {
 
@@ -52,6 +52,8 @@ public class c_MaxLength {
      * @return
      *
      * 时间复杂度O(N)
+     *
+     * 使用HashMap保存sum[i]最早出现的位置
      */
     public static int getMaxLength2(int[] arr, int k) {
         if (arr == null || arr.length < 0) {
@@ -81,6 +83,8 @@ public class c_MaxLength {
      * @return
      *
      * 时间复杂度O(N)，额外空间复杂度O(1)
+     *
+     * 双指针卡位
      */
     public static int getMaxLength1(int[] arr, int k) {
         if (arr == null || arr.length < 0 || k <= 0) {

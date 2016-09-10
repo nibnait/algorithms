@@ -5,14 +5,14 @@ package nowcoder.bb160727;
  *
  * Created by nibnait on 2016/9/10.
  */
-public class b_maxTwoSubArray {
+public class b_TwoSubArrayMaxSum {
 
     public static void main(String[] args) {
         int[] arr = new int[]{3,-2,1,-6,4,3,-2,3};
-        System.out.println(maxTwoSubArray(arr));
+        System.out.println(maxSum(arr));
     }
 
-    public static int maxTwoSubArray(int[] arr) {
+    public static int maxSum(int[] arr) {
 
         int length = arr.length;
         int[] Rmax = new int[length];
