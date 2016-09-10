@@ -2,6 +2,8 @@ package nowcoder.bf160831.src;
 
 import java.util.HashMap;
 
+import static nowcoder.common.Utils.BinarySearch;
+
 public class LongestSubarrayLessSumAwesomeSolution {
 
 	// So great, first time, my book need modify, add this solution into book
@@ -51,26 +53,9 @@ public class LongestSubarrayLessSumAwesomeSolution {
 		int len = 0;
 		for (int i = 0; i != arr.length; i++) {
 			sum += arr[i];
-			pre = getLessIndex(h, sum - k);
+			pre = BinarySearch(h, sum - k);
 			len = pre == -1 ? 0 : i - pre + 1;
 			res = Math.max(res, len);
-		}
-		return res;
-	}
-
-	public static int getLessIndex(int[] arr, int num) {
-		int low = 0;
-		int high = arr.length - 1;
-		int mid = 0;
-		int res = -1;
-		while (low <= high) {
-			mid = (low + high) / 2;
-			if (arr[mid] >= num) {
-				res = mid;
-				high = mid - 1;
-			} else {
-				low = mid + 1;
-			}
 		}
 		return res;
 	}

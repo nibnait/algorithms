@@ -11,14 +11,9 @@ public class std {
         temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-/*        Algorithms_4thEdition[i] ^= Algorithms_4thEdition[j];
-        Algorithms_4thEdition[j] ^= Algorithms_4thEdition[i];
-        Algorithms_4thEdition[i] ^= Algorithms_4thEdition[j];*/
-    }
-
-    public static void swap(int a, int b){
-        int t;
-        t = a; a = b; b = t;
+/*        a[i] ^= a[j];
+        a[j] ^= a[i];
+        a[i] ^= a[j];*/
     }
 
 }

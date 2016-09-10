@@ -47,7 +47,7 @@ public class RussianDollEnvelopes {
         }
     }
 
-    private static int maxEnvelopes(int[][] doll) {
+    public static int maxEnvelopes(int[][] doll) {
 
         Dot[] dots = new Dot[doll.length];
         for (int i = 0; i < doll.length; i++) {

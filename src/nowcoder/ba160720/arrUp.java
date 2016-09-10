@@ -25,7 +25,7 @@ public class arrUp {
         System.out.println(arrUp(arr));
     }
 
-    private static int arrUp(int[] arr) {
+    public static int arrUp(int[] arr) {
 
         int[] h = new int[arr.length];
         int j = 0;      //有效区的范围

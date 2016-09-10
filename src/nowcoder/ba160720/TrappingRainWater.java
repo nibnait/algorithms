@@ -29,7 +29,7 @@ public class TrappingRainWater {
      * @param arr
      * @return
      */
-    private static int trap1(int[] arr) {
+    public static int trap1(int[] arr) {
         int length = arr.length;
         if (arr==null || length<=3){
             return 0;
@@ -60,7 +60,7 @@ public class TrappingRainWater {
      * @param arr
      * @return
      */
-    private static int trap2(int[] arr) {
+    public static int trap2(int[] arr) {
         int sum = 0;
         int length = arr.length;
         int Lmax = arr[0];

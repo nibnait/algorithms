@@ -12,7 +12,7 @@ public class ContainerWithMostWater {
         System.out.println(maxArea(arr));
     }
 
-    private static int maxArea(int[] arr) {
+    public static int maxArea(int[] arr) {
         int area = Integer.MIN_VALUE;
 
 
