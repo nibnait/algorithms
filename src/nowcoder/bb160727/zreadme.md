@@ -71,7 +71,7 @@
         如果存在：sum[i] + k = sum[j] （i在j的左边），则说明：arr[i+1,,,,j]=k
         考察，从j位置 往左最多能扩多远？
         即：sum[j]-k最早出现的位置。。
-![]()
+![nowcoderbb16072701](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/common/imgs/nowcoderbb16072701.png?raw=true)
         
         提示：
         可以用HashMap， 
@@ -100,7 +100,7 @@
         arr， 
         m[]：每一步的累加和数组。
         h[]：辅助数组，每个位置，累加和递增的序列。（累加和数组中，从0到i位置范围上的 累加和数组的最大值）
-![]()
+![nowcoderbb16072702](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/common/imgs/nowcoderbb16072702.png?raw=true)
         
     求第一个 >=k的位置，
     用二分。

@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaximalRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/PrefixCheck.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/SubArrayMaxSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/src/SubMatrixMaxSum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/a_MaximumSubarray.java" afterPath="$PROJECT_DIR$/src/nowcoder/bb160727/a_SubArrayMaxSum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/b_maxTwoSubArray.java" afterPath="$PROJECT_DIR$/src/nowcoder/bb160727/b_TwoSubArrayMaxSum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/c_MaxLength.java" afterPath="$PROJECT_DIR$/src/nowcoder/bb160727/c_MaxLength.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,16 +39,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1380">
-                <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+              <first_editor relative-caret-position="640">
+                <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongestLessSumSubArrayLength.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1460">
+                <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MaxSubMatrixSumLessK.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nowcoderbc16080303.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbc16080303.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nowcoderbc16080302.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbc16080302.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -138,12 +174,12 @@
         <option value="$PROJECT_DIR$/src/nowcoder/bb160727/a_MaximumSubarray.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bb160727/a_SubArrayMaxSum.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bb160727/b_TwoSubArrayMaxSum.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaximalRectangle.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/src/PrefixCheck.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md" />
       </list>
     </option>
@@ -165,10 +201,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1312" />
-    <option name="y" value="-7" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1089,15 +1125,15 @@
       <workItem from="1473431082471" duration="8022000" />
       <workItem from="1473506465160" duration="4791000" />
       <workItem from="1473513711086" duration="7057000" />
-      <workItem from="1473532952389" duration="11396000" />
+      <workItem from="1473532952389" duration="12274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166201000" />
+    <option name="totallyTimeSpent" value="167079000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1312" y="-7" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1112,7 +1148,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23650794" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.256447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23567335" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1160,20 +1196,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/c_Shell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/d_Merge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/f_Deap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1384,23 +1406,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="841">
-            <caret line="102" column="5" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -1413,14 +1418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1483,14 +1480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/PrefixCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1499,11 +1488,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbc16080302.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbc16080303.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1380">
-            <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <first_editor relative-caret-position="640">
+            <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1460">
+            <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />

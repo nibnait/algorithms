@@ -16,7 +16,7 @@
         时间复杂度：O(N^2 *N)
         
     代码：
-[]()
+[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/SubMatrixMaxSum.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/SubMatrixMaxSum.java)
 
 
 ## 2.给定一个无序矩阵，其中有正，有负，有0，再给定一个值k，求累加和小于等于k 的最
@@ -24,25 +24,25 @@
 
     只需找到累加和<=k 的最长子数组的长度即可
         代码：
-[]()
+[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java)
 
 ## 3.给定一个无序矩阵，其中只有1 和0 两种值，求只含有1 的最大的子矩阵大小，矩阵的大
 小用其中的元素个数来表示。
 
     如果矩阵是m*n的，则时间复杂度可以做到O(M*N)
-![]()
+![nowcoderbc16080301](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/common/imgs/nowcoderbc16080301.png?raw=true)
     
     将矩阵转化为直方图。然后求直方图内最大的长方形的面积即可。
+![nowcoderbc16080302](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/common/imgs/nowcoderbc16080302.png?raw=true)     
     
     用栈：
          - 当前数 > 栈顶，index直接入栈
          - 当前数 < 栈顶，比较, 计算max， 弹栈， 当前数的index入栈
          - 当前数 = 栈顶，
-          
-![]()     
+![nowcoderbc16080303](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/common/imgs/nowcoderbc16080302.png?raw=true)     
      
     代码：
-[]()
+[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/MaximalRectangle.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/MaximalRectangle.java)
     
     
 ## 4.给定一棵完全二叉树的头节点head，求其中的节点个数。
@@ -59,6 +59,8 @@
      
      整个的时间复杂度：O( (logN)^2) = O((logN + logN)^2)
     
+    代码：
+[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java)    
     
 
 ## 5.给定一个字符串类型的数组，其中不含有重复的字符串，如果其中某一个字符串是另一个
@@ -66,5 +68,6 @@
 
     最长前缀树（N叉树的数据结构，缺谁补谁）
         
-    
+    代码：
+[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/PrefixCheck.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bc160803/src/PrefixCheck.java)
     
