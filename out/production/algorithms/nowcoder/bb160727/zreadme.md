@@ -34,7 +34,7 @@
 【要求】
 时间复杂度O(N)，额外空间复杂度O(1)
 
-    自然想法：
+    自然想法：（暴力出奇迹）
          - 找出所有子数组中相加和为k的，再找出长度最长的。
          时间复杂度：O(N^2)
          
@@ -71,6 +71,8 @@
         如果存在：sum[i] + k = sum[j] （i在j的左边），则说明：arr[i+1,,,,j]=k
         考察，从j位置 往左最多能扩多远？
         即：sum[j]-k最早出现的位置。。
+![nowcoderbb16072701](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbb16072701.png)
+        
         提示：
         可以用HashMap， 
             key：sum，
@@ -95,10 +97,10 @@
     时间复杂度(N*logN)
     只要求出 最早 >=sum[j]-k出现的位置
     即：出现了>=5的累加和，就无需关心>=3的累加和了。
-    
         arr， 
         m[]：每一步的累加和数组。
         h[]：辅助数组，每个位置，累加和递增的序列。（累加和数组中，从0到i位置范围上的 累加和数组的最大值）
+![nowcoderbb16072702](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbb16072702.png)
         
     求第一个 >=k的位置，
     用二分。
