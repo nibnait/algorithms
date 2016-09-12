@@ -38,8 +38,13 @@
 这个栈转置后，从栈顶到栈底为1、2、3、4、5，也就是实现栈中元素的逆序，
 但是只能用递归函数来实现，不能用其他数据结构。
 
-    
+    【此题就是为了递归而设计的】
+        需要辅助结构（递归自带：栈）
+    递归过程：
+![nowcoderbd16081001](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbd16081001.png)
 
+
+代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/ReverseStackUsingRecursive.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/ReverseStackUsingRecursive.java)
 
 ## 题目五
 字符串表达式求值
@@ -57,6 +62,16 @@ str="3+(1*4)"，返回7。
 开头或括号部分的开头，则可以没有括号，比如"-3*4"和"(-3*4)"都是合法的。
 3．不用考虑计算过程中会发生溢出的情况。
 
+    自然想法：
+        逆波兰表达式（用栈）
+
+    左神解法：（用递归代替栈，）
+         - 简单表达式求值
+         - 将“（”、“）”里面的字符串理解成另一个表达式，递归求解。
+         - 如何返回两个值：装在一个二维数组中。[0]的位置放数组，[1]的位置放其在原表达式中的下标
+        
+    
+代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/ExpressionCompute.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/ExpressionCompute.java)
 
 
 ## 题目六
@@ -76,3 +91,10 @@ str="3+(1*4)"，返回7。
 输入：整型数组arr，窗口大小为w。
 输出：一个长度为n-w+1 的数组res，res[i]表示每一种窗口状态下的最大值。
 以本题为例，结果应该返回{5,5,5,4,6,7}。
+
+    算法原型：O(n)
+         双端队列 
+         
+
+
+代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/SlidingWindowMaxArray.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/bd160810/src/SlidingWindowMaxArray.java)
