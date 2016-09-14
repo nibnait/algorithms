@@ -2,14 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SubArrayMaxSum.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/Josephus.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/ba160720/ContainerWithMostWater.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/ContainerWithMostWater.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/ba160720/RussianDollEnvelopes.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/ba160720/TrappingRainWater.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/TrappingRainWater.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/ba160720/arrUp.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/arrUp.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/ba160720/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/a_SubArrayMaxSum.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/a_SubArrayMaxSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/b_TwoSubArrayMaxSum.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/b_TwoSubArrayMaxSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/c_MaxLength.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/MaximalRectangle.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaximalRectangle.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/PrefixCheck.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/SubArrayMaxSum.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/SubArrayMaxSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/src/SubMatrixMaxSum.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/SubMatrixMaxSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/SlidingWindowMaxValue.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/SlidingWindowMaxValue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/ExpressionCompute.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/ExpressionCompute.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/GetMinStack.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/GetMinStack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/ReverseStackUsingRecursive.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/ReverseStackUsingRecursive.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/SlidingWindowMaxArray.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/SlidingWindowMaxArray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/TwoQueuesImplementStack.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/src/TwoStacksImplementQueue.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/TwoStacksImplementQueue.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/AllLessNumSubArray.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/AllLessNumSubArray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/DogCat.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/DogCat.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/Hanoi.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/Hanoi.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/MaxTree.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/MaxTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/zreadme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/BSTtoDoubleLinkedList.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/BSTtoDoubleLinkedList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/src/LongestSubarrayLessSumAwesomeSolution.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/src/Problem_15_BSTtoDoubleLinkedList.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/Problem_15_BSTtoDoubleLinkedList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/src/Problem_17_RemoveNodeWired.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/Problem_17_RemoveNodeWired.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/src/Problem_31_KMPAlgorithm.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/Problem_31_KMPAlgorithm.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/bf160831/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/bd160810/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/bd160810/zreadme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/src/Hanoi.java" afterPath="$PROJECT_DIR$/src/nowcoder/be160817/src/Hanoi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,21 +81,7 @@
     <favorites_list name="algorithms" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="553">
-                <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,16 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/b_Searching/BST.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/160810/ExpressionCompute.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/160810/src/ExpressionCompute.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/ExpressionCompute.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/d160810/src/ExpressionCompute.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/d160810/src/GetMinStack.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/e160817/src/AllLessNumSubArray.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bf160831/src/BSTtoDoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bf160831/BSTtoDoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/nowcoder/bf160831/readme.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/ba160720/readme.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/ba160720/zreadme.md" />
@@ -132,6 +143,16 @@
         <option value="$PROJECT_DIR$/src/nowcoder/bd160810/zreadme.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/bf160824.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/bf160824/zreader.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/bf160824/src/Josephus.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md" />
       </list>
     </option>
   </component>
@@ -152,10 +173,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="-1312" />
+    <option name="y" value="-7" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -198,8 +219,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,7 +288,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="be160817" />
+              <option name="myItemId" value="b_2nd_Season" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,65 +310,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="be160817" />
+              <option name="myItemId" value="b_2nd_Season" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bd160810" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bd160810" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="bf160824" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,32 +336,32 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160824\src" />
+      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bc160803\src" />
+      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160831" />
+      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160831\src" />
+      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\e160817\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="nowcoder.AlgorithmPrototype" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bd160810" />
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\be160817" />
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms" />
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\Standard" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="nowcoder.AlgorithmPrototype" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bc160803\src" />
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160831" />
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160831\src" />
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\e160817\src" />
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\d160810\src" />
-    </key>
   </component>
   <component name="RunManager" selected="Application.SlidingWindowMaxValue">
     <configuration default="false" name="c_MaxLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="nowcoder.bb160727.*" />
+          <option name="PATTERN" value="nowcoder.b_2nd_Season.bb160727.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="nowcoder.bb160727.c_MaxLength" />
+      <option name="MAIN_CLASS_NAME" value="nowcoder.b_2nd_Season.bb160727.c_MaxLength" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -464,11 +437,11 @@
     <configuration default="false" name="SlidingWindowMaxValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="nowcoder.bd160810.*" />
+          <option name="PATTERN" value="nowcoder.b_2nd_Season.bd160810.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="nowcoder.bd160810.SlidingWindowMaxValue" />
+      <option name="MAIN_CLASS_NAME" value="nowcoder.b_2nd_Season.bd160810.SlidingWindowMaxValue" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -985,15 +958,16 @@
       <workItem from="1473707623703" duration="8331000" />
       <workItem from="1473716518676" duration="11525000" />
       <workItem from="1473832064956" duration="2324000" />
-      <workItem from="1473851435277" duration="1979000" />
+      <workItem from="1473851435277" duration="16308000" />
+      <workItem from="1473881299373" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197798000" />
+    <option name="totallyTimeSpent" value="212301000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-1312" y="-7" width="1320" height="784" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1008,7 +982,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28510028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32698414" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23492064" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1056,51 +1030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/160810/SlidingWindowMaxArray.java" />
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/b_Searching/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1662">
-          <caret line="245" column="58" selection-start-line="245" selection-start-column="58" selection-end-line="245" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/b_Searching/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/160810/src/ExpressionCompute.java" />
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160831.java" />
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160831/BSTtoDoubleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160831/src/Problem_15_BSTtoDoubleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160831/zreadme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/ba160720/zreadme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Standard/std.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1108,28 +1037,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/ba160720/ContainerWithMostWater.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/ContainerWithMostWater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-382">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/ba160720/RussianDollEnvelopes.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
           <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/ba160720/TrappingRainWater.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/TrappingRainWater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160831/src/LongestSubarrayLessSumAwesomeSolution.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
@@ -1143,77 +1072,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/ba160720/arrUp.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/arrUp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128">
           <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/a_SubArrayMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/a_SubArrayMaxSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
           <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/b_TwoSubArrayMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/b_TwoSubArrayMaxSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/CompleteTreeNodeNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/MaximalRectangle.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaximalRectangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/SubMatrixMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/SubMatrixMaxSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/SubArrayMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/SubArrayMaxSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/c_MaxLength.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-48">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/PrefixCheck.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/MaxSubMatrixSumLessK.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/src/LongestLessSumSubArrayLength.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
           <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
@@ -1228,21 +1157,6 @@
     <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbb16072701.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bb160727/zreadme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="241">
-            <caret line="102" column="125" selection-start-line="102" selection-start-column="125" selection-end-line="102" selection-end-column="125" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/common/imgs/nowcoderbc16080301.png">
@@ -1274,7 +1188,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/src/GetMinStack.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/GetMinStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
@@ -1288,42 +1202,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bc160803/zreadme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="220">
-            <caret line="16" column="107" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="107" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/src/ReverseStackUsingRecursive.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/ReverseStackUsingRecursive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/src/ExpressionCompute.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/ExpressionCompute.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-616">
           <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/src/SlidingWindowMaxArray.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/src/SlidingWindowMaxArray.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="17" column="15" selection-start-line="14" selection-start-column="12" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/src/DogCat.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/DogCat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-500">
           <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,22 +1237,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/src/Hanoi.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/Hanoi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/SlidingWindowMaxValue.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/SlidingWindowMaxValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#553#562#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,7 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1365,7 +1262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,11 +1280,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/bd160810/zreadme.md">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/MaxTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/AllLessNumSubArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160824.java" />
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="61">
-            <caret line="74" column="16" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="16" />
+          <first_editor relative-caret-position="361">
+            <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-479">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1240">
+            <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="441">
+            <caret line="72" column="187" selection-start-line="72" selection-start-column="187" selection-end-line="72" selection-end-column="187" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="411">
+            <caret line="123" column="193" selection-start-line="123" selection-start-column="193" selection-end-line="123" selection-end-column="193" />
           </first_editor>
           <second_editor />
         </state>
@@ -1399,35 +1360,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/src/MaxTree.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state relative-caret-position="400">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/src/AllLessNumSubArray.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="260">
+            <caret line="40" column="129" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="129" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Problem_17_RemoveNodeWired.java" />
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/Problem_17_RemoveNodeWired.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/be160817/zreadme.md">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="85" column="52" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="553">
-            <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="253">
+            <caret line="125" column="9" selection-start-line="125" selection-start-column="9" selection-end-line="125" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
