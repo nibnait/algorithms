@@ -31,8 +31,8 @@ public class KMPAlgorithm {
 		int[] next = new int[ms.length];
 		next[0] = -1;
 		next[1] = 0;
-		int pos = 2;
-		int cn = 0;
+		int pos = 2;	//当前位置
+		int cn = 0;		//最长匹配前缀字串后面的那个字符位置
 		while (pos < next.length) {
 			if (ms[pos - 1] == ms[cn]) {
 				next[pos++] = ++cn;

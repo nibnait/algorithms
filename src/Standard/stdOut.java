@@ -305,6 +305,18 @@ public final class stdOut {
 
     //-------------输出数组 begin--------------------------------
 
+    public static void print(int[][] a){
+        int n = a.length;
+        int m = a[0].length;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void print(int[] a){
         for (int i = 0; i < a.length; i++) {
             if (i == a.length - 1) {
