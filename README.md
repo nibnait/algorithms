@@ -18,7 +18,7 @@
     - [nowcoder/bh160907](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/be160907/zreadme.md) 题目五：在二叉树中找到累加和为指定值的最长路径长度
     
         
- - 字符串匹配的KMP算法：[]()
- - 求最长回文子串的Manacher算法：[]()
+ - 字符串匹配的KMP算法：[KMP.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java)
+ - 求最长回文子串的Manacher算法：[Manacher.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java)
 
 

@@ -48,6 +48,7 @@ public class KMP {
         while (pos < s2.length){
             if (s2[pos-1] == s2[cn]){
                 nextArr[pos++] = nextArr[pos-1] + 1;
+                cn++;
             }else if (cn > 0){
                 cn = nextArr[cn];
             }else {

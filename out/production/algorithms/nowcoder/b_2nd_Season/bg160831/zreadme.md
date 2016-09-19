@@ -46,7 +46,7 @@
         ababc  --> S(c)=2;
         aaaac --> S(c)=3;
 
-详解：[]()
+详解：[http://tianbin.leanote.com/post/KMP%E7%AE%97%E6%B3%95](http://tianbin.leanote.com/post/KMP%E7%AE%97%E6%B3%95)
     
 
 

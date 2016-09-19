@@ -2,28 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/Prime.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/others/DD_01.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/others/DD_02.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/common/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/common/PrintBinaryTree.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RandomTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RandomTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/others/LeShi_01.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/others/Perfect_World_02.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/Chapter2/二维数组中的二分查找.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/nowcoder/book/BinaryTree/getPosArray.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/others/LeShi_01.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/others/Perfect_World_02.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/zreadme.md" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/zreadme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/zreadme.md" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/zreadme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Standard/stdOut.java" afterPath="$PROJECT_DIR$/src/Standard/stdOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Standard/stdRandom.java" afterPath="$PROJECT_DIR$/src/Standard/stdRandom.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/zreadme.md" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/zreadme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java" afterPath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/RandomTest.java" afterPath="$PROJECT_DIR$/src/zzzTest/RandomTest.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,35 +57,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KMPAlgorithm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java">
+      <file leaf-file-name="MorrisTraversal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+            <state relative-caret-position="133">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="二维数组中的二分查找.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SwordOffer/Chapter2/二维数组中的二分查找.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="193">
-                <caret line="38" column="46" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="46" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="285">
-                <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+              <first_editor relative-caret-position="143">
+                <caret line="40" column="30" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="30" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -97,22 +92,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KMP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java">
+      <file leaf-file-name="getPosArray.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/book/BinaryTree/getPosArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="78">
+              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdRandom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Standard/stdRandom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java">
+      <file leaf-file-name="zreadme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bh160907/zreadme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1380">
+                <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Standard/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="100">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Problem_01_PreInPosTraversal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2680">
+              <caret line="136" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <folding>
+                <element signature="e#229#230#0" expanded="false" />
+                <element signature="e#255#256#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,11 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/others/WangYi_163_1.java" />
-        <option value="$PROJECT_DIR$/src/others/WangYi_163_2.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bd160810/src/ReverseStackUsingRecursive.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bd160810/src/ExpressionCompute.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/bd160810/src/SlidingWindowMaxArray.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/bd160810/SlidingWindowMaxValue.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/be160817/src/Hanoi.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java" />
@@ -178,17 +206,22 @@
         <option value="$PROJECT_DIR$/src/zzzTest/RandomTest.java" />
         <option value="$PROJECT_DIR$/src/others/DD_01.java" />
         <option value="$PROJECT_DIR$/src/Standard/stdOut.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
         <option value="$PROJECT_DIR$/src/others/Main.java" />
         <option value="$PROJECT_DIR$/src/others/DD_02.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/Mains.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" />
         <option value="$PROJECT_DIR$/src/SwordOffer/Prime.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
+        <option value="$PROJECT_DIR$/src/others/LeShi_01.java" />
+        <option value="$PROJECT_DIR$/src/others/Perfect_World_02.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter2/二维数组中的二分查找.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/book/BinaryTree/getPosArray.java" />
       </list>
     </option>
   </component>
@@ -209,10 +242,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1312" />
-    <option name="y" value="-7" />
-    <option name="width" value="1320" />
-    <option name="height" value="784" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -255,6 +288,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -324,11 +359,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="b_2nd_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bi160914" />
+              <option name="myItemId" value="BinaryTree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,66 +377,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b_2nd_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_1st_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_1st_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aa_Manacher_bfprt_KMP" />
+              <option name="myItemId" value="Algorithms_4thEdition" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -437,67 +414,7 @@
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\bf160831\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KMP">
-    <configuration default="false" name="Manacher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nowcoder.a_1st_Season.aa_Manacher_bfprt_KMP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="nowcoder.a_1st_Season.aa_Manacher_bfprt_KMP.Manacher" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DD_02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="others.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="others.DD_02" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="others.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="others.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.getPosArray">
     <configuration default="false" name="KMP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -518,14 +435,74 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="KMPAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="nowcoder.b_2nd_Season.bg160831.src.*" />
+          <option name="PATTERN" value="zzzTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="nowcoder.b_2nd_Season.bg160831.src.KMPAlgorithm" />
+      <option name="MAIN_CLASS_NAME" value="zzzTest.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithms" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LeShi_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="others.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="others.LeShi_01" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithms" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="MorrisTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nowcoder.b_2nd_Season.bi160914.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="nowcoder.b_2nd_Season.bi160914.MorrisTraversal" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithms" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="getPosArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nowcoder.book.BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="nowcoder.book.BinaryTree.getPosArray" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -960,19 +937,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Manacher" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DD_02" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="Application.KMP" />
-      <item index="4" class="java.lang.String" itemvalue="Application.KMPAlgorithm" />
+      <item index="0" class="java.lang.String" itemvalue="Application.KMP" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LeShi_01" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MorrisTraversal" />
+      <item index="4" class="java.lang.String" itemvalue="Application.getPosArray" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.KMP" />
-        <item index="1" class="java.lang.String" itemvalue="Application.KMPAlgorithm" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Manacher" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DD_02" />
+        <item index="0" class="java.lang.String" itemvalue="Application.getPosArray" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MorrisTraversal" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LeShi_01" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Main (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.KMP" />
       </list>
     </recent_temporary>
   </component>
@@ -1047,15 +1024,19 @@
       <workItem from="1473984853558" duration="123000" />
       <workItem from="1474029097647" duration="1403000" />
       <workItem from="1474034138894" duration="714000" />
-      <workItem from="1474063657510" duration="32052000" />
+      <workItem from="1474063657510" duration="32410000" />
+      <workItem from="1474246825020" duration="805000" />
+      <workItem from="1474262239509" duration="7227000" />
+      <workItem from="1474309651579" duration="5898000" />
+      <workItem from="1474322846134" duration="2831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282611000" />
+    <option name="totallyTimeSpent" value="299730000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1312" y="-7" width="1320" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1067,17 +1048,17 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1089" y="81" width="807" height="673" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44474393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1089" y="81" width="807" height="673" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2829513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23373677" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23352435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38688526" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38140163" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1108,8 +1089,26 @@
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/others/LeShi_01.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1118,41 +1117,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/DogCat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/Hanoi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="63" column="89" selection-start-line="63" selection-start-column="89" selection-end-line="63" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/SlidingWindowMaxValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SubArrayMaxSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/MaxTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
@@ -1169,17 +1133,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/bf160824.java" />
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/zreadme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="-479">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1216,11 +1180,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/zreadme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="533">
@@ -1229,19 +1188,24 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/zreadme.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bd160810/zreadme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="-160">
             <caret line="40" column="129" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="129" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1263,17 +1227,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/zreadme.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="2200">
             <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="111" selection-end-column="55" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1312,13 +1276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -1330,15 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Standard/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1381,9 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="26" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1391,6 +1336,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/RandomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Standard/stdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="314" column="31" selection-start-line="314" selection-start-column="31" selection-end-line="314" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/others/DD_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/others/DD_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="460">
+            <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="420">
+            <caret line="36" column="112" selection-start-line="36" selection-start-column="112" selection-end-line="36" selection-end-column="112" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="835">
+            <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/Prime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/others/LeShi_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/others/Perfect_World_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2680">
+          <caret line="136" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="e#229#230#0" expanded="false" />
+            <element signature="e#255#256#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Standard/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1406,128 +1489,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Standard/stdRandom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
+        <state relative-caret-position="343">
           <caret line="70" column="16" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/RandomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Standard/stdOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="314" column="31" selection-start-line="314" selection-start-column="31" selection-end-line="314" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/DD_02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/DD_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="420">
-            <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="435">
-            <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/Prime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/zreadme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="193">
-            <caret line="38" column="46" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1535,11 +1510,29 @@
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bi160914/zreadme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="285">
-            <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <first_editor relative-caret-position="143">
+            <caret line="40" column="30" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="30" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/Chapter2/二维数组中的二分查找.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/book/BinaryTree/getPosArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
