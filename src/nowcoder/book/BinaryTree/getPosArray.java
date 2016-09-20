@@ -37,14 +37,33 @@ public class getPosArray {
         return pos;
     }
 
-    private static int setPos(int[] p, int pi, int pj, int[] n, int ni, int nj, int[] s, int si, HashMap<Integer, Integer> map) {
-        if (pi > pj){
+    /**
+     *
+     * @param pre   前序遍历数组
+     * @param ps    前序遍历开始的位置
+     * @param pe    前序遍历结束的位置
+     * @param in    中序遍历数组
+     * @param is    中序遍历开始的位置
+     * @param ie    中序遍历结束的位置
+     * @param pos   后序数组
+     * @param si    后序数组填写到的位置
+     * @param map   中序数组
+     * @return
+     */
+    private static int setPos(int[] pre, int ps, int pe, int[] in, int is, int ie, int[] pos, int si, HashMap<Integer, Integer> map) {
+        if (ps > pe){
+            //开始位置大于结束位置，说明已经没有需要处理的元素了
             return si;
         }
-        s[si--] = p[pi];
-        int i = map.get(p[pi]);
-        si = setPos(p, pj-nj+i+1, pj, n, i+1, nj, s, si, map);
-        return setPos(p, pi+1, pi+i-ni, n, ni, i-1, s, si, map);
+        pos[si--] = pre[ps];    // 取前序遍历的第一个数字，就是当前的根结点
+        int i = 0;
+        try {
+            i = map.get(pre[ps]);   // 在中序遍历的数组中找根结点的位置
+        }catch (Exception e){
+            throw new RuntimeException("前序/中序数组有问题");
+        }
+        si = setPos(pre, pe+1+i-ie, pe, in, i+1, ie, pos, si, map);
+        return setPos(pre, ps+1, ps+i-is, in, is, i-1, pos, si, map);
     }
 
 }

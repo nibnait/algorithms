@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class TwoStacksImplementQueue {
 
-	public static class TwoStacksQueue {
+	private static class TwoStacksQueue {
 		public Stack<Integer> stackPush;
 		public Stack<Integer> stackPop;
 

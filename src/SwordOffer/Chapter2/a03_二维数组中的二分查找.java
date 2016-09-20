@@ -8,7 +8,7 @@ package SwordOffer.Chapter2;
  * 从二维数组的右上角往左下角开始比较。
  * Created by nibnait on 2016/9/20.
  */
-public class 二维数组中的二分查找 {
+public class a03_二维数组中的二分查找 {
 
     public static void main(String[] args) {
         int[][] matrix = new int[][]{
@@ -21,8 +21,22 @@ public class 二维数组中的二分查找 {
     }
 
     private static int find(int[][] matrix, int key) {
-
-
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        if (matrix==null || rows<1 || cols<1){
+            return 0;
+        }
+        int row = 0;
+        int col = cols-1;
+        while (row<rows && col>=0){
+            if (matrix[row][col] == key){
+                return 1;
+            } else if (matrix[row][col] < key){
+                row++;
+            } else {
+                col--;
+            }
+        }
         return 0;
     }
 
