@@ -43,9 +43,6 @@ import java.util.Locale;
  *  <ul>
  *  <li> <code>stdOut</code> coerces the character-set encoding to UTF-8,
  *       which is Algorithms_4thEdition standard character encoding for Unicode.
- *  <li> <code>stdOut</code> coerces the locale to {@link Locale#US},
- *       for consistency with {@link StdIn}, {@link Double#parseDouble(String)},
- *       and floating-point literals.
  *  <li> <code>stdOut</code> <em>flushes</em> standard output after each call to
  *       <code>print()</code> so that text will appear immediately in the terminal.
  *  </ul>
@@ -172,7 +169,6 @@ public final class stdOut {
    /**
      * Prints Algorithms_4thEdition byte to standard output and then terminates the line.
      * <p>
-     * To write binary data, see {@link BinaryStdOut}.
      *
      * @param x the byte to print
      */
@@ -329,8 +325,53 @@ public final class stdOut {
 
     //-------------输出数组 end----------------------------------
 
+    //-------------打印链表 begin-------------------------------
+    public static void printList(ListNode head){
+        while (head != null){
+            System.out.print(head.value + " -> ");
+            head = head.next;
+        }
+        System.out.println("null");
+    }
 
-   /**
+    //-------------打印链表 end-------------------------------
+
+    //-------------打印二叉树 begin---------------------------------
+    private static final int NODE_LENGTH = 17;      //二叉树中每个节点的长度
+
+    public static void printBinaryTree(Node head) {
+
+        System.out.println("Binary Tree：");
+        printInOrder(head, 0, "*");
+        System.out.println();
+    }
+
+    private static void printInOrder(Node head, int height, String to) {
+        if (head == null){
+            return;
+        }
+        printInOrder(head.left, height+1, "~");
+        String val = to + head.value + to;
+        int lenM = val.length();
+        int lenL = (NODE_LENGTH - lenM) / 2;
+        int lenR = NODE_LENGTH - lenL - lenM;
+        val = getSpace(height*NODE_LENGTH + lenL) + val + getSpace(lenR);
+        System.out.println(val);
+        printInOrder(head.right, height+1, "_");
+    }
+
+    private static String getSpace(int n) {
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < n; i++) {
+            sb.append(" ");
+        }
+        return sb.toString();
+    }
+
+    //-------------打印二叉树 end---------------------------------
+
+
+    /**
      * Unit tests some of the methods in <tt>stdOut</tt>.
      */
     public static void main(String[] args) {

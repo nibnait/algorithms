@@ -17,7 +17,7 @@ public class a10_二进制中1的个数 {
      * @param n
      * @return
      */
-    private static int numberOfOne(int n){
+    public static int NumberOf1InBinary(int n){
         int cnt = 0;
         while (n != 0){
             n = n & (n-1);
@@ -45,7 +45,7 @@ public class a10_二进制中1的个数 {
 //        int num = 0B10000000_00000000_00000000_00000000;    // Integer.MIN_VALUE
         int num = 3;
 
-        System.out.println(numberOfOne(num));
+        System.out.println(NumberOf1InBinary(num));
 
         System.out.println(0B01111111_11111111_11111111_11111111 == Integer.MAX_VALUE);
         System.out.println(0B10000000_00000000_00000000_00000000 == Integer.MIN_VALUE);

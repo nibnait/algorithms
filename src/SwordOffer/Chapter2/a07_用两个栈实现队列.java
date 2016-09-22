@@ -8,7 +8,7 @@ import java.util.Stack;
 public class a07_用两个栈实现队列 {
 
     public static void main(String[] args) {
-        TwoStacksQueue test = new TwoStacksQueue();
+        QueueWithTwoStacks test = new QueueWithTwoStacks();
         test.add(1);
         test.add(2);
         test.add(3);
@@ -17,11 +17,11 @@ public class a07_用两个栈实现队列 {
         System.out.println(test.peek());
     }
 
-    private static class TwoStacksQueue{
+    private static class QueueWithTwoStacks {
         public Stack<Integer> stackPush;
         public Stack<Integer> stackPop;
 
-        public TwoStacksQueue() {
+        public QueueWithTwoStacks() {
             stackPush = new Stack<Integer>();
             stackPop = new Stack<Integer>();
         }

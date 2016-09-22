@@ -9,6 +9,9 @@ public class Node {
     public Node left = null;
     public Node right = null;
 
+    public Node() {
+    }
+
     public Node(int data) {
         this.value = data;
     }

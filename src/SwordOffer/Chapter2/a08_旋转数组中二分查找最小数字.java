@@ -10,7 +10,7 @@ package SwordOffer.Chapter2;
  */
 public class a08_旋转数组中二分查找最小数字 {
 
-    private static int min(int[] arr){
+    private static int MinNumberInRotatedArray(int[] arr){
         if (arr==null || arr.length==0){
             throw new RuntimeException("arr为空");
         }
@@ -49,27 +49,27 @@ public class a08_旋转数组中二分查找最小数字 {
     public static void main(String[] args) {
         // 典型输入，单调升序的数组的一个旋转
         int[] array1 = {3, 4, 5, 1, 2};
-        System.out.println(min(array1));
+        System.out.println(MinNumberInRotatedArray(array1));
         // 有重复数字，并且重复的数字刚好的最小的数字
         int[] array2 = {3, 4, 5, 1, 1, 2};
-        System.out.println(min(array2));
+        System.out.println(MinNumberInRotatedArray(array2));
         // 有重复数字，但重复的数字不是第一个数字和最后一个数字
         int[] array3 = {3, 4, 5, 1, 2, 2};
-        System.out.println(min(array3));
+        System.out.println(MinNumberInRotatedArray(array3));
         // 有重复的数字，并且重复的数字刚好是第一个数字和最后一个数字
         int[] array4 = {1, 0, 1, 1, 1};
-        System.out.println(min(array4));
+        System.out.println(MinNumberInRotatedArray(array4));
         // 单调升序数组，旋转0个元素，也就是单调升序数组本身
         int[] array5 = {1, 2, 3, 4, 5};
-        System.out.println(min(array5));
+        System.out.println(MinNumberInRotatedArray(array5));
         // 数组中只有一个数字
         int[] array6 = {2};
-        System.out.println(min(array6));
+        System.out.println(MinNumberInRotatedArray(array6));
         // 数组中数字都相同
         int[] array7 = {1, 1, 1, 1, 1, 1, 1};
-        System.out.println(min(array7));
+        System.out.println(MinNumberInRotatedArray(array7));
         // 输入NULL
-//        System.out.println(min(null));
+//        System.out.println(MinNumberInRotatedArray(null));
     }
 
 }

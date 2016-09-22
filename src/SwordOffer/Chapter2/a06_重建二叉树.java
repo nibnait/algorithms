@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class a06_重建二叉树 {
 
-    private static Node construct(int[] pre, int[] in) {
+    private static Node ConstructBinaryTree(int[] pre, int[] in) {
 
         if (pre==null || in==null || pre.length!=in.length || in.length<=0){
             return null;
@@ -67,7 +67,7 @@ public class a06_重建二叉树 {
     private static void test1() {
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 所有结点都没有右子结点  
@@ -83,7 +83,7 @@ public class a06_重建二叉树 {
     private static void test2() {
         int[] pre = {1, 2, 3, 4, 5};
         int[] in = {5, 4, 3, 2, 1};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 所有结点都没有左子结点  
@@ -99,14 +99,14 @@ public class a06_重建二叉树 {
     private static void test3() {
         int[] pre = {1, 2, 3, 4, 5};
         int[] in = {1, 2, 3, 4, 5};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 树中只有一个结点  
     private static void test4() {
         int[] pre = {1};
         int[] in = {1};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 完全二叉树  
@@ -118,18 +118,18 @@ public class a06_重建二叉树 {
     private static void test5() {
         int[] pre = {1, 2, 4, 5, 3, 6, 7};
         int[] in = {4, 2, 5, 1, 6, 3, 7};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 输入空指针  
     private static void test6() {
-        construct(null, null);
+        ConstructBinaryTree(null, null);
     }
     // 输入的两个序列不匹配  
     private static void test7() {
         int[] pre = {1, 2, 4, 5, 3, 6, 7};
         int[] in = {4, 2, 8, 1, 6, 3, 7};
-        Node root = construct(pre, in);
+        Node root = ConstructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
 
