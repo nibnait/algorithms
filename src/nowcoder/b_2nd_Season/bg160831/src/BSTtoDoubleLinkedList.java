@@ -62,24 +62,24 @@ public class BSTtoDoubleLinkedList {
 		Node rightE = process(head.right); // right end
 		Node leftS = leftE != null ? leftE.right : null; // left start
 		Node rightS = rightE != null ? rightE.right : null; // right start
-		if (leftE != null && rightE != null) {
+		if (leftE != null && rightE!=null){     //leftS(头)...leftE<-->head<-->rightS...rightE(尾)
 			leftE.right = head;
 			head.left = leftE;
 			head.right = rightS;
 			rightS.left = head;
 			rightE.right = leftS;
 			return rightE;
-		} else if (leftE != null) {
+		} else if (leftE != null){  //head为右子树为空    leftE<-->head(尾)-->leftS(头)
 			leftE.right = head;
 			head.left = leftE;
 			head.right = leftS;
 			return head;
-		} else if (rightE != null) {
+		} else if (rightE != null) {    //head的左子树为空，   head(头)<-->rightS...rightE(尾)
 			head.right = rightS;
 			rightS.left = head;
 			rightE.right = head;
 			return rightE;
-		} else {
+		} else {        //head为左右子节点都为null的叶子结点
 			head.right = head;
 			return head;
 		}

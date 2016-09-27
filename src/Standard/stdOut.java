@@ -334,7 +334,55 @@ public final class stdOut {
         System.out.println("null");
     }
 
+    public static void printDoubleLinkedList(Node head){
+        System.out.println("Double Linked List: ");
+        Node end = null;
+        while (head != null) {
+            System.out.print(head.value + " ");
+            end = head;
+            head = head.right;
+        }
+        System.out.print("| ");
+        while (end != null) {
+            System.out.print(end.value + " ");
+            end = end.left;
+        }
+        System.out.println();
+
+    }
+
     //-------------打印链表 end-------------------------------
+
+
+    //-------------二叉树的前中后需遍历 begin---------------------------------
+    public static void preOrderPrint(Node head) {
+        if (head == null){
+            return;
+        }
+        System.out.print(head.value + " ");
+        preOrderPrint(head.left);
+        preOrderPrint(head.right);
+    }
+
+    public static void inOrderPrint(Node head) {
+        if (head == null){
+            return;
+        }
+        inOrderPrint(head.left);
+        System.out.print(head.value + " ");
+        inOrderPrint(head.right);
+    }
+
+    public static void posOrderPrint(Node head) {
+        if (head == null){
+            return;
+        }
+        posOrderPrint(head.left);
+        posOrderPrint(head.right);
+        System.out.print(head.value + " ");
+    }
+    //-------------二叉树的前中后需遍历 end-------------------------------
+
 
     //-------------打印二叉树 begin---------------------------------
     private static final int NODE_LENGTH = 17;      //二叉树中每个节点的长度
