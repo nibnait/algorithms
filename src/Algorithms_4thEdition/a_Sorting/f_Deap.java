@@ -2,9 +2,6 @@ package Algorithms_4thEdition.a_Sorting;
 
 import Standard.std;
 import Standard.stdOut;
-import Standard.stdRandom;
-
-import java.util.NavigableMap;
 
 /**
  * Created by nibnait on 2016/8/10.
@@ -30,7 +27,7 @@ public class f_Deap {
         }
 
         while (N > 0) {
-            std.exch(a, 0, N--);    //将堆的最大元素a[0]和a[N]交换，
+            std.swap(a, 0, N--);    //将堆的最大元素a[0]和a[N]交换，
             sink(a, 0, N);          //调整堆， 知道堆空
             stdOut.print(a);
         }
@@ -48,7 +45,7 @@ public class f_Deap {
             if (a[k] > a[j]) { //如果a[k] 比他的最大的子结点还大，则无需调整
                 break;
             } else {    //否则 交换a[k] 和a[j]
-                std.exch(a, j, k);      //为了保证a[k]（堆顶）（父亲永远比儿子大）
+                std.swap(a, j, k);      //为了保证a[k]（堆顶）（父亲永远比儿子大）
                 k = j;  // 然后 继续 a[k]的子结点和a[k]的孙结点进行比较
             }
         }

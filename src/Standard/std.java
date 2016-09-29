@@ -5,7 +5,7 @@ package Standard;
  */
 public class std {
 
-    public static void exch(int[] a, int i, int j){
+    public static void swap(int[] a, int i, int j){
 
         int temp;
         temp = a[i];
@@ -14,6 +14,13 @@ public class std {
 /*        a[i] ^= a[j];
         a[j] ^= a[i];
         a[i] ^= a[j];*/
+    }
+
+    public static void swap(char[] a, int i, int j){
+        char tmp;
+        tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
     }
 
 }

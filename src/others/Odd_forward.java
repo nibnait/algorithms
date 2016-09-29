@@ -16,7 +16,7 @@ public class Odd_forward {
 
         for (int i = 1; i < a.length; i++) {
             for (int j = i; j > 0 && IsOdd(a[j]) && !IsOdd(a[j-1]); j--) {
-                std.exch(a,j,j-1);
+                std.swap(a,j,j-1);
             }
         }
 
@@ -26,7 +26,7 @@ public class Odd_forward {
             if (!IsOdd(a[i])) {
                 for (int j = a.length - 1; j > 0 && i < j; j--) {
                     if (IsOdd(a[j])) {
-                        std.exch(a, i, j);
+                        std.swap(a, i, j);
                     }
                 }
             }

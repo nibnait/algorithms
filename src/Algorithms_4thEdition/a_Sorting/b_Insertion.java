@@ -26,7 +26,7 @@ public class b_Insertion {
 
         for (int i = 1; i < length; i++) {
             for (int j = i; j > 0 && a[j]<a[j-1]; j--) {
-                std.exch(a,j,j-1);
+                std.swap(a,j,j-1);
             }
         }
         return a;

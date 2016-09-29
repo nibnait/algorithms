@@ -2,7 +2,6 @@ package Algorithms_4thEdition.a_Sorting;
 
 import Standard.std;
 import Standard.stdOut;
-import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/7.
@@ -32,7 +31,7 @@ public class c_Shell {
         while (h>0){
             for (int i = h; i < length; i++) {//将数组整理成【h有序数组】，
                 for (int j = i; j >= h && a[j]<a[j-h]; j-=h) {
-                    std.exch(a,j,j-h);
+                    std.swap(a,j,j-h);
                 }
             }
             stdOut.print(a);

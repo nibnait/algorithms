@@ -40,7 +40,7 @@ public class a_Selection {
                     min = j;
                 }
             }
-            std.exch(a, i, min);
+            std.swap(a, i, min);
         }
         return a;
     }

@@ -1,5 +1,7 @@
 package Algorithms_4thEdition.a_Sorting;
 
+import Standard.std;
+
 /**
  * Bubble_Sort
  * 时间复杂度：O(n^2)
@@ -28,18 +30,16 @@ public class a_Bubble {
 
     }
 
-    public static int[] Bubble_Sort(int[] A, int n) {
+    public static int[] Bubble_Sort(int[] a, int n) {
 
         int temp;
         for(int i=0; i<n-1; i++){
             for(int j=0; j<n-1-i; j++){
-                if(A[j]>A[j+1]){
-                    temp = A[j];
-                    A[j] = A[j+1];
-                    A[j+1] = temp;
+                if(a[j]>a[j+1]){
+                    std.swap(a, j, j+1);
                 }
             }
         }
-        return A;
+        return a;
     }
 }

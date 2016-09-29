@@ -2,7 +2,6 @@ package Algorithms_4thEdition.a_Sorting;
 
 import Standard.std;
 import Standard.stdOut;
-import Standard.stdRandom;
 
 /**
  * Created by nibnait on 2016/8/9.
@@ -36,18 +35,18 @@ public class e_Quick {
 //        int flag = lo;
 //        for (int i = lo; i <= hi; i++) {
 //            if (a[i] < a[hi]){      //以a[hi]为基准
-//                std.exch(a, i, flag++);
+//                std.swap(a, i, flag++);
 //            }
 //        }
-//        std.exch(a,flag,hi);
+//        std.swap(a,flag,hi);
 
         int flag = lo+1;    //以a[lo]为基准
         for (int i = lo+1; i <= hi; i++) {
             if (a[i]<a[lo]) {
-                std.exch(a,i,flag++);
+                std.swap(a,i,flag++);
             }
         }
-        std.exch(a,--flag,lo);
+        std.swap(a,--flag,lo);
         return flag;
     }
 }
