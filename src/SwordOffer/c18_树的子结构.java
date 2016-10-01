@@ -20,7 +20,7 @@ public class c18_树的子结构 {
      * @param head2
      * @return
      */
-    public static boolean HasSubtree(Node head1, Node head2){
+    public static boolean hasSubtree(Node head1, Node head2){
         if (head1 == head2){
             return true;
         }
@@ -129,7 +129,7 @@ public class c18_树的子结构 {
      * @param head2 B树
      * @return
      */
-    private static boolean HasSubtreeWithRecursion(Node head1, Node head2) {
+    private static boolean hasSubtreeWithRecursion(Node head1, Node head2) {
         if (head1 == head2){
             return true;
         }
@@ -144,10 +144,10 @@ public class c18_树的子结构 {
             result = match(head1, head2);
         }
         if (!result){   //此结点未匹配出B树，继续考察 A.left
-            result = HasSubtreeWithRecursion(head1.left, head2);
+            result = hasSubtreeWithRecursion(head1.left, head2);
         }
         if (!result){   //左子树不行 换右子树
-            result = HasSubtreeWithRecursion(head1.right, head2);
+            result = hasSubtreeWithRecursion(head1.right, head2);
         }
         return result;
     }
@@ -191,20 +191,20 @@ public class c18_树的子结构 {
         head2.left.value = 9;
         head2.right = new Node();
         head2.right.value = 2;
-        System.out.println(HasSubtree(head1, head2));
-        System.out.println(HasSubtree(head2, head1));
-        System.out.println(HasSubtree(head1, head1.left));
-        System.out.println(HasSubtree(head1, null));
-        System.out.println(HasSubtree(null, head2));
-        System.out.println(HasSubtree(null, null));
+        System.out.println(hasSubtree(head1, head2));
+        System.out.println(hasSubtree(head2, head1));
+        System.out.println(hasSubtree(head1, head1.left));
+        System.out.println(hasSubtree(head1, null));
+        System.out.println(hasSubtree(null, head2));
+        System.out.println(hasSubtree(null, null));
 
-        System.out.println("--------HasSubtreeWithRecursion-------");
-        System.out.println(HasSubtreeWithRecursion(head1, head2));
-        System.out.println(HasSubtreeWithRecursion(head2, head1));
-        System.out.println(HasSubtreeWithRecursion(head1, head1.left));
-        System.out.println(HasSubtreeWithRecursion(head1, null));
-        System.out.println(HasSubtreeWithRecursion(null, head2));
-        System.out.println(HasSubtreeWithRecursion(null, null));
+        System.out.println("--------hasSubtreeWithRecursion-------");
+        System.out.println(hasSubtreeWithRecursion(head1, head2));
+        System.out.println(hasSubtreeWithRecursion(head2, head1));
+        System.out.println(hasSubtreeWithRecursion(head1, head1.left));
+        System.out.println(hasSubtreeWithRecursion(head1, null));
+        System.out.println(hasSubtreeWithRecursion(null, head2));
+        System.out.println(hasSubtreeWithRecursion(null, null));
         
     }
 

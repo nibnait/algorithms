@@ -21,7 +21,7 @@ public class c11_数值的整数次方 {
     public static double Power(double base, int exponent){
 
         if (equal(base, 0.0) && exponent<0){
-            throw new RuntimeException("参数异常");
+            throw new IllegalArgumentException("Invalid args");
         }
         if (exponent == 0){
             return 1;

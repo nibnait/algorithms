@@ -15,7 +15,7 @@ import Standard.stdOut;
  */
 public class d19_二叉树的镜像 {
 
-    private static void MirrorRecursivelly(Node head) {
+    private static void mirrorRecursivelly(Node head) {
         if (head == null){
             return;
         }
@@ -25,8 +25,8 @@ public class d19_二叉树的镜像 {
         Node tmp = head.left;
         head.left = head.right;
         head.right = tmp;
-        MirrorRecursivelly(head.left);
-        MirrorRecursivelly(head.right);
+        mirrorRecursivelly(head.left);
+        mirrorRecursivelly(head.right);
     }
 
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class d19_二叉树的镜像 {
         head.right.right.value = 11;
         stdOut.printBinaryTree(head);
         System.out.println();
-        MirrorRecursivelly(head);
+        mirrorRecursivelly(head);
         stdOut.printBinaryTree(head);
         //         1
         //        /
@@ -75,7 +75,7 @@ public class d19_二叉树的镜像 {
         System.out.println("\n");
         stdOut.printBinaryTree(head2);
         System.out.println();
-        MirrorRecursivelly(head2);
+        mirrorRecursivelly(head2);
         stdOut.printBinaryTree(head2);
         // 0
         //  \
@@ -99,7 +99,7 @@ public class d19_二叉树的镜像 {
         System.out.println("\n");
         stdOut.printBinaryTree(head3);
         System.out.println();
-        MirrorRecursivelly(head3);
+        mirrorRecursivelly(head3);
         stdOut.printBinaryTree(head3);
     }
 

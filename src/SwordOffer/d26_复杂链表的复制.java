@@ -1,11 +1,9 @@
 package SwordOffer;
 
-import Standard.stdOut;
-
 import java.util.HashMap;
 
 /**
- * 题目：请实现函数 ComplexListNode Clone(ComplexListNode head)，复制一个复杂链表。
+ * 题目：请实现函数 ComplexListNode clone(ComplexListNode head)，复制一个复杂链表。
  * 在复杂链表中，每个结点除了有一个 next 域指向下一个结点外，还有一个 sibling 指向链表中的任意结点或者 null。
  *  【解】：
  *  法一：
@@ -52,9 +50,9 @@ public class d26_复杂链表的复制 {
         head.sibling = head.next.next;
         head.next.sibling = head.next.next.next.next;
         head.next.next.next.sibling = head.next;
-        PrintList(head);
-        ComplexListNode newHead = Clone2(head);
-        PrintList(newHead);
+        printList(head);
+        ComplexListNode newHead = clone2(head);
+        printList(newHead);
 
         // 有指向自身的情况
         //          -----------------
@@ -77,23 +75,23 @@ public class d26_复杂链表的复制 {
         head2.next.next.next.sibling = head2.next.sibling;
         head2.next.next.sibling = head2.next.next;
         System.out.println("\n");
-        PrintList(head2);
-        ComplexListNode newHead2 = Clone2(head2);
-        PrintList(newHead2);
+        printList(head2);
+        ComplexListNode newHead2 = clone2(head2);
+        printList(newHead2);
 
         ComplexListNode head3 = new ComplexListNode();
         head3.value = 1;
         System.out.println("\n");
-        PrintList(head3);
-        ComplexListNode newHead3 = Clone2(head3);
-        PrintList(newHead3);
+        printList(head3);
+        ComplexListNode newHead3 = clone2(head3);
+        printList(newHead3);
 
         System.out.println("\n");
-        ComplexListNode head4 = Clone2(null);
-        PrintList(head4);
+        ComplexListNode head4 = clone2(null);
+        printList(head4);
     }
 
-    private static void PrintList(ComplexListNode head) {
+    private static void printList(ComplexListNode head) {
 
         ComplexListNode cur = head;
         System.out.println("order: ");
@@ -117,7 +115,7 @@ public class d26_复杂链表的复制 {
      * @param head
      * @return
      */
-    private static ComplexListNode Clone(ComplexListNode head) {
+    private static ComplexListNode clone(ComplexListNode head) {
 
         HashMap<ComplexListNode, ComplexListNode> map = new HashMap<>();
         ComplexListNode cur = head;
@@ -141,7 +139,7 @@ public class d26_复杂链表的复制 {
      * @param head
      * @return
      */
-    private static ComplexListNode Clone2(ComplexListNode head) {
+    private static ComplexListNode clone2(ComplexListNode head) {
         if (head == null) {
             return null;
         }

@@ -47,7 +47,7 @@ public class c12_打印1到最大的n位数 {
 
     private static void Print1ToMaxOfNDigits1(int n) {
         if (n <= 0){
-            throw new RuntimeException("位数N必须大于0");
+            throw new IllegalArgumentException("Invalid args: 位数N必须大于0");
         }
         int[] arr = new int[n+1];
         for (int i = 0; i < arr.length; i++) {

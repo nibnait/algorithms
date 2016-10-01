@@ -1,4 +1,4 @@
-package SwordOffer;
+package others;
 
 /**
  * 求1000以内的素数

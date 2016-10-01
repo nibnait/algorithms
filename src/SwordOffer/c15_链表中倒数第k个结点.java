@@ -31,7 +31,7 @@ import Standard.ListNode;
 public class c15_链表中倒数第k个结点 {
 
 
-    public static ListNode FindKthToTail(ListNode head, int k) {
+    public static ListNode findKthToTail(ListNode head, int k) {
         if (head==null || k<=0){
            return null;
         }
@@ -41,7 +41,7 @@ public class c15_链表中倒数第k个结点 {
             if (p2.next != null){
                 p2 = p2.next;
             } else {
-                throw new RuntimeException("k > 链表的节点数");
+                throw new RuntimeException("Invalid args: k > 链表的节点数");
             }
         }
 
@@ -60,9 +60,9 @@ public class c15_链表中倒数第k个结点 {
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
 
-        System.out.println(FindKthToTail(head, 1).value);   //倒数第1个
-        System.out.println(FindKthToTail(head, 3).value);   //中间的一个
-        System.out.println(FindKthToTail(head, 6).value);   //倒数最后一个就是顺数第一个
-//        System.out.println(FindKthToTail(head, 10).value);
+        System.out.println(findKthToTail(head, 1).value);   //倒数第1个
+        System.out.println(findKthToTail(head, 3).value);   //中间的一个
+        System.out.println(findKthToTail(head, 6).value);   //倒数最后一个就是顺数第一个
+//        System.out.println(findKthToTail(head, 10).value);
     }
 }

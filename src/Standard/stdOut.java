@@ -298,6 +298,20 @@ public final class stdOut {
         out.printf(locale, format, args);
         out.flush();
     }
+    //-------------输出char型数组 begin--------------------------------
+    public static void print(char[] chars){
+        for (int i = 0; i < chars.length; i++) {
+            if (i == chars.length - 1) {
+                out.println(chars[i]);
+            }else {
+                out.print(chars[i]+", ");
+            }
+        }
+    }
+
+
+
+    //-------------输出char型数组 end--------------------------------
 
     //-------------输出数组 begin--------------------------------
 

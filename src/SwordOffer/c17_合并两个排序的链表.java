@@ -20,7 +20,7 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    public static ListNode MergeSortedLists(ListNode head1, ListNode head2) {
+    public static ListNode mergeSortedLists(ListNode head1, ListNode head2) {
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
@@ -76,7 +76,7 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    private static ListNode MergeSortedLists2(ListNode head1, ListNode head2){
+    private static ListNode mergeSortedLists2(ListNode head1, ListNode head2){
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
@@ -111,7 +111,7 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    private static ListNode MergeSortedLists3(ListNode head1, ListNode head2) {
+    private static ListNode mergeSortedLists3(ListNode head1, ListNode head2) {
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
@@ -121,10 +121,10 @@ public class c17_合并两个排序的链表 {
         ListNode tmp = new ListNode();
         if (head1.value <= head2.value){
             tmp = head1;    //head1.next = head2;
-            tmp.next = MergeSortedLists3(head1.next, head2);
+            tmp.next = mergeSortedLists3(head1.next, head2);
         }else {
             tmp = head2;    //head2.next = head1;
-            tmp.next = MergeSortedLists3(head1, head2.next);
+            tmp.next = mergeSortedLists3(head1, head2.next);
         }
         return tmp;
     }
@@ -145,7 +145,7 @@ public class c17_合并两个排序的链表 {
         head2.next.next.next = new ListNode(6);
         head2.next.next.next.next = new ListNode(7);
         stdOut.printList(head2);
-        head = MergeSortedLists2(head, head2);
+        head = mergeSortedLists2(head, head2);
         stdOut.printList(head);
         System.out.println();
 
@@ -160,7 +160,7 @@ public class c17_合并两个排序的链表 {
         head4.next.next = new ListNode(4);
         stdOut.printList(head4);
 
-        head3 = MergeSortedLists(head3, head4);
+        head3 = mergeSortedLists(head3, head4);
         stdOut.printList(head3);
     }
 

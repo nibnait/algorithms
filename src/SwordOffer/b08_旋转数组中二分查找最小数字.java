@@ -12,7 +12,7 @@ public class b08_旋转数组中二分查找最小数字 {
 
     private static int MinNumberInRotatedArray(int[] arr){
         if (arr==null || arr.length==0){
-            throw new RuntimeException("arr为空");
+            throw new IllegalArgumentException("args should not be null or empty");
         }
 
         int lo = 0;

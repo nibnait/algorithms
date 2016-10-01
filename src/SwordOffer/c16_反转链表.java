@@ -14,7 +14,7 @@ import Standard.stdOut;
 public class c16_反转链表 {
 
 
-    public static ListNode ReverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
         }
@@ -35,7 +35,7 @@ public class c16_反转链表 {
      * @param head
      * @return
      */
-    private static ListNode ReverseList2(ListNode head) {
+    private static ListNode reverseList2(ListNode head) {
         if (head == null) {
             return null;
         }
@@ -65,17 +65,17 @@ public class c16_反转链表 {
         head.next.next.next.next.next = new ListNode(6);
 
         stdOut.printList(head);
-        head = ReverseList(head);
+        head = reverseList(head);
         stdOut.printList(head);
-        head = ReverseList2(head);
+        head = reverseList2(head);
         stdOut.printList(head);
 
         //当只有一个结点时
         ListNode head2 = new ListNode(1);
         stdOut.printList(head2);
-        head = ReverseList(head2);
+        head = reverseList(head2);
         stdOut.printList(head2);
-        head = ReverseList2(head2);
+        head = reverseList2(head2);
         stdOut.printList(head2);
 
     }

@@ -54,7 +54,7 @@ public class d21_包含min函数的栈 {
 
         public T pop(){
             if (dataStack.isEmpty()){
-                throw new RuntimeException("栈已空");
+                throw new RuntimeException("Stack is empty!");
             }
             minStack.pop();
             return dataStack.pop();
@@ -62,7 +62,7 @@ public class d21_包含min函数的栈 {
 
         public T min(){
             if (minStack.isEmpty()){
-                throw new RuntimeException("栈已空");
+                throw new RuntimeException("Stack is empty!");
             }
             return dataStack.get(minStack.peek());
         }

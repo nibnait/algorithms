@@ -17,10 +17,10 @@ public class b03_二维数组中的二分查找 {
                 {4, 7, 10, 13},
                 {6, 8, 11, 15}
         };
-        System.out.println(FindInPartiallySortedMatrix(matrix, 6));
+        System.out.println(findInPartiallySortedMatrix(matrix, 6));
     }
 
-    private static int FindInPartiallySortedMatrix(int[][] matrix, int key) {
+    private static int findInPartiallySortedMatrix(int[][] matrix, int key) {
         int rows = matrix.length;
         int cols = matrix[0].length;
         if (matrix==null || rows<1 || cols<1){

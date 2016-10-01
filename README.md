@@ -22,4 +22,4 @@
  - 字符串匹配的KMP算法：[KMP.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.java)
  - 求最长回文子串的Manacher算法：[Manacher.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.java)
 
-
+ - 链表系列专题：[/src/nowcoder/b_2nd_Season/bf160824/zreader.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/zreader.md)

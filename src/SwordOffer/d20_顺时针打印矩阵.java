@@ -7,7 +7,7 @@ package SwordOffer;
  */
 public class d20_顺时针打印矩阵 {
 
-    public static void PrintMatrixClockWisely(int[][] numbers) {
+    public static void printMatrixClockWisely(int[][] numbers) {
         if (numbers == null || numbers.length==0){
             System.out.println("数组不能为空");
             return;
@@ -16,13 +16,13 @@ public class d20_顺时针打印矩阵 {
         int columns = numbers[0].length;
         int start = 0;  //每一行起点的位置：(1,1), (2,2), (3,3), ...
         while (columns>2*start && rows>2*start){
-            PrintMatrixInCircle(numbers, rows, columns, start);
+            printMatrixInCircle(numbers, rows, columns, start);
             start++;
         }
 
     }
 
-    private static void PrintMatrixInCircle(int[][] numbers, int rows, int columns, int start) {
+    private static void printMatrixInCircle(int[][] numbers, int rows, int columns, int start) {
         //打印一圈，分四步
         int endX = columns-1-start;
         int endY = rows-1-start;
@@ -66,7 +66,7 @@ public class d20_顺时针打印矩阵 {
                 {14, 23, 22, 21, 8},
                 {13, 12, 11, 10, 9},
         };
-        PrintMatrixClockWisely(numbers);
+        printMatrixClockWisely(numbers);
         System.out.println();
         int[][] numbers2 = {
                 {1, 2, 3, 4, 5, 6, 7, 8},
@@ -75,18 +75,18 @@ public class d20_顺时针打印矩阵 {
                 {20, 35, 34, 33, 32, 31, 30, 11},
                 {19, 18, 17, 16, 15, 14, 13, 12},
         };
-        PrintMatrixClockWisely(numbers2);
+        printMatrixClockWisely(numbers2);
         System.out.println();
         int[][] numbers3 = {
                 {1, 2, 3, 4, 5, 6, 7, 8}
         };
-        PrintMatrixClockWisely(numbers3);
+        printMatrixClockWisely(numbers3);
         System.out.println();
         int[][] numbers4 = {
                 {1, 2, 3, 4, 5, 6, 7, 8},
                 {16, 15, 14, 13, 12, 11, 10, 9}
         };
-        PrintMatrixClockWisely(numbers4);
+        printMatrixClockWisely(numbers4);
         System.out.println();
         int[][] numbers5 = {
                 {1},
@@ -98,7 +98,7 @@ public class d20_顺时针打印矩阵 {
                 {7},
                 {8}
         };
-        PrintMatrixClockWisely(numbers5);
+        printMatrixClockWisely(numbers5);
         System.out.println();
         int[][] numbers6 = {
                 {0, 1},
@@ -110,23 +110,23 @@ public class d20_顺时针打印矩阵 {
                 {10, 7},
                 {9, 8}
         };
-        PrintMatrixClockWisely(numbers6);
+        printMatrixClockWisely(numbers6);
         System.out.println();
         int[][] numbers7 = {
                 {1, 2},
                 {4, 3}
         };
-        PrintMatrixClockWisely(numbers7);
+        printMatrixClockWisely(numbers7);
         System.out.println();
         int[][] numbers8 = {
                 {1}
         };
-        PrintMatrixClockWisely(numbers8);
+        printMatrixClockWisely(numbers8);
         System.out.println();
         // 0个元素的数组
-        PrintMatrixClockWisely(new int[][]{{}});    //numbers.length=1, numbers[0].length=0;
+        printMatrixClockWisely(new int[][]{{}});    //numbers.length=1, numbers[0].length=0;
         // 空数组
-        PrintMatrixClockWisely(null);
+        printMatrixClockWisely(null);
 
     }
 

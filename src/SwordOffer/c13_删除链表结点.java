@@ -29,15 +29,15 @@ public class c13_删除链表结点 {
         head.next.next.next.next = new ListNode(5);
         ListNode last = head.next.next.next.next.next = new ListNode(6);
 
-        head = DeleteNodeInList(head, head); // 删除头结点  
+        head = deleteNodeInList(head, head); // 删除头结点
         printList(head);
-        head = DeleteNodeInList(head, last); // 删除尾结点  
+        head = deleteNodeInList(head, last); // 删除尾结点
         printList(head);
-        head = DeleteNodeInList(head, middle); // 删除中间结点  
+        head = deleteNodeInList(head, middle); // 删除中间结点
         printList(head);
     }
 
-    private static ListNode DeleteNodeInList(ListNode head, ListNode nodeToBeDeleted) {
+    private static ListNode deleteNodeInList(ListNode head, ListNode nodeToBeDeleted) {
         if (head==null || nodeToBeDeleted==null){
             return head;
         }

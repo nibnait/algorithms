@@ -16,11 +16,11 @@ public class b05_从尾到头打印链表 {
      * 递归
      * @param head
      */
-    private static void PrintListInverselyUsingRecursion(ListNode head) {
+    private static void printListInverselyUsingRecursion(ListNode head) {
         if (head == null){
             return;
         }
-        PrintListInverselyUsingRecursion(head.next);
+        printListInverselyUsingRecursion(head.next);
         System.out.print(head.value+ " ");
     }
 
@@ -28,7 +28,7 @@ public class b05_从尾到头打印链表 {
      * 栈
      * @param head
      */
-    private static void PrintListInverselyUsingStack(ListNode head) {
+    private static void printListInverselyUsingStack(ListNode head) {
         if (head == null){
             return;
         }
@@ -49,9 +49,9 @@ public class b05_从尾到头打印链表 {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        PrintListInverselyUsingStack(head);
+        printListInverselyUsingStack(head);
         System.out.println();
-        PrintListInverselyUsingRecursion(head);
+        printListInverselyUsingRecursion(head);
     }
 
 }

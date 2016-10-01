@@ -21,7 +21,7 @@ public class b04_替换空格 {
         for (int i = 0; i < strCharArr.length; i++) {
             str[i] = strCharArr[i];
         }
-        System.out.println(ReplaceBlank(str, strCharArr.length));
+        System.out.println(replaceBlank(str, strCharArr.length));
     }
 
     /**
@@ -29,7 +29,7 @@ public class b04_替换空格 {
      * @param size  str中OriginalString的长度
      * @return
      */
-    private static String ReplaceBlank(char[] str, int size) {
+    private static String replaceBlank(char[] str, int size) {
         if (str==null || size<=0){
             return null;
         }
@@ -43,7 +43,7 @@ public class b04_替换空格 {
         int p1 = size-1;
         int p2 = p1+(2*cnt);
         if (p2 > str.length){
-            throw new RuntimeException("str有点小，不够装！");
+            throw new RuntimeException("Invalid args: str有点小，不够装！");
         }
         while (p1 >= 0){
             if (str[p1] == ' '){

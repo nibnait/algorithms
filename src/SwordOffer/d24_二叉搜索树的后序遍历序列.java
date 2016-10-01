@@ -13,14 +13,14 @@ package SwordOffer;
 public class d24_二叉搜索树的后序遍历序列 {
 
 
-    private static boolean VerifySequenceOfBST(int[] squence) {
+    private static boolean verifySequenceOfBST(int[] squence) {
         if (squence == null || squence.length<=0){
             return false;
         }
-        return VerifySequenceOfBST(squence, 0, squence.length-1);
+        return verifySequenceOfBST(squence, 0, squence.length-1);
     }
 
-    private static boolean VerifySequenceOfBST(int[] squence, int start, int end) {
+    private static boolean verifySequenceOfBST(int[] squence, int start, int end) {
         if (start >= end){
             return true;
         }
@@ -37,7 +37,7 @@ public class d24_二叉搜索树的后序遍历序列 {
         if (index != end-1){    //end-1位置应该为root的右子树的根结点
             return false;   //出现了异常，无法完成此出站序列
         }
-        return VerifySequenceOfBST(squence,start,mid-1) && VerifySequenceOfBST(squence,mid,end-1);
+        return verifySequenceOfBST(squence,start,mid-1) && verifySequenceOfBST(squence,mid,end-1);
     }
 
 
@@ -49,14 +49,14 @@ public class d24_二叉搜索树的后序遍历序列 {
         //       /\     /\
         //      4  8  12  16
         int[] squence = {4, 8, 6, 12, 16, 14, 10};
-        System.out.println("true: " + VerifySequenceOfBST(squence));
+        System.out.println("true: " + verifySequenceOfBST(squence));
         //           5
         //          / \
         //         4   7
         //            /
         //           6
         int[] squence2 = {4, 6, 7, 5};
-        System.out.println("true: " + VerifySequenceOfBST(squence2));
+        System.out.println("true: " + verifySequenceOfBST(squence2));
         //               5
         //              /
         //             4
@@ -67,7 +67,7 @@ public class d24_二叉搜索树的后序遍历序列 {
         //        /
         //       1
         int[] squence3 = {1, 2, 3, 4, 5};
-        System.out.println("true: " + VerifySequenceOfBST(squence3));
+        System.out.println("true: " + verifySequenceOfBST(squence3));
         // 1
         //  \
         //   2
@@ -78,14 +78,14 @@ public class d24_二叉搜索树的后序遍历序列 {
         //        \
         //         5
         int[] squence4 = {5, 4, 3, 2, 1};
-        System.out.println("true: " + VerifySequenceOfBST(squence4));
+        System.out.println("true: " + verifySequenceOfBST(squence4));
         // 树中只有1个结点
         int[] squence5 = {5};
-        System.out.println("true: " + VerifySequenceOfBST(squence5));
+        System.out.println("true: " + verifySequenceOfBST(squence5));
         int[] squence6 = {7, 4, 6, 5};
-        System.out.println("false: " + VerifySequenceOfBST(squence6));
+        System.out.println("false: " + verifySequenceOfBST(squence6));
         int[] squence7 = {4, 6, 12, 8, 16, 14, 10};
-        System.out.println("false: " + VerifySequenceOfBST(squence7));
+        System.out.println("false: " + verifySequenceOfBST(squence7));
 
     }
 

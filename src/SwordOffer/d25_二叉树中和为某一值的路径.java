@@ -13,27 +13,27 @@ import java.util.List;
  */
 public class d25_二叉树中和为某一值的路径 {
 
-    private static void FindPath(Node head, int expectedSum) {
+    private static void findPath(Node head, int expectedSum) {
         if (head == null){
             return;
         }
         
         List<Integer> path = new ArrayList<>();
         int currentSum = 0;
-        FindPath(head, expectedSum, path, currentSum);
+        findPath(head, expectedSum, path, currentSum);
     }
 
-    private static void FindPath(Node head, int expectedSum, List<Integer> path, int currentSum) {
+    private static void findPath(Node head, int expectedSum, List<Integer> path, int currentSum) {
         currentSum += head.value;
         path.add(head.value);
         if (head.left==null && head.right==null && currentSum == expectedSum){
             System.out.println(path);
         }
         if (head.left != null){
-            FindPath(head.left, expectedSum, path, currentSum);
+            findPath(head.left, expectedSum, path, currentSum);
         }
         if (head.right != null){
-            FindPath(head.right, expectedSum, path, currentSum);
+            findPath(head.right, expectedSum, path, currentSum);
         }
         path.remove(path.size()-1);
     }
@@ -56,14 +56,14 @@ public class d25_二叉树中和为某一值的路径 {
         head.right = new Node();
         head.right.value = 12;
         // 有两条路径上的结点和为22
-        System.out.println("FindPath(head, 22);");
-        FindPath(head, 22);
+        System.out.println("findPath(head, 22);");
+        findPath(head, 22);
         // 没有路径上的结点和为15
-        System.out.println("FindPath(head, 15);");
-        FindPath(head, 15);
+        System.out.println("findPath(head, 15);");
+        findPath(head, 15);
         // 有一条路径上的结点和为19
-        System.out.println("FindPath(head, 19);");
-        FindPath(head, 19);
+        System.out.println("findPath(head, 19);");
+        findPath(head, 19);
         //               5
         //              /
         //             4
@@ -84,11 +84,11 @@ public class d25_二叉树中和为某一值的路径 {
         head2.left.left.left.left = new Node();
         head2.left.left.left.left.value = 1;
         // 有一条路径上面的结点和为15
-        System.out.println("FindPath(head2, 15);");
-        FindPath(head2, 15);
+        System.out.println("findPath(head2, 15);");
+        findPath(head2, 15);
         // 没有路径上面的结点和为16
-        System.out.println("FindPath(head2, 16);");
-        FindPath(head2, 16);
+        System.out.println("findPath(head2, 16);");
+        findPath(head2, 16);
         // 1
         //  \
         //   2
@@ -109,23 +109,23 @@ public class d25_二叉树中和为某一值的路径 {
         head3.right.right.right.right = new Node();
         head3.right.right.right.right.value = 5;
         // 有一条路径上面的结点和为15
-        System.out.println("FindPath(head3, 15);");
-        FindPath(head3, 15);
+        System.out.println("findPath(head3, 15);");
+        findPath(head3, 15);
         // 没有路径上面的结点和为16
-        System.out.println("FindPath(head3, 16);");
-        FindPath(head3, 16);
+        System.out.println("findPath(head3, 16);");
+        findPath(head3, 16);
         // 树中只有1个结点
         Node head4 = new Node();
         head4.value = 1;
         // 有一条路径上面的结点和为1
-        System.out.println("FindPath(head4, 1);");
-        FindPath(head4, 1);
+        System.out.println("findPath(head4, 1);");
+        findPath(head4, 1);
         // 没有路径上面的结点和为2
-        System.out.println("FindPath(head4, 2);");
-        FindPath(head4, 2);
+        System.out.println("findPath(head4, 2);");
+        findPath(head4, 2);
         // 树中没有结点
-        System.out.println("FindPath(null, 0);");
-        FindPath(null, 0);
+        System.out.println("findPath(null, 0);");
+        findPath(null, 0);
 
 
     }

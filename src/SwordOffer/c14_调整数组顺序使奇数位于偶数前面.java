@@ -40,7 +40,7 @@ public class c14_调整数组顺序使奇数位于偶数前面 {
     }
 
     //O(N^2)
-    private static void ReorderOddEvenFromInsertSort(int[] arr) {
+    private static void reorderOddEvenFromInsertSort(int[] arr) {
 
         if (arr==null || arr.length<=1){
             return;
@@ -68,7 +68,7 @@ public class c14_调整数组顺序使奇数位于偶数前面 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 3, 4, 5};
         stdOut.print(arr);
-        ReorderOddEvenFromInsertSort(arr);
+        reorderOddEvenFromInsertSort(arr);
         stdOut.print(arr);
         Reorder(arr);
         stdOut.print(arr);

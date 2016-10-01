@@ -14,7 +14,7 @@ import java.util.Queue;
  */
 public class d23_从上往下打印二叉树 {
 
-    private static void PrintFromToBottom(Node head) {
+    private static void printFromToBottom(Node head) {
         if (head == null){
             return;
         }
@@ -55,7 +55,7 @@ public class d23_从上往下打印二叉树 {
         head.right.left.value = 9;
         head.right.right = new Node();
         head.right.right.value = 11;
-        PrintFromToBottom(head);
+        printFromToBottom(head);
         //         1
         //        /
         //       3
@@ -76,7 +76,7 @@ public class d23_从上往下打印二叉树 {
         head2.left.left.left.left = new Node();
         head2.left.left.left.left.value = 9;
         System.out.println("\n");
-        PrintFromToBottom(head2);
+        printFromToBottom(head2);
         // 0
         //  \
         //   2
@@ -97,15 +97,15 @@ public class d23_从上往下打印二叉树 {
         head3.right.right.right.right = new Node();
         head3.right.right.right.right.value = 8;
         System.out.println("\n");
-        PrintFromToBottom(head3);
+        printFromToBottom(head3);
         // 1
         Node head4 = new Node();
         head4.value = 1;
         System.out.println("\n");
-        PrintFromToBottom(head4);
+        printFromToBottom(head4);
         // null
         System.out.println("\n");
-        PrintFromToBottom(null);
+        printFromToBottom(null);
 
     }
 
