@@ -13,7 +13,7 @@ public class BitMap1 {
 
         for(i=0;i<5;){
             if(b[a[i]]==1){
-                stdOut.print("数组含有重复值");
+                System.out.print("数组含有重复值");
                 break;
             }
             else{
@@ -23,7 +23,7 @@ public class BitMap1 {
         }
 
         if(i==5){
-            stdOut.print("数组含没有重复值");
+            System.out.print("数组含没有重复值");
         }
     }
 }

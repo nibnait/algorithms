@@ -1,17 +1,16 @@
-package nowcoder.common;
+package Standard;
 
 /**
- * Created by nibnait on 2016/9/11.
+ * Created by nibnait on 2016/10/2.
  */
-public class Utils {
-
+public class BinarySearch {
     /**
      * 二分查找
      * @param arr
      * @param num
      * @return
      */
-    public static int BinarySearch(int[] arr, int num) {
+    public static int search(int[] arr, int num) {
         int lo = 0;
         int hi = arr.length - 1;
         int mid = 0;
@@ -27,7 +26,5 @@ public class Utils {
         }
         return res;
     }
-
-
 
 }

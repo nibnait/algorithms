@@ -10,6 +10,7 @@ import java.util.Map;
  * 【解】：
  *     用HashMap统计每个字符出现的次数
  *     然后再扫描一次字符数组，当此字符出现次数为1时，直接return
+ *     时间复杂度：2 * O(N)
  *
  * Created by nibnait on 2016/10/1.
  */

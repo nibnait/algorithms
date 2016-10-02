@@ -27,7 +27,7 @@ public class stdRandom {
     }
 
     /**
-     *  随机返回 [Algorithms_4thEdition,b)之间的一个double值
+     *  随机返回 [a,b)之间的一个double值
      * @param a
      * @param b
      * @return

@@ -21,12 +21,18 @@ public class b10_二进制中1的个数 {
         int cnt = 0;
         while (n != 0){
             n = n & (n-1);
-            cnt++;      //所以cnt就记录着 n一共被减了多少次1，
+            cnt++;      //所以cnt就记录着 n一共被减了多少次1，即n的二进制表示中1的个数
         }
         return cnt;
     }
 
-
+    /**
+     * 自然想法：一个int有32位，那n的二进制的每一位都跟 00000000 ... ... 00000001与一下，
+     *          结果为1，则cnt++
+     *          否则 cnt不变
+     * @param n
+     * @return
+     */
     private static int numberOfOne1(int n) {
         int cnt = 0;
         for (int i = 0; i < 32; i++) {  //Java语言规范中，int整形占四个字节，总计32位

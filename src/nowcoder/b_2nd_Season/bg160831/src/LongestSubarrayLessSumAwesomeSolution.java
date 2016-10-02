@@ -1,8 +1,8 @@
 package nowcoder.b_2nd_Season.bg160831.src;
 
-import java.util.HashMap;
+import Standard.BinarySearch;
 
-import static nowcoder.common.Utils.BinarySearch;
+import java.util.HashMap;
 
 public class LongestSubarrayLessSumAwesomeSolution {
 
@@ -53,7 +53,7 @@ public class LongestSubarrayLessSumAwesomeSolution {
 		int len = 0;
 		for (int i = 0; i != arr.length; i++) {
 			sum += arr[i];
-			pre = BinarySearch(h, sum - k);
+			pre = BinarySearch.search(h, sum - k);
 			len = pre == -1 ? 0 : i - pre + 1;
 			res = Math.max(res, len);
 		}

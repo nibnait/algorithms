@@ -42,6 +42,8 @@
         即：s = (m -1)%i +1
         old =（new + m -1）%i + 1   
          
+         
+看完《剑指Offer》第45题 [f45_圆圈中最后剩下的数字$约瑟夫环杀人]()之后，突然感觉明明很简单的一道题，被左神讲的好复杂。。。
     
 代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java)
         

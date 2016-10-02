@@ -1,8 +1,8 @@
 package nowcoder.b_2nd_Season.bb160727;
 
-import java.util.HashMap;
+import Standard.BinarySearch;
 
-import static nowcoder.common.Utils.BinarySearch;
+import java.util.HashMap;
 
 /**
  * 未排序正数数组中累加和为给定值的最长子数组长度
@@ -39,7 +39,7 @@ public class c_MaxLength {
         int len = 0;
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
-            pre = BinarySearch(h, sum-k);
+            pre = BinarySearch.search(h, sum - k);
             len = pre==1? 0: i-pre+1;
             res = Math.max(res, len);
         }

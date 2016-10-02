@@ -1,6 +1,6 @@
 package nowcoder.b_2nd_Season.bc160803.src;
 
-import nowcoder.common.Utils;
+import Standard.BinarySearch;
 
 public class MaxSubMatrixSumLessK {
 
@@ -35,7 +35,7 @@ public class MaxSubMatrixSumLessK {
 		int len = 0;
 		for (int i = 0; i != arr.length; i++) {
 			sum += arr[i];
-			pre = Utils.BinarySearch(h, sum - k);
+			pre = BinarySearch.search(h, sum - k);
 			len = pre == -1 ? 0 : i - pre + 1;
 			res = Math.max(res, len);
 		}

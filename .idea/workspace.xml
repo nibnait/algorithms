@@ -2,68 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e30_最小的k个数.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e31_连续子数组的最大和.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e32_从1到n整数中1出现的次数.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e33_把数组排成最小的数.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e34_丑数.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e36_数组中的逆序对.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/e37_两个单向链表的第一个公共结点.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/Prime.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SwordOffer/Prime.java" afterPath="$PROJECT_DIR$/src/others/Prime.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/e_Quick.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/e_Quick.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/Std.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/Std.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Standard/StringUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/areadme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f38_数字在排序数组中出现的次数.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f39_1$二叉树的深度.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f39_2$判断二叉树是否平衡.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f40_数组中只出现一次的数字.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f41_1$和为s的两个数字VS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f41_2$和为s的连续正数序列.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f42_1$翻转单词顺序.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f42_2$左旋转字符串.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f43_n个骰子的点数.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f44_扑克牌的顺子.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f45_圆圈中最后剩下的数字$约瑟夫环杀人.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f46_求1到n的和.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f47_不用加减乘除做加法.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SwordOffer/f48_不能被继承的类.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/common/Utils.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/nowcoder/common/Utils.java" afterPath="$PROJECT_DIR$/src/Standard/BinarySearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b03_二维数组中的二分查找.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b03_二维数组中的二分查找.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b05_从尾到头打印链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b05_从尾到头打印链表.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b06_重建二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b06_重建二叉树.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b08_旋转数组中二分查找最小数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b08_旋转数组中二分查找最小数字.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c11_数值的整数次方.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c11_数值的整数次方.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c12_打印1到最大的n位数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c12_打印1到最大的n位数.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c13_删除链表结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c13_删除链表结点.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c15_链表中倒数第k个结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c15_链表中倒数第k个结点.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c16_反转链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c16_反转链表.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c17_合并两个排序的链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c17_合并两个排序的链表.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c18_树的子结构.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c18_树的子结构.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d19_二叉树的镜像.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d19_二叉树的镜像.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d20_顺时针打印矩阵.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d20_顺时针打印矩阵.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈$StackWithMin.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈$StackWithMin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d23_从上往下打印二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d23_从上往下打印二叉树.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d24_二叉搜索树的后序遍历序列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d24_二叉搜索树的后序遍历序列.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b10_二进制中1的个数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b10_二进制中1的个数.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d25_二叉树中和为某一值的路径.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d25_二叉树中和为某一值的路径.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制$ComplexListNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制$ComplexListNode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的组合.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的组合.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e29_数组中出现次数超过一半的数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e29_数组中出现次数超过一半的数字.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e35_第一个只出现一次的字符.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e35_第一个只出现一次的字符.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/c_MaxLength.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/c_MaxLength.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/others/BitMap1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/BitMap1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/e_Quick.java" afterPath="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/e_Quick.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Standard/std.java" afterPath="$PROJECT_DIR$/src/Standard/std.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/zreader.md" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/zreader.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Standard/stdOut.java" afterPath="$PROJECT_DIR$/src/Standard/stdOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b03_二维数组中的二分查找.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b03_二维数组中的二分查找.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b04_替换空格.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b04_替换空格.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b05_从尾到头打印链表.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b05_从尾到头打印链表.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b06_重建二叉树.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b06_重建二叉树.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b08_旋转数组中二分查找最小数字.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b08_旋转数组中二分查找最小数字.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c11_数值的整数次方.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c11_数值的整数次方.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c12_打印1到最大的n位数.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c12_打印1到最大的n位数.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c13_删除链表结点.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c13_删除链表结点.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Standard/stdRandom.java" afterPath="$PROJECT_DIR$/src/Standard/stdRandom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/b10_二进制中1的个数.java" afterPath="$PROJECT_DIR$/src/SwordOffer/b10_二进制中1的个数.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c15_链表中倒数第k个结点.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c15_链表中倒数第k个结点.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c16_反转链表.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c16_反转链表.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c17_合并两个排序的链表.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c17_合并两个排序的链表.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/c18_树的子结构.java" afterPath="$PROJECT_DIR$/src/SwordOffer/c18_树的子结构.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d19_二叉树的镜像.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d19_二叉树的镜像.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d20_顺时针打印矩阵.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d20_顺时针打印矩阵.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d21_包含min函数的栈.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d21_包含min函数的栈.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d23_从上往下打印二叉树.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d23_从上往下打印二叉树.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d24_二叉搜索树的后序遍历序列.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d24_二叉搜索树的后序遍历序列.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d25_二叉树中和为某一值的路径.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d25_二叉树中和为某一值的路径.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/d26_复杂链表的复制.java" afterPath="$PROJECT_DIR$/src/SwordOffer/d26_复杂链表的复制.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/e29_数组中出现次数超过一半的数字.java" afterPath="$PROJECT_DIR$/src/SwordOffer/e29_数组中出现次数超过一半的数字.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java" afterPath="$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java" afterPath="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/others/BitMap1.java" afterPath="$PROJECT_DIR$/src/others/BitMap1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -101,42 +83,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="e37_两个单向链表的第一个公共结点.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SwordOffer/e37_两个单向链表的第一个公共结点.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
-              <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
+            <state relative-caret-position="0">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Standard/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+      <file leaf-file-name="areadme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SwordOffer/areadme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="460">
+                <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FindFirstIntersectNode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="184" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zreader.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="zreader.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="267">
-                <caret line="154" column="27" selection-start-line="134" selection-start-column="0" selection-end-line="154" selection-end-column="27" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="320">
+                <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -144,15 +119,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="227">
-                <caret line="24" column="57" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="57" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="Josephus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,42 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a23_从上往下打印二叉树.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a22_栈的压入$弹出序列.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a24_二叉搜索树的后序遍历序列.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a25_二叉树中和为某一值的路径.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a26_复杂链表的复制.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a27_二叉搜索树与双向链表.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter4/a28_字符串的排列.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter2/b02_单例模式.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter3/c15_链表中倒数第k个结点.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/Chapter3/c18_树的子结构.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/a_Bubble.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d28_字符串的排列.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d28_字符串的组合.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/b03_二维数组中的二分查找.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/b05_从尾到头打印链表.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/c13_删除链表结点.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/c16_反转链表.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/c17_合并两个排序的链表.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/c18_树的子结构.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d19_二叉树的镜像.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d20_顺时针打印矩阵.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d23_从上往下打印二叉树.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d24_二叉搜索树的后序遍历序列.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d25_二叉树中和为某一值的路径.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/d26_复杂链表的复制.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/e31_连续子数组的最大和.java" />
-        <option value="$PROJECT_DIR$/src/Standard/stdOut.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/e32_从1到n整数中1出现的次数.java" />
-        <option value="$PROJECT_DIR$/src/xiaozhao/Prime.java" />
-        <option value="$PROJECT_DIR$/src/others/Prime.java" />
-        <option value="$PROJECT_DIR$/src/Standard/std.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/e_Quick.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/e34_丑数.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/e33_把数组排成最小的数.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/e30_最小的k个数.java" />
@@ -227,10 +163,46 @@
         <option value="$PROJECT_DIR$/src/SwordOffer/d21_包含min函数的栈.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/b06_重建二叉树.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/b04_替换空格.java" />
-        <option value="$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java" />
         <option value="$PROJECT_DIR$/src/SwordOffer/e36_数组中的逆序对.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/SwordOffer/e37_两个单向链表的第一个公共结点.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f38_数字在排序数组中出现的次数.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/d25_二叉树中和为某一值的路径.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f39_二叉树的深度.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f39_1二叉树的深度.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f39_2_判断二叉树是否平衡.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f39_2判断二叉树是否平衡.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/zreadme.md" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/b10_二进制中1的个数.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f40_数组中只出现一次的数字.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f41_和为s的两个数字VS和为s的连续正数序列.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f41_1_和为s的两个数字VS.java" />
+        <option value="$PROJECT_DIR$/src/Standard/stdOut.java" />
+        <option value="$PROJECT_DIR$/src/Standard/stdRandom.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f41_1$和为s的两个数字VS.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f41_2$和为s的连续正数序列.java" />
+        <option value="$PROJECT_DIR$/src/others/BitMap1.java" />
+        <option value="$PROJECT_DIR$/src/Standard/BinarySerch.java" />
+        <option value="$PROJECT_DIR$/src/Standard/Utils.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java" />
+        <option value="$PROJECT_DIR$/src/Standard/StringUtils.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f42_1$翻转单词顺序.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f42_2$左旋转字符串.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f43_n个骰子的点数.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f44_扑克牌的顺子.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f45_圆圈中最后剩下的数字.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f45_圆圈中最后剩下的数字$约瑟夫环杀人.java" />
+        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f46_求1到n的和.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/areadme.md" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f47_不用加减乘除做加法.java" />
+        <option value="$PROJECT_DIR$/src/SwordOffer/f48_不能被继承的类.java" />
       </list>
     </option>
   </component>
@@ -297,7 +269,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,203 +320,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SwordOffer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b02_单例模式.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Standard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="others" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b_2nd_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b_2nd_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bf160824" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nowcoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b_2nd_Season" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bf160824" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms_4thEdition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms_4thEdition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a_Sorting" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -558,7 +336,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="qui&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/e_Quick.java&#10;compa&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.ba160720.RussianDollEnvelopes.DotComparator&#10;d&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/f_Deap.java&#10;tra&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.java&#10;bst&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java&#10;c&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java&#10;odd&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/others/Odd_forward.java" />
+    <property name="SearchEverywhereHistoryKey" value="dog&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.be160817.src.DogCat.Dog&#10;jose&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.bf160824.src.Josephus&#10;y&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/java/time/Year.class&#10;前&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java&#10;qui&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/e_Quick.java&#10;compa&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.ba160720.RussianDollEnvelopes.DotComparator&#10;d&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/f_Deap.java&#10;tra&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.java&#10;bst&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java&#10;c&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java&#10;odd&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/others/Odd_forward.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -578,15 +356,15 @@
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\Standard" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.e37_两个单向链表的第一个公共结点">
-    <configuration default="false" name="e33_把数组排成最小的数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.f47_不用加减乘除做加法">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="SwordOffer.*" />
+          <option name="PATTERN" value="zzzTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SwordOffer.e33_把数组排成最小的数" />
+      <option name="MAIN_CLASS_NAME" value="zzzTest.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -599,14 +377,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="e34_丑数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="f45_圆圈中最后剩下的数字$约瑟夫环杀人" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="SwordOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SwordOffer.e34_丑数" />
+      <option name="MAIN_CLASS_NAME" value="SwordOffer.f45_圆圈中最后剩下的数字$约瑟夫环杀人" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -619,14 +397,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="e35_第一个只出现一次的字符" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Josephus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="SwordOffer.*" />
+          <option name="PATTERN" value="nowcoder.b_2nd_Season.bf160824.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SwordOffer.e35_第一个只出现一次的字符" />
+      <option name="MAIN_CLASS_NAME" value="nowcoder.b_2nd_Season.bf160824.src.Josephus" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -639,14 +417,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="e36_数组中的逆序对" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="f46_求1到n的和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="SwordOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SwordOffer.e36_数组中的逆序对" />
+      <option name="MAIN_CLASS_NAME" value="SwordOffer.f46_求1到n的和" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -659,14 +437,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="e37_两个单向链表的第一个公共结点" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="f47_不用加减乘除做加法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="SwordOffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SwordOffer.e37_两个单向链表的第一个公共结点" />
+      <option name="MAIN_CLASS_NAME" value="SwordOffer.f47_不用加减乘除做加法" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1101,19 +879,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.e33_把数组排成最小的数" />
-      <item index="1" class="java.lang.String" itemvalue="Application.e34_丑数" />
-      <item index="2" class="java.lang.String" itemvalue="Application.e35_第一个只出现一次的字符" />
-      <item index="3" class="java.lang.String" itemvalue="Application.e36_数组中的逆序对" />
-      <item index="4" class="java.lang.String" itemvalue="Application.e37_两个单向链表的第一个公共结点" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Application.f45_圆圈中最后剩下的数字$约瑟夫环杀人" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Josephus" />
+      <item index="3" class="java.lang.String" itemvalue="Application.f46_求1到n的和" />
+      <item index="4" class="java.lang.String" itemvalue="Application.f47_不用加减乘除做加法" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.e37_两个单向链表的第一个公共结点" />
-        <item index="1" class="java.lang.String" itemvalue="Application.e36_数组中的逆序对" />
-        <item index="2" class="java.lang.String" itemvalue="Application.e35_第一个只出现一次的字符" />
-        <item index="3" class="java.lang.String" itemvalue="Application.e34_丑数" />
-        <item index="4" class="java.lang.String" itemvalue="Application.e33_把数组排成最小的数" />
+        <item index="0" class="java.lang.String" itemvalue="Application.f47_不用加减乘除做加法" />
+        <item index="1" class="java.lang.String" itemvalue="Application.f46_求1到n的和" />
+        <item index="2" class="java.lang.String" itemvalue="Application.f45_圆圈中最后剩下的数字$约瑟夫环杀人" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Josephus" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -1214,11 +992,13 @@
       <workItem from="1475112513621" duration="5131000" />
       <workItem from="1475213842871" duration="9857000" />
       <workItem from="1475230799743" duration="23201000" />
+      <workItem from="1475306289358" duration="34318000" />
+      <workItem from="1475398256966" duration="5878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492814000" />
+    <option name="totallyTimeSpent" value="533010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1227,32 +1007,62 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31967214" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2590164" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2852459" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="748" y="144" width="563" height="408" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22314675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32614556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23352435" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23352435" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27213115" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44918033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23352435" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44918033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31967214" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25081968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="748" y="144" width="563" height="408" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32459018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1340,8 +1150,26 @@
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SwordOffer/f43_n个骰子的点数.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SwordOffer/f44_扑克牌的顺子.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SwordOffer/f47_不用加减乘除做加法.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="150" />
+      <option name="time" value="175" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1350,381 +1178,417 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/a_SubArrayMaxSum.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="32" column="19" selection-start-line="21" selection-start-column="8" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="160">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/zreadme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="18" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/f_Deap.java">
+    <entry file="file://$PROJECT_DIR$/src/Standard/PrintBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Standard/stdOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="306" column="31" selection-start-line="306" selection-start-column="31" selection-end-line="306" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algorithms.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/BitMap1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Standard/std.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
+        <state relative-caret-position="130">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/e_Quick.java">
+    <entry file="file://$PROJECT_DIR$/src/Standard/stdRandom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="125">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b02_单例模式.java">
+    <entry file="file://$PROJECT_DIR$/src/Standard/stdOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="72" column="5" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/Prime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e34_丑数.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e33_把数组排成最小的数.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="71" column="84" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="84" />
+        <state relative-caret-position="4282">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2824#2825#0" expanded="false" />
+            <element signature="e#2851#2852#0" expanded="false" />
+            <element signature="e#2932#2933#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e32_从1到n整数中1出现的次数.java">
+    <entry file="file://$PROJECT_DIR$/src/others/BitMap1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="448">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e29_数组中出现次数超过一半的数字.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="83" column="49" selection-start-line="83" selection-start-column="49" selection-end-line="83" selection-end-column="49" />
+        <state relative-caret-position="155">
+          <caret line="622" column="21" selection-start-line="622" selection-start-column="21" selection-end-line="622" selection-end-column="21" />
+          <folding>
+            <element signature="e#22736#22737#0" expanded="false" />
+            <element signature="e#22776#22777#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Standard/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d28_字符串的组合.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="40">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d28_字符串的排列.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d27_二叉搜索树与双向链表.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d26_复杂链表的复制.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="141" column="41" selection-start-line="141" selection-start-column="41" selection-end-line="141" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d25_二叉树中和为某一值的路径.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d24_二叉搜索树的后序遍历序列.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d23_从上往下打印二叉树.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d22_栈的压入$弹出序列.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c13_删除链表结点.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c15_链表中倒数第k个结点.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c16_反转链表.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c11_数值的整数次方.java">
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bb160727/c_MaxLength.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="6787" column="26" selection-start-line="6787" selection-start-column="26" selection-end-line="6787" selection-end-column="26" />
+          <folding>
+            <element signature="e#244761#244762#0" expanded="false" />
+            <element signature="e#244805#244806#0" expanded="false" />
+            <element signature="e#246241#246242#0" expanded="false" />
+            <element signature="e#246315#246316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Standard/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/DD_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c12_打印1到最大的n位数.java">
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/DD_02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c17_合并两个排序的链表.java">
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/K_lucky.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="129" column="5" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        <state relative-caret-position="160">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/LeShi_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/c18_树的子结构.java">
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/Perfect_World_02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="131" column="50" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+        <state relative-caret-position="-347">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d19_二叉树的镜像.java">
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/SoHu_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="-467">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b03_二维数组中的二分查找.java">
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/SoHu_02.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="-128">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/SoHu_03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/TouTiao_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/TouTiao_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/WangYi_163_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xiaozhao/XiaoMi_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" column="48" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordOffer/b04_替换空格.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+        <state relative-caret-position="260">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordOffer/b05_从尾到头打印链表.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="193">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordOffer/b06_重建二叉树.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        <state relative-caret-position="160">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d21_包含min函数的栈.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f38_数字在排序数组中出现的次数.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="64" column="59" selection-start-line="64" selection-start-column="59" selection-end-line="64" selection-end-column="59" />
+        <state relative-caret-position="-1624">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b07_用两个栈实现队列.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b02_单例模式.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b08_旋转数组中二分查找最小数字.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b03_二维数组中的二分查找.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-366">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="193">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b09_斐波那契数列.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f39_1$二叉树的深度.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="232">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/b10_二进制中1的个数.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f39_2$判断二叉树是否平衡.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e31_连续子数组的最大和.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e30_最小的k个数.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1894">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="-2468">
+          <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/d_Merge.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f40_数组中只出现一次的数字.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="-968">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e35_第一个只出现一次的字符.java">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f41_1$和为s的两个数字VS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="-488">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f41_2$和为s的连续正数序列.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#958#978#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f42_2$左旋转字符串.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="31" column="96" selection-start-line="31" selection-start-column="96" selection-end-line="31" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f42_1$翻转单词顺序.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f43_n个骰子的点数.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/java/time/Year.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f44_扑克牌的顺子.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="56" column="51" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f46_求1到n的和.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f47_不用加减乘除做加法.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/be160817/src/DogCat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f48_不能被继承的类.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/f45_圆圈中最后剩下的数字$约瑟夫环杀人.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1220">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SwordOffer/areadme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="227">
-            <caret line="24" column="57" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="57" />
+          <first_editor relative-caret-position="460">
+            <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1733,44 +1597,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/zreader.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="267">
-            <caret line="154" column="27" selection-start-line="134" selection-start-column="0" selection-end-line="154" selection-end-column="27" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="320">
+            <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e36_数组中的逆序对.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="184" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Standard/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e37_两个单向链表的第一个公共结点.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
