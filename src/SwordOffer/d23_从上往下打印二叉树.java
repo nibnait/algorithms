@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -14,13 +14,13 @@ import java.util.Queue;
  */
 public class d23_从上往下打印二叉树 {
 
-    private static void printFromToBottom(Node head) {
+    private static void printFromToBottom(BinaryTreeNode head) {
         if (head == null){
             return;
         }
-        Queue<Node> queue = new LinkedList<>();
+        Queue<BinaryTreeNode> queue = new LinkedList<>();
         queue.add(head);
-        Node curNode = null;
+        BinaryTreeNode curNode = null;
         while (!queue.isEmpty()){
             curNode = queue.remove();
             System.out.print(curNode.value + " ");
@@ -41,19 +41,19 @@ public class d23_从上往下打印二叉树 {
         //   6     10
         //  / \   / \
         // 5   7 9  11
-        Node head = new Node();
+        BinaryTreeNode head = new BinaryTreeNode();
         head.value = 8;
-        head.left = new Node();
+        head.left = new BinaryTreeNode();
         head.left.value = 6;
-        head.left.left = new Node();
+        head.left.left = new BinaryTreeNode();
         head.left.left.value = 5;
-        head.left.right = new Node();
+        head.left.right = new BinaryTreeNode();
         head.left.right.value = 7;
-        head.right = new Node();
+        head.right = new BinaryTreeNode();
         head.right.value = 10;
-        head.right.left = new Node();
+        head.right.left = new BinaryTreeNode();
         head.right.left.value = 9;
-        head.right.right = new Node();
+        head.right.right = new BinaryTreeNode();
         head.right.right.value = 11;
         printFromToBottom(head);
         //         1
@@ -65,15 +65,15 @@ public class d23_从上往下打印二叉树 {
         //   7
         //  /
         // 9
-        Node head2 = new Node();
+        BinaryTreeNode head2 = new BinaryTreeNode();
         head2.value = 1;
-        head2.left = new Node();
+        head2.left = new BinaryTreeNode();
         head2.left.value = 3;
-        head2.left.left = new Node();
+        head2.left.left = new BinaryTreeNode();
         head2.left.left.value = 5;
-        head2.left.left.left = new Node();
+        head2.left.left.left = new BinaryTreeNode();
         head2.left.left.left.value = 7;
-        head2.left.left.left.left = new Node();
+        head2.left.left.left.left = new BinaryTreeNode();
         head2.left.left.left.left.value = 9;
         System.out.println("\n");
         printFromToBottom(head2);
@@ -86,20 +86,20 @@ public class d23_从上往下打印二叉树 {
         //       6
         //        \
         //         8
-        Node head3 = new Node();
+        BinaryTreeNode head3 = new BinaryTreeNode();
         head3.value = 0;
-        head3.right = new Node();
+        head3.right = new BinaryTreeNode();
         head3.right.value = 2;
-        head3.right.right = new Node();
+        head3.right.right = new BinaryTreeNode();
         head3.right.right.value = 4;
-        head3.right.right.right = new Node();
+        head3.right.right.right = new BinaryTreeNode();
         head3.right.right.right.value = 6;
-        head3.right.right.right.right = new Node();
+        head3.right.right.right.right = new BinaryTreeNode();
         head3.right.right.right.right.value = 8;
         System.out.println("\n");
         printFromToBottom(head3);
         // 1
-        Node head4 = new Node();
+        BinaryTreeNode head4 = new BinaryTreeNode();
         head4.value = 1;
         System.out.println("\n");
         printFromToBottom(head4);

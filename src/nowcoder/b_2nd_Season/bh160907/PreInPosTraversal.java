@@ -1,7 +1,7 @@
 package nowcoder.b_2nd_Season.bh160907;
 
-import Standard.Node;
-import Standard.PrintBinaryTree;
+import Standard.BinaryTreeNode;
+import others.PrintBinaryTree;
 
 import java.util.Stack;
 
@@ -12,12 +12,12 @@ import java.util.Stack;
  */
 public class PreInPosTraversal {
 
-    private static void posOrderUnRecur2(Node head) {
+    private static void posOrderUnRecur2(BinaryTreeNode head) {
         System.out.print("pos-order2: ");
         if (head != null){
-            Stack<Node> stack = new Stack<Node>();
-            Node cur = stack.push(head);
-            Node pre = head;
+            Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
+            BinaryTreeNode cur = stack.push(head);
+            BinaryTreeNode pre = head;
             while (!stack.isEmpty()){
                 cur = stack.peek();
                 if (cur.left!=null && pre!=cur.left &&  pre!=cur.right){
@@ -33,11 +33,11 @@ public class PreInPosTraversal {
         System.out.println();
     }
 
-    private static void posOrderUnRecur1(Node head) {
+    private static void posOrderUnRecur1(BinaryTreeNode head) {
         System.out.print("pos-order: ");
         if (head != null){
-            Stack<Node> s1 = new Stack<Node>();
-            Stack<Node> s2 = new Stack<Node>();
+            Stack<BinaryTreeNode> s1 = new Stack<BinaryTreeNode>();
+            Stack<BinaryTreeNode> s2 = new Stack<BinaryTreeNode>();
             s1.add(head);
             while (!s1.isEmpty()){
                 head = s1.pop();
@@ -57,10 +57,10 @@ public class PreInPosTraversal {
         System.out.println();
     }
 
-    private static void inOrderUnRecur(Node head) {
+    private static void inOrderUnRecur(BinaryTreeNode head) {
         System.out.print("in-order: ");
         if (head != null){
-            Stack<Node> stack = new Stack<Node>();
+            Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
             while (head!=null || !stack.isEmpty()){
                 if (head != null){
                     stack.push(head);
@@ -75,10 +75,10 @@ public class PreInPosTraversal {
         System.out.println();
     }
 
-    private static void preOrderUnRecur(Node head) {
+    private static void preOrderUnRecur(BinaryTreeNode head) {
         System.out.print("pre-order: ");
         if (head != null){
-            Stack<Node> stack = new Stack<Node>();
+            Stack<BinaryTreeNode> stack = new Stack<BinaryTreeNode>();
             stack.add(head);
             while (!stack.isEmpty()){
                 head = stack.pop();
@@ -95,17 +95,17 @@ public class PreInPosTraversal {
     }
 
     public static void main(String[] args) {
-        Node head = new Node(5);
-        head.left = new Node(3);
-        head.right = new Node(8);
-        head.left.left = new Node(2);
-        head.left.right = new Node(4);
-        head.left.left.left = new Node(1);
-        head.right.left = new Node(7);
-        head.right.left.left = new Node(6);
-        head.right.right = new Node(10);
-        head.right.right.left = new Node(9);
-        head.right.right.right = new Node(11);
+        BinaryTreeNode head = new BinaryTreeNode(5);
+        head.left = new BinaryTreeNode(3);
+        head.right = new BinaryTreeNode(8);
+        head.left.left = new BinaryTreeNode(2);
+        head.left.right = new BinaryTreeNode(4);
+        head.left.left.left = new BinaryTreeNode(1);
+        head.right.left = new BinaryTreeNode(7);
+        head.right.left.left = new BinaryTreeNode(6);
+        head.right.right = new BinaryTreeNode(10);
+        head.right.right.left = new BinaryTreeNode(9);
+        head.right.right.right = new BinaryTreeNode(11);
         PrintBinaryTree.print(head);
 
         // recursive
@@ -128,7 +128,7 @@ public class PreInPosTraversal {
         posOrderUnRecur2(head);
     }
 
-    private static void preOrderRecur(Node head) {
+    private static void preOrderRecur(BinaryTreeNode head) {
         if (head == null){
             return;
         }
@@ -137,7 +137,7 @@ public class PreInPosTraversal {
         preOrderRecur(head.right);
     }
 
-    private static void inOrderRecur(Node head) {
+    private static void inOrderRecur(BinaryTreeNode head) {
         if (head == null){
             return;
         }
@@ -146,7 +146,7 @@ public class PreInPosTraversal {
         inOrderRecur(head.right);
     }
 
-    private static void posOrderRecur(Node head) {
+    private static void posOrderRecur(BinaryTreeNode head) {
         if (head == null){
             return;
         }

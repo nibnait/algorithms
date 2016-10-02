@@ -62,7 +62,7 @@ public class f45_圆圈中最后剩下的数字$约瑟夫环杀人 {
 
 
     /**
-     * 法2：这里需要用到一个非常牛逼的公式：old =（new + m ）% n
+     * 法2：这里需要用到一个非常“牛逼”的公式：old =（new + m ）% n
      * @param n
      * @param m
      * @return

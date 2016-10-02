@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 import Standard.stdOut;
 
 /**
@@ -15,14 +15,14 @@ import Standard.stdOut;
  */
 public class d19_二叉树的镜像 {
 
-    private static void mirrorRecursivelly(Node head) {
+    private static void mirrorRecursivelly(BinaryTreeNode head) {
         if (head == null){
             return;
         }
         if (head.left==null && head.right==null){
             return;
         }
-        Node tmp = head.left;
+        BinaryTreeNode tmp = head.left;
         head.left = head.right;
         head.right = tmp;
         mirrorRecursivelly(head.left);
@@ -35,19 +35,19 @@ public class d19_二叉树的镜像 {
         //   6     10
         //  / \   / \
         // 5   7 9  11
-        Node head = new Node();
+        BinaryTreeNode head = new BinaryTreeNode();
         head.value = 8;
-        head.left = new Node();
+        head.left = new BinaryTreeNode();
         head.left.value = 6;
-        head.left.left = new Node();
+        head.left.left = new BinaryTreeNode();
         head.left.left.value = 5;
-        head.left.right = new Node();
+        head.left.right = new BinaryTreeNode();
         head.left.right.value = 7;
-        head.right = new Node();
+        head.right = new BinaryTreeNode();
         head.right.value = 10;
-        head.right.left = new Node();
+        head.right.left = new BinaryTreeNode();
         head.right.left.value = 9;
-        head.right.right = new Node();
+        head.right.right = new BinaryTreeNode();
         head.right.right.value = 11;
         stdOut.printBinaryTree(head);
         System.out.println();
@@ -62,15 +62,15 @@ public class d19_二叉树的镜像 {
         //   7
         //  /
         // 9
-        Node head2 = new Node();
+        BinaryTreeNode head2 = new BinaryTreeNode();
         head2.value = 1;
-        head2.left = new Node();
+        head2.left = new BinaryTreeNode();
         head2.left.value = 3;
-        head2.left.left = new Node();
+        head2.left.left = new BinaryTreeNode();
         head2.left.left.value = 5;
-        head2.left.left.left = new Node();
+        head2.left.left.left = new BinaryTreeNode();
         head2.left.left.left.value = 7;
-        head2.left.left.left.left = new Node();
+        head2.left.left.left.left = new BinaryTreeNode();
         head2.left.left.left.left.value = 9;
         System.out.println("\n");
         stdOut.printBinaryTree(head2);
@@ -86,15 +86,15 @@ public class d19_二叉树的镜像 {
         //       6
         //        \
         //         8
-        Node head3 = new Node();
+        BinaryTreeNode head3 = new BinaryTreeNode();
         head3.value = 0;
-        head3.right = new Node();
+        head3.right = new BinaryTreeNode();
         head3.right.value = 2;
-        head3.right.right = new Node();
+        head3.right.right = new BinaryTreeNode();
         head3.right.right.value = 4;
-        head3.right.right.right = new Node();
+        head3.right.right.right = new BinaryTreeNode();
         head3.right.right.right.value = 6;
-        head3.right.right.right.right = new Node();
+        head3.right.right.right.right = new BinaryTreeNode();
         head3.right.right.right.right.value = 8;
         System.out.println("\n");
         stdOut.printBinaryTree(head3);

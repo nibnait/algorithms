@@ -49,9 +49,9 @@ public class RemoveNodeWired {
 		removeNodeWired(node);
 		printLinkedList(head);
 
-//		head = new Node(1);
-//		head.next = new Node(2);
-//		head.next.next = new Node(3);
+//		head = new BinaryTreeNode(1);
+//		head.next = new BinaryTreeNode(2);
+//		head.next.next = new BinaryTreeNode(3);
 //		node = head.next.next;
 //		printLinkedList(head);
 //		removeNodeWired(node);

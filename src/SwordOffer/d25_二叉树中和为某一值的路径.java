@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class d25_二叉树中和为某一值的路径 {
 
-    private static void findPath(Node head, int expectedSum) {
+    private static void findPath(BinaryTreeNode head, int expectedSum) {
         if (head == null){
             return;
         }
@@ -23,7 +23,7 @@ public class d25_二叉树中和为某一值的路径 {
         findPath(head, expectedSum, path, currentSum);
     }
 
-    private static void findPath(Node head, int expectedSum, List<Integer> path, int currentSum) {
+    private static void findPath(BinaryTreeNode head, int expectedSum, List<Integer> path, int currentSum) {
         currentSum += head.value;
         path.add(head.value);
         if (head.left==null && head.right==null && currentSum == expectedSum){
@@ -45,15 +45,15 @@ public class d25_二叉树中和为某一值的路径 {
         //        5        12
         //       /\
         //      4  7
-        Node head = new Node();
+        BinaryTreeNode head = new BinaryTreeNode();
         head.value = 10;
-        head.left = new Node();
+        head.left = new BinaryTreeNode();
         head.left.value = 5;
-        head.left.left = new Node();
+        head.left.left = new BinaryTreeNode();
         head.left.left.value = 4;
-        head.left.right = new Node();
+        head.left.right = new BinaryTreeNode();
         head.left.right.value = 7;
-        head.right = new Node();
+        head.right = new BinaryTreeNode();
         head.right.value = 12;
         // 有两条路径上的结点和为22
         System.out.println("findPath(head, 22);");
@@ -73,15 +73,15 @@ public class d25_二叉树中和为某一值的路径 {
         //         2
         //        /
         //       1
-        Node head2 = new Node();
+        BinaryTreeNode head2 = new BinaryTreeNode();
         head2.value = 5;
-        head2.left = new Node();
+        head2.left = new BinaryTreeNode();
         head2.left.value = 4;
-        head2.left.left = new Node();
+        head2.left.left = new BinaryTreeNode();
         head2.left.left.value = 3;
-        head2.left.left.left = new Node();
+        head2.left.left.left = new BinaryTreeNode();
         head2.left.left.left.value = 2;
-        head2.left.left.left.left = new Node();
+        head2.left.left.left.left = new BinaryTreeNode();
         head2.left.left.left.left.value = 1;
         // 有一条路径上面的结点和为15
         System.out.println("findPath(head2, 15);");
@@ -98,15 +98,15 @@ public class d25_二叉树中和为某一值的路径 {
         //       4
         //        \
         //         5
-        Node head3 = new Node();
+        BinaryTreeNode head3 = new BinaryTreeNode();
         head3.value = 1;
-        head3.right = new Node();
+        head3.right = new BinaryTreeNode();
         head3.right.value = 2;
-        head3.right.right = new Node();
+        head3.right.right = new BinaryTreeNode();
         head3.right.right.value = 3;
-        head3.right.right.right = new Node();
+        head3.right.right.right = new BinaryTreeNode();
         head3.right.right.right.value = 4;
-        head3.right.right.right.right = new Node();
+        head3.right.right.right.right = new BinaryTreeNode();
         head3.right.right.right.right.value = 5;
         // 有一条路径上面的结点和为15
         System.out.println("findPath(head3, 15);");
@@ -115,7 +115,7 @@ public class d25_二叉树中和为某一值的路径 {
         System.out.println("findPath(head3, 16);");
         findPath(head3, 16);
         // 树中只有1个结点
-        Node head4 = new Node();
+        BinaryTreeNode head4 = new BinaryTreeNode();
         head4.value = 1;
         // 有一条路径上面的结点和为1
         System.out.println("findPath(head4, 1);");

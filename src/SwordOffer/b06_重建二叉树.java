@@ -1,7 +1,7 @@
 package SwordOffer;
 
-import Standard.Node;
-import Standard.PrintBinaryTree;
+import Standard.BinaryTreeNode;
+import others.PrintBinaryTree;
 
 import java.util.HashMap;
 
@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class b06_重建二叉树 {
 
-    private static Node constructBinaryTree(int[] pre, int[] in) {
+    private static BinaryTreeNode constructBinaryTree(int[] pre, int[] in) {
 
         if (pre==null || in==null || pre.length!=in.length || in.length<=0){
             return null;
@@ -34,7 +34,7 @@ public class b06_重建二叉树 {
      * @param map   中序数组
      * @return
      */
-    private static Node construct(int[] pre, int ps, int pe, int[] in, int is, int ie, HashMap<Integer, Integer> map) {
+    private static BinaryTreeNode construct(int[] pre, int ps, int pe, int[] in, int is, int ie, HashMap<Integer, Integer> map) {
 
         if (ps>pe){
             //开始位置大于结束位置，说明已经没有需要处理的元素了
@@ -49,7 +49,7 @@ public class b06_重建二叉树 {
             throw new IllegalArgumentException("Invalid args: 前序/中序数组有问题");
         }
         //创建当前根节点
-        Node head = new Node(value);
+        BinaryTreeNode head = new BinaryTreeNode(value);
         //递归：
         head.left = construct(pre, ps+1, ps+i-is, in, is, i-1, map);
         head.right = construct(pre, ps+1+i-is, pe, in, i+1, ie, map);
@@ -67,7 +67,7 @@ public class b06_重建二叉树 {
     private static void test1() {
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 所有结点都没有右子结点  
@@ -83,7 +83,7 @@ public class b06_重建二叉树 {
     private static void test2() {
         int[] pre = {1, 2, 3, 4, 5};
         int[] in = {5, 4, 3, 2, 1};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 所有结点都没有左子结点  
@@ -99,14 +99,14 @@ public class b06_重建二叉树 {
     private static void test3() {
         int[] pre = {1, 2, 3, 4, 5};
         int[] in = {1, 2, 3, 4, 5};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 树中只有一个结点  
     private static void test4() {
         int[] pre = {1};
         int[] in = {1};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 完全二叉树  
@@ -118,7 +118,7 @@ public class b06_重建二叉树 {
     private static void test5() {
         int[] pre = {1, 2, 4, 5, 3, 6, 7};
         int[] in = {4, 2, 5, 1, 6, 3, 7};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
     // 输入空指针  
@@ -129,7 +129,7 @@ public class b06_重建二叉树 {
     private static void test7() {
         int[] pre = {1, 2, 4, 5, 3, 6, 7};
         int[] in = {4, 2, 8, 1, 6, 3, 7};
-        Node root = constructBinaryTree(pre, in);
+        BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
     }
 

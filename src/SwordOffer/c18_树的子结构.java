@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 /**
  * 题目：输入两棵二叉树 A 和 B，判断 B 是不是 A 的子结构。
@@ -20,7 +20,7 @@ public class c18_树的子结构 {
      * @param head2
      * @return
      */
-    public static boolean hasSubtree(Node head1, Node head2){
+    public static boolean hasSubtree(BinaryTreeNode head1, BinaryTreeNode head2){
         if (head1 == head2){
             return true;
         }
@@ -91,12 +91,12 @@ public class c18_树的子结构 {
      * @param head
      * @return
      */
-    private static String MorrisInTraversal(Node head) {
+    private static String MorrisInTraversal(BinaryTreeNode head) {
         if (head == null){
             return null;
         }
-        Node cur1 = head;
-        Node cur2 = null;
+        BinaryTreeNode cur1 = head;
+        BinaryTreeNode cur2 = null;
         StringBuffer sb = new StringBuffer();
         while (cur1 != null){
             cur2 = cur1.left;
@@ -129,7 +129,7 @@ public class c18_树的子结构 {
      * @param head2 B树
      * @return
      */
-    private static boolean hasSubtreeWithRecursion(Node head1, Node head2) {
+    private static boolean hasSubtreeWithRecursion(BinaryTreeNode head1, BinaryTreeNode head2) {
         if (head1 == head2){
             return true;
         }
@@ -152,7 +152,7 @@ public class c18_树的子结构 {
         return result;
     }
 
-    private static boolean match(Node head1, Node head2){
+    private static boolean match(BinaryTreeNode head1, BinaryTreeNode head2){
         if (head1 == head2){
             return true;
         }
@@ -170,26 +170,26 @@ public class c18_树的子结构 {
 
 
     public static void main(String[] args) {
-        Node head1 = new Node();
+        BinaryTreeNode head1 = new BinaryTreeNode();
         head1.value = 8;
-        head1.right = new Node();
+        head1.right = new BinaryTreeNode();
         head1.right.value = 7;
-        head1.left = new Node();
+        head1.left = new BinaryTreeNode();
         head1.left.value = 8;
-        head1.left.left = new Node();
+        head1.left.left = new BinaryTreeNode();
         head1.left.left.value = 9;
-        head1.left.right = new Node();
+        head1.left.right = new BinaryTreeNode();
         head1.left.right.value = 2;
-        head1.left.right.left = new Node();
-        head1.left.right.left.left = new Node();
+        head1.left.right.left = new BinaryTreeNode();
+        head1.left.right.left.left = new BinaryTreeNode();
         head1.left.right.left.left.value = 4;
-        head1.left.right.left.right = new Node();
+        head1.left.right.left.right = new BinaryTreeNode();
         head1.left.right.left.right.value = 7;
-        Node head2 = new Node();
+        BinaryTreeNode head2 = new BinaryTreeNode();
         head2.value = 8;
-        head2.left = new Node();
+        head2.left = new BinaryTreeNode();
         head2.left.value = 9;
-        head2.right = new Node();
+        head2.right = new BinaryTreeNode();
         head2.right.value = 2;
         System.out.println(hasSubtree(head1, head2));
         System.out.println(hasSubtree(head2, head1));

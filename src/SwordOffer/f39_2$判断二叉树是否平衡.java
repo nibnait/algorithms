@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 import static SwordOffer.f39_1$二叉树的深度.TreeDepth;
 
@@ -23,7 +23,7 @@ import static SwordOffer.f39_1$二叉树的深度.TreeDepth;
  */
 public class f39_2$判断二叉树是否平衡 {
 
-    private static boolean isBalanced(Node head){
+    private static boolean isBalanced(BinaryTreeNode head){
         if (head == null){
             return true;
         }
@@ -41,12 +41,12 @@ public class f39_2$判断二叉树是否平衡 {
      * @param head
      * @return
      */
-    private static boolean isBalanced2(Node head){
+    private static boolean isBalanced2(BinaryTreeNode head){
         int[] depth = new int[]{0};
         return isBalanced2(head, depth);
     }
 
-    private static boolean isBalanced2(Node head, int[] depth) {
+    private static boolean isBalanced2(BinaryTreeNode head, int[] depth) {
         if (head == null){
             depth[0] = 0;
             return true;
@@ -77,13 +77,13 @@ public class f39_2$判断二叉树是否平衡 {
     //       /\       / \
     //      4  5     6   7
     private static void test1() {
-        Node n1 = new Node(1);
-        Node n2 = new Node(1);
-        Node n3 = new Node(1);
-        Node n4 = new Node(1);
-        Node n5 = new Node(1);
-        Node n6 = new Node(1);
-        Node n7 = new Node(1);
+        BinaryTreeNode n1 = new BinaryTreeNode(1);
+        BinaryTreeNode n2 = new BinaryTreeNode(1);
+        BinaryTreeNode n3 = new BinaryTreeNode(1);
+        BinaryTreeNode n4 = new BinaryTreeNode(1);
+        BinaryTreeNode n5 = new BinaryTreeNode(1);
+        BinaryTreeNode n6 = new BinaryTreeNode(1);
+        BinaryTreeNode n7 = new BinaryTreeNode(1);
         n1.left = n2;
         n1.right = n3;
         n2.left = n4;
@@ -103,13 +103,13 @@ public class f39_2$判断二叉树是否平衡 {
     //        /
     //       7
     private static void test2() {
-        Node n1 = new Node(1);
-        Node n2 = new Node(1);
-        Node n3 = new Node(1);
-        Node n4 = new Node(1);
-        Node n5 = new Node(1);
-        Node n6 = new Node(1);
-        Node n7 = new Node(1);
+        BinaryTreeNode n1 = new BinaryTreeNode(1);
+        BinaryTreeNode n2 = new BinaryTreeNode(1);
+        BinaryTreeNode n3 = new BinaryTreeNode(1);
+        BinaryTreeNode n4 = new BinaryTreeNode(1);
+        BinaryTreeNode n5 = new BinaryTreeNode(1);
+        BinaryTreeNode n6 = new BinaryTreeNode(1);
+        BinaryTreeNode n7 = new BinaryTreeNode(1);
         n1.left = n2;
         n1.right = n3;
         n2.left = n4;
@@ -129,13 +129,13 @@ public class f39_2$判断二叉树是否平衡 {
     //        /
     //       7
     private static void test3() {
-        Node n1 = new Node(1);
-        Node n2 = new Node(1);
-        Node n3 = new Node(1);
-        Node n4 = new Node(1);
-        Node n5 = new Node(1);
-        Node n6 = new Node(1);
-        Node n7 = new Node(1);
+        BinaryTreeNode n1 = new BinaryTreeNode(1);
+        BinaryTreeNode n2 = new BinaryTreeNode(1);
+        BinaryTreeNode n3 = new BinaryTreeNode(1);
+        BinaryTreeNode n4 = new BinaryTreeNode(1);
+        BinaryTreeNode n5 = new BinaryTreeNode(1);
+        BinaryTreeNode n6 = new BinaryTreeNode(1);
+        BinaryTreeNode n7 = new BinaryTreeNode(1);
         n1.left = n2;
         n1.right = n3;
         n2.left = n4;
@@ -155,13 +155,13 @@ public class f39_2$判断二叉树是否平衡 {
     //        /
     //       5
     private static void test4() {
-        Node n1 = new Node(1);
-        Node n2 = new Node(1);
-        Node n3 = new Node(1);
-        Node n4 = new Node(1);
-        Node n5 = new Node(1);
-        Node n6 = new Node(1);
-        Node n7 = new Node(1);
+        BinaryTreeNode n1 = new BinaryTreeNode(1);
+        BinaryTreeNode n2 = new BinaryTreeNode(1);
+        BinaryTreeNode n3 = new BinaryTreeNode(1);
+        BinaryTreeNode n4 = new BinaryTreeNode(1);
+        BinaryTreeNode n5 = new BinaryTreeNode(1);
+        BinaryTreeNode n6 = new BinaryTreeNode(1);
+        BinaryTreeNode n7 = new BinaryTreeNode(1);
         n1.left = n2;
         n2.left = n3;
         n3.left = n4;
@@ -180,13 +180,13 @@ public class f39_2$判断二叉树是否平衡 {
     //        \
     //         5
     private static void test5() {
-        Node n1 = new Node(1);
-        Node n2 = new Node(1);
-        Node n3 = new Node(1);
-        Node n4 = new Node(1);
-        Node n5 = new Node(1);
-        Node n6 = new Node(1);
-        Node n7 = new Node(1);
+        BinaryTreeNode n1 = new BinaryTreeNode(1);
+        BinaryTreeNode n2 = new BinaryTreeNode(1);
+        BinaryTreeNode n3 = new BinaryTreeNode(1);
+        BinaryTreeNode n4 = new BinaryTreeNode(1);
+        BinaryTreeNode n5 = new BinaryTreeNode(1);
+        BinaryTreeNode n6 = new BinaryTreeNode(1);
+        BinaryTreeNode n7 = new BinaryTreeNode(1);
         n1.right = n2;
         n2.right = n3;
         n3.right = n4;

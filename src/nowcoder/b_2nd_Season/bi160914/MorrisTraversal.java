@@ -1,7 +1,7 @@
 package nowcoder.b_2nd_Season.bi160914;
 
-import Standard.Node;
-import Standard.PrintBinaryTree;
+import Standard.BinaryTreeNode;
+import others.PrintBinaryTree;
 
 /**
  * 二叉树的神级遍历
@@ -13,12 +13,12 @@ public class MorrisTraversal {
 
     //左右中
     //先打印根结点的左结点，再将此根即其右结点逆序打印
-    public static void MorrisPos(Node head){
+    public static void MorrisPos(BinaryTreeNode head){
         if (head == null){
             return;
         }
-        Node cur1 = head;
-        Node cur2 = null;
+        BinaryTreeNode cur1 = head;
+        BinaryTreeNode cur2 = null;
         while (cur1 != null){
             cur2 = cur1.left;
             if (cur2 != null){
@@ -45,9 +45,9 @@ public class MorrisTraversal {
      * 打印以head为根结点的右边界的逆序
      * @param head
      */
-    private static void printEdge(Node head) {
-        Node tail = reverseEdge(head);
-        Node cur = tail;
+    private static void printEdge(BinaryTreeNode head) {
+        BinaryTreeNode tail = reverseEdge(head);
+        BinaryTreeNode cur = tail;
         while (cur != null){
             System.out.print(cur.value + " ");
             cur = cur.right;
@@ -55,9 +55,9 @@ public class MorrisTraversal {
         reverseEdge(tail);
     }
 
-    private static Node reverseEdge(Node head) {
-        Node pre = null;
-        Node next = null;
+    private static BinaryTreeNode reverseEdge(BinaryTreeNode head) {
+        BinaryTreeNode pre = null;
+        BinaryTreeNode next = null;
         while (head != null){
             next = head.right;
             head.right = pre;
@@ -68,13 +68,13 @@ public class MorrisTraversal {
     }
 
     //左中右
-    public static void MorrisIn(Node head) {
+    public static void MorrisIn(BinaryTreeNode head) {
         if (head == null) {
             return;
         }
 
-        Node cur1 = head;
-        Node cur2 = null;
+        BinaryTreeNode cur1 = head;
+        BinaryTreeNode cur2 = null;
         while (cur1 != null){
             cur2 = cur1.left;
             if (cur2 != null) {
@@ -96,12 +96,12 @@ public class MorrisTraversal {
     }
 
     //中左右
-    public static void MorrisPre(Node head) {
+    public static void MorrisPre(BinaryTreeNode head) {
         if (head == null){
             return;
         }
-        Node cur1 = head;
-        Node cur2 = null;
+        BinaryTreeNode cur1 = head;
+        BinaryTreeNode cur2 = null;
         while (cur1 != null){
             cur2 = cur1.left;
             if (cur2 != null){
@@ -125,17 +125,17 @@ public class MorrisTraversal {
     }
 
     public static void main(String[] args) {
-        Node head = new Node(5);
-        head.left = new Node(3);
-        head.right = new Node(8);
-        head.left.left = new Node(2);
-        head.left.right = new Node(4);
-        head.left.left.left = new Node(1);
-        head.right.left = new Node(7);
-        head.right.left.left = new Node(6);
-        head.right.right = new Node(10);
-        head.right.right.left = new Node(9);
-        head.right.right.right = new Node(11);
+        BinaryTreeNode head = new BinaryTreeNode(5);
+        head.left = new BinaryTreeNode(3);
+        head.right = new BinaryTreeNode(8);
+        head.left.left = new BinaryTreeNode(2);
+        head.left.right = new BinaryTreeNode(4);
+        head.left.left.left = new BinaryTreeNode(1);
+        head.right.left = new BinaryTreeNode(7);
+        head.right.left.left = new BinaryTreeNode(6);
+        head.right.right = new BinaryTreeNode(10);
+        head.right.right.left = new BinaryTreeNode(9);
+        head.right.right.right = new BinaryTreeNode(11);
 
         PrintBinaryTree.print(head);
         MorrisIn(head); //Morris中序

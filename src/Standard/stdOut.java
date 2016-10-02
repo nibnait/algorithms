@@ -169,9 +169,9 @@ public final class stdOut {
         System.out.println("null");
     }
 
-    public static void printDoubleLinkedList(Node head){
+    public static void printDoubleLinkedList(BinaryTreeNode head){
         System.out.println("Double Linked List: ");
-        Node end = null;
+        BinaryTreeNode end = null;
         while (head != null) {
             System.out.print(head.value + " ");
             end = head;
@@ -190,7 +190,7 @@ public final class stdOut {
 
 
     //-------------二叉树的前中后需遍历 begin---------------------------------
-    public static void preOrderPrint(Node head) {
+    public static void preOrderPrint(BinaryTreeNode head) {
         if (head == null){
             return;
         }
@@ -199,7 +199,7 @@ public final class stdOut {
         preOrderPrint(head.right);
     }
 
-    public static void inOrderPrint(Node head) {
+    public static void inOrderPrint(BinaryTreeNode head) {
         if (head == null){
             return;
         }
@@ -208,7 +208,7 @@ public final class stdOut {
         inOrderPrint(head.right);
     }
 
-    public static void posOrderPrint(Node head) {
+    public static void posOrderPrint(BinaryTreeNode head) {
         if (head == null){
             return;
         }
@@ -222,14 +222,14 @@ public final class stdOut {
     //-------------打印二叉树 begin---------------------------------
     private static final int NODE_LENGTH = 17;      //二叉树中每个节点的长度
 
-    public static void printBinaryTree(Node head) {
+    public static void printBinaryTree(BinaryTreeNode head) {
 
         System.out.println("Binary Tree：");
         printInOrder(head, 0, "*");
         System.out.println();
     }
 
-    private static void printInOrder(Node head, int height, String to) {
+    private static void printInOrder(BinaryTreeNode head, int height, String to) {
         if (head == null){
             return;
         }

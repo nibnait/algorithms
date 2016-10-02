@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 /**
  * 题目一：输入一棵二叉树的根结点，求该树的深度。
@@ -13,7 +13,7 @@ import Standard.Node;
  */
 public class f39_1$二叉树的深度 {
 
-    public static int TreeDepth(Node head){
+    public static int TreeDepth(BinaryTreeNode head){
         if (head==null){
             return 0;
         }

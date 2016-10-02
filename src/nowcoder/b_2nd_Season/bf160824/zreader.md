@@ -43,7 +43,7 @@
         old =（new + m -1）%i + 1   
          
          
-看完《剑指Offer》第45题 [f45_圆圈中最后剩下的数字$约瑟夫环杀人]()之后，突然感觉明明很简单的一道题，被左神讲的好复杂。。。
+看完《剑指Offer》第45题 [f45_圆圈中最后剩下的数字$约瑟夫环杀人](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f45_%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97%24%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E6%9D%80%E4%BA%BA.java)之后，突然感觉明明很简单的一道题，被左神讲的好复杂。。。
     
 代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/Josephus.java)
         

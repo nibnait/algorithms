@@ -16,7 +16,7 @@ public class BinarySearch {
         int mid = 0;
         int res = -1;
         while (lo <= hi) {
-            mid = lo + ((lo + hi) >> 1);    //防止溢出，移位也更高效。
+            mid = (lo + hi) >> 1;    //防止溢出，移位也更高效。
             if (arr[mid] >= num) {
                 res = mid;
                 hi = mid - 1;

@@ -1,6 +1,6 @@
 package SwordOffer;
 
-import Standard.Node;
+import Standard.BinaryTreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -25,16 +25,16 @@ public class d27_二叉搜索树与双向链表 {
      * @param head 二叉树的根结点
      * @return 双向链表的头节点
      */
-    private static Node convert1(Node head) {
+    private static BinaryTreeNode convert1(BinaryTreeNode head) {
         if (head == null){
             return null;
         }
-        Queue<Node> queue = new LinkedList<>();
+        Queue<BinaryTreeNode> queue = new LinkedList<>();
         inOrderToQueue(head, queue);
         head = queue.poll();
-        Node pre = head;
+        BinaryTreeNode pre = head;
         pre.left = null;
-        Node cur = null;
+        BinaryTreeNode cur = null;
         while (!queue.isEmpty()){
             cur = queue.poll();
             pre.right = cur;
@@ -45,7 +45,7 @@ public class d27_二叉搜索树与双向链表 {
         return head;
     }
 
-    private static void inOrderToQueue(Node head, Queue<Node> queue) {
+    private static void inOrderToQueue(BinaryTreeNode head, Queue<BinaryTreeNode> queue) {
         if (head == null){
             return;
         }
@@ -60,11 +60,11 @@ public class d27_二叉搜索树与双向链表 {
      * @param head 二叉树的根结点
      * @return 双向链表的头节点
      */
-    private static Node convert2(Node head) {
+    private static BinaryTreeNode convert2(BinaryTreeNode head) {
         if (head == null){
             return null;
         }
-        Node[] last = new Node[1];
+        BinaryTreeNode[] last = new BinaryTreeNode[1];
         convertNode(head, last);
         head = last[0];
         while (head!=null && head.left!=null){
@@ -78,7 +78,7 @@ public class d27_二叉搜索树与双向链表 {
      * @param head
      * @param last
      */
-    private static void convertNode(Node head, Node[] last) {
+    private static void convertNode(BinaryTreeNode head, BinaryTreeNode[] last) {
         if (head == null){
             return;
         }
@@ -103,12 +103,12 @@ public class d27_二叉搜索树与双向链表 {
      * @param head
      * @return
      */
-    private static Node convert(Node head) {
+    private static BinaryTreeNode convert(BinaryTreeNode head) {
         if (head == null){
             return null;
         }
 
-        Node last = process(head);
+        BinaryTreeNode last = process(head);
         head = last.right;
         last.right = null;
         return head;
@@ -119,15 +119,15 @@ public class d27_二叉搜索树与双向链表 {
      * @param head
      * @return  返回已经处理好的双向链表的尾结点
      */
-    private static Node process(Node head) {
+    private static BinaryTreeNode process(BinaryTreeNode head) {
         if (head == null){
             return null;
         }
 
-        Node leftE = process(head.left);
-        Node rightE = process(head.right);
-        Node leftS = leftE!=null? leftE.right: null;
-        Node rightS = rightE!=null? rightE.right: null;
+        BinaryTreeNode leftE = process(head.left);
+        BinaryTreeNode rightE = process(head.right);
+        BinaryTreeNode leftS = leftE!=null? leftE.right: null;
+        BinaryTreeNode rightS = rightE!=null? rightE.right: null;
         if (leftE != null && rightE!=null){     //leftS(头)...leftE<-->head<-->rightS...rightE(尾)
             leftE.right = head;
             head.left = leftE;
@@ -166,19 +166,19 @@ public class d27_二叉搜索树与双向链表 {
     //       /\        /\
     //      4  8     12  16
     private static void test01() {
-        Node node10 = new Node();
+        BinaryTreeNode node10 = new BinaryTreeNode();
         node10.value = 10;
-        Node node6 = new Node();
+        BinaryTreeNode node6 = new BinaryTreeNode();
         node6.value = 6;
-        Node node14 = new Node();
+        BinaryTreeNode node14 = new BinaryTreeNode();
         node14.value = 14;
-        Node node4 = new Node();
+        BinaryTreeNode node4 = new BinaryTreeNode();
         node4.value = 4;
-        Node node8 = new Node();
+        BinaryTreeNode node8 = new BinaryTreeNode();
         node8.value = 8;
-        Node node12 = new Node();
+        BinaryTreeNode node12 = new BinaryTreeNode();
         node12.value = 12;
-        Node node16 = new Node();
+        BinaryTreeNode node16 = new BinaryTreeNode();
         node16.value = 16;
         node10.left = node6;
         node10.right = node14;
@@ -188,7 +188,7 @@ public class d27_二叉搜索树与双向链表 {
         node14.right = node16;
         System.out.println("inOrderTraversal: ");
         inOrderPrint(node10);
-        Node head = convert(node10);
+        BinaryTreeNode head = convert(node10);
         printDoubleLinkedList(head);
         System.out.println();
     }
@@ -203,15 +203,15 @@ public class d27_二叉搜索树与双向链表 {
     //        /
     //       1
     private static void test02() {
-        Node node1 = new Node();
+        BinaryTreeNode node1 = new BinaryTreeNode();
         node1.value = 1;
-        Node node2 = new Node();
+        BinaryTreeNode node2 = new BinaryTreeNode();
         node2.value = 2;
-        Node node3 = new Node();
+        BinaryTreeNode node3 = new BinaryTreeNode();
         node3.value = 3;
-        Node node4 = new Node();
+        BinaryTreeNode node4 = new BinaryTreeNode();
         node4.value = 4;
-        Node node5 = new Node();
+        BinaryTreeNode node5 = new BinaryTreeNode();
         node5.value = 5;
         node5.left = node4;
         node4.left = node3;
@@ -219,7 +219,7 @@ public class d27_二叉搜索树与双向链表 {
         node2.left = node1;
         System.out.println("inOrderTraversal: ");
         inOrderPrint(node5);
-        Node head = convert(node5);
+        BinaryTreeNode head = convert(node5);
         printDoubleLinkedList(head);
         System.out.println();
     }
@@ -233,15 +233,15 @@ public class d27_二叉搜索树与双向链表 {
     //        \
     //         5
     private static void test03() {
-        Node node1 = new Node();
+        BinaryTreeNode node1 = new BinaryTreeNode();
         node1.value = 1;
-        Node node2 = new Node();
+        BinaryTreeNode node2 = new BinaryTreeNode();
         node2.value = 2;
-        Node node3 = new Node();
+        BinaryTreeNode node3 = new BinaryTreeNode();
         node3.value = 3;
-        Node node4 = new Node();
+        BinaryTreeNode node4 = new BinaryTreeNode();
         node4.value = 4;
-        Node node5 = new Node();
+        BinaryTreeNode node5 = new BinaryTreeNode();
         node5.value = 5;
         node1.right = node2;
         node2.right = node3;
@@ -249,17 +249,17 @@ public class d27_二叉搜索树与双向链表 {
         node4.right = node5;
         System.out.println("inOrderTraversal: ");
         inOrderPrint(node1);
-        Node head = convert(node1);
+        BinaryTreeNode head = convert(node1);
         printDoubleLinkedList(head);
         System.out.println();
     }
     // 只有一个结点
     private static void test04() {
-        Node node1 = new Node();
+        BinaryTreeNode node1 = new BinaryTreeNode();
         node1.value = 1;
         System.out.println("inOrderTraversal: ");
         inOrderPrint(node1);
-        Node head = convert(node1);
+        BinaryTreeNode head = convert(node1);
         printDoubleLinkedList(head);
         System.out.println();
     }
@@ -268,7 +268,7 @@ public class d27_二叉搜索树与双向链表 {
         System.out.println("inOrderTraversal: ");
         inOrderPrint(null);
         System.out.println("null");
-        Node head = convert(null);
+        BinaryTreeNode head = convert(null);
         printDoubleLinkedList(head);
         System.out.println();
     }
