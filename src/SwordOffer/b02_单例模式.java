@@ -18,42 +18,42 @@ class Singleton_EHan{
 
 //2. 懒汉式
 class Singleton_LanHan{
-    private static Singleton_LanHan instance;
+    private static Singleton_LanHan INSTANCE;
     private Singleton_LanHan(){};
 
 /*  懒汉式线程不安全的
     public static Singleton_LanHan getInstance(){
-        if (instance == null){
+        if (INSTANCE == null){
             return new Singleton_LanHan();
         }
-        return instance;
+        return INSTANCE;
     }
 */
     //懒汉式线程安全的：
     public static synchronized Singleton_LanHan getInstance(){
-        if (instance == null){
+        if (INSTANCE == null){
             return new Singleton_LanHan();
         }
-        return instance;
+        return INSTANCE;
     }
 }
 
 //3. 双重检验锁模式
 class Singleton_DoubleCheck{
 
-    private volatile static Singleton_DoubleCheck instance; //volatile可以使instance变量不会在多线程中存在副本，直接从内存中读
+    private volatile static Singleton_DoubleCheck INSTANCE; //volatile可以使instance变量不会在多线程中存在副本，直接从内存中读
             //即：volatile的赋值操作后面会有个“内存屏障”，防止读操作被JVM重排序到内存屏障之前。
     private Singleton_DoubleCheck(){}
 
     public static Singleton_DoubleCheck getInstance(){
-        if (instance == null){
+        if (INSTANCE == null){
             synchronized (Singleton_DoubleCheck.class){
-                if (instance == null){
+                if (INSTANCE == null){
                     return new Singleton_DoubleCheck();
                 }
             }
         }
-        return instance;
+        return INSTANCE;
     }
 
 }

@@ -15,4 +15,9 @@ public class BinaryTreeNode {
     public BinaryTreeNode(int data) {
         this.value = data;
     }
+
+    @Override
+    public String toString() {
+        return value + "";
+    }
 }

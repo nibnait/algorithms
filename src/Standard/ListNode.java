@@ -13,4 +13,9 @@ public class ListNode {
     public ListNode(int data){
         this.value = data;
     }
+
+    @Override
+    public String toString() {
+        return value +"";
+    }
 }

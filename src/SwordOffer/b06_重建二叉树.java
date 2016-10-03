@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 /**
  * 根据前序和中序序列（不含有重复的数字），构建一棵二叉树
+ *
  * Created by nibnait on 2016/9/20.
  */
 public class b06_重建二叉树 {
@@ -55,6 +56,23 @@ public class b06_重建二叉树 {
         head.right = construct(pre, ps+1+i-is, pe, in, i+1, ie, map);
         return head;
     }
+
+    public static void main(String[] args) {
+        test1();
+        System.out.println();
+        test2();
+        System.out.println();
+        test3();
+        System.out.println();
+        test4();
+        System.out.println();
+        test5();
+        System.out.println();
+        test6();
+        System.out.println();
+//        test7();
+    }
+
 
     // 普通二叉树  
     //              1  
@@ -131,22 +149,6 @@ public class b06_重建二叉树 {
         int[] in = {4, 2, 8, 1, 6, 3, 7};
         BinaryTreeNode root = constructBinaryTree(pre, in);
         PrintBinaryTree.print(root);
-    }
-
-    public static void main(String[] args) {
-        test1();
-        System.out.println();
-        test2();
-        System.out.println();
-        test3();
-        System.out.println();
-        test4();
-        System.out.println();
-        test5();
-        System.out.println();
-        test6();
-        System.out.println();
-//        test7();
     }
 
 }
