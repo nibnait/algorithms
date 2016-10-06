@@ -84,7 +84,7 @@
  - [俄国沙皇问题](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.java)
  
 ## 链表专题
- - [/src/nowcoder/b_2nd_Season/bf160824/zreadme.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/zreader.md)
+ - [/src/nowcoder/b_2nd_Season/bf160824/README.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/README.md)
  - [b05_从尾到头打印链表](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/b05_%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8.java)
  - [c13_删除链表结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c13_%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%BB%93%E7%82%B9.java)
  - [c15_链表中倒数第k个结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c15_%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E7%BB%93%E7%82%B9.java)
@@ -130,7 +130,7 @@
  - [h65_滑动窗口的最大值](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h65_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.java)，这也是一个算法原型：[SlidingWindowMaxValue.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java)
  
  
- ---
+---
  
  这里的所有测试用例 均copy自[王俊超的剑指 Offer 学习心得](http://blog.csdn.net/DERRANTCM/article/category/3151215)
  但是解题思路，代码基本还是以书上为准（毕竟我写的这些解题思路的确有点太白话了），当然也有几道题 书上的也并不是最优解。比如[c17_合并两个排序的链表](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c17_%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E7%9A%84%E9%93%BE%E8%A1%A8.java)、[e37_两个单向链表的第一个公共结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/e37_%E4%B8%A4%E4%B8%AA%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E7%BB%93%E7%82%B9.java)、、、
