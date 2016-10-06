@@ -18,7 +18,7 @@ import Standard.stdOut;
  *
  * Created by nibnait on 2016/10/2.
  */
-public class f41_1$和为s的两个数字VS {
+public class f41_1$和为s的两个数字 {
 
     public static void main(String[] args) {
         int[] data1 = {1, 2, 4, 7, 11, 15};

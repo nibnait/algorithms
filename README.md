@@ -24,6 +24,10 @@
 
  - 链表系列专题：[/src/nowcoder/b_2nd_Season/bf160824/zreader.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/zreader.md)
 
+
+## 《剑指Offer》套路汇总：[/src/SwordOffer/aREADME.md](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/aREADME.md)
+
+
 ---
 
 代码或者讲解如有错误,或者不清楚的地方,欢迎[提交Issues](https://github.com/nibnait/algorithms/issues)

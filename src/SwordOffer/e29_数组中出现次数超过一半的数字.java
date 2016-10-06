@@ -24,6 +24,7 @@ import Standard.std;
  *      如果arr[i] != 上一个数字，则将times--
  *                              当times == 0时，将result替换为当前的arr[i]，并将times=1
  *      继续往下遍历。
+ *      那么要找的数字就是最后一次把次数设为1时，对应的数字
  *
  *
  * Created by nibnait on 2016/9/27.
