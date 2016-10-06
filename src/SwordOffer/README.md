@@ -77,7 +77,7 @@
   
 ## 基于堆排的思想：
  - [e30_最小的k个数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/e30_%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0.java)
- - [h64_数据流中的中位数]()
+ - [h64_数据流中的中位数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h64_%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0.java)★
  
 ## new Comparator 
  - [e33_把数组排成最小的数]()
@@ -116,8 +116,8 @@
  - [h63_二叉搜索树的第k个结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h63_%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E7%9A%84%E7%AC%ACk%E4%B8%AA%E7%BB%93%E7%82%B9.java)★
  
 ## 回溯法
- - [h66_矩阵中的路径]()
- - [h67_机器人的运动范围]()
+ - [h66_矩阵中的路径](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h66_%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84.java)
+ - [h67_机器人的运动范围](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h67_%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4.java)
 
 ## 其他
  - [d20_顺时针打印矩阵](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/d20_%E9%A1%BA%E6%97%B6%E9%92%88%E6%89%93%E5%8D%B0%E7%9F%A9%E9%98%B5.java)：注意一下每次打印的边界条件判断
@@ -127,7 +127,7 @@
  - [g49_把字符串转换成整数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/g49_%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0.java)，注意：null、""、+、-、非法字符、溢出
  - [h52_构建乘积数组](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h52_%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84.java)，这就是一道数学题了
  - [h54_表示数值的字符串](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h54_%E8%A1%A8%E7%A4%BA%E6%95%B0%E5%80%BC%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2.java)
- - [h65_滑动窗口的最大值]()，这也是一个算法原型：[SlidingWindowMaxValue.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java)
+ - [h65_滑动窗口的最大值](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h65_%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC.java)，这也是一个算法原型：[SlidingWindowMaxValue.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.java)
  
  
  ---
