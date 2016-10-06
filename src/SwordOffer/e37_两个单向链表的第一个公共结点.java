@@ -5,7 +5,7 @@ import Standard.ListNode;
 /**
  * 题目：输入两个链表，找出它们的第一个公共结点。
  *
- *  /src/nowcoder/b_2nd_Season/bf160824/zreader.md：题目五
+ *  /src/nowcoder/b_2nd_Season/bf160824/README.md：题目五
  *
      1. 两个链表：一个有环，一个无环
      则两个链表不可能相交

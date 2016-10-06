@@ -4,7 +4,7 @@ package SwordOffer;
  * 题目：输入一个整型数组，数组里有正数也有负数。数组中一个或连续的多个整数组成一个子数组。求所有子数组的和的最大值。
  * 要求时间复杂度为 O(n)。
  *
- * /src/nowcoder/b_2nd_Season/bb160727/zreadme.md：
+ * /src/nowcoder/b_2nd_Season/bb160727/README.md：
  * 左神做法：
      cur 依次累加各个元素，一旦cur为负数时，则将cur清为零。
      并尝试更新一次result（最大值）
