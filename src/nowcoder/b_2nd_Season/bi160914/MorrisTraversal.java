@@ -73,19 +73,19 @@ public class MorrisTraversal {
             return;
         }
 
-        BinaryTreeNode cur1 = head;
+        BinaryTreeNode cur1 = head;     //当前结点
         BinaryTreeNode cur2 = null;
         while (cur1 != null){
-            cur2 = cur1.left;
+            cur2 = cur1.left;       //当前结点的左子树的头
             if (cur2 != null) {
-                while (cur2.right != null && cur2.right!=cur1) {      //
+                while (cur2.right != null && cur2.right!=cur1) {
                     cur2 = cur2.right;  //一直遍历到左子树的最右结点
                 }
                 if (cur2.right == null) {
                     cur2.right = cur1;  //将左子树的最右结点指向cur1
                     cur1 = cur1.left;   //loop，
                     continue;           //直到遍历到最左结点。
-                } else {
+                } else {    //cur2.right==cur1
                     cur2.right = null;  //将左子树的最右结点调换回来，重新指向null
                 }
             }
@@ -110,13 +110,13 @@ public class MorrisTraversal {
                 }
                 if (cur2.right == null){
                     cur2.right = cur1;
-                    System.out.print(cur1.value + " ");
+                    System.out.print(cur1.value + " ");     //满足标准1：（其左子树的最右结点指向null）
                     cur1 = cur1.left;
                     continue;
                 } else {
                     cur2.right = null;
                 }
-            }else {
+            } else {	//当前结点没有左子树
                 System.out.print(cur1.value + " ");
             }
             cur1 = cur1.right;
