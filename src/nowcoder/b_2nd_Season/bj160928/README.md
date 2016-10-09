@@ -56,6 +56,7 @@ Level 3 from left to right: 4 5 6 7
 结构上完全交换两个节点的位置，请实现调整的函数。
 
 ![bj092801](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbj16092801.png)
+
     1. 1的1p，跟2的2p，交换
     2. 1的左右孩子，跟2的左右孩子 交换
     

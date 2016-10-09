@@ -8,8 +8,9 @@
  - [e36_数组中的逆序对](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/e36_%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%80%86%E5%BA%8F%E5%AF%B9.java)★
  - [f41_1$和为s的两个数字](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f41_1%24%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97.java)
  - [f41_2$和为s的连续正数序列](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f41_2%24%E5%92%8C%E4%B8%BAs%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97.java)
+ - [f44_扑克牌的顺子](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f44_%E6%89%91%E5%85%8B%E7%89%8C%E7%9A%84%E9%A1%BA%E5%AD%90.java)：1. 排序、2. 数大小王、3. 数空缺。注意对子
  - [h56_链表中环的入口结点](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h56_%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%8E%AF%E7%9A%84%E5%85%A5%E5%8F%A3%E7%BB%93%E7%82%B9.java)（三指针）
- 
+  
 ## 2. 递归
  - [b06_重建二叉树](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/b06_%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91.java)
  - [c11_数值的整数次方](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c11_%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9.java) <==公式
@@ -36,7 +37,6 @@
  - [f45_圆圈中最后剩下的数字$约瑟夫环杀人](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f45_%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97%24%E7%BA%A6%E7%91%9F%E5%A4%AB%E7%8E%AF%E6%9D%80%E4%BA%BA.java)
 
 ### -->动态规划★★
- - [f39_2$判断二叉树是否平衡](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f39_2%24%E5%88%A4%E6%96%AD%E4%BA%8C%E5%8F%89%E6%A0%91%E6%98%AF%E5%90%A6%E5%B9%B3%E8%A1%A1.java)
  - [f43_n个骰子的点数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/f43_n%E4%B8%AA%E9%AA%B0%E5%AD%90%E7%9A%84%E7%82%B9%E6%95%B0.java)
 
 ## 3. 用栈
@@ -97,7 +97,9 @@
  
 
 ## 树的专题
- - [/src/nowcoder/b_2nd_Season/bh160907/zreadme.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bh160907/zreadme.md)
+ - [/src/nowcoder/b_2nd_Season/bh160907/README.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bh160907/README.md)
+ - [/src/nowcoder/b_2nd_Season/bi160914/README.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bi160914/README.md)
+ - [/src/nowcoder/b_2nd_Season/bj160928/README.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bj160928/README.md)
  - [b06_重建二叉树](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/b06_%E9%87%8D%E5%BB%BA%E4%BA%8C%E5%8F%89%E6%A0%91.java)
  - [c18_树的子结构](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/c18_%E6%A0%91%E7%9A%84%E5%AD%90%E7%BB%93%E6%9E%84.java)
  - [d19_二叉树的镜像](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/d19_%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F.java)
