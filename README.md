@@ -27,8 +27,8 @@
 ## 《剑指Offer》套路汇总：[/src/SwordOffer/README.md](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/README.md)
 
  - 树的专题：
-     - [nowcoder/bi160914]()
-     - [nowcoder/bj160928]()
+     - [nowcoder/bi160914](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bi160914/README.md)
+     - [nowcoder/bj160928](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bj160928/README.md)
 
 ---
 

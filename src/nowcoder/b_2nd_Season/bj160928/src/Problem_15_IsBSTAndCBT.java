@@ -50,7 +50,7 @@ public class Problem_15_IsBSTAndCBT {
 		if (head == null) {
 			return true;
 		}
-		Queue<Node> queue = new LinkedList<Node>();
+		Queue<Node> queue = new LinkedList<Node>();	//按层遍历
 		boolean leaf = false;
 		Node l = null;
 		Node r = null;
@@ -59,7 +59,8 @@ public class Problem_15_IsBSTAndCBT {
 			head = queue.poll();
 			l = head.left;
 			r = head.right;
-			if ((leaf && (l != null || r != null)) || (l == null && r != null)) {
+			if (   (leaf && (l != null || r != null))    ||    (l == null && r != null)   ) {
+				//当前是叶节点的阶段 && head居然还有孩子			//不管哪个阶段，此结点只要有右无左
 				return false;
 			}
 			if (l != null) {
@@ -67,7 +68,7 @@ public class Problem_15_IsBSTAndCBT {
 			}
 			if (r != null) {
 				queue.offer(r);
-			} else {
+			} else {	//有左无右 或 无左无右
 				leaf = true;
 			}
 		}

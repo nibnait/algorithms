@@ -61,7 +61,7 @@
 
     额外空间复杂度达到O(1)，就不能用栈了。。
     判断是否回文：
-![nowcoderbd16081701](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbd16081701.png)
+![nowcoderbf16082401](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbf16082401.png)
         
         
 代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList.java)
@@ -156,7 +156,7 @@ Node 类中的value 是节点值，next 指针和正常单链表中next 指针�
      - 共享环，（在环外没遇上）：让环1的入环结点，往下走，如果遇到了环2的入环结点，√
      - 不相交： 两环的入环的第一个节点没遇上 
 
-![nowcoderbd16081702](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbd16081702.png)        
+![nowcoderbf16082402](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbf16082402.png)        
 
     
 代码：[https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.java)
