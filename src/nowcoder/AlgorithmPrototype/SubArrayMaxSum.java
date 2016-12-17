@@ -19,7 +19,7 @@ public class SubArrayMaxSum {
      *  cur和res
      */
     public static int maxSum(int[] arr) {
-        if (arr==null || arr.length<0){
+        if (arr==null || arr.length<=0){
             return 0;
         }
 

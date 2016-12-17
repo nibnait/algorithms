@@ -8,7 +8,7 @@ package SwordOffer;
  * 左神做法：
      cur 依次累加各个元素，一旦cur为负数时，则将cur清为零。
      并尝试更新一次result（最大值）
-     最终返回result即为 两个无重合部分的子数组的最大累加和
+     最终返回result即为子数组的最大累加和
 
      解释：
      因为最大和的子数组：其任意数量的前缀一定不为负。
@@ -30,7 +30,7 @@ public class e31_连续子数组的最大和 {
     }
 
     private static int findGreatestSumOfSubArray(int[] arr) {
-        if (arr==null || arr.length<0){
+        if (arr==null || arr.length<=0){
             return 0;
         }
 

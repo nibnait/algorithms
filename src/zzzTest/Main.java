@@ -1,13 +1,17 @@
 package zzzTest;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class Main{
+public class Main {
     public static void main(String[] args){
-        List<Integer> result = new LinkedList<>();
-        result.add(null);
-        result.add(1);
-        int value = result.remove(result.size()-2);
-        System.out.println(value);
+
+        String x = null;
+        int y = (null!=x) && (x.length()>0)?x.length():0;
+
+        System.out.println(y);
     }
+
+
 }

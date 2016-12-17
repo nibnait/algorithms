@@ -80,7 +80,7 @@
  - [h64_数据流中的中位数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/h64_%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0.java)★
  
 ## new Comparator 
- - [e33_把数组排成最小的数]()
+ - [e33_把数组排成最小的数](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/e33_%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0.java)
  - [俄国沙皇问题](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.java)
  
 ## 链表专题

@@ -15,6 +15,10 @@ import static SwordOffer.f42_1$翻转单词顺序.Reverse;
  *  第二步，翻转后半部分的字符：ba gfedc
  *  第三部，翻转整个字符串：cdegfab
  *
+ * 【左神做法】：/src/nowcoder/b_2nd_Season/bk161012/src/
+ *
+ *      `小块换过来的东西，定住！
+ *
  *
  * Created by nibnait on 2016/10/2.
  */

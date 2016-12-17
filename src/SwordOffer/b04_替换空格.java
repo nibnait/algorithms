@@ -30,7 +30,7 @@ public class b04_替换空格 {
      * @return
      */
     private static String replaceBlank(char[] str, int size) {
-        if (str==null || size<=0){
+        if (str==null || size<1){
             return null;
         }
 

@@ -57,7 +57,7 @@
         最后，再打印当前左子树树的整个右边界的逆序
         逆序：调整链表的方式，即将这个右边界的链表逆序。打印完毕再给他调回去。 √
     整棵树的后序遍历结点：从左到右，所有子树的右边界的逆序。
-![bi16091401](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbd16091401.png)
+![bi16091401](https://raw.githubusercontent.com/nibnait/algorithms/master/src/nowcoder/common/imgs/nowcoderbi16091401.png)
   
     
     
