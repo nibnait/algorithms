@@ -1,12 +1,59 @@
 package zzzTest;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by nibnait on 2016/10/11.
  */
 public class StringTest {
     public static void main(String[] args) {
+
+        String str = "1,2,3,";
+        System.out.println( str.substring(0, str.length()-1));
+
+    }
+
+    public void test01(){
         String a = "ab";
         String b = "a"+"b";
         System.out.println(a.equals(b));    //true
+
+
+        System.out.println("------------xxx-------------");
+
+        String str2 = "a";
+        String str3 = "b";
+
+        List<String> stringList = new ArrayList<>();
+        stringList.add(str2);
+        stringList.add(str3);
+
+        System.out.println(String.join(";", stringList));
+    }
+
+    /**
+     * 检查字符串是否包含某个字符串
+     */
+    public void checkStringContains() {
+
+        String haystack = "Programming in Java";
+        String needle1 = "Java";
+        String needle2 = "Pascal";
+
+        int index1 = haystack.indexOf(needle1);
+        int index2 = haystack.indexOf(needle2);
+
+        System.out.println(index1+"    "+index2);
+
+        if (index1 != -1)
+            System.out.println("The string contains the substring " + needle1);
+        else
+            System.out.println("The string does not contain the substring " + needle1);
+
+        if (index2 != -1)
+            System.out.println("The string contains the substring " + needle2);
+        else
+            System.out.println("The string does not contain the substring " + needle2);
     }
 }
