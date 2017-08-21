@@ -2,70 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-beanutils-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-collections4-4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cxf-core-3.1.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cxf-rt-frontend-jaxws-3.1.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cxf-rt-transports-http-jetty-3.1.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/fastjson-1.2.29.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient-4.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient-cache-4.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient-win-4.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpcore-4.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpmime-4.4.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/poi-3.16-beta2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/poi-ooxml-schemas-3.16-beta2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/Base64Convert.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/test/HttpClientUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/test/SSLClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/util/SHAUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/util/aes/AES.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/util/aes/AESUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/util/aes/AESencrp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/ListTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/LocalDateTimeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelColumnTitle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Student.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/regularTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/wsdlTest/EncryptUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/wsdlTest/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/wsdlTest/VerifyResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/xmlTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/BeijingSubway/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/BeijingSubway/beijing-subway.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/aREADME.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f41_1$和为s的两个数字VS.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/zreader.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/zreadme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/others/HashMapTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/others/HashMapTest.java" afterPath="$PROJECT_DIR$/src/zzzTest/HashMapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e31_连续子数组的最大和.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e31_连续子数组的最大和.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SubArrayMaxSum.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Student.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/zzzTest/regularTest.java" afterPath="$PROJECT_DIR$/src/zzzTest/RegularTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StringTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StringTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/algorithms.iml" afterPath="$PROJECT_DIR$/algorithms.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/StringTest.java" afterPath="$PROJECT_DIR$/src/zzzTest/StringTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,28 +50,74 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state relative-caret-position="15">
+              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Student.java">
+      <file leaf-file-name="ExcelLoader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3000">
+              <caret line="219" column="104" lean-forward="false" selection-start-line="219" selection-start-column="104" selection-end-line="219" selection-end-column="104" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#703#704#0" expanded="false" />
+                <element signature="e#731#732#0" expanded="false" />
+                <element signature="e#771#772#0" expanded="false" />
+                <element signature="e#805#806#0" expanded="false" />
+                <element signature="e#836#837#0" expanded="false" />
+                <element signature="e#864#865#0" expanded="false" />
+                <element signature="e#905#906#0" expanded="false" />
+                <element signature="e#939#940#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#529#530#0" expanded="false" />
+                <element signature="e#559#560#0" expanded="false" />
+                <element signature="e#605#606#0" expanded="false" />
+                <element signature="e#643#644#0" expanded="false" />
+                <element signature="e#677#678#0" expanded="false" />
+                <element signature="e#707#708#0" expanded="false" />
+                <element signature="e#753#754#0" expanded="false" />
+                <element signature="e#791#792#0" expanded="false" />
+                <element signature="e#822#823#0" expanded="false" />
+                <element signature="e#849#850#0" expanded="false" />
+                <element signature="e#889#890#0" expanded="false" />
+                <element signature="e#921#922#0" expanded="false" />
+                <element signature="e#954#955#0" expanded="false" />
+                <element signature="e#983#984#0" expanded="false" />
+                <element signature="e#1027#1028#0" expanded="false" />
+                <element signature="e#1063#1064#0" expanded="false" />
+                <element signature="e#1105#1106#0" expanded="false" />
+                <element signature="e#1143#1144#0" expanded="false" />
+                <element signature="e#1205#1206#0" expanded="false" />
+                <element signature="e#1259#1260#0" expanded="false" />
+                <element signature="e#1292#1293#0" expanded="false" />
+                <element signature="e#1321#1322#0" expanded="false" />
+                <element signature="e#1365#1366#0" expanded="false" />
+                <element signature="e#1401#1402#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XSSFWorkbook.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8400">
+              <caret line="691" column="0" lean-forward="false" selection-start-line="691" selection-start-column="0" selection-end-line="691" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,9 +139,15 @@
       <find>system</find>
       <find>[1-4]\\d(?&lt;![1-4])\\d(?&lt;!44[1-5])</find>
       <find>RunshopVerifyResult</find>
+      <find>runshop_audit_word</find>
+      <find>runshop_regist_tag</find>
+      <find>datetype</find>
     </findStrings>
     <replaceStrings>
       <replace>VerifyResult</replace>
+      <replace>runshop_audit_sensitive_word</replace>
+      <replace>runshop_regist_tag</replace>
+      <replace>1</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -165,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bj160928/IsBalancedBinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bj160928/testRecoverBST.java" />
-        <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bj160928/RecoverBST.java" />
         <option value="$PROJECT_DIR$/src/nowcoder/b_2nd_Season/bj160928/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/SwordOffer/f48_不能被继承的类.java" />
@@ -211,10 +204,13 @@
         <option value="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/test/SSLClient.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest/test/HttpClientUtil.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/StringTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/wsdlTest/Main.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/regularTest.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/RegularTest.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Student.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" />
       </list>
     </option>
@@ -275,6 +271,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -380,7 +377,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,15 +411,15 @@
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\b_2nd_Season\bh160907\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="zzzTest.wsdlTest.*" />
+          <option name="PATTERN" value="zzzTest.excelLoader.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.Main" />
+      <option name="MAIN_CLASS_NAME" value="zzzTest.excelLoader.test.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -476,34 +472,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="regularTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RegularTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="zzzTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.regularTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zzzTest.excelLoader.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.excelLoader.test.Main" />
+      <option name="MAIN_CLASS_NAME" value="zzzTest.RegularTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -1135,20 +1111,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       <item index="1" class="java.lang.String" itemvalue="Application.StringTest" />
       <item index="2" class="java.lang.String" itemvalue="Application.HttpClientUtil" />
-      <item index="3" class="java.lang.String" itemvalue="Application.regularTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RegularTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.regularTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HttpClientUtil" />
-        <item index="4" class="java.lang.String" itemvalue="Application.StringTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Application.StringTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RegularTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HttpClientUtil" />
       </list>
     </recent_temporary>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -1379,12 +1354,15 @@
       <workItem from="1502974706071" duration="3015000" />
       <workItem from="1502981386156" duration="1390000" />
       <workItem from="1503023912126" duration="754000" />
-      <workItem from="1503051167639" duration="425000" />
+      <workItem from="1503051167639" duration="4618000" />
+      <workItem from="1503285591635" duration="10183000" />
+      <workItem from="1503310944285" duration="4600000" />
+      <workItem from="1503319142294" duration="1248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="724281000" />
+    <option name="totallyTimeSpent" value="744505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="6" />
@@ -1396,21 +1374,21 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36433122" sideWeight="0.5029542" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36548913" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3722826" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26466382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27539343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744566" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744566" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1520,8 +1498,14 @@
           <properties />
           <option name="timeStamp" value="194" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="203" />
+      <option name="time" value="210" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1530,42 +1514,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d28_字符串的排列.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/d28_字符串的组合.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e29_数组中出现次数超过一半的数字.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="71" column="9" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SwordOffer/e30_最小的k个数.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nowcoder/AlgorithmPrototype/SubArrayMaxSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SwordOffer/e31_连续子数组的最大和.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1733,27 +1681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="181" column="11" lean-forward="false" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/RandomTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1786,7 +1713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1832,14 +1758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="57" column="5" lean-forward="false" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/wsdlTest/EncryptUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -1861,55 +1779,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/regularTest.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/Base64Convert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9000">
+          <caret line="635" column="8" lean-forward="false" selection-start-line="635" selection-start-column="8" selection-end-line="635" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/RegularTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/Base64Convert.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Student.java">
+    <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar!/org/apache/poi/xssf/usermodel/XSSFRow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="e#2285#2286#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-schemas-3.16-beta2.jar!/org/openxmlformats/schemas/spreadsheetml/x2006/main/impl/CTCellImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="33" lean-forward="false" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar!/org/apache/xmlbeans/impl/values/XmlObjectBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="e#4832#4833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar!/org/apache/poi/xssf/usermodel/XSSFCell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="401" column="0" lean-forward="false" selection-start-line="401" selection-start-column="0" selection-end-line="401" selection-end-column="0" />
+          <folding>
+            <element signature="e#15607#15608#0" expanded="true" />
+            <element signature="e#15694#15695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/poi-ooxml-3.16-beta2.jar!/org/apache/poi/xssf/usermodel/XSSFWorkbook.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8400">
+          <caret line="691" column="0" lean-forward="false" selection-start-line="691" selection-start-column="0" selection-end-line="691" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3000">
+          <caret line="219" column="104" lean-forward="false" selection-start-line="219" selection-start-column="104" selection-end-line="219" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#836#837#0" expanded="false" />
+            <element signature="e#864#865#0" expanded="false" />
+            <element signature="e#905#906#0" expanded="false" />
+            <element signature="e#939#940#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="false" />
+            <element signature="e#559#560#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+            <element signature="e#643#644#0" expanded="false" />
+            <element signature="e#677#678#0" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#753#754#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#822#823#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#983#984#0" expanded="false" />
+            <element signature="e#1027#1028#0" expanded="false" />
+            <element signature="e#1063#1064#0" expanded="false" />
+            <element signature="e#1105#1106#0" expanded="false" />
+            <element signature="e#1143#1144#0" expanded="false" />
+            <element signature="e#1205#1206#0" expanded="false" />
+            <element signature="e#1259#1260#0" expanded="false" />
+            <element signature="e#1292#1293#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1365#1366#0" expanded="false" />
+            <element signature="e#1401#1402#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="52" lean-forward="false" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state relative-caret-position="15">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="46" />
           <folding />
         </state>
       </provider>

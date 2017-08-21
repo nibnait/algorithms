@@ -10,6 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public abstract class ExcelLoader<T> {
@@ -211,10 +212,12 @@ public abstract class ExcelLoader<T> {
         if(cellType == CellType.NUMERIC || cellType == CellType.FORMULA){
             //判断是不是时间格式
             if(isDateType(cell)){
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = cell.getDateCellValue();
-                return String.valueOf(date);
+                return sdf.format(date);
             }
-            return String.valueOf(cell.getNumericCellValue()).trim();
+//            return String.valueOf(cell.getNumericCellValue()).trim();
+            return String.valueOf(Double.valueOf(String.valueOf(cell.getNumericCellValue())).intValue());
         }else if (cellType == CellType.BOOLEAN) {
             return String.valueOf(cell.getBooleanCellValue()).trim();
         }else if(cellType == CellType.STRING){
