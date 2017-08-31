@@ -9,7 +9,12 @@ import java.util.TimeZone;
 public class LocalDateTimeTest {
     public static void main(String[] args) {
 //        test1();
+        LocalDateTime beginDate = LocalDate.now().minusDays(67).atStartOfDay();
+        System.out.println(beginDate);
 
+    }
+
+    private static void testTimestamp() {
         Long timestamp = 1488187910l;
         LocalDateTime localDateTime = LocalDateTime.ofInstant(Instant.ofEpochSecond(timestamp), TimeZone.getDefault().toZoneId());
         System.out.println(localDateTime);

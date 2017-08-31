@@ -1,5 +1,7 @@
 package zzzTest;
 
+import Standard.StringUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +14,11 @@ public class StringTest {
         String str = "1,2,3,";
         System.out.println( str.substring(0, str.length()-1));
 
+    }
+    public static void test02(){
+        System.out.println(StringUtils.isNotBlank(null));
+        System.out.println(StringUtils.isNotBlank(""));
+        System.out.println(StringUtils.isNotBlank("  "));
     }
 
     public void test01(){
