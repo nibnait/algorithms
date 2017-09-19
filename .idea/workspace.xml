@@ -2,16 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonParseMain.java" afterPath="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonParseMain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/LocalDateTimeTest.java" afterPath="$PROJECT_DIR$/src/zzzTest/LocalDateTimeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/024d040a1ae19185dc31572f848e8998e6cb4c03" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d83134ec6a895ddba9806c00960d0c56ab614c9" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/10bdc62b61f9bb60879729be8726560ac9825b9a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e7c48431ac1b792604a25b83a228907dc1b2bc0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29e0840433af29b82137d8228b01c5d14047452f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49bc8ff1c64f55d7b9638ede473940a0ed749e7a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5ef8dc9d4baa539ea67c0ec9f828d3084531e8a2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/3/73d4a491b1bc8f5ee3d7174098b3c4f5c14f20f1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acb5cd49d79514993a71c3b36dda488f9eaf748f" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf11b78a21d7cee02f52ea4fac579b3713e36531" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Base64Convert.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/HttpClientUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/SSLClient$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/SSLClient.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/SHAUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AES.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESencrp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HashMapTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/District.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonParseMain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/RunshopAuditWordDto.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/LocalDateTimeTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RegularTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelColumnTitle.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelLoader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelReader.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/ExcelModel.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/FoodMall.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/ProtectBrand.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/EncryptUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/VerifyResult.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/xmlTest.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,10 +83,89 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+            <state relative-caret-position="120">
+              <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProtectBrand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodMall.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding>
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
+                <element signature="e#1181#1182#0" expanded="true" />
+                <element signature="e#1213#1214#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1325#1326#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1395#1396#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1527#1528#0" expanded="true" />
+                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#1609#1610#0" expanded="true" />
+                <element signature="e#1651#1652#0" expanded="true" />
+                <element signature="e#1691#1692#0" expanded="true" />
+                <element signature="e#1727#1728#0" expanded="true" />
+                <element signature="e#1785#1786#0" expanded="true" />
+                <element signature="e#1835#1836#0" expanded="true" />
+                <element signature="e#1878#1879#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1981#1982#0" expanded="true" />
+                <element signature="e#2037#2038#0" expanded="true" />
+                <element signature="e#2084#2085#0" expanded="true" />
+                <element signature="e#2127#2128#0" expanded="true" />
+                <element signature="e#2309#2310#0" expanded="true" />
+                <element signature="e#2351#2352#0" expanded="true" />
+                <element signature="e#2421#2422#0" expanded="true" />
+                <element signature="e#2483#2484#0" expanded="true" />
+                <element signature="e#2527#2528#0" expanded="true" />
+                <element signature="e#2567#2568#0" expanded="true" />
+                <element signature="e#2633#2634#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="e#2731#2732#0" expanded="true" />
+                <element signature="e#2767#2768#0" expanded="true" />
+                <element signature="e#2825#2826#0" expanded="true" />
+                <element signature="e#2875#2876#0" expanded="true" />
+                <element signature="e#2912#2913#0" expanded="true" />
+                <element signature="e#2945#2946#0" expanded="true" />
+                <element signature="e#2997#2998#0" expanded="true" />
+                <element signature="e#3041#3042#0" expanded="true" />
+                <element signature="e#3077#3078#0" expanded="true" />
+                <element signature="e#3109#3110#0" expanded="true" />
+                <element signature="e#3159#3160#0" expanded="true" />
+                <element signature="e#3201#3202#0" expanded="true" />
+                <element signature="e#3243#3244#0" expanded="true" />
+                <element signature="e#3281#3282#0" expanded="true" />
+                <element signature="e#3343#3344#0" expanded="true" />
+                <element signature="e#3397#3398#0" expanded="true" />
+                <element signature="e#3432#3433#0" expanded="true" />
+                <element signature="e#3463#3464#0" expanded="true" />
+                <element signature="e#3511#3512#0" expanded="true" />
+                <element signature="e#3551#3552#0" expanded="true" />
+                <element signature="e#3592#3593#0" expanded="true" />
+                <element signature="e#3629#3630#0" expanded="true" />
+                <element signature="e#3689#3690#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,10 +264,10 @@
         <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonParseMain.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/保护品牌.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelLoader.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java" />
       </list>
@@ -182,7 +292,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1008" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1347,15 +1457,15 @@
       <workItem from="1504842070724" duration="364000" />
       <workItem from="1505448382263" duration="756000" />
       <workItem from="1505534430083" duration="8925000" />
-      <workItem from="1505701430931" duration="16174000" />
+      <workItem from="1505701430931" duration="19774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="792211000" />
+    <option name="totallyTimeSpent" value="795811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1008" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1007" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1370,15 +1480,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40611354" sideWeight="0.48855507" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40546447" sideWeight="0.48855507" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3176856" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29694322" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264192" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29617485" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.72572815" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1687966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1485,7 +1595,7 @@
           <option name="timeStamp" value="223" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="237" />
+      <option name="time" value="239" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1762,6 +1872,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-304">
           <caret line="96" column="20" lean-forward="false" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1776,13 +1887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1829,19 +1933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#221#222#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1862,18 +1953,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ProtectBrand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/FoodMall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+            <element signature="e#1181#1182#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1325#1326#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1395#1396#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1527#1528#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1691#1692#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1878#1879#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2127#2128#0" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2421#2422#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+            <element signature="e#2527#2528#0" expanded="true" />
+            <element signature="e#2567#2568#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2767#2768#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2912#2913#0" expanded="true" />
+            <element signature="e#2945#2946#0" expanded="true" />
+            <element signature="e#2997#2998#0" expanded="true" />
+            <element signature="e#3041#3042#0" expanded="true" />
+            <element signature="e#3077#3078#0" expanded="true" />
+            <element signature="e#3109#3110#0" expanded="true" />
+            <element signature="e#3159#3160#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3243#3244#0" expanded="true" />
+            <element signature="e#3281#3282#0" expanded="true" />
+            <element signature="e#3343#3344#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
+            <element signature="e#3463#3464#0" expanded="true" />
+            <element signature="e#3511#3512#0" expanded="true" />
+            <element signature="e#3551#3552#0" expanded="true" />
+            <element signature="e#3592#3593#0" expanded="true" />
+            <element signature="e#3629#3630#0" expanded="true" />
+            <element signature="e#3689#3690#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/ExcelModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="330">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/test/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="44" lean-forward="true" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        <state relative-caret-position="120">
+          <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

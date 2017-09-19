@@ -7,42 +7,15 @@ import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args){
 
-        File excelFile = new File("/Users/nibnait/Desktop/1.xlsx");
+        File excelFile = new File("/Users/nibnait/Desktop/8.xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
-        List<ExcelModel> modelList8 = excelReader.loadSheet(0);
+        List<ExcelModel> modelList = excelReader.loadSheet(0);
 
-        File excelFile2 = new File("/Users/nibnait/Desktop/2.xlsx");
-        ExcelReader excelReader2 = new ExcelReader(excelFile2);
-        List<ExcelModel> modelList7 = excelReader2.loadSheet(0);
-
-        List<String> modelList11 = new ArrayList<>();
-        List<String> modelList77 = new ArrayList<>();
-//        modelList7.forEach(item-> modelList77.add(item.getBrand()));
-        for (ExcelModel excelModel: modelList7) {
-            modelList77.add(excelModel.getBrand());
-        }
-        List<String> modelList88 = new ArrayList<>();
-//        modelList8.forEach(item-> modelList88.add(item.getBrand()));
-        for (ExcelModel excelModel: modelList8) {
-            modelList88.add(excelModel.getBrand());
-        }
-        for (String brand : modelList88) {
-            if (!modelList77.contains(brand)) {
-                modelList11.add(brand);
-            }
-        }
-
-        List<ExcelModel> modelList = new ArrayList<>();
-//        modelList11.forEach(item -> modelList.add(new ExcelModel(item, 1)));
-        for (String excelModel: modelList11) {
-            modelList.add(new ExcelModel(excelModel, 1));
-        }
         Field[] fields = null;
         try {
             Class clz = Class.forName("zzzTest.excelLoader.test.ExcelModel");
@@ -51,7 +24,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        StringBuilder baseStr = new StringBuilder("INSERT INTO runshop_audit_sensitive_word (");
+        StringBuilder baseStr = new StringBuilder("INSERT INTO runshop_regist_tag (");
         for (int i = 0; i < fields.length; i++) {
             if (i == fields.length-1) {
                 baseStr.append(fields[i].getName());
@@ -102,7 +75,9 @@ public class Main {
                         java.lang.String.class.getName())) {
                     sb.append("\'" + fields[i].get(obj).toString() + "\'");
                 } else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-                        || fields[i].getType().getName().equals("int")) {
+                        || fields[i].getType().getName().equals("int")
+                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
+                        || fields[i].getType().getName().equals("long") ){
                     sb.append(fields[i].get(obj).toString());
                 }
                 if (i!=fields.length-1) {
@@ -127,7 +102,9 @@ public class Main {
                         java.lang.String.class.getName())) {
                     sb.append("\'" + fields[i].get(obj).toString() + "\'");
                 } else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-                        || fields[i].getType().getName().equals("int")) {
+                        || fields[i].getType().getName().equals("int")
+                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
+                        || fields[i].getType().getName().equals("long") ){
                     sb.append(fields[i].get(obj).toString());
                 }
 

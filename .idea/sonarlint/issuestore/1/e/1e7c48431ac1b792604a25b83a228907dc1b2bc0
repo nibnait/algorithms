@@ -1,0 +1,6 @@
+
+Usquid:UselessImportCheck",Remove this unused import 'java.util.Queue'.(Äá™ô8öË„å+
+^squid:S1854"=Remove this useless assignment to local variable "xuyinyong".(ö§áİÿÿÿÿÿ8“î‹‚å+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ
+Osquid:S1481".Remove this unused "xuyinyong" local variable.(ö§áİÿÿÿÿÿ8®›„å+
+_squid:UselessImportCheck"1Remove this unused import 'java.util.ArrayDeque'.(†®ŞÖúÿÿÿÿ8öË„å+

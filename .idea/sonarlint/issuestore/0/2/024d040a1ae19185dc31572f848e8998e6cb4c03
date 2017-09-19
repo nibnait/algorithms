@@ -1,0 +1,12 @@
+
+Fsquid:S00108")Either remove or fill this block of code.(Úîø›8Õ›ääå+
+[squid:S1075"ARefactor your code to get this URI from a customizable parameter.(ˆÀÇ“ùÿÿÿÿ
+]squid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8Ííãäå+
+Xsquid:UselessImportCheck"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8ãµáäå+
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(ƒÚáB8ô¼¥äå+
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(³ğ¸ûÿÿÿÿ
+hsquid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8ÚèÍäå+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çÊäå+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(â²ü¹

@@ -1,0 +1,12 @@
+
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ù¥ÅÎ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+r
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ÀÍÌÝûÿÿÿÿ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ºÈÈ³þÿÿÿÿ
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÒóŸ¹
+lsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(²µñüÿÿÿÿ
+Ssquid:S1155">Use isEmpty() to check whether the collection is empty or not.(·è¤±
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(þ¹„§þÿÿÿÿ
