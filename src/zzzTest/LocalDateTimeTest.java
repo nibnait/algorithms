@@ -10,7 +10,8 @@ public class LocalDateTimeTest {
     public static void main(String[] args) {
 //        test1();
         LocalDateTime beginDate = LocalDate.now().minusDays(67).atStartOfDay();
-        System.out.println(beginDate);
+        LocalDateTime endDate = LocalDate.now().minusDays(60).atStartOfDay();
+        System.out.println(beginDate+"   "+endDate);
 
     }
 
