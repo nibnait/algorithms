@@ -217,7 +217,7 @@ public abstract class ExcelLoader<T> {
                 return sdf.format(date);
             }
 //            return String.valueOf(cell.getNumericCellValue()).trim();
-            return String.valueOf(Double.valueOf(String.valueOf(cell.getNumericCellValue())).intValue());
+            return String.valueOf(Double.valueOf(String.valueOf(cell.getNumericCellValue())).longValue());
         }else if (cellType == CellType.BOOLEAN) {
             return String.valueOf(cell.getBooleanCellValue()).trim();
         }else if(cellType == CellType.STRING){

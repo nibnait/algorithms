@@ -30,7 +30,6 @@ public class ExcelModel {
     public String camp_name;
     @ExcelColumnTitle("提报人")
     public String apply_user_name;
-
     public String tag_name="美食城";
     public String tag_brand_name="美食城";
 

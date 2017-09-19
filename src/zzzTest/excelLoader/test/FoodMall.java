@@ -7,7 +7,7 @@ public class FoodMall {
     @ExcelColumnTitle("店铺名称")
     public String shop_name;
     @ExcelColumnTitle("店铺ID（选填）")
-    public Long shop_id;
+    public String shop_id;
     @ExcelColumnTitle("店铺绑定手机号")
     public String shop_phone;
     @ExcelColumnTitle("报备类型")
@@ -41,11 +41,11 @@ public class FoodMall {
         this.shop_name = shop_name;
     }
 
-    public Long getShop_id() {
+    public String getShop_id() {
         return shop_id;
     }
 
-    public void setShop_id(Long shop_id) {
+    public void setShop_id(String shop_id) {
         this.shop_id = shop_id;
     }
 

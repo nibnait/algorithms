@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         File excelFile = new File("/Users/nibnait/Desktop/8.xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
@@ -26,7 +26,7 @@ public class Main {
 
         StringBuilder baseStr = new StringBuilder("INSERT INTO runshop_regist_tag (");
         for (int i = 0; i < fields.length; i++) {
-            if (i == fields.length-1) {
+            if (i == fields.length - 1) {
                 baseStr.append(fields[i].getName());
                 baseStr.append(") VALUES ");
                 continue;
@@ -38,8 +38,8 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int length = modelList.size();
         int count = 0;
-        for (ExcelModel model : modelList){
-            if (count == length-1){
+        for (ExcelModel model : modelList) {
+            if (count == length - 1) {
                 sb = reflectLastTime(model, sb);
                 break;
             }
@@ -60,27 +60,40 @@ public class Main {
 
             //写操作
             Files.write(filePath, baseStr.toString().getBytes());
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         System.out.println(modelList.size());
     }
 
-    private static StringBuilder reflectLastTime(Object obj, StringBuilder sb) {
+    private static StringBuilder reflectLastTime(ExcelModel obj, StringBuilder sb) {
         Field[] fields = obj.getClass().getDeclaredFields();
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
                 if (fields[i].getType().getName().equals(
                         java.lang.String.class.getName())) {
-                    sb.append("\'" + fields[i].get(obj).toString() + "\'");
-                } else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-                        || fields[i].getType().getName().equals("int")
-                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
-                        || fields[i].getType().getName().equals("long") ){
-                    sb.append(fields[i].get(obj).toString());
+                    if (fields[i].getName().equals("shop_type")) {
+                        sb.append(checkShopType(fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'") + ", ");
+                        continue;
+                    }
+                    if (fields[i].getName().equals("shop_id")) {
+                        sb.append((fields[i].get(obj).toString().equals("")?0:fields[i].get(obj).toString())+ ", ");
+                        continue;
+                    }
+                    if (fields[i].getName().equals("shop_phone")) {
+                        sb.append((fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'")+ ", ");
+                        continue;
+                    }
+                    sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 }
-                if (i!=fields.length-1) {
+//                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
+//                        || fields[i].getType().getName().equals("int")
+//                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
+//                        || fields[i].getType().getName().equals("long")) {
+//                    sb.append(fields[i].get(obj).toString());
+//                }
+                if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {
                     sb.append(");");
@@ -92,23 +105,35 @@ public class Main {
         return sb;
     }
 
-    private static StringBuilder reflect(Object obj, StringBuilder sb){
+    private static StringBuilder reflect(ExcelModel obj, StringBuilder sb) {
 
         Field[] fields = obj.getClass().getDeclaredFields();
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
-                if (fields[i].getType().getName().equals(
-                        java.lang.String.class.getName())) {
-                    sb.append("\'" + fields[i].get(obj).toString() + "\'");
-                } else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-                        || fields[i].getType().getName().equals("int")
-                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
-                        || fields[i].getType().getName().equals("long") ){
-                    sb.append(fields[i].get(obj).toString());
+                if (fields[i].getType().getName().equals(java.lang.String.class.getName())) {
+                    if (fields[i].getName().equals("shop_type")) {
+                        sb.append(checkShopType(fields[i].get(obj).toString()) + ", ");
+                        continue;
+                    }
+                    if (fields[i].getName().equals("shop_id")) {
+                        sb.append((fields[i].get(obj).toString().equals("")?0:fields[i].get(obj).toString())+ ", ");
+                        continue;
+                    }
+                    if (fields[i].getName().equals("shop_phone")) {
+                        sb.append((fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'")+ ", ");
+                        continue;
+                    }
+                    sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 }
+//                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
+//                        || fields[i].getType().getName().equals("int")
+//                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
+//                        || fields[i].getType().getName().equals("long")) {
+//                    sb.append(fields[i].get(obj)!=null?fields[i].get(obj).toString():"");
+//                }
 
-                if (i!=fields.length-1) {
+                if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {
                     sb.append("),");
@@ -118,5 +143,20 @@ public class Main {
             e.printStackTrace();
         }
         return sb;
+    }
+
+    private static int checkShopType(String shopType) {
+        switch (shopType) {
+            case "新店报备":
+                return 1;
+            case "老店报备":
+                return 2;
+            case "美食城报备":
+                return 3;
+            case "学校饭堂":
+                return 4;
+            default:
+                return 1;
+        }
     }
 }
