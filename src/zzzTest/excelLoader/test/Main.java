@@ -73,18 +73,6 @@ public class Main {
             for (int i = 0; i < fields.length; i++) {
                 if (fields[i].getType().getName().equals(
                         java.lang.String.class.getName())) {
-                    if (fields[i].getName().equals("shop_type")) {
-                        sb.append(checkShopType(fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'") + ", ");
-                        continue;
-                    }
-                    if (fields[i].getName().equals("shop_id")) {
-                        sb.append((fields[i].get(obj).toString().equals("")?0:fields[i].get(obj).toString())+ ", ");
-                        continue;
-                    }
-                    if (fields[i].getName().equals("shop_phone")) {
-                        sb.append((fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'")+ ", ");
-                        continue;
-                    }
                     sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 }
 //                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
@@ -106,24 +94,11 @@ public class Main {
     }
 
     private static StringBuilder reflect(ExcelModel obj, StringBuilder sb) {
-
         Field[] fields = obj.getClass().getDeclaredFields();
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
                 if (fields[i].getType().getName().equals(java.lang.String.class.getName())) {
-                    if (fields[i].getName().equals("shop_type")) {
-                        sb.append(checkShopType(fields[i].get(obj).toString()) + ", ");
-                        continue;
-                    }
-                    if (fields[i].getName().equals("shop_id")) {
-                        sb.append((fields[i].get(obj).toString().equals("")?0:fields[i].get(obj).toString())+ ", ");
-                        continue;
-                    }
-                    if (fields[i].getName().equals("shop_phone")) {
-                        sb.append((fields[i].get(obj)!=null?fields[i].get(obj).toString():"\'\'")+ ", ");
-                        continue;
-                    }
                     sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 }
 //                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
@@ -143,20 +118,5 @@ public class Main {
             e.printStackTrace();
         }
         return sb;
-    }
-
-    private static int checkShopType(String shopType) {
-        switch (shopType) {
-            case "新店报备":
-                return 1;
-            case "老店报备":
-                return 2;
-            case "美食城报备":
-                return 3;
-            case "学校饭堂":
-                return 4;
-            default:
-                return 1;
-        }
     }
 }

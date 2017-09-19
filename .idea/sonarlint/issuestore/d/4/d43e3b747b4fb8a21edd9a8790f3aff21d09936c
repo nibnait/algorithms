@@ -1,0 +1,5 @@
+
+osquid:S00116"TRename this field "word_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è·±Üüÿÿÿÿ
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(â²ü¹
+†"squid:ClassVariableVisibilityCheck"UMake word_type a static final constant or non-public and provide accessors if needed.(è·±Üüÿÿÿÿ
+vsquid:S00116"YRename this field "sensitive_word" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌåŞ¹8Ã“Ïé+

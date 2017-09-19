@@ -19,3 +19,7 @@ V
 ,src/zzzTest/excelLoader/test/ExcelModel.java,c/f/cf11b78a21d7cee02f52ea4fac579b3713e36531
 X
 (src/zzzTest/excelLoader/ExcelLoader.java,4/9/49bc8ff1c64f55d7b9638ede473940a0ed749e7a
+^
+.src/zzzTest/excelLoader/test/ProtectBrand.java,d/4/d43e3b747b4fb8a21edd9a8790f3aff21d09936c
+Z
+*src/zzzTest/excelLoader/test/FoodMall.java,a/8/a85fc947a794b77d5bb4c72976151d00489da0f8
