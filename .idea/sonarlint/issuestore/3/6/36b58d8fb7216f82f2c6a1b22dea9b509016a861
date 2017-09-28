@@ -1,0 +1,10 @@
+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(›Üƒåıÿÿÿÿ8”ÔÔÍé+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çÊäå+
+esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8”ÔÔÍé+
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÑíÂ…ûÿÿÿÿ
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
+[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8”ÔÔÍé+

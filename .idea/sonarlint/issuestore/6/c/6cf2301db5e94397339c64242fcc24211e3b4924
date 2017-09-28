@@ -1,0 +1,14 @@
+
+@squid:S1168"+Return an empty collection instead of null.(•πÔç
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ˆÅ–‰¯ˇˇˇˇ
+Ysquid:S2147"DCombine this catch with the one at line 72, which has the same body.(Ô≠£ƒ
+=squid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ
+=squid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬πæ˚ˇˇˇˇ8ıÛﬂâÏ+
+=squid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ
+=squid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÓµÓ˚˛ˇˇˇˇ
+´%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'java.lang.NoSuchFieldException', as it cannot be thrown from method's body.(¬È’ˇˇˇˇˇ
+ö%squid:RedundantThrowsDeclarationCheck"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(¬È’ˇˇˇˇˇ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ú«¸Ÿˇˇˇˇˇ
+=squid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ
