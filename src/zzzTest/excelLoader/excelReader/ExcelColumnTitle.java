@@ -1,4 +1,4 @@
-package zzzTest.excelLoader;
+package zzzTest.excelLoader.excelReader;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

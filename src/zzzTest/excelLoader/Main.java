@@ -1,6 +1,7 @@
-package zzzTest.excelLoader.test;
+package zzzTest.excelLoader;
 
-import zzzTest.excelLoader.ExcelReader;
+import zzzTest.excelLoader.excelReader.ExcelReader;
+import zzzTest.excelLoader.models.FDA.complaint;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -12,19 +13,20 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        File excelFile = new File("/Users/nibnait/Desktop/8.xlsx");
+        String fileName = "921投诉";
+        File excelFile = new File("/Users/nibnait/Desktop/"+fileName+".xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
-        List<ExcelModel> modelList = excelReader.loadSheet(0);
+        List<complaint> modelList = excelReader.loadSheet();
 
         Field[] fields = null;
         try {
-            Class clz = Class.forName("zzzTest.excelLoader.test.ExcelModel");
+            Class clz = Class.forName(complaint.class.getName());
             fields = clz.getDeclaredFields();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        StringBuilder baseStr = new StringBuilder("INSERT INTO runshop_regist_tag (");
+        StringBuilder baseStr = new StringBuilder("INSERT INTO complaint (");
         for (int i = 0; i < fields.length; i++) {
             if (i == fields.length - 1) {
                 baseStr.append(fields[i].getName());
@@ -38,7 +40,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int length = modelList.size();
         int count = 0;
-        for (ExcelModel model : modelList) {
+        for (complaint model : modelList) {
             if (count == length - 1) {
                 sb = reflectLastTime(model, sb);
                 break;
@@ -50,7 +52,8 @@ public class Main {
 
         try {
             //创建一个新文件
-            Path filePath = Paths.get("/Users/nibnait/Desktop/1.txt");
+            String insertSQLFileName = "921投诉";
+            Path filePath = Paths.get("/Users/nibnait/Desktop/"+insertSQLFileName+".txt");
             if (Files.exists(filePath)) {
                 Files.delete(filePath);
                 Files.createFile(filePath);
@@ -66,21 +69,13 @@ public class Main {
         System.out.println(modelList.size());
     }
 
-    private static StringBuilder reflectLastTime(ExcelModel obj, StringBuilder sb) {
+    private static StringBuilder reflectLastTime(Object obj, StringBuilder sb) {
         Field[] fields = obj.getClass().getDeclaredFields();
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
-                if (fields[i].getType().getName().equals(
-                        java.lang.String.class.getName())) {
-                    sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
-                }
-//                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-//                        || fields[i].getType().getName().equals("int")
-//                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
-//                        || fields[i].getType().getName().equals("long")) {
-//                    sb.append(fields[i].get(obj).toString());
-//                }
+
+                sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {
@@ -93,21 +88,13 @@ public class Main {
         return sb;
     }
 
-    private static StringBuilder reflect(ExcelModel obj, StringBuilder sb) {
+    private static StringBuilder reflect(Object obj, StringBuilder sb) {
         Field[] fields = obj.getClass().getDeclaredFields();
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
-                if (fields[i].getType().getName().equals(java.lang.String.class.getName())) {
-                    sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
-                }
-//                else if (fields[i].getType().getName().equals(java.lang.Integer.class.getName())
-//                        || fields[i].getType().getName().equals("int")
-//                        || fields[i].getType().getName().equals(java.lang.Long.class.getName())
-//                        || fields[i].getType().getName().equals("long")) {
-//                    sb.append(fields[i].get(obj)!=null?fields[i].get(obj).toString():"");
-//                }
 
+                sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {

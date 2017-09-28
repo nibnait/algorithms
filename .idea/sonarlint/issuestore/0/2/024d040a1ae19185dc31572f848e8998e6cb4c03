@@ -1,17 +1,0 @@
-
-@squid:S1872"Use "isAssignableFrom" instead.(ù‘îœşÿÿÿÿ8”ÔÔÍé+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(›Üƒåıÿÿÿÿ8”ÔÔÍé+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(â²ü¹
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
-bsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ß”¸Ïşÿÿÿÿ8”ÔÔÍé+
-;squid:S1872"Use "isAssignableFrom" instead.(‚Ûİê8”ÔÔÍé+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡œ»åúÿÿÿÿ8”ÔÔÍé+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡œ»åúÿÿÿÿ8”ÔÔÍé+
-[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8”ÔÔÍé+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹Ü¼¶8”ÔÔÍé+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8çÊäå+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8”ÔÔÍé+
-esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8”ÔÔÍé+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¹Ü¼¶8”ÔÔÍé+

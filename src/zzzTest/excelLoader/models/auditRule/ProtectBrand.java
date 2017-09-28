@@ -1,6 +1,6 @@
-package zzzTest.excelLoader.test;
+package zzzTest.excelLoader.models.auditRule;
 
-import zzzTest.excelLoader.ExcelColumnTitle;
+import zzzTest.excelLoader.excelReader.ExcelColumnTitle;
 
 public class ProtectBrand {
     @ExcelColumnTitle("品牌")

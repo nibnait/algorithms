@@ -1,8 +1,8 @@
-package zzzTest.excelLoader.test;
+package zzzTest.excelLoader;
 
-import zzzTest.excelLoader.ExcelColumnTitle;
+import zzzTest.excelLoader.excelReader.ExcelColumnTitle;
 
-public class FoodMall {
+public class ExcelModel {
 
     @ExcelColumnTitle("店铺名称")
     public String shop_name;

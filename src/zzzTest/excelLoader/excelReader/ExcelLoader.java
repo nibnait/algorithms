@@ -1,4 +1,4 @@
-package zzzTest.excelLoader;
+package zzzTest.excelLoader.excelReader;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -143,6 +143,7 @@ public abstract class ExcelLoader<T> {
         int i = 0;
         for (Cell cell : row) {
             if(num2Field.get(i) != null){
+//                System.out.println(getCellValue(cell));
                 num2Field.get(i).set(t, getCellValue(cell));
             }
             i++;
@@ -152,10 +153,9 @@ public abstract class ExcelLoader<T> {
 
     /**
      * 加载第几个excel表格
-     * @param index
      * @return 返回第一页的 所有行的数据
      */
-    public List<T> loadSheet(int index){
+    public List<T> loadSheet(){
         if(workbook == null){
             return null;
         }
@@ -163,26 +163,27 @@ public abstract class ExcelLoader<T> {
         //加载的内容存放位置
         List<T> list = new ArrayList<>();
 
-        Sheet sheet = workbook.getSheetAt(index);
+        for (int i = 0; i < workbook.getNumberOfSheets()-1; i++) {
+            Sheet sheet = workbook.getSheetAt(i);
 
-        Map<Integer, Field> num2Field = new HashMap<>();
-        int i = 0;
-        //查找首行
-        for(Row row : sheet){
-            //如果是第一行  加载标题
-            if(i == 0){
-                num2Field = loadTitle(row);
-            }else{
-                //否则 装载一个实体类
-                try {
-                    list.add(newEntity(row, num2Field));
-                } catch (InstantiationException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
-                    e.printStackTrace();
+            Map<Integer, Field> num2Field = new HashMap<>();
+            int rowNum = 0;
+            //查找首行
+            for (Row row : sheet) {
+                //如果是第一行  加载标题
+                if (rowNum == 0) {
+                    num2Field = loadTitle(row);
+                } else {
+                    //否则 装载一个实体类
+                    try {
+                        list.add(newEntity(row, num2Field));
+                    } catch (InstantiationException | IllegalAccessException | NoSuchFieldException | SecurityException e) {
+                        e.printStackTrace();
+                    }
                 }
+                rowNum++;
             }
-            i++;
         }
-
         return list;
     }
 

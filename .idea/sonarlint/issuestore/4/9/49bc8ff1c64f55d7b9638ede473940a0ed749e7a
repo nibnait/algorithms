@@ -1,13 +1,0 @@
-
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÑíÂ…ûÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-š%squid:RedundantThrowsDeclarationCheck"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÂðéÕÿÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œÇüÙÿÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÐäøÿÿÿÿ
-«%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'java.lang.NoSuchFieldException', as it cannot be thrown from method's body.(ÂðéÕÿÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-@squid:S1168"+Return an empty collection instead of null.(¥¹ï
-Ysquid:S2147"DCombine this catch with the one at line 72, which has the same body.(ï­£Ä
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ

@@ -1,6 +1,8 @@
 
-Usquid:UselessImportCheck",Remove this unused import 'java.util.Queue'.(Äá™ô8öË„å+
-^squid:S1854"=Remove this useless assignment to local variable "xuyinyong".(ö§áİÿÿÿÿÿ8“î‹‚å+
+rsquid:UselessImportCheck"DRemove this unused import 'org.apache.commons.lang.text.StrBuilder'.(ÀŞö‹úÿÿÿÿ8••Ù·ë+
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8••Ù·ë+
 msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ
-Osquid:S1481".Remove this unused "xuyinyong" local variable.(ö§áİÿÿÿÿÿ8®›„å+
-_squid:UselessImportCheck"1Remove this unused import 'java.util.ArrayDeque'.(†®ŞÖúÿÿÿÿ8öË„å+
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œû¿Ø8Ì×÷‰ì+
+isquid:UselessImportCheck";Remove this unused import 'java.lang.ref.PhantomReference'.(öšÑøÿÿÿÿ8••Ù·ë+
+bsquid:UselessImportCheck"9Remove this unused import 'java.lang.ref.ReferenceQueue'.(Õ®ù–8••Ù·ë+
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8••Ù·ë+
