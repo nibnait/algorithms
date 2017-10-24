@@ -1,0 +1,14 @@
+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+Tsquid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(Åì8Õ„¿Íô+
+^squid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ
+Fsquid:S1481"*Remove this unused "count" local variable.(æÕ¿¼8ê¾ÅÍô+
+Ysquid:S1854"=Remove this useless assignment to local variable "excelFile".(Åì8ê¾ÅÍô+
+Xsquid:UnusedPrivateMethod")Remove this unused private "make" method.(íÍôşÿÿÿÿ8ê¾ÅÍô+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ğ“ëèüÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜™öÂ8ê¾ÅÍô+
+Jsquid:S1481".Remove this unused "excelFile" local variable.(Åì8ê¾ÅÍô+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
