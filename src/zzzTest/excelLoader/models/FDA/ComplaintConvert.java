@@ -1,4 +1,4 @@
-package zzzTest.excelLoader;
+package zzzTest.excelLoader.models.FDA;
 
 import zzzTest.excelLoader.excelReader.ExcelReader;
 import zzzTest.excelLoader.models.FDA.complaint;
@@ -10,13 +10,17 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class Main {
+public class ComplaintConvert {
     public static void main(String[] args) {
 
         int count = 0;
         for (int i = 1; i <= 8; i++) {
             File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
             ExcelReader excelReader = new ExcelReader(excelFile);
+            List<complaint> modelList = excelReader.loadSheet();
+            int cnt = make(modelList);
+            System.out.println(cnt);
+            count += cnt;
         }
         System.out.println(count);
     }
@@ -59,13 +63,17 @@ public class Main {
             //创建一个新文件
             String insertSQLFileName = "投诉";
             Path filePath = Paths.get("/Users/nibnait/Desktop/"+insertSQLFileName+".txt");
+            byte[] bytes = null;
             if (Files.exists(filePath)) {
-                Files.delete(filePath);
-                Files.createFile(filePath);
+                bytes = Files.readAllBytes(filePath);
             } else {
                 Files.createFile(filePath);
             }
 
+            if (bytes != null) {
+                String oldString = new String(bytes);
+                baseStr.append(oldString);
+            }
             //写操作
             Files.write(filePath, baseStr.toString().getBytes());
         } catch (Exception e) {
@@ -80,7 +88,11 @@ public class Main {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
 
-                sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
+                if (fields[i].getName().equals("business_license_tag") || fields[i].getName().equals("service_license_tag")){
+                    sb.append(1);
+                } else {
+                    sb.append("\'" + (fields[i].get(obj) != null ? fields[i].get(obj).toString() : "") + "\'");
+                }
                 if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {
@@ -99,7 +111,11 @@ public class Main {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
 
-                sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
+                if (fields[i].getName().equals("business_license_tag") || fields[i].getName().equals("service_license_tag")){
+                    sb.append(1);
+                } else {
+                    sb.append("\'" + (fields[i].get(obj) != null ? fields[i].get(obj).toString() : "") + "\'");
+                }
                 if (i != fields.length - 1) {
                     sb.append(", ");
                 } else {

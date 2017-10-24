@@ -1,7 +1,6 @@
-package zzzTest.excelLoader;
+package zzzTest.excelLoader.models.FDA;
 
 import zzzTest.excelLoader.excelReader.ExcelReader;
-import zzzTest.excelLoader.models.FDA.complaint;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -10,28 +9,30 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class Main {
+public class ShfdaIncreasedDataConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 8; i++) {
-            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
-            ExcelReader excelReader = new ExcelReader(excelFile);
-        }
-        System.out.println(count);
+            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/7.xlsx");
+//            ExcelReader excelReader = new ExcelReader(excelFile);
+//            List<shfda_increaded_data> modelList = excelReader.loadSheet();
+//            int cnt = make(modelList);
+//            System.out.println(cnt);
+//            count += cnt;
+//        System.out.println(count);
     }
 
-    private static int make(List<complaint> modelList) {
+    private static int make(List<shfda_increaded_data> modelList) {
 
         Field[] fields = null;
         try {
-            Class clz = Class.forName(complaint.class.getName());
+            Class clz = Class.forName(shfda_increaded_data.class.getName());
             fields = clz.getDeclaredFields();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        StringBuilder baseStr = new StringBuilder("INSERT INTO complaint (");
+        StringBuilder baseStr = new StringBuilder("INSERT INTO shfda_increaded_data (");
         for (int i = 0; i < fields.length; i++) {
             if (i == fields.length - 1) {
                 baseStr.append(fields[i].getName());
@@ -45,7 +46,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int length = modelList.size();
         int count = 0;
-        for (complaint model : modelList) {
+        for (shfda_increaded_data model : modelList) {
             if (count == length - 1) {
                 sb = reflectLastTime(model, sb);
                 break;
@@ -57,15 +58,19 @@ public class Main {
 
         try {
             //创建一个新文件
-            String insertSQLFileName = "投诉";
+            String insertSQLFileName = "新增数据";
             Path filePath = Paths.get("/Users/nibnait/Desktop/"+insertSQLFileName+".txt");
+            byte[] bytes = null;
             if (Files.exists(filePath)) {
-                Files.delete(filePath);
-                Files.createFile(filePath);
+                bytes = Files.readAllBytes(filePath);
             } else {
                 Files.createFile(filePath);
             }
 
+            if (bytes != null) {
+                String oldString = new String(bytes);
+                baseStr.append(oldString);
+            }
             //写操作
             Files.write(filePath, baseStr.toString().getBytes());
         } catch (Exception e) {

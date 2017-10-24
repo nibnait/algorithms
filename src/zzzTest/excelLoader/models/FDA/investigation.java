@@ -3,13 +3,13 @@ package zzzTest.excelLoader.models.FDA;
 import zzzTest.excelLoader.excelReader.ExcelColumnTitle;
 
 public class investigation {
-    @ExcelColumnTitle("店铺id")
+    @ExcelColumnTitle("店铺ID")
     public String shop_id;
 
-    @ExcelColumnTitle("城市id")
+    @ExcelColumnTitle("城市ID")
     public String city_id;
 
-    @ExcelColumnTitle("区域id")
+    @ExcelColumnTitle("区域ID")
     public String area;
 
     @ExcelColumnTitle("下架原因")
