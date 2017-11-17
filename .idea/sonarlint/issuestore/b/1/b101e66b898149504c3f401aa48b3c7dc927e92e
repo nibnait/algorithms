@@ -1,0 +1,9 @@
+
+Jsquid:S2140")Use "java.util.Random.nextInt()" instead.(‚õ©÷ûÿÿÿÿ8×íÜ¦û+
+Zsquid:UnusedPrivateMethod"+Remove this unused private "test01" method.(„òıÿÿÿÿ8×íÜ¦û+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(—’¶ƒ8×íÜ¦û+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ûéÉÀüÿÿÿÿ8×íÜ¦û+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(éĞ«şÿÿÿÿ8×íÜ¦û+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ8×íÜ¦û+
