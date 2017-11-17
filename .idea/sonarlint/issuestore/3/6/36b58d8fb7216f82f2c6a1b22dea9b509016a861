@@ -1,10 +1,16 @@
 
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(›Üƒåıÿÿÿÿ8ĞâŠÆó+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
 ysquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÑíÂ…ûÿÿÿÿ8ĞâŠÆó+
+]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(«ª¾8Äâ…–ü+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
+[squid:UnusedPrivateMethod",Remove this unused private "reflect" method.(øºÒÂüÿÿÿÿ8²Ï¥–ü+
 [squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8ĞâŠÆó+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
+^squid:UnusedPrivateMethod"4Remove this unused private "reflectLastTime" method.(¾²¬÷8²Ï¥–ü+
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥Ø8²Ï¥–ü+
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŠßÉ8ÇŠ¥–ü+
 esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8ĞâŠÆó+
+`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8ÇŠ¥–ü+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ĞâŠÆó+
+Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8ÇŠ¥–ü+
+Fsquid:S1481"*Remove this unused "count" local variable.(æÕ¿¼8²Ï¥–ü+

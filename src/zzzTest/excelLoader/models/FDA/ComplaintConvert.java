@@ -11,16 +11,17 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class ComplaintConvert {
+
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 8; i++) {
+        for (int i = 1; i <= 4; i++) {
             File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
-            ExcelReader excelReader = new ExcelReader(excelFile);
-            List<complaint> modelList = excelReader.loadSheet();
-            int cnt = make(modelList);
-            System.out.println(cnt);
-            count += cnt;
+//            ExcelReader excelReader = new ExcelReader(excelFile);
+//            List<complaint> modelList = excelReader.loadSheet();
+//            int cnt = make(modelList);
+//            System.out.println(cnt);
+//            count += cnt;
         }
         System.out.println(count);
     }

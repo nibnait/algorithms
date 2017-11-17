@@ -139,10 +139,9 @@ public abstract class ExcelLoader<T> {
     protected T newEntity(Row row, Map<Integer, Field> num2Field) throws InstantiationException, IllegalAccessException, NoSuchFieldException, SecurityException{
         T t = (T) clazz.newInstance();
 
-
         int i = 0;
         for (Cell cell : row) {
-            if(num2Field.get(i) != null){
+            if (num2Field.get(i) != null) {
 //                System.out.println(getCellValue(cell));
                 num2Field.get(i).set(t, getCellValue(cell));
             }
@@ -164,6 +163,7 @@ public abstract class ExcelLoader<T> {
         List<T> list = new ArrayList<>();
 
         for (int i = 0; i < workbook.getNumberOfSheets()-1; i++) {
+//        for (int i = 0; i <= workbook.getNumberOfSheets()-1; i++) {
             Sheet sheet = workbook.getSheetAt(i);
 
             Map<Integer, Field> num2Field = new HashMap<>();
@@ -212,12 +212,13 @@ public abstract class ExcelLoader<T> {
 
         if(cellType == CellType.NUMERIC || cellType == CellType.FORMULA){
             //判断是不是时间格式
-            if(isDateType(cell)){
+            if(isDateType(cell)) {
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = cell.getDateCellValue();
                 return sdf.format(date);
             }
-//            return String.valueOf(cell.getNumericCellValue()).trim();
+            String str = String.valueOf(cell.getNumericCellValue()).trim();
+//            return str.substring(0, str.length()-2);       //shfda_increaded_data
             return String.valueOf(Double.valueOf(String.valueOf(cell.getNumericCellValue())).longValue());
         }else if (cellType == CellType.BOOLEAN) {
             return String.valueOf(cell.getBooleanCellValue()).trim();

@@ -1,12 +1,14 @@
 
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŠßÉ8»½é¤ü+
 Tsquid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ
+`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8»½é¤ü+
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ð“ëèüÿÿÿÿ
+Ssquid:UnusedPrivateMethod")Remove this unused private "make" method.(Ì«Ô´8»½é¤ü+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+^squid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ
+Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8»½é¤ü+
 R
 squid:S106"9Replace this use of System.out or System.err by a logger.(Ž³ð¸ûÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(®õã‚8ä‰ÆÍô+
-^squid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ð“ëèüÿÿÿÿ

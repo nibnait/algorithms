@@ -10,16 +10,17 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class InvestigationConvert {
+
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 8; i++) {
+        for (int i = 1; i <= 4; i++) {
             File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/食安排查/"+ i+".xlsx");
-//            ExcelReader excelReader = new ExcelReader(excelFile);
-//            List<investigation> modelList = excelReader.loadSheet();
-//            int cnt = make(modelList);
-//            System.out.println(cnt);
-//            count += cnt;
+            ExcelReader excelReader = new ExcelReader(excelFile);
+            List<investigation> modelList = excelReader.loadSheet();
+            int cnt = make(modelList);
+            System.out.println(cnt);
+            count += cnt;
         }
         System.out.println(count);
     }

@@ -14,14 +14,9 @@ public class Main {
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 8; i++) {
-            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
-            ExcelReader excelReader = new ExcelReader(excelFile);
-        }
-        System.out.println(count);
-    }
-
-    private static int make(List<complaint> modelList) {
+        File excelFile = new File("/Users/nibnait/Desktop/美食城名单更新.xlsx");
+        ExcelReader excelReader = new ExcelReader(excelFile);
+//        List<complaint> modelList = excelReader.loadSheet();
 
         Field[] fields = null;
         try {
@@ -31,7 +26,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        StringBuilder baseStr = new StringBuilder("INSERT INTO complaint (");
+        StringBuilder baseStr = new StringBuilder("INSERT INTO runshop_regist_tag (");
         for (int i = 0; i < fields.length; i++) {
             if (i == fields.length - 1) {
                 baseStr.append(fields[i].getName());
@@ -43,21 +38,20 @@ public class Main {
         }
 
         StringBuilder sb = new StringBuilder();
-        int length = modelList.size();
-        int count = 0;
-        for (complaint model : modelList) {
-            if (count == length - 1) {
-                sb = reflectLastTime(model, sb);
-                break;
-            }
-            sb = reflect(model, sb);
-            count++;
-        }
+//        int length = modelList.size();
+//        for (complaint model : modelList) {
+//            if (count == length - 1) {
+//                sb = reflectLastTime(model, sb);
+//                break;
+//            }
+//            sb = reflect(model, sb);
+//            count++;
+//        }
         baseStr.append(sb);
 
         try {
             //创建一个新文件
-            String insertSQLFileName = "投诉";
+            String insertSQLFileName = "美食城标签";
             Path filePath = Paths.get("/Users/nibnait/Desktop/"+insertSQLFileName+".txt");
             if (Files.exists(filePath)) {
                 Files.delete(filePath);
@@ -71,7 +65,6 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return  modelList.size();
     }
 
     private static StringBuilder reflectLastTime(Object obj, StringBuilder sb) {
@@ -98,7 +91,6 @@ public class Main {
         try {
             sb.append("(");
             for (int i = 0; i < fields.length; i++) {
-
                 sb.append("\'" + (fields[i].get(obj)!=null?fields[i].get(obj).toString():"")+ "\'");
                 if (i != fields.length - 1) {
                     sb.append(", ");

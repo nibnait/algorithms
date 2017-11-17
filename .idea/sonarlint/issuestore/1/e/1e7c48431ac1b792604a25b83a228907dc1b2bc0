@@ -1,8 +1,8 @@
 
-Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8••Ù·ë+
-Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8••Ù·ë+
-squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œû¿Ø8Ì×÷‰ì+
-bsquid:UselessImportCheck"9Remove this unused import 'java.lang.ref.ReferenceQueue'.(Õ®ù–8••Ù·ë+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ
-isquid:UselessImportCheck";Remove this unused import 'java.lang.ref.PhantomReference'.(öšÑøÿÿÿÿ8••Ù·ë+
-rsquid:UselessImportCheck"DRemove this unused import 'org.apache.commons.lang.text.StrBuilder'.(ÀŞö‹úÿÿÿÿ8••Ù·ë+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ8×íÜ¦û+
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8×íÜ¦û+
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(œû¿Ø8×íÜ¦û+
+isquid:UselessImportCheck";Remove this unused import 'java.lang.ref.PhantomReference'.(öšÑøÿÿÿÿ8×íÜ¦û+
+rsquid:UselessImportCheck"DRemove this unused import 'org.apache.commons.lang.text.StrBuilder'.(ÀŞö‹úÿÿÿÿ8×íÜ¦û+
+Ysquid:UselessImportCheck"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8×íÜ¦û+
+bsquid:UselessImportCheck"9Remove this unused import 'java.lang.ref.ReferenceQueue'.(Õ®ù–8×íÜ¦û+

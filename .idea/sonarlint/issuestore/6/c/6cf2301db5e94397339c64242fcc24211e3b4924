@@ -1,14 +1,16 @@
 
+«%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'java.lang.NoSuchFieldException', as it cannot be thrown from method's body.(ÂðéÕÿÿÿÿÿ
+š%squid:RedundantThrowsDeclarationCheck"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÂðéÕÿÿÿÿÿ
 esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(öÐäøÿÿÿÿ
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(îµîûþÿÿÿÿ
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ùê²¦ùÿÿÿÿ8¶è ¦ü+
 Ysquid:S2147"DCombine this catch with the one at line 72, which has the same body.(ï­£Ä
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œÇüÙÿÿÿÿÿ
-š%squid:RedundantThrowsDeclarationCheck"fRemove the declaration of thrown exception 'java.lang.SecurityException' which is a runtime exception.(ÂðéÕÿÿÿÿÿ
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Â¹ð¾ûÿÿÿÿ8õóß‰ì+
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-«%squid:RedundantThrowsDeclarationCheck"wRemove the declaration of thrown exception 'java.lang.NoSuchFieldException', as it cannot be thrown from method's body.(ÂðéÕÿÿÿÿÿ
 @squid:S1168"+Return an empty collection instead of null.(¥¹ï
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ØÉŒ“üÿÿÿÿ8ì‰°¦ü+
 =squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(º¸È„ýÿÿÿÿ8Öòó¤ü+
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(îµîûþÿÿÿÿ

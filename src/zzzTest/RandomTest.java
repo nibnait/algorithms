@@ -3,6 +3,8 @@ package zzzTest;
 import Standard.stdOut;
 import Standard.stdRandom;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -11,8 +13,18 @@ import java.util.UUID;
 public class RandomTest {
 
     public static void main(String[] args) {
-//        int[] a = new int[10];
-//        stdOut.print(stdRandom.random(a));
+
+        List<String> applyIds = new ArrayList<>();
+        applyIds.add("123");
+        int max = applyIds.size();
+        int index = (int) (Math.random()*max);
+        System.out.println(index);
+
+    }
+
+    private void test01() {
+        //int[] a = new int[10];
+        //stdOut.print(stdRandom.random(a));
         System.out.println(UUID.randomUUID().toString());
     }
 }

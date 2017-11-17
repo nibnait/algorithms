@@ -37,3 +37,13 @@ l
 <src/zzzTest/excelLoader/models/FDA/InvestigationConvert.java,6/3/63aea045d3125f5fa523487bbd24abe76af62bd9
 q
 Asrc/zzzTest/excelLoader/models/FDA/ShfdaIncreasedDataConvert.java,4/5/459e23d81963c35d6367d5c27371fc12e9346e90
+I
+src/zzzTest/ListTest.java,3/5/35fb2fbeb7a1d4d2d95362ac53e2237d93465bfa
+K
+src/zzzTest/RandomTest.java,b/1/b101e66b898149504c3f401aa48b3c7dc927e92e
+m
+=src/zzzTest/excelLoader/models/auditRule/FoodMallConvert.java,6/7/670fbd83e90bdc0b57a2ee77cd51a05873fb316e
+q
+Asrc/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.java,4/c/4c8f6e06d95d2450f37a127f64dd88f05351688f
+u
+Esrc/zzzTest/excelLoader/models/auditRule/soutDeletedProtectBrand.java,7/7/77d95aa786aee7d35eea0fe38f0850d84a55093f

@@ -11,8 +11,12 @@ import java.util.List;
 public class StringTest {
     public static void main(String[] args) {
 
-        String str = "1,2,3,";
-        System.out.println( str.substring(0, str.length()-1));
+        String str = "276,251,285,286,278,279,282,283,284,41,252,253,254,255,256,257,258,287,288,289";
+        int id = 289;
+        System.out.println(str.contains(id+""));
+
+        String s = "saf ";
+        System.out.println(s.trim());
 
     }
     public static void test02(){
@@ -21,7 +25,7 @@ public class StringTest {
         System.out.println(StringUtils.isNotBlank("  "));
     }
 
-    public void test01(){
+    public void testEquals(){
         String a = "ab";
         String b = "a"+"b";
         System.out.println(a.equals(b));    //true
@@ -37,6 +41,15 @@ public class StringTest {
         stringList.add(str3);
 
         System.out.println(String.join(";", stringList));
+    }
+
+    private void testSunString() {
+        List<Long> ids = new ArrayList<>();
+        ids.add(1l);
+        ids.add(2l);
+        System.out.println(ids.lastIndexOf(']'));
+        String str = ids.toString();
+        System.out.println(str.substring(1, str.length()-1));
     }
 
     /**
