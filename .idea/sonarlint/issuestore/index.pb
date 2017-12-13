@@ -47,3 +47,7 @@ q
 Asrc/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.java,4/c/4c8f6e06d95d2450f37a127f64dd88f05351688f
 u
 Esrc/zzzTest/excelLoader/models/auditRule/soutDeletedProtectBrand.java,7/7/77d95aa786aee7d35eea0fe38f0850d84a55093f
+L
+src/zzzTest/HashMapTest.java,e/f/efb156b4e702aa6981234f859fd52a5babab3280
+R
+"src/zzzTest/MainTestFuncation.java,0/c/0cf8909ac060b32acf991f13633d0180b8758537

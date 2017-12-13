@@ -15,15 +15,15 @@ public class ComplaintConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 4; i++) {
-            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
+//        for (int i = 1; i <= 2; i++) {
+//            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/店铺投诉/"+ i+".xlsx");
 //            ExcelReader excelReader = new ExcelReader(excelFile);
 //            List<complaint> modelList = excelReader.loadSheet();
 //            int cnt = make(modelList);
 //            System.out.println(cnt);
 //            count += cnt;
-        }
-        System.out.println(count);
+//        }
+//        System.out.println(count);
     }
 
     private static int make(List<complaint> modelList) {

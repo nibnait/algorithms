@@ -8,28 +8,8 @@ import java.util.stream.Stream;
 
 public class ListTest {
 
-    static class test {
-        int id;
-        String name;
-
-        public test(int id, String name) {
-            this.id = id;
-            this.name = name;
-        }
-    }
-
     public static void main(String[] args) {
-        String xx = null;
-       test t = new test(1, xx);
-        System.out.println(t.toString());
-    }
 
-    public static String sponsorTypeDto2String(List<SponsorTypeDto> sponsorTypeDtoList) {
-
-
-
-
-        return null;
     }
 
     private void testIsEmpty() {
@@ -79,13 +59,14 @@ public class ListTest {
         System.out.println(str.toString());
     }
 
-    private void testDistince() {
+    private static void testDistince() {
         List<String> fatherList = new ArrayList<>();
         fatherList.add("快餐便当");
-        fatherList.add("快餐便当");
+        fatherList.add(null);
 
-        List<String> unique = fatherList.stream().distinct().collect(Collectors.toList());
         System.out.println(fatherList.toString());
+        List<String> unique = fatherList.stream().distinct().collect(Collectors.toList());
+        System.out.println(unique);
     }
 
     static class SponsorTypeDto{

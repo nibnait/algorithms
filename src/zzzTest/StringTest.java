@@ -11,14 +11,16 @@ import java.util.List;
 public class StringTest {
     public static void main(String[] args) {
 
-        String str = "276,251,285,286,278,279,282,283,284,41,252,253,254,255,256,257,258,287,288,289";
-        int id = 289;
-        System.out.println(str.contains(id+""));
-
-        String s = "saf ";
-        System.out.println(s.trim());
-
+        testSubString();
     }
+
+    private static void testSplit() {
+        String str = "253";
+        String[] split = str.split(",");
+        System.out.println(split.length);
+        System.out.println(split);
+    }
+
     public static void test02(){
         System.out.println(StringUtils.isNotBlank(null));
         System.out.println(StringUtils.isNotBlank(""));
@@ -43,13 +45,15 @@ public class StringTest {
         System.out.println(String.join(";", stringList));
     }
 
-    private void testSunString() {
+    private static void testSubString() {
         List<Long> ids = new ArrayList<>();
         ids.add(1l);
         ids.add(2l);
+        ids.add(3l);
         System.out.println(ids.lastIndexOf(']'));
         String str = ids.toString();
         System.out.println(str.substring(1, str.length()-1));
+        System.out.println(str);
     }
 
     /**

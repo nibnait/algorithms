@@ -1,25 +1,26 @@
 
-[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8˜ù–ü+
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8˜ù–ü+
+msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(”÷£Ö
+Hsquid:S1481"'Remove this unused "sb" local variable.(€ê±Õúÿÿÿÿ8é†˜ş+
 `squid:S3358"DExtract this nested ternary operation into an independent statement.(€§å˜8°ÒÇ›ü+
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥Ø8‘†ã›ü+
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øºÒÂüÿÿÿÿ8ùÈ›ü+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(í˜Õšùÿÿÿÿ8‡–ã›ü+
-`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8©—â›ü+
-`squid:S3358"DExtract this nested ternary operation into an independent statement.(€§å˜8ùÈ›ü+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8˜ù–ü+
+`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8£³†˜ş+
+[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8˜ù–ü+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8™ÊË–ü+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢ˆÇııÿÿÿÿ8©—â›ü+
-Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8©—â›ü+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8˜ù–ü+
+Fsquid:S1481"*Remove this unused "count" local variable.(æÕ¿¼8é†˜ş+
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¥Ø8é†˜ş+
+Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8£³†˜ş+
 nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¾²¬÷8È“Å›ü+
-y
-squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ª¥”Áúÿÿÿÿ8È“Å›ü+
-Fsquid:S1481"*Remove this unused "count" local variable.(æÕ¿¼8Á»â›ü+
+`squid:S3358"DExtract this nested ternary operation into an independent statement.(€§å˜8ùÈ›ü+
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8™ÊË–ü+
-]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(«ª¾8˜ù–ü+
-^squid:UnusedPrivateMethod"4Remove this unused private "reflectLastTime" method.(¾²¬÷8Á»â›ü+
-esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8˜ù–ü+
 y
 squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ª¥”Áúÿÿÿÿ8ùÈ›ü+
-[squid:UnusedPrivateMethod",Remove this unused private "reflect" method.(øºÒÂüÿÿÿÿ8Á»â›ü+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(”÷£Ö
+esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8˜ù–ü+
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(øºÒÂüÿÿÿÿ8ùÈ›ü+
+]squid:S1075"ARefactor your code to get this URI from a customizable parameter.(±âÆ×8˜ù–ü+
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¢ˆÇııÿÿÿÿ8£³†˜ş+
+y
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ª¥”Áúÿÿÿÿ8È“Å›ü+
+Wsquid:S1854"6Remove this useless assignment to local variable "sb".(€ê±Õúÿÿÿÿ8é†˜ş+
+[squid:UnusedPrivateMethod",Remove this unused private "reflect" method.(øºÒÂüÿÿÿÿ8é†˜ş+
+^squid:UnusedPrivateMethod"4Remove this unused private "reflectLastTime" method.(¾²¬÷8é†˜ş+

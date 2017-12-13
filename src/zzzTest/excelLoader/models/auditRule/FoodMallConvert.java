@@ -13,7 +13,7 @@ public class FoodMallConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        File excelFile = new File("/Users/nibnait/Desktop/美食城名单更新.xlsx");
+        File excelFile = new File("/Users/nibnait/Desktop/美食城更新名单11-22.xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
 //        List<FoodMall> modelList = excelReader.loadSheet();
 
@@ -46,7 +46,7 @@ public class FoodMallConvert {
 //            sb = reflect(model, sb);
 //            count++;
 //        }
-        baseStr.append(sb);
+//        baseStr.append(sb);
 //        System.out.println(length);
         try {
             //创建一个新文件

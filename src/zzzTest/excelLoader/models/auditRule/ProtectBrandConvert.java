@@ -13,7 +13,7 @@ public class ProtectBrandConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        File excelFile = new File("/Users/nibnait/Desktop/1.xlsx");
+        File excelFile = new File("/Users/nibnait/Desktop/品牌更新 11-22.xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
 //        List<ProtectBrand> modelList = excelReader.loadSheet();
 
@@ -46,7 +46,7 @@ public class ProtectBrandConvert {
 //            sb = reflect(model, sb);
 //            count++;
 //        }
-        baseStr.append(sb);
+//        baseStr.append(sb);
 //        System.out.println(length);
         try {
             //创建一个新文件
