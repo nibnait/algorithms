@@ -1,0 +1,7 @@
+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ8Ìêöíü+
+¢%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8©Ù÷íü+
+tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ8×íÜ¦û+
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ8Ìêöíü+
