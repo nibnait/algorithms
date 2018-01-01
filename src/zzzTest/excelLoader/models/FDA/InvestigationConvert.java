@@ -17,10 +17,10 @@ public class InvestigationConvert {
         for (int i = 1; i <= 2; i++) {
             File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/食安排查/"+ i+".xlsx");
             ExcelReader excelReader = new ExcelReader(excelFile);
-            List<investigation> modelList = excelReader.loadSheet();
-            int cnt = make(modelList);
-            System.out.println(cnt);
-            count += cnt;
+//            List<investigation> modelList = excelReader.loadSheet();
+//            int cnt = make(modelList);
+//            System.out.println(cnt);
+//            count += cnt;
         }
         System.out.println(count);
     }

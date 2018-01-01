@@ -13,9 +13,9 @@ public class ProtectBrandConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        File excelFile = new File("/Users/nibnait/Desktop/品牌更新 11-22.xlsx");
+        File excelFile = new File("/Users/nibnait/Desktop/品牌变更12-29.xlsx");
         ExcelReader excelReader = new ExcelReader(excelFile);
-//        List<ProtectBrand> modelList = excelReader.loadSheet();
+        List<ProtectBrand> modelList = excelReader.loadSheet();
 
         Field[] fields = null;
         try {
@@ -37,17 +37,17 @@ public class ProtectBrandConvert {
         }
 
         StringBuilder sb = new StringBuilder();
-//        int length = modelList.size();
-//        for (ProtectBrand model : modelList) {
-//            if (count == length - 1) {
-//                sb = reflectLastTime(model, sb);
-//                break;
-//            }
-//            sb = reflect(model, sb);
-//            count++;
-//        }
-//        baseStr.append(sb);
-//        System.out.println(length);
+        int length = modelList.size();
+        for (ProtectBrand model : modelList) {
+            if (count == length - 1) {
+                sb = reflectLastTime(model, sb);
+                break;
+            }
+            sb = reflect(model, sb);
+            count++;
+        }
+        baseStr.append(sb);
+        System.out.println(length);
         try {
             //创建一个新文件
             String insertSQLFileName = "保护品牌";

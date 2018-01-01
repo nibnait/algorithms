@@ -2,10 +2,10 @@ package zzzTest.JsonParseTest.certificationConvert;
 
 public class OperatorDto {
     private String user_id;
-    private String system_type;
     private String name;
     private String email;
     private String mobile;
+    private String comment;
 
     public String getUser_id() {
         return user_id;
@@ -15,12 +15,12 @@ public class OperatorDto {
         this.user_id = user_id;
     }
 
-    public String getSystem_type() {
-        return system_type;
+    public String getComment() {
+        return comment;
     }
 
-    public void setSystem_type(String system_type) {
-        this.system_type = system_type;
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public String getName() {

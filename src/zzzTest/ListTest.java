@@ -2,6 +2,7 @@ package zzzTest;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -9,7 +10,14 @@ import java.util.stream.Stream;
 public class ListTest {
 
     public static void main(String[] args) {
-
+        List<Integer> applyIds = new ArrayList<>();
+        applyIds.add(123);
+        applyIds.add(234);
+        Iterator<Integer> iterator = applyIds.iterator();
+        while (iterator.hasNext()) {
+            Integer next = iterator.next();
+            System.out.println(next);
+        }
     }
 
     private void testIsEmpty() {
