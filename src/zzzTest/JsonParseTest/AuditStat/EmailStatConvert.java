@@ -11,9 +11,11 @@ import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class EmailStatConvert {
@@ -59,7 +61,7 @@ public class EmailStatConvert {
         }
 
         XSSFWorkbook workbook = new XSSFWorkbook();
-        XSSFSheet sheet = workbook.createSheet("审核统计");
+        XSSFSheet sheet = workbook.createSheet("审核统计"+new SimpleDateFormat("MMdd").format(new Date()));
         createHeadRow(sheet);
         int rowNum = 1;
         for (ExcelDto excelDto : excelDtoList) {

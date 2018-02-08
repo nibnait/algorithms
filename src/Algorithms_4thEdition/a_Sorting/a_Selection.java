@@ -31,10 +31,9 @@ public class a_Selection {
      * 时间复杂度：O（N^2)
      */
     public static int[] Selection_Sort(int[] a) {
-
         int N = a.length;
-        int min = 0;
         for (int i = 0; i < N - 1; i++) {
+            int min = i;
             for (int j = i + 1; j < N; j++) {
                 if (a[min] > a[j]) {
                     min = j;

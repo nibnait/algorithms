@@ -6,18 +6,18 @@ import Standard.stdOut;
 /**
  * Created by nibnait on 2016/8/10.
  */
-public class f_Deap {
+public class f_Heap {
     public static void main(String[] args) {
 //        int[] a = new int[10];
 //        a = stdRandom.random(a);
         int[] a = {73,98,27,36,77,22,6,32,83,69};
         stdOut.print(a);
 
-        a = Deap_Sort(a);
+        a = Heap_Sort(a);
         stdOut.print(a);
     }
 
-    public static int[] Deap_Sort(int[] a) {
+    public static int[] Heap_Sort(int[] a) {
 
         int N = a.length-1;
         //建立一支 二叉大根堆，先序遍历
