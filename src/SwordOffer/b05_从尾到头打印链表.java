@@ -42,6 +42,42 @@ public class b05_从尾到头打印链表 {
         }
     }
 
+    /**
+     * 利用头插法插入链表
+     * @param head
+     */
+    public static void reverseNode(ListNode head) {
+        if (head == null) {
+            return ;
+        }
+
+        //最终翻转之后的 Node
+        ListNode node ;
+
+        ListNode pre = head;
+        ListNode cur = head.next;
+        ListNode next                                                                     ;
+        while(cur != null){
+            next = cur.next;
+
+            //链表的头插法
+            cur.next = pre;
+            pre = cur;
+
+            cur = next;
+        }
+        head.next = null;
+        node = pre;
+
+
+        //遍历新链表
+        while (node != null){
+            System.out.print(node.value + " ");
+            node = node.next ;
+        }
+
+    }
+
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -52,6 +88,8 @@ public class b05_从尾到头打印链表 {
         printListInverselyUsingStack(head);
         System.out.println();
         printListInverselyUsingRecursion(head);
+        System.out.println();
+        reverseNode(head);
     }
 
 }
