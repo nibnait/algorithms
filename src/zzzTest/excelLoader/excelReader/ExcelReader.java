@@ -9,7 +9,7 @@ import zzzTest.excelLoader.models.auditRule.ProtectBrand;
 
 import java.io.File;
 
-public class ExcelReader extends ExcelLoader<ProtectBrand>{
+public class ExcelReader extends ExcelLoader<investigation>{
 
     public ExcelReader(File file) {
         super(file);

@@ -3,23 +3,22 @@ package zzzTest;
 import org.apache.commons.lang3.StringUtils;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-//        int[] a = {3, 3, -1, 0, 2, 1};
-        int[] a = {1,1,2};
-        System.out.println(Solution(a));
-    }
-    public static int Solution(int[] nums) {
-        Arrays.sort(nums);
-        int count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (i == 0 || nums[i] > nums[i - 1]) {
-                count++;
-            }
+       String url = "https://fuss.alpha.elenet.me:9090/3/04/5a256243be53173844ceebdf1ea16jpeg.jpeg";
+        String[] split = url.split("/");
+        StringBuilder sb = new StringBuilder();
+        for (int i = 3; i < split.length; i++) {
+            sb.append(split[i]);
         }
-        return count;
+        String str = sb.toString();
+        String[] split1 = str.split("/");
+        System.out.println(split1[0]);
     }
 }
+

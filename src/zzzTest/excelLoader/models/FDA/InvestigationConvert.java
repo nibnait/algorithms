@@ -14,13 +14,13 @@ public class InvestigationConvert {
     public static void main(String[] args) {
 
         int count = 0;
-        for (int i = 1; i <= 2; i++) {
-            File excelFile = new File("/Users/nibnait/Desktop/shiyaojian/食安排查/"+ i+".xlsx");
+        for (int i = 1; i <= 3; i++) {
+            File excelFile = new File("/Users/nibnait/Desktop/食药监/食安排查/"+ i+".xlsx");
             ExcelReader excelReader = new ExcelReader(excelFile);
-//            List<investigation> modelList = excelReader.loadSheet();
-//            int cnt = make(modelList);
-//            System.out.println(cnt);
-//            count += cnt;
+            List<investigation> modelList = excelReader.loadSheet();
+            int cnt = make(modelList);
+            System.out.println(cnt);
+            count += cnt;
         }
         System.out.println(count);
     }
