@@ -2,14 +2,341 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5523bd1-109c-4f90-a842-6e2acf3e4f24" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/JsoupTest/BJ_Jsoup.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/JsoupTest/Jsoup.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/JsoupMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/zzzTest/JsoupTest/JsoupMain.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/refuseReason/ReasonModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/refuseReason/RefuseReason_Main.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Main_Parser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LegalReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LicenseReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LogoReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/PermitReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/QualificationInfoReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/RefuseReasonDisplay.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/StoreInfoReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/StoreReason.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/ReasonParserConstants.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/ReasonTitle.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/RunShopAuditType.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LegalReasonParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LicenseReasonParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LogoReasonParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/PermitReasonParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/ReasonParser.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/StoreReasonParser.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/a_Bubble.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/a_Bubble.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/a_Selection.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/a_Selection.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/b_Insertion.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/b_Insertion.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/c_Shell.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/c_Shell.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/d_Merge.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/d_Merge.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/e_Quick.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/e_Quick.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/f_Heap.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/f_Heap.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/g_基数排序.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/g_基数排序.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/g_计数排序.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/a_Sorting/g_计数排序.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/BST.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/BST.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/NodeSimple.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Algorithms_4thEdition/b_Searching/NodeSimple.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/BinarySearch.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/BinarySearch.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/BinaryTreeNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/BinaryTreeNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/BinaryTreeNodeWithParent.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/BinaryTreeNodeWithParent.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/ListNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/ListNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/Std.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/Std.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/StdOut.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/StdRandom.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/StdRandom.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/StringUtils.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/StringUtils.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/Standard/TreeNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/Standard/TreeNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/Singleton.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/Singleton.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b03_二维数组中的二分查找.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b03_二维数组中的二分查找.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b04_替换空格.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b05_从尾到头打印链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b05_从尾到头打印链表.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b06_重建二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b06_重建二叉树.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b07_用两个栈实现队列$QueueWithTwoStacks.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b07_用两个栈实现队列$QueueWithTwoStacks.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b07_用两个栈实现队列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b07_用两个栈实现队列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b08_旋转数组中二分查找最小数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b08_旋转数组中二分查找最小数字.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b09_斐波那契数列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b09_斐波那契数列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b10_二进制中1的个数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/b10_二进制中1的个数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c11_数值的整数次方.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c11_数值的整数次方.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c12_打印1到最大的n位数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c12_打印1到最大的n位数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c13_删除链表结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c13_删除链表结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c15_链表中倒数第k个结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c15_链表中倒数第k个结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c16_反转链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c16_反转链表.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c17_合并两个排序的链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c17_合并两个排序的链表.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c18_树的子结构.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/c18_树的子结构.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d19_二叉树的镜像.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d19_二叉树的镜像.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d20_顺时针打印矩阵.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d20_顺时针打印矩阵.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈$StackWithMin.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈$StackWithMin.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d21_包含min函数的栈.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d22_栈的压入$弹出序列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d22_栈的压入$弹出序列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d23_从上往下打印二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d23_从上往下打印二叉树.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d24_二叉搜索树的后序遍历序列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d24_二叉搜索树的后序遍历序列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d25_二叉树中和为某一值的路径.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d25_二叉树中和为某一值的路径.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制$ComplexListNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制$ComplexListNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d26_复杂链表的复制.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d27_二叉搜索树与双向链表.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d27_二叉搜索树与双向链表.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的排列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的排列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的组合.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/d28_字符串的组合.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e29_数组中出现次数超过一半的数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e29_数组中出现次数超过一半的数字.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e30_最小的k个数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e30_最小的k个数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e31_连续子数组的最大和.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e31_连续子数组的最大和.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e32_从1到n整数中1出现的次数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e32_从1到n整数中1出现的次数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e33_把数组排成最小的数$StringComparator.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e33_把数组排成最小的数$StringComparator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e33_把数组排成最小的数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e33_把数组排成最小的数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e34_丑数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e34_丑数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e35_第一个只出现一次的字符.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e35_第一个只出现一次的字符.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e36_数组中的逆序对.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e36_数组中的逆序对.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e37_两个单向链表的第一个公共结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/e37_两个单向链表的第一个公共结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f38_数字在排序数组中出现的次数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f38_数字在排序数组中出现的次数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f39_1$二叉树的深度.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f39_1$二叉树的深度.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f39_2$判断二叉树是否平衡.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f39_2$判断二叉树是否平衡.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f40_数组中只出现一次的数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f40_数组中只出现一次的数字.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f41_1$和为s的两个数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f41_1$和为s的两个数字.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f41_2$和为s的连续正数序列.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f41_2$和为s的连续正数序列.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f42_1$翻转单词顺序.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f42_1$翻转单词顺序.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f42_2$左旋转字符串.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f42_2$左旋转字符串.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f43_n个骰子的点数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f43_n个骰子的点数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f44_扑克牌的顺子.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f44_扑克牌的顺子.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f45_圆圈中最后剩下的数字$约瑟夫环杀人.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f45_圆圈中最后剩下的数字$约瑟夫环杀人.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f46_求1到n的和.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f46_求1到n的和.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f47_不用加减乘除做加法.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/f47_不用加减乘除做加法.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/g49_把字符串转换成整数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/g49_把字符串转换成整数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/g50_树中两个结点的最低公共祖先.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/g50_树中两个结点的最低公共祖先.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h51_数组中重复的数字.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h51_数组中重复的数字.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h52_构建乘积数组.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h52_构建乘积数组.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h53_正则表达式匹配.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h53_正则表达式匹配.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h54_表示数值的字符串.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h54_表示数值的字符串.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h55_字符流中第一个不重复的字符$CharStatistics.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h55_字符流中第一个不重复的字符$CharStatistics.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h55_字符流中第一个不重复的字符.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h55_字符流中第一个不重复的字符.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h56_链表中环的入口结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h56_链表中环的入口结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h57_删除链表中重复的结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h57_删除链表中重复的结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h58_二叉树的下一个结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h58_二叉树的下一个结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h59_对称的二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h59_对称的二叉树.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h60_把二叉树打印成多行.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h60_把二叉树打印成多行.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h61_按之字形顺序打印二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h61_按之字形顺序打印二叉树.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h62_序列化二叉树.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h62_序列化二叉树.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h63_二叉搜索树的第k个结点.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h63_二叉搜索树的第k个结点.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$DescComparator.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$DescComparator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$DynamicArray.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$DynamicArray.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$Heap.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$Heap.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$IncComparator.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数$IncComparator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h64_数据流中的中位数.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h65_滑动窗口的最大值.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h65_滑动窗口的最大值.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h66_矩阵中的路径.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h66_矩阵中的路径.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h67_机器人的运动范围.class" afterPath="$PROJECT_DIR$/out/production/algorithms/SwordOffer/h67_机器人的运动范围.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SlidingWindowMaxValue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/AlgorithmPrototype/SubArrayMaxSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/KMP.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/a_1st_Season/aa_Manacher_bfprt_KMP/Manacher.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/ContainerWithMostWater.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/ContainerWithMostWater.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes$Dot.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes$Dot.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes$DotComparator.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes$DotComparator.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/RussianDollEnvelopes.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/TrappingRainWater.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/TrappingRainWater.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/arrUp.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/ba160720/arrUp.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/a_SubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/a_SubArrayMaxSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/b_TwoSubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/b_TwoSubArrayMaxSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/c_MaxLength.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bb160727/c_MaxLength.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/CompleteTreeNodeNumber.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/LongestLessSumSubArrayLength.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaxSubMatrixSumLessK.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaximalRectangle.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/MaximalRectangle.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck$Tries.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck$Tries.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/PrefixCheck.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/SubArrayMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/SubArrayMaxSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/SubMatrixMaxSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bc160803/src/SubMatrixMaxSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/SlidingWindowMaxValue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/SlidingWindowMaxValue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/ExpressionCompute.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/ExpressionCompute.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack$MyStack1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack$MyStack1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack$MyStack2.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack$MyStack2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/GetMinStack.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/ReverseStackUsingRecursive.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/ReverseStackUsingRecursive.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/SlidingWindowMaxArray.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/SlidingWindowMaxArray.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack$Queue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack$Queue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack$Stack.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack$Stack.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoQueuesImplementStack.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoStacksImplementQueue$TwoStacksQueue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoStacksImplementQueue$TwoStacksQueue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoStacksImplementQueue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bd160810/src/TwoStacksImplementQueue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/AllLessNumSubArray.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/AllLessNumSubArray.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$DogCatQueue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$DogCatQueue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$Pet.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$Pet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$PetEnterQueue.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat$PetEnterQueue.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/DogCat.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/Hanoi$Action.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/Hanoi$Action.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/Hanoi.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/Hanoi.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/MaxTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/MaxTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/MaxTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/be160817/src/MaxTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/FindFirstIntersectNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/IsPalindromeList.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/Josephus$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/Josephus$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/Josephus.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/Josephus.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/RemoveNodeWired$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/RemoveNodeWired$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/RemoveNodeWired.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bf160824/src/RemoveNodeWired.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/KMPAlgorithm.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bg160831/src/LongestSubarrayLessSumAwesomeSolution.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/BiggestSubBSTInTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/BiggestSubBSTInTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_01_PreInPosTraversal.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_03_PrintBinaryTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_03_PrintBinaryTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_03_PrintBinaryTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_03_PrintBinaryTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_06_LongestPathSum$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_06_LongestPathSum$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_06_LongestPathSum.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_06_LongestPathSum.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_07_BiggestSubBSTInTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_07_BiggestSubBSTInTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_07_BiggestSubBSTInTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_07_BiggestSubBSTInTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_20_MaxDistanceInTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_20_MaxDistanceInTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_20_MaxDistanceInTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bh160907/src/Problem_20_MaxDistanceInTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/BiggestBSTTopologyInTree$Record.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/BiggestBSTTopologyInTree$Record.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/BiggestBSTTopologyInTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/BiggestBSTTopologyInTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/MorrisTraversal.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_05_MorrisTraversal$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_05_MorrisTraversal$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_05_MorrisTraversal.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_05_MorrisTraversal.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree$Record.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree$Record.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_08_BiggestBSTTopologyInTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_17_DescendantNode$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_17_DescendantNode$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_17_DescendantNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bi160914/src/Problem_17_DescendantNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsBalancedBinaryTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsBalancedBinaryTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsCompleteBinaryTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsCompleteBinaryTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsSearchBinaryTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/IsSearchBinaryTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/RecoverBST.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/RecoverBST.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_09_PrintBinaryTreeByLevelAndZigZag$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_09_PrintBinaryTreeByLevelAndZigZag$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_09_PrintBinaryTreeByLevelAndZigZag.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_09_PrintBinaryTreeByLevelAndZigZag.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_10_RecoverBST$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_10_RecoverBST$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_10_RecoverBST.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_10_RecoverBST.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_13_IsBalancedTree$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_13_IsBalancedTree$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_13_IsBalancedTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_13_IsBalancedTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_15_IsBSTAndCBT$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_15_IsBSTAndCBT$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_15_IsBSTAndCBT.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/src/Problem_15_IsBSTAndCBT.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/testRecoverBST.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/b_2nd_Season/bj160928/testRecoverBST.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/nowcoder/book/BinaryTree/getPosArray.class" afterPath="$PROJECT_DIR$/out/production/algorithms/nowcoder/book/BinaryTree/getPosArray.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/BitMap1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/BitMap1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/Matrix_Print1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/Matrix_Print1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/MoreThanHalfNum_Solution.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/MoreThanHalfNum_Solution.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/Odd_forward.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/Odd_forward.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/Prime.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/Prime.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/others/PrintBinaryTree.class" afterPath="$PROJECT_DIR$/out/production/algorithms/others/PrintBinaryTree.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/DD_01.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/DD_01.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/DD_02.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/DD_02.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/K_lucky.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/K_lucky.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/LeShi_01.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/LeShi_01.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/Perfect_World_02.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/Perfect_World_02.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_01$ListNode.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_01$ListNode.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_01.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_01.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_02.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_02.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_03.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/SoHu_03.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/TouTiao_01.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/TouTiao_01.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/TouTiao_02.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/TouTiao_02.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/WangYi_163_1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/WangYi_163_1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/WangYi_163_2.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/WangYi_163_2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_01$Node.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_01$Node.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_01.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_01.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_02.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_02.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_03.class" afterPath="$PROJECT_DIR$/out/production/algorithms/xiaozhao/XiaoMi_03.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Base64Convert.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Base64Convert.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/DateFormatTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/DateFormatTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/HttpClientUtil.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/HttpClientUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/SSLClient$1.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/test/SSLClient$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/SHAUtil.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/SHAUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AES.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AES.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESUtils.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESUtils.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESencrp.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HangzhouFdaTest/util/aes/AESencrp.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HashMapTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/HashMapTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/IntegerTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/IntegerTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/EmailStatConvert.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/EmailStatConvert.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/EmailStatDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/EmailStatDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/ExcelDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/ExcelDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/Excel_Date_AuditNumber.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/AuditStat/Excel_Date_AuditNumber.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/District.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/District.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonHelperTest/JsonHelper.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonHelperTest/JsonHelper.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonHelperTest/JsonTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonHelperTest/JsonTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/JsonParseMain.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/RunshopAuditWordDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/RunshopAuditWordDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/CertificationDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/CertificationDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/DomIdConvet.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/DomIdConvet.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/DomIdDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/DomIdDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/OperatorDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/OperatorDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/RunshopDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/RunshopDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/certificationConvert.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/certificationConvert/certificationConvert.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/flavorConvert/FlavorDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/flavorConvert/FlavorDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/flavorConvert/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsonParseTest/flavorConvert/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/BJ_Jsoup$License.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/BJ_Jsoup$License.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/BJ_Jsoup.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/BJ_Jsoup.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/Jsoup$LicenseInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/JsoupTest/Jsoup.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest$Person.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest$Person.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest$SponsorTypeDto.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest$SponsorTypeDto.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ListTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/LocalDateTimeTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/LocalDateTimeTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MainTestFuncation$Person.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MainTestFuncation$Person.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MainTestFuncation.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MainTestFuncation.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MapTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/MapTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RandomTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RandomTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RegularTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/RegularTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ReturnTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ReturnTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StaticFunctionTest$test.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StaticFunctionTest$test.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StaticFunctionTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StaticFunctionTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StringTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/StringTest.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/ThreadTest/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelColumnTitle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/ExcelReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/excelReader/ExcelColumnTitle.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/excelReader/ExcelLoader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/excelReader/ExcelReader.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/ComplaintConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/InvestigationConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/ShfdaIncreasedDataConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/complaint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/investigation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/FDA/shfda_increaded_data.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/auditRule/FoodMall.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/auditRule/FoodMallConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/auditRule/ProtectBrand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/models/auditRule/printDeletedBrandSQL.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/ExcelModel.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/FDA/complaint.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/FDA/investigation.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/FDA/shfda_increaded_data.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/auditRule/FoodMall.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/excelLoader/test/auditRule/ProtectBrand.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/EncryptUtil.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/EncryptUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/Main.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/VerifyResult.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/wsdlTest/VerifyResult.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/zzzTest/xmlTest.class" afterPath="$PROJECT_DIR$/out/production/algorithms/zzzTest/xmlTest.class" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonParseMain.java" afterPath="$PROJECT_DIR$/src/zzzTest/JsonParseTest/Main_JsonParse.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/JsoupTest/Jsoup.java" afterPath="$PROJECT_DIR$/src/zzzTest/JsoupTest/Main_Jsoup.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/ThreadTest/Main_Thread.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelModel.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/ExcelModel.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/Main_ExcelParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelColumnTitle.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/excelParser/ExcelColumnTitle.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelLoader.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/excelParser/ExcelParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelReader.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/ComplaintConvert.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ComplaintConvert.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/InvestigationConvert.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/InvestigationConvert.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/ShfdaIncreasedDataConvert.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ShfdaIncreasedDataConvert.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/complaint.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/complaint.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/investigation.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/investigation.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/shfda_increaded_data.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/shfda_increaded_data.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/FoodMall.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMall.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/FoodMallConvert.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMallConvert.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/ProtectBrand.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/ProtectBrand.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/ProtectBrandConvert.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/printDeletedBrandSQL.java" afterPath="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/printDeletedBrandSQL.java" />
+      <change beforePath="$PROJECT_DIR$/src/zzzTest/wsdlTest/Main.java" afterPath="$PROJECT_DIR$/src/zzzTest/wsdlTest/Main_wsddlTest.java" />
     </list>
     <ignored path="algorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,48 +368,40 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="algorithms" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BJ_Jsoup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zzzTest/JsoupTest/BJ_Jsoup.java">
+      <file leaf-file-name="Main_Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Main_Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="1860">
+              <caret line="136" column="9" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="9" />
               <folding>
-                <element signature="e#3828#3829#0" expanded="false" />
-                <element signature="e#3867#3868#0" expanded="false" />
-                <element signature="e#3919#3920#0" expanded="false" />
-                <element signature="e#3967#3968#0" expanded="false" />
-                <element signature="e#4009#4010#0" expanded="false" />
-                <element signature="e#4051#4052#0" expanded="false" />
-                <element signature="e#4109#4110#0" expanded="false" />
-                <element signature="e#4163#4164#0" expanded="false" />
-                <element signature="e#4203#4204#0" expanded="false" />
-                <element signature="e#4243#4244#0" expanded="false" />
-                <element signature="e#4297#4298#0" expanded="false" />
-                <element signature="e#4347#4348#0" expanded="false" />
-                <element signature="e#4385#4386#0" expanded="false" />
-                <element signature="e#4423#4424#0" expanded="false" />
-                <element signature="e#4473#4474#0" expanded="false" />
-                <element signature="e#4519#4520#0" expanded="false" />
-                <element signature="e#4560#4561#0" expanded="false" />
-                <element signature="e#4601#4602#0" expanded="false" />
-                <element signature="e#4657#4658#0" expanded="false" />
-                <element signature="e#4709#4710#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReasonParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/ReasonParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -96,6 +415,7 @@
         <option value="Kotlin Class" />
         <option value="package-info" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -105,12 +425,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,</find>
-      <find>\</find>
-      <find>保护品牌</find>
-      <find>ProtectBrand</find>
-      <find>ExcelReader</find>
-      <find>add(</find>
       <find>ields[i].get(obj).toString()</find>
       <find>fields[i].get(obj)!=null?fields[i].get(obj).toString():&quot;&quot;</find>
       <find>fields[i].get(obj).toString()</find>
@@ -135,6 +449,12 @@
       <find>split[1].trim()</find>
       <find>http://qyxy.baic.gov.cn/wap/wap/creditWapAction!qr.dhtml?id=ff80808154cd96280154e6eb93512f38</find>
       <find>http://qyxy.baic.gov.cn/wap/wap/creditWapAction!qr.dhtml?id=1D59AB12B1D14CC08CE9E8AFEC253048</find>
+      <find>ExcelColumnTitle</find>
+      <find>excel</find>
+      <find>loadtitle</find>
+      <find>reasonMap</find>
+      <find>licenseReasonMap</find>
+      <find>reasonEntry</find>
     </findStrings>
     <replaceStrings>
       <replace>VerifyResult</replace>
@@ -169,57 +489,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/ShfdaIncreasedDataConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/HashMapTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/MainTestFuncation.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/FoodMallConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/StaticFunctionTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/IntegerTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonHelper.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonHelperTest/JsonHelper.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonHelperTest/JsonHelper.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/FlavorDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/FlavorDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/StringTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/CertificationDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/OperatorConvert/OperatorConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/certificationConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/RunshopDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/DomIdDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/DomIdConvet.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/OperatorDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/CertificationConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/soutDeletedProtectBrand.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/ListTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/EmailStatDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/ExcelDto.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/Excel_Date_AuditNumber.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/SourceData.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/FileTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/MapTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/EmailStatConvert.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/a_Selection.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/f_Deap.java" />
-        <option value="$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/f_Heap.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonHelperTest/JsonTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/printDeletedBrandSQL.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/ComplaintConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/refuseReason/ComplaintConvert.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelLoader.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/InvestigationConvert.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/DateFormatTest.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsoupTest/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsoupTest/JsoupMain.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsoupTest/Jsoup.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/refuseReason/ReasonModel.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/refuseReason/Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/models/refuseReason/RefuseReason_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/annotation/refuseReasonDisplay/StoreReason.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/annotation/refuseReasonDisplay/RefuseReasonDisplay.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/annotation/refuseReasonDisplay/MainReasonTitle.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/annotation/Annotation_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/annotation/parseJsonWithAnnotation/Annotation_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Annotation_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/PermitReason.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/RunshopAuditType.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/RunShopAuditType.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotation_enum/ReasonTitle.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelLoader.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/RunShopAuditType.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationReader/ReasonTitle.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationParser/ReasonTitle.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationParser/ReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationParser/ReasonLoader.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationParser/ReasonReader.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMall.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/excelReader/ExcelParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMallConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/printDeletedBrandSQL.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/ProtectBrandConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ComplaintConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/InvestigationConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ShfdaIncreasedDataConvert.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/models/refuseReason/RefuseReason_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/excelParser/excelParser/ExcelParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/StoreReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotation/ReasonTitle.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Parser_Main.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/RunShopAuditType.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/Constants.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/ReasonParserConstants.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/StoreReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LogoReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LicenseReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/PermitReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/QualificationInfoReason.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LegalReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/StoreInfoReason.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/ReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/ReasonParser.java" />
+        <option value="$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Main_Parser.java" />
         <option value="$PROJECT_DIR$/src/zzzTest/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/JsoupTest/BJ_Jsoup.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java" />
-        <option value="$PROJECT_DIR$/src/zzzTest/ThreadTest/SynchronizationData.java" />
       </list>
     </option>
   </component>
@@ -229,20 +549,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="873" />
+    <option name="width" value="1920" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -282,90 +595,27 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zzzTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zzzTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThreadTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="algorithms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms_4thEdition" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zzzTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -373,7 +623,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -381,6 +631,16 @@
     <property name="SearchEverywhereHistoryKey" value="旋转&#9;PSI&#9;JAVA://SwordOffer.f42_2$左旋转字符串&#10;sl&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.bd160810.src.SlidingWindowMaxArray&#10;dot&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.ba160720.RussianDollEnvelopes.Dot&#10;深度&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/SwordOffer/f39_1$二叉树的深度.java&#10;dog&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.be160817.src.DogCat.Dog&#10;jose&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.bf160824.src.Josephus&#10;y&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_05/jre/lib/rt.jar!/java/time/Year.class&#10;前&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/SwordOffer/c14_调整数组顺序使奇数位于偶数前面.java&#10;qui&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/e_Quick.java&#10;compa&#9;PSI&#9;JAVA://nowcoder.b_2nd_Season.ba160720.RussianDollEnvelopes.DotComparator&#10;d&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/Algorithms_4thEdition/a_Sorting/f_Deap.java&#10;tra&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bh160907/PreInPosTraversal.java&#10;bst&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bg160831/src/BSTtoDoubleLinkedList.java&#10;c&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/nowcoder/b_2nd_Season/bf160824/src/CopyListWithRandom.java&#10;odd&#9;FILE&#9;file://C:/Users/nibnait/IdeaProjects/algorithms/src/others/Odd_forward.java" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="LombokPluginEnabledInProject" value="true" />
+    <property name="LombokPluginIS_VAL_Enabled" value="true" />
+    <property name="LombokPluginIS_BUILDER_Enabled" value="true" />
+    <property name="LombokPluginIS_DELEGATE_Enabled" value="true" />
+    <property name="LombokPluginIS_LOG_Enabled" value="true" />
+    <property name="LombokPluginIS_CONSTRUCTOR_Enabled" value="true" />
+    <property name="LombokPluginIS_THIRD_PARTY_Enabled" value="true" />
+    <property name="LombokPluginIS_RUNTIME_PATCH_Enabled" value="true" />
+    <property name="LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled" value="true" />
+    <property name="LombokPluginIS_MISSING_LOMBOK_CHECK_Enabled" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -389,18 +649,18 @@
       <recent name="zzzTest" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/zzzTest/annotation" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/zzzTest/HangzhouFdaTest" />
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\b_2nd_Season\bi160914\src" />
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\b_2nd_Season\bj160928\src" />
-      <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\nowcoder\b_2nd_Season\bh160907\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zzzTest.excelLoader.models.refuseReason" />
       <recent name="zzzTest.JsoupTest" />
       <recent name="zzzTest.JsonParseTest.certificationConvert" />
       <recent name="zzzTest.excelLoader.models.FDA" />
       <recent name="zzzTest.excelLoader" />
-      <recent name="zzzTest.wsdlTest" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
@@ -410,88 +670,20 @@
       <recent name="C:\Users\nibnait\IdeaProjects\algorithms\src\Standard" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BJ_Jsoup">
-    <configuration default="false" name="InvestigationConvert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zzzTest.excelLoader.models.FDA.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.excelLoader.models.FDA.InvestigationConvert" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DateFormatTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zzzTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.DateFormatTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="BJ_Jsoup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zzzTest.JsoupTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.JsoupTest.BJ_Jsoup" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Jsoup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zzzTest.JsoupTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zzzTest.JsoupTest.Jsoup" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="algorithms" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="zzzTest.*" />
@@ -509,7 +701,106 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="algorithms" />
       <envs />
-      <method />
+    </configuration>
+    <configuration name="Main_Parser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zzzTest.parseJsonWithAnnotation.reasonParsers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zzzTest.parseJsonWithAnnotation.Main_Parser" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="algorithms" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -537,6 +828,35 @@
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -579,32 +899,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
@@ -693,55 +987,6 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="FlashPlayerDebugger.exe" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -756,16 +1001,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -970,15 +1205,6 @@
       <module name="algorithms" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
@@ -1130,51 +1356,24 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.InvestigationConvert" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DateFormatTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BJ_Jsoup" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Jsoup" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main_Parser" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.BJ_Jsoup" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Jsoup" />
-        <item index="3" class="java.lang.String" itemvalue="Application.DateFormatTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.InvestigationConvert" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main_Parser" />
       </list>
     </recent_temporary>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
-      <method />
-    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -1491,45 +1690,55 @@
       <workItem from="1521645301059" duration="1066000" />
       <workItem from="1521688955613" duration="649000" />
       <workItem from="1521698741901" duration="2616000" />
+      <workItem from="1522381231398" duration="4419000" />
+      <workItem from="1522392971819" duration="1800000" />
+      <workItem from="1522396722839" duration="19466000" />
+      <workItem from="1522481170545" duration="603000" />
+      <workItem from="1522648365917" duration="1274000" />
+      <workItem from="1522664398738" duration="2033000" />
+      <workItem from="1522723251393" duration="1928000" />
+      <workItem from="1523329452557" duration="704000" />
+      <workItem from="1523418138877" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="964736000" />
+    <option name="totallyTimeSpent" value="996965000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744566" sideWeight="0.5114449" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35691988" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3559499" sideWeight="0.4970458" order="2" side_tool="false" content_ui="tabs" x="841" y="298" width="522" height="408" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35691988" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29344434" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32403433" sideWeight="0.4936306" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2172524" sideWeight="0.4936306" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6363636" sideWeight="0.48855507" order="3" side_tool="false" content_ui="tabs" x="355" y="111" width="655" height="506" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47599164" sideWeight="0.48855507" order="3" side_tool="false" content_ui="tabs" x="1920" y="124" width="1080" height="1335" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21192758" sideWeight="0.5063694" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31145832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31106472" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" x="860" y="177" width="791" height="677" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1539,7 +1748,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -1646,7 +1855,7 @@
           <option name="timeStamp" value="223" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="372" />
+      <option name="time" value="409" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1655,231 +1864,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/investigation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/FoodMallConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="49" column="37" lean-forward="false" selection-start-line="39" selection-start-column="10" selection-end-line="49" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/IntegerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/StaticFunctionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/RunshopAuditWordDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="3150" column="25" lean-forward="false" selection-start-line="3150" selection-start-column="25" selection-end-line="3150" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/FlavorDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/OperatorConvert/OperatorConvert.java" />
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/District.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/CertificationDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/DomIdDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/DomIdConvet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="32" lean-forward="false" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/OperatorDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/RunshopDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/certificationConvert/CertificationConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/JsonParseMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/ListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/ProtectBrand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/EmailStatDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/Excel_Date_AuditNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/ExcelModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/ExcelDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/SourceData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/commons-collections4-4.1.jar!/org/apache/commons/collections4/CollectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="40" column="69" lean-forward="true" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/MapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/AuditStat/EmailStatConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/d_Merge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Standard/std.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/a_Bubble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/a_Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/b_Insertion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Algorithms_4thEdition/a_Sorting/f_Heap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1901,28 +1885,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="169" column="13" lean-forward="false" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/ComplaintConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="25" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/FDA/InvestigationConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java" />
     <entry file="file://$PROJECT_DIR$/src/zzzTest/DateFormatTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1930,24 +1893,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/ProtectBrandConvert.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsoupTest/Main_Jsoup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/models/auditRule/printDeletedBrandSQL.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/ThreadTest/SynchronizationData.java" />
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/ThreadTest/Main_Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsoupTest/BJ_Jsoup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/refuseReason/ReasonModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/complaint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="63" column="40" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/lombok-1.16.20.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ideaLibSources/lombok-1.16.20-sources.jar!/lombok/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsonParseTest/flavorConvert/FlavorDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LogoReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/PermitReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/StoreReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1958,76 +1985,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelReader.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/annotationParser/ReasonReader.java" />
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelReader.java" />
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMall.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelLoader/excelReader/ExcelLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/FoodMallConvert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="166" column="32" lean-forward="false" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/printDeletedBrandSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="73" lean-forward="false" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/auditRule/ProtectBrandConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ComplaintConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="74" lean-forward="false" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/investigation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/InvestigationConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/FDA/ShfdaIncreasedDataConvert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/models/refuseReason/RefuseReason_Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="72" lean-forward="false" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/ExcelModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/Main_ExcelParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/excelParser/ExcelParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/excelParser/excelParser/ExcelColumnTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="75" column="19" lean-forward="false" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/ReasonTitle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LegalReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LogoReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/StoreReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LicenseReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="67" lean-forward="false" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/PermitReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/RefuseReasonDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/LicenseReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/QualificationInfoReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Models/StoreInfoReason.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/LegalReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="63" lean-forward="false" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/RunShopAuditType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/abstractClass/ReasonParserConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/Main_Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1860">
+          <caret line="136" column="9" lean-forward="false" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zzzTest/parseJsonWithAnnotation/reasonParsers/ReasonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="78" column="21" lean-forward="false" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zzzTest/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsoupTest/Jsoup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="28" column="64" lean-forward="false" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/JsoupTest/BJ_Jsoup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="54" />
-          <folding>
-            <element signature="e#3828#3829#0" expanded="false" />
-            <element signature="e#3867#3868#0" expanded="false" />
-            <element signature="e#3919#3920#0" expanded="false" />
-            <element signature="e#3967#3968#0" expanded="false" />
-            <element signature="e#4009#4010#0" expanded="false" />
-            <element signature="e#4051#4052#0" expanded="false" />
-            <element signature="e#4109#4110#0" expanded="false" />
-            <element signature="e#4163#4164#0" expanded="false" />
-            <element signature="e#4203#4204#0" expanded="false" />
-            <element signature="e#4243#4244#0" expanded="false" />
-            <element signature="e#4297#4298#0" expanded="false" />
-            <element signature="e#4347#4348#0" expanded="false" />
-            <element signature="e#4385#4386#0" expanded="false" />
-            <element signature="e#4423#4424#0" expanded="false" />
-            <element signature="e#4473#4474#0" expanded="false" />
-            <element signature="e#4519#4520#0" expanded="false" />
-            <element signature="e#4560#4561#0" expanded="false" />
-            <element signature="e#4601#4602#0" expanded="false" />
-            <element signature="e#4657#4658#0" expanded="false" />
-            <element signature="e#4709#4710#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/ThreadTest/SynchronizationData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zzzTest/ThreadTest/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -2089,6 +2261,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
