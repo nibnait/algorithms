@@ -1,29 +1,0 @@
-
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(úÑ•şÿÿÿÿ8æ½Ù¦û+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(”¢Úß8„‡¸˜ş+
-_squid:UnusedPrivateMethod"0Remove this unused private "testIsEmpty" method.(ŒÂ³«ùÿÿÿÿ8æ½Ù¦û+
-bsquid:UnusedPrivateMethod"3Remove this unused private "testList2Array" method.(äŞ„óúÿÿÿÿ8æ½Ù¦û+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(×Ş‹ô8æ½Ù¦û+
-tsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ8æ½Ù¦û+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8æ½Ù¦û+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ñÿ¾ùÿÿÿÿ8æ½Ù¦û+
-@squid:S2116"%Use "Arrays.toString(array)" instead.(Ä Y8æ½Ù¦û+
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(ŞŒşñúÿÿÿÿ8æ½Ù¦û+
-]squid:UnusedPrivateMethod"3Remove this unused private "getStringArray" method.(´Íğ„8æ½Ù¦û+
-Bsquid:S1168"&Return an empty array instead of null.(¥¹ï8æ½Ù¦û+
-S
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ä Y8æ½Ù¦û+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ï¸“®8„‡¸˜ş+
-bsquid:S2259"FA "NullPointerException" could be thrown; "applyIds" is nullable here.(ñåÁé8æ½Ù¦û+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Â€öÙşÿÿÿÿ8ò’Û¦û+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ñåÁé8æ½Ù¦û+
-Zsquid:S1172"9Remove this unused method parameter "sponsorTypeDtoList".(²ÿêòüÿÿÿÿ8æ½Ù¦û+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÚšèÔÿÿÿÿÿ8æ½Ù¦û+
-Msquid:S1612",Replace this lambda with a method reference.(³ãÕßúÿÿÿÿ8æ½Ù¦û+
-osquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ã•Œşÿÿÿÿ8æ½Ù¦û+

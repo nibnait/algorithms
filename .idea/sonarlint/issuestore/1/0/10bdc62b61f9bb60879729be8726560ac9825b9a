@@ -1,15 +1,0 @@
-
-M
-squid:S106"9Replace this use of System.out or System.err by a logger.(ðœ»Ÿ
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(º²ëöøÿÿÿÿ8ŠÂÐ±ã+
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(¼ÎÜÞ8ý§Ñ±ã+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùÐ
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(àÁæ‚þÿÿÿÿ
-esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(áÝ˜ïüÿÿÿÿ
-L
-squid:S106"9Replace this use of System.out or System.err by a logger.(¼…®c
-Rsquid:UnusedPrivateMethod"*Remove this unused private "test1" method.(•Ü±ªÿÿÿÿÿ
-asquid:UnusedPrivateMethod"2Remove this unused private "testTimestamp" method.(ÂáÏ‹üÿÿÿÿ8ô„Ñ±ã+

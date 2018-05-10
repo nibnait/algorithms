@@ -1,6 +1,0 @@
-
-ysquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(îµîûşÿÿÿÿ8”Ã÷—ş+
-rsquid:UselessImportCheck"IRemove this unused import 'zzzTest.excelLoader.models.FDA.investigation'.(Äèø²8¢İ÷—ş+
-ssquid:UselessImportCheck"JRemove this unused import 'zzzTest.excelLoader.models.auditRule.FoodMall'.(Çñ‘8æŒˆ˜ş+
-ysquid:UselessImportCheck"PRemove this unused import 'zzzTest.excelLoader.models.FDA.shfda_increaded_data'.(››¾É8”Ã÷—ş+
-nsquid:UselessImportCheck"ERemove this unused import 'zzzTest.excelLoader.models.FDA.complaint'.(ÈŸÊÓ8”Ã÷—ş+

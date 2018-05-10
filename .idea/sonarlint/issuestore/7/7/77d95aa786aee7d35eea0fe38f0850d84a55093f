@@ -1,11 +1,0 @@
-
-`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8áÑ¼£ü+
-{squid:S1149"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰8‰ü‡œü+
-hsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…Ší¹ûÿÿÿÿ
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(åö¡½úÿÿÿÿ8¥œ‹œü+
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ù¾¼ðúÿÿÿÿ8áÑ¼£ü+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©—á8Öû¼£ü+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(”÷£Ö
-bsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(ˆÀÇ“ùÿÿÿÿ8º¨…œü+
-Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8áÑ¼£ü+

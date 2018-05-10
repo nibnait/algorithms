@@ -14,7 +14,7 @@ public class ProtectBrandConvert {
 
         int count = 0;
         File excelFile = new File("/Users/nibnait/Desktop/品牌变更12-29.xlsx");
-        ExcelParser<ProtectBrand> excelParser = new ExcelParser(excelFile);
+        ExcelParser<ProtectBrand> excelParser = new ProtectBrandParser(excelFile);
         List<ProtectBrand> modelList = excelParser.loadSheet();
 
         Field[] fields = null;

@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class RegularTest {
 
     public static void main(String[] args) {
-        test02();
+        test01();
     }
 
     private static void test02() {
@@ -20,14 +20,15 @@ public class RegularTest {
     }
 
     private static void test01() {
-        Pattern p = Pattern.compile("肯德基|满记甜品|呵呵|五芳斋");
+        Pattern p = Pattern.compile("肯德基|满记甜品|呵呵|ofo");
 //        Matcher m = p.matcher("呵呵肯德基哼哼哼");
-        Matcher m = p.matcher("满记甜品（M+购物中心店）");
+        Matcher m = p.matcher("gogofod韩国料理");
+//        Matcher m = p.matcher("满记甜品（M+购物中心店）");
         //完全匹配
-        System.out.println(m.matches());
+//        System.out.println(m.matches());
         //部分匹配
         System.out.println(m.find());
-        System.out.println(m.lookingAt());
+//        System.out.println(m.lookingAt());
     }
 
 }

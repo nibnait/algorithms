@@ -1,14 +1,0 @@
-
-ysquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ð“ëèüÿÿÿÿ8Õó÷—þ+
-Qsquid:S1481"0Remove this unused "excelReader" local variable.(‰Î‚Âûÿÿÿÿ8Ž¯ø—þ+
-Xsquid:UnusedPrivateMethod")Remove this unused private "make" method.(¼¿¬‘øÿÿÿÿ8Ž¯ø—þ+
-`squid:S1854"?Remove this useless assignment to local variable "excelReader".(‰Î‚Âûÿÿÿÿ8Ž¯ø—þ+
-esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8Õó÷—þ+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õó÷—þ+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õó÷—þ+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ž³ð¸ûÿÿÿÿ8Õó÷—þ+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õó÷—þ+
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(úþ‚Å8Ž¯ø—þ+
-[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8Õó÷—þ+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Õó÷—þ+

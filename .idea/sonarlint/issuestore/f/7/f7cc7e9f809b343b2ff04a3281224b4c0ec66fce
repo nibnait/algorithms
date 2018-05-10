@@ -1,14 +1,0 @@
-
-Ssquid:UnusedPrivateMethod")Remove this unused private "make" method.(Ì«Ô´8ÉÃù¿ü+
-^squid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ
-rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Ð“ëèüÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Tsquid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ
-^squid:S1854"=Remove this useless assignment to local variable "excelFile".(àÊ±ßøÿÿÿÿ8ÉÃù¿ü+
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Osquid:S1481".Remove this unused "excelFile" local variable.(àÊ±ßøÿÿÿÿ8ÉÃù¿ü+
-R
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ž³ð¸ûÿÿÿÿ
-=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜™öÂ8ÉÃù¿ü+

@@ -1,14 +1,0 @@
-
-Vsquid:S2209"5Change this instance-reference to a static reference.(¸æğÛûÿÿÿÿ8ğ˜¦ó+
-Wsquid:S2696"6Make the enclosing method "static" or remove this set.(¸æğÛûÿÿÿÿ8ğ˜¦ó+
-Fsquid:S3010"%Remove this assignment of "hardDisk".(¸æğÛûÿÿÿÿ8ğ˜¦ó+
-;squid:S3010" Remove this assignment of "cpu".(ŒÁóS8ğ˜¦ó+
-Qsquid:S2696"6Make the enclosing method "static" or remove this set.(ŒÁóS8ğ˜¦ó+
-Vsquid:S2209"5Change this instance-reference to a static reference.(¸æğÛûÿÿÿÿ8ğ˜¦ó+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(Á¸³ò
-Psquid:S2209"5Change this instance-reference to a static reference.(ŒÁóS8ğ˜¦ó+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÕÚº ÿÿÿÿÿ8ğ˜¦ó+
-Psquid:S2209"5Change this instance-reference to a static reference.(ŒÁóS8ğ˜¦ó+
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Õ„”ûÿÿÿÿ8ğ˜¦ó+

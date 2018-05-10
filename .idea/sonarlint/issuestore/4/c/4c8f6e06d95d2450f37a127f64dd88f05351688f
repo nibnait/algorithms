@@ -1,11 +1,0 @@
-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(îÁŽ–ûÿÿÿÿ8§ñ‡˜þ+
-bsquid:S1075"ARefactor your code to get this URI from a customizable parameter.(½´£àûÿÿÿÿ8ç¡Þ›ü+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ç¡Þ›ü+
-[squid:S3725":Replace this with a call to the "toFile().exists()" method(¿àüìùÿÿÿÿ8ç¡Þ›ü+
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(”÷£Ö
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ç¡Þ›ü+
-esquid:S2259"DA "NullPointerException" could be thrown; "fields" is nullable here.(ª¥”Áúÿÿÿÿ8ç¡Þ›ü+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ç¡Þ›ü+
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ç¡Þ›ü+

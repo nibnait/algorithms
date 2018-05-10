@@ -1,5 +1,0 @@
-
-msquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(ÚõùĞ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(«û¯ì8éËÂÈü+
-Tsquid:UselessImportCheck"-Remove this unused import 'java.util.BitSet'.(‹¸ÚÁıÿÿÿÿ
