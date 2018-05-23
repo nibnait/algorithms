@@ -33,11 +33,11 @@ public class DateTimeUtil {
     /**
      * Date ==> String
      */
-    public static String Date2String(Date date) {
+    public static String date2String(Date date) {
         return dateFormat.format(date);
     }
 
-    public static String Date2String(Date date, String dateFormat) {
+    public static String date2String(Date date, String dateFormat) {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat);
         return simpleDateFormat.format(date);
     }
@@ -76,11 +76,11 @@ public class DateTimeUtil {
     /**
      * LocalDateTime ==> String
      */
-    public static String LocalDateTimeToString(LocalDateTime localDateTime) {
+    public static String localDateTimeToString(LocalDateTime localDateTime) {
         return localDateTime.format(dateTimeFormatter);
     }
 
-    public static String LocalDateTimeToString(LocalDateTime localDateTime, String dateFormat) {
+    public static String localDateTimeToString(LocalDateTime localDateTime, String dateFormat) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(dateFormat);
         return localDateTime.format(dateTimeFormatter);
     }
@@ -114,7 +114,7 @@ public class DateTimeUtil {
      *  .toIns
      *   (ZonedDateTime)
      */
-    public static LocalDate DateToLocalDate(Date date) {
+    public static LocalDate dateToLocalDate(Date date) {
         ZonedDateTime zonedDateTime = date.toInstant().atZone(defaultZoneId);
         return zonedDateTime.toLocalDate();
     }
@@ -123,8 +123,15 @@ public class DateTimeUtil {
      * Date ==> LocalDateTime
      *   (ZonedDateTime)
      */
-    public static LocalDateTime DateToLocalDateTime(Date date) {
+    public static LocalDateTime dateToLocalDateTime(Date date) {
         ZonedDateTime zonedDateTime = date.toInstant().atZone(defaultZoneId);
         return zonedDateTime.toLocalDateTime();
+    }
+
+    /**
+     * 获取当前时间戳
+     */
+    public static Long getTimeInMillis() {
+        return System.currentTimeMillis();
     }
 }

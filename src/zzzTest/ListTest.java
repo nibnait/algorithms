@@ -1,5 +1,7 @@
 package zzzTest;
 
+import com.google.common.collect.Lists;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -8,6 +10,21 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ListTest {
+
+    public static void main(String[] args) {
+        ArrayList<Long> ids = Lists.newArrayList(1l,2l,3l,4l);
+        Object[] objects = ids.toArray();
+    }
+    private static String getValueString(Object[] value) {
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < value.length; i++) {
+            sb.append(value[i]);
+            if (i<value.length-1) {
+                sb.append(",");
+            }
+        }
+        return sb.toString();
+    }
 
     static class Person {
         int age;
@@ -42,7 +59,7 @@ public class ListTest {
         }
     }
 
-    public static void main(String[] args) {
+    private void testObjectToString() {
         List<Person> personList = new ArrayList<>();
         personList.add(new Person(1));
         personList.add(new Person(2));
@@ -50,8 +67,6 @@ public class ListTest {
         for (Person p : personList) {
             p.setName("dd");
         }
-
-
         System.out.println(personList.toString());
     }
 
