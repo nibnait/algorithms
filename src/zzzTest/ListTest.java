@@ -13,7 +13,8 @@ public class ListTest {
 
     public static void main(String[] args) {
         ArrayList<Long> ids = Lists.newArrayList(1l,2l,3l,4l);
-        Object[] objects = ids.toArray();
+        System.out.println( ids.toString());
+
     }
     private static String getValueString(Object[] value) {
         StringBuffer sb = new StringBuffer();

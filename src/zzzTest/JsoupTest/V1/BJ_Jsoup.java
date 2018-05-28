@@ -1,4 +1,4 @@
-package zzzTest.JsoupTest;
+package zzzTest.JsoupTest.V1;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
