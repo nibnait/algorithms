@@ -1,4 +1,4 @@
-package zzzTest;
+package Java8_in_Action;
 
 import com.google.common.collect.Lists;
 import lombok.AllArgsConstructor;

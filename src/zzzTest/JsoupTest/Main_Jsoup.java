@@ -66,10 +66,12 @@ public class Main_Jsoup {
     private static final String EMPTY = "";
     private static final String Tag_TD = "td";
     private static final String Tag_I = "i";
+    private static final String Tag_Li = "li";
     private static final String Tag_Body = "body";
     private static final String GovV1_TableName = "tableYyzz";
     private static final String GovV7_TableName = "xinxi";
     private static final String GovV5_TagName = "table";
+    private static final String GovV8_DivName = "shuxing_ul";
 
     private static final String GovV2_JiangSu_queryURL = "http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?pageView=true&";
     private static final String GovV2_GuiZhou_queryURL = "http://gsxt.gzgs.gov.cn/business/JCXX.jspx";
@@ -80,7 +82,7 @@ public class Main_Jsoup {
     private static final String GovV4_XiZang_queryURL = "http://220.182.3.99:9079/yztww/ent/queryEntInfoById.do ";
 
     public static void main(String[] args) {
-        String url = TestSourceUrl.XiZang;
+        String url = TestSourceUrl.ShenZhen;
         LicenseInfo licenseInfo = LicenseInfo.newLicenseInfoBySupport(false);
 
         /**
@@ -98,6 +100,9 @@ public class Main_Jsoup {
         }
         if (url.contains(LicenseUrlSource.GuangDong.getUrl())) {
             licenseInfo = GovAnalysis_V5_GuangDong(url);
+        }
+        if (url.contains(LicenseUrlSource.ShenZhen.getUrl())) {
+            licenseInfo = GovAnalysis_V8_ShenZhen(url);
         }
 
         /**
@@ -139,6 +144,28 @@ public class Main_Jsoup {
         }
         System.out.println(licenseInfo);
 //            return licenseInfo;
+    }
+
+    public static LicenseInfo GovAnalysis_V8_ShenZhen(String url) {
+        LicenseInfo licenseInfo = LicenseInfo.newLicenseInfoBySupport(true);
+        try {
+            Document document = org.jsoup.Jsoup.connect(url).get();
+            Elements tableYyzz = document.getElementsByClass(GovV8_DivName);
+            if (tableYyzz.size() > 0) {
+                Element element = tableYyzz.get(0);
+                Elements li = element.getElementsByTag(Tag_Li);
+                for (int i = 0; i < li.size(); i++) {
+                    String text = li.get(i).text();
+                    licenseInfo = getLicenseInfo(licenseInfo, text);
+                }
+                if (StringUtils.isBlank(licenseInfo.getExpireDate())) {
+                    licenseInfo.setExpireDate(LONG_TERM);
+                }
+            }
+        } catch (Exception e) {
+//                logger.error("AnalysizeLicenseHelper.BeiJingAnalysis error, url:%s, msg:%s", url, e.getMessage());
+        }
+        return licenseInfo;
     }
 
     public static LicenseInfo GovAnalysis_V4(String url, String queryURL) {
@@ -209,31 +236,7 @@ public class Main_Jsoup {
                 Elements td = element.getElementsByTag(Tag_TD);
                 for (int i = 0; i < td.size(); i++) {
                     String text = td.get(i).text().trim();
-                    licenseNoList.stream().forEach(item -> {
-                        if (text.contains(item)) {
-                            licenseInfo.setLicenseNo(getTextInfo(text));
-                        }
-                    });
-                    corpNameList.stream().forEach(item -> {
-                        if (text.contains(item)) {
-                            licenseInfo.setCorpName(getTextInfo(text));
-                        }
-                    });
-                    legalPersonList.stream().forEach(item -> {
-                        if (text.contains(item)) {
-                            licenseInfo.setLegalPerson(getTextInfo(text));
-                        }
-                    });
-                    addressList.stream().forEach(item -> {
-                        if (text.contains(item)) {
-                            licenseInfo.setAddress(getTextInfo(text));
-                        }
-                    });
-                    expireDateList.stream().forEach(item -> {
-                        if (text.contains(item)) {
-                            licenseInfo.setExpireDate(getTextInfo(text));
-                        }
-                    });
+                    licenseInfo = getLicenseInfo(licenseInfo, text);
                 }
                 if (StringUtils.isBlank(licenseInfo.getExpireDate())) {
                     licenseInfo.setExpireDate(LONG_TERM);
@@ -242,6 +245,35 @@ public class Main_Jsoup {
         } catch (IOException e) {
             //logger.error("AnalysizeLicenseHelper.BeiJingAnalysis error, url:%s, msg:%s", url, e.getMessage());
         }
+        return licenseInfo;
+    }
+
+    private static LicenseInfo getLicenseInfo(LicenseInfo licenseInfo, String text) {
+        licenseNoList.stream().forEach(item -> {
+            if (text.contains(item)) {
+                licenseInfo.setLicenseNo(getTextInfo(text));
+            }
+        });
+        corpNameList.stream().forEach(item -> {
+            if (text.contains(item)) {
+                licenseInfo.setCorpName(getTextInfo(text));
+            }
+        });
+        legalPersonList.stream().forEach(item -> {
+            if (text.contains(item)) {
+                licenseInfo.setLegalPerson(getTextInfo(text));
+            }
+        });
+        addressList.stream().forEach(item -> {
+            if (text.contains(item)) {
+                licenseInfo.setAddress(getTextInfo(text));
+            }
+        });
+        expireDateList.stream().forEach(item -> {
+            if (text.contains(item)) {
+                licenseInfo.setExpireDate(getTextInfo(text));
+            }
+        });
         return licenseInfo;
     }
 
@@ -272,31 +304,7 @@ public class Main_Jsoup {
                     Elements td = element.getElementsByTag(Tag_TD);
                     for (int i = 0; i < td.size(); i++) {
                         String text = td.get(i).text().trim();
-                        licenseNoList.stream().forEach(item -> {
-                            if (text.contains(item)) {
-                                licenseInfo.setLicenseNo(getTextInfo(text));
-                            }
-                        });
-                        corpNameList.stream().forEach(item -> {
-                            if (text.contains(item)) {
-                                licenseInfo.setCorpName(getTextInfo(text));
-                            }
-                        });
-                        legalPersonList.stream().forEach(item -> {
-                            if (text.contains(item)) {
-                                licenseInfo.setLegalPerson(getTextInfo(text));
-                            }
-                        });
-                        addressList.stream().forEach(item -> {
-                            if (text.contains(item)) {
-                                licenseInfo.setAddress(getTextInfo(text));
-                            }
-                        });
-                        expireDateList.stream().forEach(item -> {
-                            if (text.contains(item)) {
-                                licenseInfo.setExpireDate(getTextInfo(text));
-                            }
-                        });
+                        licenseInfo = getLicenseInfo(licenseInfo, text);
                     }
                     if (StringUtils.isBlank(licenseInfo.getExpireDate())) {
                         licenseInfo.setExpireDate(LONG_TERM);

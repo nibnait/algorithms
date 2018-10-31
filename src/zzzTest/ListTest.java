@@ -14,8 +14,14 @@ public class ListTest {
     public static void main(String[] args) {
         ArrayList<Long> ids = Lists.newArrayList(1l,2l,3l,4l);
         System.out.println( ids.toString());
-
+        testList(ids);
+        System.out.println(ids);
     }
+
+    private static void testList(ArrayList<Long> ids) {
+        ids.add(1l);
+    }
+
     private static String getValueString(Object[] value) {
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < value.length; i++) {

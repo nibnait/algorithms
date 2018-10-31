@@ -21,7 +21,7 @@ public class StringTest {
         System.out.println(split);
     }
 
-    public static void test02(){
+    private static void test02(){
         System.out.println(StringUtils.isNotBlank(null));
         System.out.println(StringUtils.isNotBlank(""));
         System.out.println(StringUtils.isNotBlank("  "));

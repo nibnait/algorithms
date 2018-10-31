@@ -100,7 +100,7 @@ public class g50_树中两个结点的最低公共祖先 {
     //      4            5
     //     / \        /  |  \
     //    6   7      8   9  10
-    public static void test01() {
+    private static void test01() {
         TreeNode n1 = new TreeNode(1);
         TreeNode n2 = new TreeNode(2);
         TreeNode n3 = new TreeNode(3);

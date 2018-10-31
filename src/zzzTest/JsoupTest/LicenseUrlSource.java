@@ -14,6 +14,7 @@ public enum LicenseUrlSource {
     HeNan("dzhy.haaic.gov.cn", "河南"),
     QingHai("218.95.241.36", "青海"),
     GuangDong("gsxt.gdgs.gov.cn", "广东"),
+    ShenZhen("www.szcredit.org.cn", "深圳"),
     SiChuan("gsxt.scaic.gov.cn", "四川"),
     GuiZhou("gsxt.gzgs.gov.cn", "贵州"),
     YunNan("gsxt.ynaic.gov.cn", "云南"),

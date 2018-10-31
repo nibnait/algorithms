@@ -1,5 +1,7 @@
 package utils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,8 +10,24 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class DateTimeUtil {
-    public static final String DATE_FORMAT = "yyyy-MM-dd";
+
+    private static ZoneId zone = ZoneId.systemDefault();
     public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    public static final String DATE_FORMAT = "yyyy-MM-dd";
+
+    public static LocalDate string2Date(String dateString) {
+        if (dateString == null) return null;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT);
+        return LocalDate.parse(dateString, formatter);
+    }
+
+    public static LocalDate dateStringDateToLocalDate(String date) {
+        if (StringUtils.isNotBlank(date)) {
+            return LocalDate.parse(date, DateTimeFormatter.ofPattern(DATE_FORMAT));
+        } else {
+            return LocalDate.now();
+        }
+    }
 
     private static DateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT);
     private static DateFormat dateTimeFormat = new SimpleDateFormat(DATE_TIME_FORMAT);
@@ -128,10 +146,34 @@ public class DateTimeUtil {
         return zonedDateTime.toLocalDateTime();
     }
 
+    public static final String LONG_TIME_VALID = "长期有效";
     /**
      * 获取当前时间戳
      */
     public static Long getTimeInMillis() {
         return System.currentTimeMillis();
+    }
+
+    /**
+     * 判断是否在有效期内
+     * @param expireDate
+     * @return
+     */
+    public static boolean isValidDate(String expireDate) {
+        if(StringUtils.isBlank(expireDate)){
+            return false;
+        }
+        if(LONG_TIME_VALID.equals(expireDate)){
+            return true;
+        }
+        try{
+            LocalDate expireLocalDate = DateTimeUtil.string2Date(expireDate);
+            if(LocalDate.now().compareTo(expireLocalDate) < 0){
+                return true;
+            }
+        }catch (Exception e){
+            return false;
+        }
+        return false;
     }
 }

@@ -43,6 +43,7 @@ public interface TestSourceUrl {
     String HaiNan = "http://202.100.252.118:8079/yzt/toHandleQuery.do?id=YmVobG9xcXFzd3VxdWd2ZnFk&uniScID=amNrcm9ycXheVXZFdH1GTXB2&jumpFlag=false&nsukey=%2B6bRDrDLDbIg7zPv8g6Scy%2FUYH9M8dRKZ%2FhG9jxPVPlU0lkoB6qo8n19RbOoAoksrWp6OmYLGE2GQgyurN5D32APo2I2g64wnZouWde%2BXzhuPrOVli6VK%2F4drmqWEhqfGj6Hk8uk9ts1mzShf8iIq7Ua0WK5fa%2Bsj%2Fk%2FYwIUfFyy3d0OC71bxtFpKjiiUQ3VQxDG%2F59SqgvBrx0CSL0CBA%3D%3D";
     //西藏
     String XiZang = "http://220.182.3.99:9079/yztww/toHandleQuery.do?id=YmFndHZ1eHRwe3N2cg==&uniScID=amNscG9yenFeVXdFdmt5JHEo&jumpFlag=false";
-
+    //深圳
+    String ShenZhen = "https://www.szcredit.org.cn/GJQYCredit1/GSZJGSPT/QYGS_Jump.aspx?rid=4360BB95C225ADCAE835977A33FDAD34FCBC0875BBA64E2F4857B2379E3554A371A3281D3901586B";
 
 }

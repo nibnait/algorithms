@@ -56,7 +56,7 @@ public class h59_对称的二叉树 {
     //                  2                   2
     //             4         6          6          4
     //          8     9   10   11   11     10   9     8
-    public static void test01() {
+    private static void test01() {
         BinaryTreeNode n1 = new BinaryTreeNode(1);
         BinaryTreeNode n2 = new BinaryTreeNode(2);
         BinaryTreeNode n3 = new BinaryTreeNode(2);
@@ -93,7 +93,7 @@ public class h59_对称的二叉树 {
     //                  2                   2
     //             4         5          6          4
     //          8     9   10   11   11     10   9     8
-    public static void test02() {
+    private static void test02() {
         BinaryTreeNode n1 = new BinaryTreeNode(1);
         BinaryTreeNode n2 = new BinaryTreeNode(2);
         BinaryTreeNode n3 = new BinaryTreeNode(2);
