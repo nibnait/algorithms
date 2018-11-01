@@ -20,11 +20,11 @@ shell程序将字符读入寄存器，在放到内存。-- 敲击回车 --
 (1): 代码和数据("hello,world\n"这个字符串)从磁盘复制到主存  
 (2): 寄存器，一种高速缓存，通过`静态随机访问存储器(SRAM)`的硬件技术实现
 
-![将数据从存储器写到显示器](https://github.com/nibnait/algorithms/blob/master/image/CSAPP_C1-1.png)
+![将数据从存储器写到显示器](../../image/CSAPP_C1-1.png)
 
 ## 存储设备的层次结构
 
-![一个存储器层次结构的水里](https://github.com/nibnait/algorithms/blob/master/image/CSAPP_C1-2.png)
+![一个存储器层次结构的示例](../../image/CSAPP_C1-2.png)
 
 | 存储器 | 单字节访问时间(相对) | 容量(相对)(数量级) | 容量(相对)(语言)(相对) |
 | :------: | ------: | ------: | :------ |
@@ -43,7 +43,7 @@ shell程序将字符读入寄存器，在放到内存。-- 敲击回车 --
 k：该部分性能提升的比例
 
 即：
-![公式](https://github.com/nibnait/algorithms/blob/master/image/CSAPP_C1-3.png)  
+![公式](../../image/CSAPP_C1-3.png)  
 
 由此可见，当k -> ∞，S的大小取决于优化部分占总体的比重。
 
