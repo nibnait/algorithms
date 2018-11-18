@@ -58,8 +58,8 @@ add:
     1. SI(source index) 来源索引寄存器
     2. DI(destination index) 目的索引寄存器
  - 指针寄存器
-    1. ebp：(extended base pointer) 基址指针寄存器（指向栈顶）
-    2. esp：(extended stack pointer) 栈指针寄存器
+    1. ebp：(extended base pointer) 基址指针寄存器（指向栈底）
+    2. esp：(extended stack pointer) 栈指针寄存器（指向栈顶）
 
 e:(extended) 代表32位寄存器，占4个字节。
 ### 2. 几个概念
@@ -69,7 +69,7 @@ e:(extended) 代表32位寄存器，占4个字节。
    答：寄存器中既可以存储一个数据值，也可以存储某一个指针的地址。
 
 ### 栈地址的生长方向：高地址-->低地址
-栈顶位于低地址
+所以栈顶位于低地址
 
 ## 假设
 1. 在执行demo函数之前，（调用demo函数的主函数的ebp的地址为1000）
