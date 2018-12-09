@@ -49,30 +49,31 @@ public class Main {
     }
 
     public static void main(String[] args) throws JsonProcessingException {
-        String str2 = "[1500006324,1583984232,43212343,23423421]";
-        String str1 = "orderOperationRecord:order:3123213213123123213";
-        String str = "{\"orderId\":3123213213123123213,\"shopId\":3123213213123123213,\"orderOperation\":\"CONFIRM\",\"operationEnvironment\":{\"platform\":\"OPEN_API\",\"deviceType\":null,\"deviceId\":null,\"confirmDescription\":null},\"time\":\"2018-10-09T19:35:24.446\"}";
-        System.out.println(str1.length());
+//        String str2 = "[1500006324,1583984232,43212343,23423421]";
+//        String str1 = "orderOperationRecord:order:3123213213123123213";
+//        String str = "{\"orderId\":3123213213123123213,\"shopId\":3123213213123123213,\"orderOperation\":\"CONFIRM\",\"operationEnvironment\":{\"platform\":\"OPEN_API\",\"deviceType\":null,\"deviceId\":null,\"confirmDescription\":null},\"time\":\"2018-10-09T19:35:24.446\"}";
+//        System.out.println(str1.length());
 
-
+//        List<String> strings = Lists.newArrayList("1", "2");
+//        System.out.println(String.join(",", strings));
 
         OrderTip orderTip = new OrderTip("1",OrderTipType.WECHAT, "微信接单小助手", "建议开启", "/app/we-chat", Switch_Type.NATIVE_PROMPT_TONE, "imageUrl");
         setsadfaf(orderTip);
         System.out.println(JsonHelper.toJsonString(orderTip));
-
-
-        String appVersion = "8.10.7";
-        String huskarVersion = "8.0.0";
-        String v2 = "7.8";
-        String v3 = "7.9.8";
-        String v4 = "8.9.8";
-        String[] huskarVersionSplit = huskarVersion.split("\\.");
-        String[] appVersionSplit = appVersion.split("\\.");
-        for (int i = 0; i < appVersionSplit.length; i++) {
-            if (Integer.valueOf(huskarVersionSplit[i]) > Integer.valueOf(appVersionSplit[i])) {
-                System.out.println("大于");
-            }
-        }
+//
+//
+//        String appVersion = "8.10.7";
+//        String huskarVersion = "8.0.0";
+//        String v2 = "7.8";
+//        String v3 = "7.9.8";
+//        String v4 = "8.9.8";
+//        String[] huskarVersionSplit = huskarVersion.split("\\.");
+//        String[] appVersionSplit = appVersion.split("\\.");
+//        for (int i = 0; i < appVersionSplit.length; i++) {
+//            if (Integer.valueOf(huskarVersionSplit[i]) > Integer.valueOf(appVersionSplit[i])) {
+//                System.out.println("大于");
+//            }
+//        }
     }
 
     private static void setsadfaf(OrderTip orderTip) {
