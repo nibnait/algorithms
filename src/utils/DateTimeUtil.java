@@ -176,4 +176,14 @@ public class DateTimeUtil {
         }
         return false;
     }
+
+    /**
+     * 比较两个日期相差多少天
+     * @param startTime
+     * @param endTime
+     * @return
+     */
+    public static Long durationDays(LocalDateTime startTime, LocalDateTime endTime) {
+        return Duration.between(startTime, endTime).toDays();
+    }
 }
