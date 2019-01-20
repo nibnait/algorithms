@@ -16,9 +16,7 @@ import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -55,10 +53,13 @@ public class Main {
     }
 
     public static void main(String[] args) throws JsonProcessingException {
-        List<String> phones = Lists.newArrayList("123");
-        String phone = null;
-        int index = phones.indexOf(phone) + 1;
-        System.out.println(index);
+//        List<String> phones = Lists.newArrayList("123");
+//        String phone = null;
+//        int index = phones.indexOf(phone) + 1;
+//        System.out.println(index);
+        Map<Long, Long> map = new HashMap<>();
+        map.put(1l, 2l);
+        System.out.println(map.get(2l));
     }
 
     private static void history() throws JsonProcessingException {
