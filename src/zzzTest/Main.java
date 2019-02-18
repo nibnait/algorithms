@@ -12,6 +12,7 @@ import org.apache.poi.util.StringUtil;
 import org.openxmlformats.schemas.wordprocessingml.x2006.main.CTVerticalJc;
 import utils.JsonHelper;
 
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -52,14 +53,23 @@ public class Main {
         private Boolean test02;
     }
 
-    public static void main(String[] args) throws JsonProcessingException {
+    @Data
+    @AllArgsConstructor
+    public class IMAttribute {
+        private Integer is_open_im;
+    }
+
+    public static void main(String[] args) throws Exception {
 //        List<String> phones = Lists.newArrayList("123");
 //        String phone = null;
 //        int index = phones.indexOf(phone) + 1;
 //        System.out.println(index);
-        Map<Long, Long> map = new HashMap<>();
-        map.put(1l, 2l);
-        System.out.println(map.get(2l));
+//        Map<Long, Long> map = new HashMap<>();
+//        map.put(1l, 2l);
+//        System.out.println(map.get(2l));
+        String str = new String("{\"a\":\"1\", \"is_open_im\":\"2\"}");
+        IMAttribute imAttribute = JsonHelper.toJsonObject(str, IMAttribute.class);
+        System.out.println(imAttribute.getIs_open_im());
     }
 
     private static void history() throws JsonProcessingException {

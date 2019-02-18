@@ -18,7 +18,7 @@ import Standard.BinaryTreeNodeWithParent;
  */
 public class h58_二叉树的下一个结点 {
 
-    public static BinaryTreeNodeWithParent getNext(BinaryTreeNodeWithParent head) {
+    private static BinaryTreeNodeWithParent getNext(BinaryTreeNodeWithParent head) {
         if (head == null) {
             return null;
         }
@@ -50,7 +50,7 @@ public class h58_二叉树的下一个结点 {
     //                  2                   3
     //             4         5          6          7
     //          8     9   10   11   12   13    14   15
-    public static void test01() {
+    private static void test01() {
         BinaryTreeNodeWithParent n1 = new BinaryTreeNodeWithParent(1); // 12
         BinaryTreeNodeWithParent n2 = new BinaryTreeNodeWithParent(2); // 10
         BinaryTreeNodeWithParent n3 = new BinaryTreeNodeWithParent(3); // 14
