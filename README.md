@@ -24,7 +24,7 @@
 
  - 链表系列专题：[/src/nowcoder/b_2nd_Season/bf160824/README.md](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bf160824/README.md)
 
-## 《剑指Offer》套路汇总：[/src/SwordOffer/README.md](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/README.md)
+## 《剑指Offer》套路汇总：[/src/A_ReadingNotes.SwordOffer/README.md](https://github.com/nibnait/algorithms/blob/master/src/SwordOffer/README.md)
 
  - 树的专题：
      - [nowcoder/bh160907](https://github.com/nibnait/algorithms/blob/master/src/nowcoder/b_2nd_Season/bh160907/README.md)

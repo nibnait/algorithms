@@ -3,7 +3,7 @@ ID3全称是Identity of MP3，其解决方案是在音频文件末尾附加一�
 
 ## 背景
 买了几节网络音频节目，但是音频文件信息里面各种乱填，根本没法分类。
-![垃圾广告](../../../image/zzzTest/png01.png)
+![垃圾广告](../../../../image/zzzTest/png01.png)
 
 ## 目标
 批量：
@@ -15,7 +15,7 @@ ID3全称是Identity of MP3，其解决方案是在音频文件末尾附加一�
 参考资料：[https://www.cnblogs.com/cocowool/p/python_read_mp3_id3v1_tag.html](https://www.cnblogs.com/cocowool/p/python_read_mp3_id3v1_tag.html)
 ### ID3v1
 ID3v1附着在音频数据之后，长度为128bytes，每个字段最大支持30个字符。
-![ID3v1](../../../image/zzzTest/ID3v1.png)
+![ID3v1](../../../../image/zzzTest/ID3v1.png)
 
 ### ID3v1的文件结构
 | 名称 | 字节 | 说明 |
@@ -34,7 +34,7 @@ ID3v1附着在音频数据之后，长度为128bytes，每个字段最大支持3
 ID3v2是加在音频数据前面的一组数据，每项具体的数据称为frame(例如歌曲名称)。可以包含任意类型的数据，每个frame最大支持16MB，整个tag大小最大支持256MB。存储编码支持Unicode，这样就不会产生乱码问题。
 
 Tag数据放在音频数据之前还有一个好处，对于流式访问可以首先获得歌曲信息并展现给用户
-![ID3v2](../../../image/zzzTest/ID3v2.png)
+![ID3v2](../../../../image/zzzTest/ID3v2.png)
 
 ## 寻找想要修改的ID3v2对象字段
 参考资料：
