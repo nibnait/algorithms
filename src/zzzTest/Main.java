@@ -67,9 +67,9 @@ public class Main {
 //        Map<Long, Long> map = new HashMap<>();
 //        map.put(1l, 2l);
 //        System.out.println(map.get(2l));
-        String str = new String("{\"a\":\"1\", \"is_open_im\":\"2\"}");
-        IMAttribute imAttribute = JsonHelper.toJsonObject(str, IMAttribute.class);
-        System.out.println(imAttribute.getIs_open_im());
+//        String str = new String("{\"a\":\"1\", \"is_open_im\":\"2\"}");
+//        IMAttribute imAttribute = JsonHelper.toJsonObject(str, IMAttribute.class);
+//        System.out.println(imAttribute.getIs_open_im());
     }
 
     private static void history() throws JsonProcessingException {
