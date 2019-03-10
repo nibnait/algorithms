@@ -2,60 +2,55 @@ package A_ReadingNotes.ASD_PPP.BowlingBall;
 
 public class Game {
     //作为全局变量，方便写测试用例
-    private static int ROUND = 10;  //只投掷10轮（每轮2次投掷机会）
-    private static int STRIKE_BASE_SCORE = 10;  //全中的得分
-    private static int[] itsThrows = new int[2 * ROUND + 2];  //10轮比赛，最多投掷22次
+    protected static final int ROUND = 10;  //只投掷10轮（每轮2次投掷机会）
+    private static int totalRoundCount = 0;  //本次游戏共有多少楼
+    protected static int STRIKE_BASE_SCORE = 10;  //全中的得分
+    private static boolean isFirstThrow = true; //是不是当前轮的第一次投掷
+    private static Scorer scorer = new Scorer();
 
-    public static void initItsThrows(int... throwsIn) {
-        int index = 0;
-        for (int i = 0; i < throwsIn.length; ) {
-            itsThrows[index++] = throwsIn[i++];
-        }
-        ROUND = getRoundNum(throwsIn);
-    }
-
-    private static int getRoundNum(int[] throwsIn) {
-        int length = throwsIn.length;
-        if (length > 2) {
-            if (throwsIn[length - 3] == STRIKE_BASE_SCORE
-                    || ((length > 3 && throwsIn[length - 4] == STRIKE_BASE_SCORE)) && throwsIn[length - 3] + throwsIn[length - 2] != STRIKE_BASE_SCORE) {
-                return (length - 2) / 2;
-            } else if ((throwsIn[length - 2] + throwsIn[length - 3] == STRIKE_BASE_SCORE && length % 2 == 1)    //长度是奇数
-                    || (throwsIn[length - 3] + throwsIn[length - 4] == STRIKE_BASE_SCORE && length % 2 == 0)) {   //长度是偶数
-                return (length - 1) / 2;
-            }
-        }
-        return length / 2;
-    }
 
     public static int score() {
-        int totalScore = 0;
-        for (int roundNum = 1; roundNum <= ROUND; roundNum++) {
-            totalScore = scoreForFrame(roundNum);
-        }
-        return totalScore;
+        return scorer.scoreForRound(totalRoundCount);
     }
 
-    public static int scoreForFrame(int roundNum) {
-        if (roundNum <= 0) {
-            return 0;
+    public static int scoreForRound(int roundNum) throws Exception {
+        if (roundNum > totalRoundCount) {
+            throw new Exception(String.format("目前只进行了%s轮", totalRoundCount));
         }
-        if (isStrike(roundNum)) {
-            return STRIKE_BASE_SCORE + itsThrows[roundNum * 2] + itsThrows[roundNum * 2 + 1] + scoreForFrame(roundNum - 1);
-        }
-        if (isSpare(roundNum)) {
-            return STRIKE_BASE_SCORE + itsThrows[roundNum * 2] + scoreForFrame(roundNum - 1);
-        }
-        return itsThrows[roundNum * 2 - 2] + itsThrows[roundNum * 2 - 1] + scoreForFrame(roundNum - 1);
+        return scorer.scoreForRound(roundNum);
     }
 
-    //补中
-    private static boolean isSpare(int roundNum) {
-        return itsThrows[roundNum * 2 - 2] + itsThrows[roundNum * 2 - 1] == 10;
+    public static void initItsThrows(int[] throwsIn) {
+        for (int i = 0; i < throwsIn.length; i++) {
+            scorer.addThrows(throwsIn[i]);
+            adjustCurrentRound(throwsIn[i]);
+        }
     }
 
-    //全中
-    private static boolean isStrike(int roundNum) {
-        return itsThrows[roundNum * 2 - 2] == 10 || itsThrows[roundNum * 2 - 1] == 10;
+    private static void adjustCurrentRound(int pins) {
+        if (isStrike(pins) || !isFirstThrow) {         //全中 或 第二次投掷，本轮结束
+            totalRoundCount = Math.min(ROUND, totalRoundCount + 1);
+            isFirstThrow = true;
+        } else {
+            isFirstThrow = false;
+        }
+    }
+
+    private static void adjustCurrentRound_V1(int pins) {
+        if (isFirstThrow) {
+            if (isStrike(pins)) {
+                totalRoundCount++;
+            } else {
+                isFirstThrow = false;
+            }
+        } else {
+            isFirstThrow = true;    //下一次，肯定就是下一轮的第一次投掷了
+            totalRoundCount++;
+        }
+        totalRoundCount = Math.min(ROUND, totalRoundCount);
+    }
+
+    private static boolean isStrike(int pins) {
+        return pins == STRIKE_BASE_SCORE;
     }
 }
