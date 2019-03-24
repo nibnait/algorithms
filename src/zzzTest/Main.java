@@ -60,6 +60,27 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
+        System.out.println(testFinally());
+    }
+
+    private static int testFinally() {
+        try {
+            System.out.println(1/0);
+            return 5;
+        } catch (Exception e) {
+            System.out.println(2);
+        } finally {
+            System.out.println(3);
+        }
+        return testFinally2();
+    }
+
+    private static int testFinally2() {
+        System.out.println(4);
+        return 0;
+    }
+
+    private static void history() throws JsonProcessingException {
 //        List<String> phones = Lists.newArrayList("123");
 //        String phone = null;
 //        int index = phones.indexOf(phone) + 1;
@@ -70,9 +91,7 @@ public class Main {
 //        String str = new String("{\"a\":\"1\", \"is_open_im\":\"2\"}");
 //        IMAttribute imAttribute = JsonHelper.toJsonObject(str, IMAttribute.class);
 //        System.out.println(imAttribute.getIs_open_im());
-    }
 
-    private static void history() throws JsonProcessingException {
         //        String str2 = "[1500006324,1583984232,43212343,23423421]";
 //        String str1 = "orderOperationRecord:order:3123213213123123213";
 //        String str = "{\"orderId\":3123213213123123213,\"shopId\":3123213213123123213,\"orderOperation\":\"CONFIRM\",\"operationEnvironment\":{\"platform\":\"OPEN_API\",\"deviceType\":null,\"deviceId\":null,\"confirmDescription\":null},\"time\":\"2018-10-09T19:35:24.446\"}";
