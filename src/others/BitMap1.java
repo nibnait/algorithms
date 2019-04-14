@@ -1,7 +1,5 @@
 package others;
 
-import Standard.stdOut;
-
 /**
  * Created by nibnait on 2016/8/9.
  */

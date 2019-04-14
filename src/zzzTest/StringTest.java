@@ -61,8 +61,8 @@ public class StringTest {
      */
     public void checkStringContains() {
 
-        String haystack = "Programming in Java";
-        String needle1 = "Java";
+        String haystack = "Programming in interview.Java";
+        String needle1 = "interview";
         String needle2 = "Pascal";
 
         int index1 = haystack.indexOf(needle1);

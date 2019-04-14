@@ -1,8 +1,5 @@
 package zzzTest;
 
-import Standard.stdOut;
-import Standard.stdRandom;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -24,7 +21,7 @@ public class RandomTest {
 
     private void test01() {
         //int[] a = new int[10];
-        //stdOut.print(stdRandom.random(a));
+        //StdOut.print(StdRandom.random(a));
         System.out.println(UUID.randomUUID().toString());
     }
 }

@@ -18,4 +18,11 @@ public class ListNode {
     public String toString() {
         return value +"";
     }
+
+    void print() {
+        System.out.print(value + " ");
+        if (next != null) {
+            next.print();
+        }
+    }
 }

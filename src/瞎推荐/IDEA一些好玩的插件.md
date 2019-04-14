@@ -1,6 +1,5 @@
-# JRebel for IntelliJ
+# 一些个人习惯单独设置的快捷键：
 
-command+F9
 
 # Lombok plugin
 @Data  
@@ -8,16 +7,20 @@ command+F9
 @NoArgsConstructor  
 ...
 
+# GenerateAllSetter
+Alt+Enter
+
+# JRebel for IntelliJ
+command+F9
+
 # codehelper.generator
 待使用
 
 # GsonFormat
 待使用
 
-# GenerateAllSetter
-Alt+Enter
-
 # CodeGlance
+不实用
 
 ---
 ---
