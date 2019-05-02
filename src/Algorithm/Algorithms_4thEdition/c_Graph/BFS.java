@@ -1,6 +1,6 @@
 package Algorithm.Algorithms_4thEdition.c_Graph;
 
-import Standard.StdOut;
+import utils.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -57,7 +57,7 @@ public class BFS extends TestCase {
             return;
         }
         String poll = queue.poll();
-        StdOut.print("node %s 到 %s 的距离为: %d", poll, startVertex, distanceMap_recursive.get(poll));
+        SysOut.println("node %s 到 %s 的距离为: %d", poll, startVertex, distanceMap_recursive.get(poll));
         int distance = distanceMap_recursive.get(poll)+1;
         for (String adjoinNode : graph.getAdjoinMap().get(poll)) {
             if (!distanceMap_recursive.containsKey(adjoinNode)) {
@@ -78,7 +78,7 @@ public class BFS extends TestCase {
         distanceMap.put(startVertex, 0);
         while (!queue.isEmpty()) {
             String poll = queue.poll();
-            StdOut.print("node %s 到 %s 的距离为: %d", poll, startVertex, distanceMap.get(poll));
+            SysOut.println("node %s 到 %s 的距离为: %d", poll, startVertex, distanceMap.get(poll));
             int distance = distanceMap.get(poll) + 1;
             for (String adjoinNode : graph.getAdjoinMap().get(poll)) {
                 if (!distanceMap.containsKey(adjoinNode)) {

@@ -1,6 +1,6 @@
 package Algorithm.Algorithms_4thEdition.a_Sorting;
 
-import Standard.Std;
+import utils.SwapUtil;
 
 /**
  * Bubble_Sort
@@ -36,7 +36,7 @@ public class a_Bubble {
         for(int i=0; i<n-1; i++){
             for(int j=0; j<n-1-i; j++){
                 if(a[j]>a[j+1]){
-                    Std.swap(a, j, j+1);
+                    SwapUtil.swap(a, j, j+1);
                 }
             }
         }

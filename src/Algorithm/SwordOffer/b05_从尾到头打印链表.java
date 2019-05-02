@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
+import StandardStruct.ListNode;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package Algorithm.Algorithms_4thEdition.c_Graph;
 
-import Standard.StdOut;
+import utils.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -39,14 +39,14 @@ public class DFS extends TestCase {
     private void DepthFirstSearch(Graph graph, String currentVertex) {
         checkParam(graph, currentVertex);
         distanceMap.put(currentVertex, distance++);
-        StdOut.print("visit Stack IN node %s \t step:%d", currentVertex, step++);
+        SysOut.println("visit Stack IN node %s \t step:%d", currentVertex, step++);
 
         for (String vertex : graph.getAdjoinMap().get(currentVertex)) {
             if (!distanceMap.containsKey(vertex)) {
                 DepthFirstSearch(graph, vertex);
             }
         }
-        StdOut.print("visit Stack OUT node %s \t step:%d", currentVertex, step++);
+        SysOut.println("visit Stack OUT node %s \t step:%d", currentVertex, step++);
         distance--;
     }
 
@@ -61,7 +61,7 @@ public class DFS extends TestCase {
     private void printAllNodesDistance(Map<String, Integer> distanceMap) {
         System.out.println();
         for (Map.Entry<String, Integer> entry : distanceMap.entrySet()) {
-            StdOut.print("node %s 到 %s 的距离为: %d", entry.getKey(), startVertex, entry.getValue());
+            SysOut.println("node %s 到 %s 的距离为: %d", entry.getKey(), startVertex, entry.getValue());
         }
     }
 }

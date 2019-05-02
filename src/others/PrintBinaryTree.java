@@ -1,6 +1,6 @@
 package others;
 
-import Standard.BinaryTreeNode;
+import StandardStruct.BinaryTreeNode;
 
 /**
  * 打印二叉树

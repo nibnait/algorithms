@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
-import Standard.StdOut;
+import StandardStruct.BinaryTreeNode;
+import utils.SysOut;
 
 /**
  * 题目：给定一棵二叉搜索树，请找出其中的第k大的结点。
@@ -43,7 +43,7 @@ public class h63_二叉搜索树的第k个结点 {
     }
     public static void main(String[] args) {
         BinaryTreeNode root = initBinaryTree();
-        StdOut.inOrderPrint(root);
+        SysOut.inOrderPrint(root);
         System.out.println();
         for (int i = 0; i <= 10; i++) {
             System.out.printf(kthNode(root, i) + ", ");

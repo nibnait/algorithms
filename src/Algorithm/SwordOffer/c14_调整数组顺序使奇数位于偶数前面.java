@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
-import Standard.StdOut;
+import utils.SwapUtil;
+import utils.SysOut;
 
 /**
  * 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数位于数组的前半部分，所有偶数位予数组的后半部分。
@@ -35,7 +35,7 @@ public class c14_调整数组顺序使奇数位于偶数前面 {
         while (p1 < p2){
             while (p1 < p2 && flag(arr[++p1]));
             while (p1 < p2 && !flag(arr[--p2]));
-            Std.swap(arr, p1, p2);
+            SwapUtil.swap(arr, p1, p2);
         }
     }
 
@@ -47,7 +47,7 @@ public class c14_调整数组顺序使奇数位于偶数前面 {
         }
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j >0 && !flag(arr[j-1]) && flag(arr[j]); j--) {
-                Std.swap(arr, j-1, j);
+                SwapUtil.swap(arr, j-1, j);
             }
         }
     }
@@ -67,11 +67,11 @@ public class c14_调整数组顺序使奇数位于偶数前面 {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 3, 4, 5};
-        StdOut.print(arr);
+        SysOut.printArray(arr);
         reorderOddEvenFromInsertSort(arr);
-        StdOut.print(arr);
+        SysOut.printArray(arr);
         Reorder(arr);
-        StdOut.print(arr);
+        SysOut.printArray(arr);
     }
 
 }

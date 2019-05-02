@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
+import StandardStruct.BinaryTreeNode;
 
 /**
  * 题目：输入两棵二叉树 A 和 B，判断 B 是不是 A 的子结构。

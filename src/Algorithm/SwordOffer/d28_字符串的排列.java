@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
+import utils.SwapUtil;
 
 import java.util.Arrays;
 
@@ -70,7 +70,7 @@ public class d28_字符串的排列 {
                 while (chars[pFind] < chars[p1]){   //从后往前找比替换点大的第一个数
                     --pFind;
                 }
-                Std.swap(chars, p1, pFind);
+                SwapUtil.swap(chars, p1, pFind);
                 Reverse(chars, p2, pEnd);   //替换点后面的数全部反转
                 System.out.print(new String(chars) + " ");
                 p1 = pEnd;
@@ -80,7 +80,7 @@ public class d28_字符串的排列 {
 
     private static void Reverse(char[] chars, int p2, int length) {
         while (p2 < length){
-            Std.swap(chars, p2++, length--);
+            SwapUtil.swap(chars, p2++, length--);
         }
     }
 
@@ -113,9 +113,9 @@ public class d28_字符串的排列 {
         } else {
             for (int i = begin; i < length; i++) {
                 if (IsSwap(chars, begin, i)){
-                    Std.swap(chars, begin, i);
+                    SwapUtil.swap(chars, begin, i);
                     permutation(chars, begin+1);
-                    Std.swap(chars, begin, i);
+                    SwapUtil.swap(chars, begin, i);
                 }
             }
         }

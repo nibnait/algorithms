@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
+import StandardStruct.BinaryTreeNode;
 import others.PrintBinaryTree;
 
 import java.util.HashMap;

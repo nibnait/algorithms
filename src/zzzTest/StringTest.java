@@ -1,6 +1,6 @@
 package zzzTest;
 
-import Standard.StringUtils;
+import utils.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +22,9 @@ public class StringTest {
     }
 
     private static void test02(){
-        System.out.println(StringUtils.isNotBlank(null));
-        System.out.println(StringUtils.isNotBlank(""));
-        System.out.println(StringUtils.isNotBlank("  "));
+        System.out.println(StringUtil.isNotBlank(null));
+        System.out.println(StringUtil.isNotBlank(""));
+        System.out.println(StringUtil.isNotBlank("  "));
     }
 
     public void testEquals(){

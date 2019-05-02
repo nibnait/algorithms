@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
-import Standard.StdOut;
+import StandardStruct.BinaryTreeNode;
+import utils.SysOut;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -110,7 +110,7 @@ public class h62_序列化二叉树 {
         BinaryTreeNode root1 = new BinaryTreeNode();
         root1 = deserialize(root1, result1);
 //        root1 = deserialize(result1, 0);
-        StdOut.inOrderPrint(root1);
+        SysOut.inOrderPrint(root1);
 
         System.out.println();
         System.out.println("法2：");
@@ -118,7 +118,7 @@ public class h62_序列化二叉树 {
         serialize2(root, result2);
         System.out.println(result2);
         BinaryTreeNode root2 = deserialize2(result2, 0) ;
-        StdOut.inOrderPrint(root2);
+        SysOut.inOrderPrint(root2);
     }
 
     //                            1

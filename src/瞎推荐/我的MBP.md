@@ -1,7 +1,7 @@
 # 必备工具
 #### [Chrome](https://www.google.com/chrome/)
 
-#### [iTerm2 + zsh](https://www.jianshu.com/p/e7af448d01b0)
+#### [iTerm2](https://www.jianshu.com/p/e7af448d01b0) + [Homebrew](https://www.jianshu.com/p/2b4f00a8e4da) + zsh
  
 #### Alfred
  - 有道 workflow
@@ -25,6 +25,17 @@ App切换
 #### Sublime Text 3
 [download](https://www.sublimetext.com/)
 
+ctrl + `
+
+获取package control最新安装代码：[https://packagecontrol.io/installation](https://packagecontrol.io/installation)
+
+
+cmd+shift+p  
+package control: install package  
+cmd+shift+p  
+pretty json
+
+
 
 # 专业工具
 #### Parallels Desktop
@@ -37,11 +48,32 @@ App切换
  - JDK 1.6：[http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html)
  - JDK 1.5：[http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase5-419410.html)
 
-#### Maven
+#### [Maven](https://www.jianshu.com/p/96021a36e000)
 
 #### IDEA
 [download](https://www.jetbrains.com/idea/download/#section=mac)  
 [lanyus](http://idea.lanyus.com/)
+
+算法测试Code Templates: 
+```java
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
+
+import junit.framework.TestCase;
+import org.junit.Test;
+
+/*
+
+ */
+public class ${NAME} extends TestCase {
+    
+    @Test
+    public void testCase() {
+        
+    }
+}
+
+```
 
 #### Xmind
 
@@ -55,6 +87,9 @@ App切换
 
 
 # 装X工具
+#### Aerial
+桌面屏保
+
 #### iStat Menus
 [支持正版，自行购买下载]
 
@@ -65,3 +100,4 @@ win风格的任务栏
 #### Commander One
 文件管理
 [支持正版，自行购买下载]
+

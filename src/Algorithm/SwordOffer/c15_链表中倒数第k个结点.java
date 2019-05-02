@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
+import StandardStruct.ListNode;
 
 /**
  * 题目：输入一个链表，输出该链表中倒数第k 个结点．

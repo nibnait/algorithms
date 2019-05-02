@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.StringUtils;
+import utils.StringUtil;
 
 /**
  * 题目一：输入一个英文句子，翻转句子中单词的顺序，但单词内字啊的顺序不变。为简单起见，标点符号和普通字母一样处理。
@@ -25,7 +25,7 @@ public class f42_1$翻转单词顺序 {
      * @return
      */
     private static String reverseSentence2(String str) {
-        if (StringUtils.isBlank(str)){
+        if (StringUtil.isBlank(str)){
             return "";
         }
         String[] arr = str.split(" ");
@@ -44,7 +44,7 @@ public class f42_1$翻转单词顺序 {
     }
 
     private static String reverseSentence(String str) {
-        if (StringUtils.isBlank(str)){
+        if (StringUtil.isBlank(str)){
             return "";
         }
         char[] chars = str.toCharArray();

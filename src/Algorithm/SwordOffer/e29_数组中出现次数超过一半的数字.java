@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
+import utils.SwapUtil;
 
 /**
  * 题目：数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字
@@ -109,10 +109,10 @@ public class e29_数组中出现次数超过一半的数字 {
         //以arr[hi]为基准 划分
         for (int i = lo; i < hi; i++) {
             if (arr[i] <= arr[hi]){
-                Std.swap(arr, i, flag++);
+                SwapUtil.swap(arr, i, flag++);
             }
         }
-        Std.swap(arr, hi, flag);
+        SwapUtil.swap(arr, hi, flag);
         return flag;
     }
 

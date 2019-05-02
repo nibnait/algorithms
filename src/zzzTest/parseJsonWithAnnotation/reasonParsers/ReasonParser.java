@@ -1,6 +1,6 @@
 package zzzTest.parseJsonWithAnnotation.reasonParsers;
 
-import Standard.StringUtils;
+import utils.StringUtil;
 import zzzTest.parseJsonWithAnnotation.abstractClass.ReasonParserConstants;
 import zzzTest.parseJsonWithAnnotation.abstractClass.ReasonTitle;
 
@@ -86,7 +86,7 @@ public abstract class ReasonParser<T> {
     private void addEmptyValue(Field[] fields, Map<String, String> resultMap) {
         for (Field field : fields) {
             String mapValue = resultMap.get(field.getName());
-            if (StringUtils.isBlank(mapValue)) {
+            if (StringUtil.isBlank(mapValue)) {
                 resultMap.put(field.getName(), "");
             }
         }
@@ -94,7 +94,7 @@ public abstract class ReasonParser<T> {
 
     private void putInOther(Map<String, String> resultMap, String str) {
         StringBuilder otherReason = new StringBuilder();
-        if (StringUtils.isNotBlank(resultMap.get(ReasonParserConstants.OTHER))) {
+        if (StringUtil.isNotBlank(resultMap.get(ReasonParserConstants.OTHER))) {
             otherReason.append(resultMap.get(ReasonParserConstants.OTHER));
             otherReason.append("。  ");
         }

@@ -1,8 +1,8 @@
 package Algorithm.Algorithms_4thEdition.a_Sorting;
 
-import Standard.Std;
-import Standard.StdOut;
-import Standard.StdRandom;
+import utils.SysOut;
+import utils.SwapUtil;
+import utils.SysRandom;
 /**
  * Selection_Sort
  * 时间复杂度：O(n^2)
@@ -16,11 +16,11 @@ import Standard.StdRandom;
 public class a_Selection {
     public static void main(String[] args) {
         int[] a = new int[10];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = SysRandom.random(a);
+        SysOut.printArray(a);
 
         a = Selection_Sort(a);
-        StdOut.print(a);
+        SysOut.printArray(a);
     }
 
     /**
@@ -39,7 +39,7 @@ public class a_Selection {
                     min = j;
                 }
             }
-            Std.swap(a, i, min);
+            SwapUtil.swap(a, i, min);
         }
         return a;
     }

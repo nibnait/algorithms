@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
-import Standard.StdOut;
+import StandardStruct.ListNode;
+import utils.SysOut;
 
 /**
  * 题目：定义一个函数，输入一个链表的头结点，反转该链表并输出反转后链表的头结点。
@@ -64,19 +64,19 @@ public class c16_反转链表 {
         head.next.next.next.next = new ListNode(5);
         head.next.next.next.next.next = new ListNode(6);
 
-        StdOut.printList(head);
+        SysOut.printList(head);
         head = reverseList(head);
-        StdOut.printList(head);
+        SysOut.printList(head);
         head = reverseList2(head);
-        StdOut.printList(head);
+        SysOut.printList(head);
 
         //当只有一个结点时
         ListNode head2 = new ListNode(1);
-        StdOut.printList(head2);
+        SysOut.printList(head2);
         head = reverseList(head2);
-        StdOut.printList(head2);
+        SysOut.printList(head2);
         head = reverseList2(head2);
-        StdOut.printList(head2);
+        SysOut.printList(head2);
 
     }
 }

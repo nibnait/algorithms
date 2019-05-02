@@ -1,7 +1,7 @@
 package Algorithm.Algorithms_4thEdition.a_Sorting;
 
-import Standard.StdOut;
-import Standard.StdRandom;
+import utils.SysOut;
+import utils.SysRandom;
 
 /**
  * Created by nibnait on 2016/8/8.
@@ -10,11 +10,11 @@ public class d_Merge {
 
     public static void main(String[] args) {
         int[] a = new int[7];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = SysRandom.random(a);
+        SysOut.printArray(a);
 
         a = Merge_Sort(a, 0, a.length-1);
-        StdOut.print(a);
+        SysOut.printArray(a);
     }
 
     /**

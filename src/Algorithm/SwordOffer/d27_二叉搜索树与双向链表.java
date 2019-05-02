@@ -1,12 +1,12 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
+import StandardStruct.BinaryTreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import static Standard.StdOut.inOrderPrint;
-import static Standard.StdOut.printDoubleLinkedList;
+import static utils.SysOut.inOrderPrint;
+import static utils.SysOut.printDoubleLinkedList;
 
 /**
  * 题目：输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。

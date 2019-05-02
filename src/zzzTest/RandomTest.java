@@ -21,7 +21,7 @@ public class RandomTest {
 
     private void test01() {
         //int[] a = new int[10];
-        //StdOut.print(StdRandom.random(a));
+        //SysOut.println(SysRandom.random(a));
         System.out.println(UUID.randomUUID().toString());
     }
 }

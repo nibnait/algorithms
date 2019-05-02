@@ -1,9 +1,8 @@
 package Algorithm.SwordOffer;
 
-import Standard.StringUtils;
+import utils.StringUtil;
 
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -36,7 +35,7 @@ public class h55_字符流中第一个不重复的字符 {
 
 
     private static char firstAppearingOnce(String str) {
-        if (StringUtils.isBlank(str)){
+        if (StringUtil.isBlank(str)){
             return '\0';
         }
         HashMap<Character, Integer> map = new LinkedHashMap<>();

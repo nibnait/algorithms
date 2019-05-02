@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
-import Standard.StdOut;
+import StandardStruct.ListNode;
+import utils.SysOut;
 
 /**
  * 题目：在一个排序的链表中，如何删除重复的结点？
@@ -69,7 +69,7 @@ public class h57_删除链表中重复的结点 {
         n5.next = n6;
         n6.next = n7;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->2->3->4->5->6->7
     private static void test02() {
@@ -87,7 +87,7 @@ public class h57_删除链表中重复的结点 {
         n5.next = n6;
         n6.next = n7;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->1->1->1->1->1->2
     private static void test03() {
@@ -105,7 +105,7 @@ public class h57_删除链表中重复的结点 {
         n5.next = n6;
         n6.next = n7;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->1->1->1->1->1->1
     private static void test04() {
@@ -123,7 +123,7 @@ public class h57_删除链表中重复的结点 {
         n5.next = n6;
         n6.next = n7;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->1->2->2->3->3->4->4
     private static void test05() {
@@ -143,7 +143,7 @@ public class h57_删除链表中重复的结点 {
         n6.next = n7;
         n7.next = n8;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->1->2->3->3->4->5->5
     private static void test06() {
@@ -163,7 +163,7 @@ public class h57_删除链表中重复的结点 {
         n6.next = n7;
         n7.next = n8;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->1->2->2->3->3->4->5->5
     private static void test07() {
@@ -185,7 +185,7 @@ public class h57_删除链表中重复的结点 {
         n7.next = n8;
         n8.next = n9;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1->2
     private static void test08() {
@@ -193,17 +193,17 @@ public class h57_删除链表中重复的结点 {
         ListNode n2 = new ListNode(2);
         n1.next = n2;
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // 1
     private static void test09() {
         ListNode n1 = new ListNode(1);
         ListNode result = deleteDuplication(n1);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
     // null
     private static void test10() {
         ListNode result = deleteDuplication(null);
-        StdOut.printList(result);
+        SysOut.printList(result);
     }
 }

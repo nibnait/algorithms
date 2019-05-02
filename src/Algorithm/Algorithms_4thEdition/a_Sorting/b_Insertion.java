@@ -1,8 +1,8 @@
 package Algorithm.Algorithms_4thEdition.a_Sorting;
 
-import Standard.Std;
-import Standard.StdOut;
-import Standard.StdRandom;
+import utils.SwapUtil;
+import utils.SysOut;
+import utils.SysRandom;
 
 /**
  * Created by nibnait on 2016/8/7.
@@ -10,11 +10,11 @@ import Standard.StdRandom;
 public class b_Insertion {
     public static void main(String[] args) {
         int[] a = new int[10];
-        a = StdRandom.random(a);
-        StdOut.print(a);
+        a = SysRandom.random(a);
+        SysOut.printArray(a);
 
         a = Insertion_Sort(a);
-        StdOut.print(a);
+        SysOut.printArray(a);
     }
 
     /**
@@ -26,7 +26,7 @@ public class b_Insertion {
 
         for (int i = 1; i < length; i++) {
             for (int j = i; j > 0 && a[j]<a[j-1]; j--) {
-                Std.swap(a,j,j-1);
+                SwapUtil.swap(a,j,j-1);
             }
         }
         return a;

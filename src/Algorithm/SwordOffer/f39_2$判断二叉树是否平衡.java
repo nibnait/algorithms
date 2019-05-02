@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
+import StandardStruct.BinaryTreeNode;
 
 import static Algorithm.SwordOffer.f39_1$二叉树的深度.TreeDepth;
 

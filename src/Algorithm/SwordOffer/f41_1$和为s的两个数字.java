@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.StdOut;
+import utils.SysOut;
 
 /**
  * 题目一：输入一个递增排序的数组和一个数字 s，在数组中查找两个数，得它们的和正好是 s。如果有多对数字的和等于 s，输出任意一对即可。
@@ -22,11 +22,11 @@ public class f41_1$和为s的两个数字 {
 
     public static void main(String[] args) {
         int[] data1 = {1, 2, 4, 7, 11, 15};
-        StdOut.print(findNumbersWithSum(data1, 15));
+        SysOut.printArray(findNumbersWithSum(data1, 15));
         int[] data2 = {1, 2, 4, 7, 11, 16};
-        StdOut.print(findNumbersWithSum(data2, 17));
+        SysOut.printArray(findNumbersWithSum(data2, 17));
         int[] data3 = {1, 2, 4, 7, 11, 16};
-        StdOut.print(findNumbersWithSum(data3, 10));
+        SysOut.printArray(findNumbersWithSum(data3, 10));
     }
 
     private static int[] findNumbersWithSum(int[] arr, int s) {

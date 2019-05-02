@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
+import StandardStruct.ListNode;
 
 /**
  * 题目：一个链表中包含环，如何找出环的入口结点？

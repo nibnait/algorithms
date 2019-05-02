@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNodeWithParent;
+import StandardStruct.BinaryTreeNodeWithParent;
 
 /**
  * 题目：给定一棵二叉树和其中的一个结点，如何找出中序遍历顺序的下一个结点？

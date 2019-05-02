@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.TreeNode;
+import StandardStruct.TreeNode;
 
 import java.util.Iterator;
 import java.util.LinkedList;

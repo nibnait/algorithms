@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
+import utils.SwapUtil;
 
 import java.util.Comparator;
 
@@ -57,10 +57,10 @@ public class e33_把数组排成最小的数 {
         int flag = lo;
         for (int i = lo; i < hi; i++) {
             if (comparator.compare(arr[i], arr[hi]) < 0){
-                Std.swap(arr, i, flag++);
+                SwapUtil.swap(arr, i, flag++);
             }
         }
-        Std.swap(arr, hi, flag);
+        SwapUtil.swap(arr, hi, flag);
         quickSort(arr, lo, flag-1, comparator);
         quickSort(arr, flag+1, hi, comparator);
     }

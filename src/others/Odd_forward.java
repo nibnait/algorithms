@@ -1,7 +1,7 @@
 package others;
 
-import Standard.Std;
-import Standard.StdOut;
+import utils.SysOut;
+import utils.SwapUtil;
 
 /**
  * 奇数放在偶数的前面。（插入排序的变异）
@@ -12,11 +12,11 @@ public class Odd_forward {
 
     public static void main(String[] args) {
         int[] a = {1, 2, 1, 3, 4, 5};
-        StdOut.print(a);
+        SysOut.printArray(a);
 
         for (int i = 1; i < a.length; i++) {
             for (int j = i; j > 0 && IsOdd(a[j]) && !IsOdd(a[j-1]); j--) {
-                Std.swap(a,j,j-1);
+                SwapUtil.swap(a,j,j-1);
             }
         }
 
@@ -26,12 +26,12 @@ public class Odd_forward {
             if (!IsOdd(a[i])) {
                 for (int j = a.length - 1; j > 0 && i < j; j--) {
                     if (IsOdd(a[j])) {
-                        Std.swap(a, i, j);
+                        StandardStruct.swap(a, i, j);
                     }
                 }
             }
         }*/
-        StdOut.print(a);
+        SysOut.printArray(a);
     }
 
     private static boolean IsOdd(int i) {

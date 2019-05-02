@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
-import Standard.StdOut;
+import StandardStruct.ListNode;
+import utils.SysOut;
 
 /**
  * 题目：输入两个递增排序的链表，合并这两个链表并使新链表中的结点仍然是按照递增排序的
@@ -137,31 +137,31 @@ public class c17_合并两个排序的链表 {
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
-        StdOut.printList(head);
+        SysOut.printList(head);
 
         ListNode head2 = new ListNode(1);
         head2.next = new ListNode(3);
         head2.next.next = new ListNode(5);
         head2.next.next.next = new ListNode(6);
         head2.next.next.next.next = new ListNode(7);
-        StdOut.printList(head2);
+        SysOut.printList(head2);
         head = mergeSortedLists2(head, head2);
-        StdOut.printList(head);
+        SysOut.printList(head);
         System.out.println();
 
         //1. head2插在head1和head1tmp中间
         ListNode head3 = new ListNode(1);
         head3.next = new ListNode(6);
         head3.next.next = new ListNode(7);
-        StdOut.printList(head3);
+        SysOut.printList(head3);
 
         ListNode head4 = new ListNode(2);
         head4.next = new ListNode(3);
         head4.next.next = new ListNode(4);
-        StdOut.printList(head4);
+        SysOut.printList(head4);
 
         head3 = mergeSortedLists(head3, head4);
-        StdOut.printList(head3);
+        SysOut.printList(head3);
     }
 
 }

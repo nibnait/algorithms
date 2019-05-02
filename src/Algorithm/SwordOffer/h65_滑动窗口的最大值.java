@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.StdOut;
+import utils.SysOut;
 
 import java.util.LinkedList;
 
@@ -20,22 +20,22 @@ public class h65_滑动窗口的最大值 {
     public static void main(String[] args) {
         // expected {7};
         int[] data1 = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
-        StdOut.print(maxInWindows(data1, 10));
+        SysOut.printArray(maxInWindows(data1, 10));
         // expected {3, 3, 5, 5, 6, 7};
         int[] data2 = new int[]{1, 3, -1, -3, 5, 3, 6, 7};
-        StdOut.print(maxInWindows(data2, 3));
+        SysOut.printArray(maxInWindows(data2, 3));
         // expected {7, 9, 11, 13, 15};
         int[] data3 = new int[]{1, 3, 5, 7, 9, 11, 13, 15};
-        StdOut.print(maxInWindows(data3, 4));
+        SysOut.printArray(maxInWindows(data3, 4));
         // expected  {16, 14, 12};
         int[] data5 = new int[]{16, 14, 12, 10, 8, 6, 4};
-        StdOut.print(maxInWindows(data5, 5));
+        SysOut.printArray(maxInWindows(data5, 5));
         // expected  {10, 14, 12, 11};
         int[] data6 = new int[]{10, 14, 12, 11};
-        StdOut.print(maxInWindows(data6, 1));
+        SysOut.printArray(maxInWindows(data6, 1));
         // expected  {14};
         int[] data7 = new int[]{10, 14, 12, 11};
-        StdOut.print(maxInWindows(data7, 4));
+        SysOut.printArray(maxInWindows(data7, 4));
     }
 
     private static int[] maxInWindows(int[] arr, int w) {

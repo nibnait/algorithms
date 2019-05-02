@@ -1,6 +1,6 @@
 package zzzTest.excelParser.models.refuseReason;
 
-import Standard.StringUtils;
+import utils.StringUtil;
 import zzzTest.excelParser.excelParser.ExcelParser;
 
 import java.io.File;
@@ -28,7 +28,7 @@ public class RefuseReason_Main {
         int main_reason_id = 0;
         String main_reason = "";
         for (ReasonModel model : modelList) {
-            if (StringUtils.isNotBlank(model.getMain_reason())) {
+            if (StringUtil.isNotBlank(model.getMain_reason())) {
                 if (model.getMain_reason().equals("自定义")) {
                     audit_type++;
                     main_reason_id = 0;

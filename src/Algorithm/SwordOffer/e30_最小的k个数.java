@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
-import Standard.StdOut;
+import utils.SysOut;
+import utils.SwapUtil;
 
 import static Algorithm.SwordOffer.e29_数组中出现次数超过一半的数字.partition;
 
@@ -54,7 +54,7 @@ public class e30_最小的k个数 {
             i++;
         }
 
-        StdOut.print(output);
+        SysOut.printArray(output);
     }
 
     /**
@@ -72,7 +72,7 @@ public class e30_最小的k个数 {
             if (arr[k]>arr[j]){
                 break;  //a[k]比他的大儿子还大，无需调整
             } else {
-                Std.swap(arr, k, j);
+                SwapUtil.swap(arr, k, j);
                 k = j;
             }
         }
@@ -83,7 +83,7 @@ public class e30_最小的k个数 {
         int[] arr = {4, 5, 1, 6, 2, 7, 3, 8};
         int k = 4;
 
-        StdOut.print(arr);
+        SysOut.printArray(arr);
         System.out.println("k = "+k);
         getLeastNumbers2(arr, k);
         getLeastNumbers(arr, k);

@@ -1,7 +1,7 @@
 package Algorithm.SwordOffer;
 
-import Standard.BinaryTreeNode;
-import Standard.StdOut;
+import StandardStruct.BinaryTreeNode;
+import utils.SysOut;
 
 /**
  * 题目：请完成一个函数，输入一个二叉树，该函数输出它的镜像。
@@ -49,10 +49,10 @@ public class d19_二叉树的镜像 {
         head.right.left.value = 9;
         head.right.right = new BinaryTreeNode();
         head.right.right.value = 11;
-        StdOut.printBinaryTree(head);
+        SysOut.printBinaryTree(head);
         System.out.println();
         mirrorRecursivelly(head);
-        StdOut.printBinaryTree(head);
+        SysOut.printBinaryTree(head);
         //         1
         //        /
         //       3
@@ -73,10 +73,10 @@ public class d19_二叉树的镜像 {
         head2.left.left.left.left = new BinaryTreeNode();
         head2.left.left.left.left.value = 9;
         System.out.println("\n");
-        StdOut.printBinaryTree(head2);
+        SysOut.printBinaryTree(head2);
         System.out.println();
         mirrorRecursivelly(head2);
-        StdOut.printBinaryTree(head2);
+        SysOut.printBinaryTree(head2);
         // 0
         //  \
         //   2
@@ -97,10 +97,10 @@ public class d19_二叉树的镜像 {
         head3.right.right.right.right = new BinaryTreeNode();
         head3.right.right.right.right.value = 8;
         System.out.println("\n");
-        StdOut.printBinaryTree(head3);
+        SysOut.printBinaryTree(head3);
         System.out.println();
         mirrorRecursivelly(head3);
-        StdOut.printBinaryTree(head3);
+        SysOut.printBinaryTree(head3);
     }
 
 }

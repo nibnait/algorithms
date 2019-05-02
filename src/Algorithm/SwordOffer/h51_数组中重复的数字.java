@@ -1,6 +1,6 @@
 package Algorithm.SwordOffer;
 
-import Standard.Std;
+import utils.SwapUtil;
 
 /**
  * 题目：在一个长度为n的数组里的所有数字都在 0 到 n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。
@@ -61,7 +61,7 @@ public class h51_数组中重复的数字 {
                 if (arr[arr[i]] == arr[i]){
                     return arr[i];
                 } else {
-                    Std.swap(arr, arr[i], i);
+                    SwapUtil.swap(arr, arr[i], i);
                 }
             }
         }

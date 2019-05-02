@@ -1,8 +1,8 @@
 package Algorithm.SwordOffer;
 
-import Standard.ListNode;
+import StandardStruct.ListNode;
 
-import static Standard.StdOut.printList;
+import static utils.SysOut.printList;
 
 /**
  * 给定单向链表的头指针和一个结点指针，定义一个函数在0(1)时间删除该结点,
