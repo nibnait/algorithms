@@ -1,15 +1,10 @@
 package localtest;
 
-import com.alibaba.fastjson.JSON;
 import junit.framework.TestCase;
 import lombok.Data;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.concurrent.ConcurrentHashMap;
 
 /*
 
