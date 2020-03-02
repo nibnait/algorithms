@@ -1,4 +1,4 @@
-package localtest;
+package localtest.advanceTest;
 
 import junit.framework.TestCase;
 import lombok.Data;
