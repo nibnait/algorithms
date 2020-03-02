@@ -18,13 +18,17 @@ public final class SysOut {
         System.out.println(String.format(format, args));
     }
 
+    public static void printSeparator() {
+        println("===========================================");
+    }
+
     public static void printSeparator(String title) {
         println("===========================================\n%s:\n", title);
     }
 
 
     //*********** 打印数组 ************************************/
-    public static void printArray(int[][] a){
+    public static void printArray(int[][] a) {
         String digitFormat = "%3d";
         String digitFormat_Comma = "%3d, ";
         int n = a.length;
@@ -33,7 +37,7 @@ public final class SysOut {
         for (int i = 0; i < n; i++) {
             System.out.print("\t{");
             for (int j = 0; j < m; j++) {
-                if (j == m-1) {
+                if (j == m - 1) {
                     print(digitFormat, a[i][j]);
                     continue;
                 }
@@ -45,19 +49,19 @@ public final class SysOut {
     }
 
 
-    public static void printArray(int[] a){
+    public static void printArray(int[] a) {
         for (int i = 0; i < a.length; i++) {
             if (i == a.length - 1) {
                 System.out.print(a[i] + "\n");
-            }else {
-                System.out.print(a[i]+", ");
+            } else {
+                System.out.print(a[i] + ", ");
             }
         }
     }
 
     //*********** 打印链表 ************************************/
-    public static void printList(ListNode head){
-        while (head != null){
+    public static void printList(ListNode head) {
+        while (head != null) {
             String arrow = head != null ? " -> " : "";
             System.out.print(head.val + arrow);
             head = head.next;
@@ -65,7 +69,7 @@ public final class SysOut {
         System.out.println("null");
     }
 
-    public static void printDoubleLinkedList(BinaryTreeNode head){
+    public static void printDoubleLinkedList(BinaryTreeNode head) {
         System.out.println("Double Linked List: ");
         BinaryTreeNode end = null;
         while (head != null) {
@@ -84,7 +88,7 @@ public final class SysOut {
 
     //*********** 二叉树的前中后需遍历 ************************************/
     public static void preOrderPrint(BinaryTreeNode head) {
-        if (head == null){
+        if (head == null) {
             return;
         }
         System.out.print(head.value + " ");
@@ -93,7 +97,7 @@ public final class SysOut {
     }
 
     public static void inOrderPrint(BinaryTreeNode head) {
-        if (head == null){
+        if (head == null) {
             return;
         }
         inOrderPrint(head.left);
@@ -102,7 +106,7 @@ public final class SysOut {
     }
 
     public static void posOrderPrint(BinaryTreeNode head) {
-        if (head == null){
+        if (head == null) {
             return;
         }
         posOrderPrint(head.left);
@@ -121,17 +125,17 @@ public final class SysOut {
     }
 
     private static void printInOrder(BinaryTreeNode head, int height, String to) {
-        if (head == null){
+        if (head == null) {
             return;
         }
-        printInOrder(head.left, height+1, "~");
+        printInOrder(head.left, height + 1, "~");
         String val = to + head.value + to;
         int lenM = val.length();
         int lenL = (NODE_LENGTH - lenM) / 2;
         int lenR = NODE_LENGTH - lenL - lenM;
-        val = getSpace(height*NODE_LENGTH + lenL) + val + getSpace(lenR);
+        val = getSpace(height * NODE_LENGTH + lenL) + val + getSpace(lenR);
         System.out.println(val);
-        printInOrder(head.right, height+1, "_");
+        printInOrder(head.right, height + 1, "_");
     }
 
     private static String getSpace(int n) {
