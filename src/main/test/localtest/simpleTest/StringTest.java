@@ -1,4 +1,4 @@
-package localtest;
+package localtest.simpleTest;
 
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -9,7 +9,13 @@ import org.junit.Test;
 public class StringTest extends TestCase {
 
     @Test
-    public void testCase() {
+    public void testSubString() {
+        String str = "123";
+        System.out.println(str.substring(0, str.length() - 1));
+    }
+
+    @Test
+    public void testSplit() {
         String str = "1234,1243";
         System.out.println(str.split(",")[0]);
     }

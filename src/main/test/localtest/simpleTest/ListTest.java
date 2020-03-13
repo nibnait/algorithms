@@ -1,4 +1,4 @@
-package localtest;
+package localtest.simpleTest;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
