@@ -22,7 +22,10 @@ split、正则匹配、
  - [M093_复原IP地址](./LeetCode/code000/M093_复原IP地址.java)
  - [M151_翻转字符串里的单词](./LeetCode/code100/M151_翻转字符串里的单词.java)
  - [M060_第k个排列](./LeetCode/code000/M060_第k个排列.java)
-
+ - [E1071_字符串的最大公因子](./LeetCode/code1000/E1071_字符串的最大公因子.java)
+ 
+## 数学
+ - [E1071_字符串的最大公因子](./LeetCode/code1000/E1071_字符串的最大公因子.java)
 
 ## 树
 ### 重建二叉树

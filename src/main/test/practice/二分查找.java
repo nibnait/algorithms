@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by nibnait on 2019-08-23
  */
-public class BS extends TestCase {
+public class 二分查找 extends TestCase {
 
     @Test
     public void testM() {
