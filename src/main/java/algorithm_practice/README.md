@@ -52,5 +52,6 @@ split、正则匹配、
  - [M695_岛屿的最大面积](./LeetCode/code600/M695_岛屿的最大面积.java)
  
  
-## 用HashSet
- - [H128_最长连续序列](./LeetCode/code100/H128_最长连续序列.java) 
+## 用HashSet / hash表
+ - [H128_最长连续序列](./LeetCode/code100/H128_最长连续序列.java)
+ - [E1160_拼写单词](./LeetCode/code1100/E1160_拼写单词.java) 

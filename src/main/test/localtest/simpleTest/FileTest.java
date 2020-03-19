@@ -1,4 +1,4 @@
-package localtest;
+package localtest.simpleTest;
 
 import junit.framework.TestCase;
 import org.junit.Test;
