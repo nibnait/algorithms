@@ -1,10 +1,12 @@
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
+import common.datastruct.TreeNode;
 import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
@@ -15,8 +17,14 @@ public class Main extends TestCase {
 
     @Test
     public void testCase() {
-        String str = "aabcccccaa";
-        System.out.println(compressString(str));
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(null);
+        queue.add(null);
+        queue.add(null);
+        queue.add(null);
+
+        System.out.println(queue.isEmpty());
+
     }
 
     public String compressString(String S) {

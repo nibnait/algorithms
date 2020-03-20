@@ -47,9 +47,12 @@ public class ConstructBinaryTree {
             Integer leftValue = bfsArray[count++];
             pop.left = new TreeNode(leftValue);
             queue.add(pop.left);
-            Integer rightValue = bfsArray[count++];
-            pop.right = new TreeNode(rightValue);
-            queue.add(pop.right);
+
+            if (count + 1 <= bfsArray.length) {
+                Integer rightValue = bfsArray[count++];
+                pop.right = new TreeNode(rightValue);
+                queue.add(pop.right);
+            }
         }
         return head;
     }

@@ -32,65 +32,68 @@ public class M199_二叉树的右视图 extends TestCase {
         Integer[] root = {1, 2, 3, null, 5, null, 4};
         System.out.println(rightSideView(ConstructBinaryTree.constructByBFSArray(root)));
 
-        Integer[] root1 = {1, 2, 3, null, 5, null, 4};
+        Integer[] root1 = {};
         System.out.println(rightSideView(ConstructBinaryTree.constructByBFSArray(root1)));
+
+        Integer[] root2 = {1, 2};
+        System.out.println(rightSideView(ConstructBinaryTree.constructByBFSArray(root2)));
+
+        Integer[] root3 = {1, 2, 3, 4};
+        System.out.println(rightSideView(ConstructBinaryTree.constructByBFSArray(root3)));
 
 
     }
-
 
     /**
      * 1. 层先法遍历二叉树
-     * 2. 然后取第1、2、4、8、16...个结点上的val
+     * // 2. 然后取第1、2、4、8、16...个结点上的val
+     * 2. 遇到每一层的最后一个元素 记录下来。
      */
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> bfsArray = new ArrayList<>();
-
-        bfsTravel(root, bfsArray);
-//        System.out.println(JSON.toJSONString(bfsArray));
+//        PrintBinaryTree.print(root);
 
         List<Integer> result = new ArrayList<>();
-        int row = 0;
-        int index = Double.valueOf(Math.pow(2, row)).intValue();
-        while (index <= bfsArray.size()) {
-            int rightIndex = index - 1;
-            Integer node = bfsArray.get(rightIndex);
-            if (node != null) {
-                result.add(node);
-            } else {
-                while (bfsArray.get(--rightIndex) != null) {
-                    result.add(node);
-                }
-            }
 
-            index += Double.valueOf(Math.pow(2, ++row)).intValue();
+        if (root == null) {
+            return result;
         }
 
-        return bfsArray;
-    }
-
-    private void bfsTravel(TreeNode root, List<Integer> bfsArray) {
-
-        bfsArray.add(root.val);
-
+        // queue是当前层的所有节点
         LinkedList<TreeNode> queue = new LinkedList<>();
-        queue.addLast(root.left);
-        queue.addLast(root.right);
+        // 下一层的所有节点
+        LinkedList<TreeNode> nextRowQueue = new LinkedList<>();
+
+        int val = root.val;
+        queue.add(root);
 
         while (!queue.isEmpty()) {
+            while (!queue.isEmpty()) {
+                TreeNode treeNode = queue.poll();
 
-            TreeNode treeNode = queue.pollFirst();
-            bfsArray.add(treeNode.val);
+                if (treeNode != null && treeNode.val != null) {
+                    val = treeNode.val;
+                }
 
-            if (isNotLeafNode(treeNode)) {
-                queue.addLast(treeNode.left);
-                queue.addLast(treeNode.right);
+                if (treeNode != null && !isLeafNode(treeNode)) {
+                    nextRowQueue.add(treeNode.left);
+                    nextRowQueue.add(treeNode.right);
+                }
             }
+            result.add(val);
+            copyToQueue(nextRowQueue, queue);
         }
-
+        return result;
     }
 
-    private boolean isNotLeafNode(TreeNode treeNode) {
-        return treeNode.left != null && treeNode.right != null;
+    private void copyToQueue(LinkedList<TreeNode> nextRowQueue, LinkedList<TreeNode> queue) {
+        queue.clear();
+        while (!nextRowQueue.isEmpty()){
+            queue.add(nextRowQueue.poll());
+        }
     }
+
+    private boolean isLeafNode(TreeNode treeNode) {
+        return treeNode.left == null && treeNode.right == null;
+    }
+
 }
