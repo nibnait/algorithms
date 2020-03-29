@@ -28,7 +28,7 @@ public class f_Heap {
 
         while (N > 0) {
             SwapUtil.swap(a, 0, N--);    //将堆的最大元素a[0]和a[N]交换，
-            sink(a, 0, N);          //调整堆， 知道堆空
+            sink(a, 0, N);          //调整堆， 直到堆空
             SysOut.printArray(a);
         }
 

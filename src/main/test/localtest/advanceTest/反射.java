@@ -13,7 +13,9 @@ public class 反射 extends TestCase {
 
     @Data
     class Person {
-        private int age;
+        public int age;
+
+        public String phone;
 
         String getName() {
             return "xxx";
@@ -50,10 +52,10 @@ public class 反射 extends TestCase {
             for (int i = 0; i < fields.length; i++) {
                 String name = fields[i].getName();
                 System.out.println(name);
-                int age = fields[i].getInt(person);
+                String age =String.valueOf(fields[i].get(person));
                 System.out.println(age);
-                fields[i].setInt(person, 2);
-                fields[i].setAccessible(true);
+//                fields[i].setInt(person, 2);
+//                fields[i].setAccessible(true);
             }
         }
 
