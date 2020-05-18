@@ -4,16 +4,30 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
 import junit.framework.TestCase;
+import localtest.Person;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /*
 
 Created by nibnait on 2020-01-09
  */
 public class ListTest extends TestCase {
+
+    @Test
+    public void testStreamCollect() {
+        List<Person> list = new ArrayList<>();
+
+        Map<Integer, Boolean> map = list.stream().collect(Collectors.toMap(Person::getAge, Person::getIsOk));
+
+        List<Person> collect1 = list.stream().filter(x -> map.get(x.getAge())).collect(Collectors.toList());
+
+        System.out.println(collect1);
+    }
 
     private static final String DEFAULT_CLOSE_VALUE = "0";
     private static final String DEFAULT_OPEN_VALUE = "-1";

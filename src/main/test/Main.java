@@ -1,26 +1,14 @@
-import com.alibaba.fastjson.JSONObject;
-import com.google.common.base.Functions;
-import com.google.common.collect.Lists;
-import common.datastruct.TreeNode;
-import junit.framework.TestCase;
-import org.junit.Test;
+import javafx.util.Pair;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
+public class Main {
 
-import static common.util.SysOut.printArray;
+    public static void main(String[] args) {
 
-/**
- * Created by nibnait on 2020-01-08
- */
-public class Main extends TestCase {
-
-    @Test
-    public void testCase() {
-
+        System.out.println(test());
     }
 
+    private static Pair<String, Integer> test() {
+        return new Pair<>("0", 1);
+    }
 
 }
