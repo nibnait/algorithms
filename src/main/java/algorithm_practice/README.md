@@ -47,11 +47,18 @@ split、正则匹配、
 
 ## 动态规划
  - [M096_不同的二叉搜索树的数量](./LeetCode/code000/M096_不同的二叉搜索树的数量.java)
-
+ - [H887_鸡蛋掉落](./LeetCode/code800/H887_鸡蛋掉落.java)
+ 
 ## 回溯（递归+剪枝）
  - [M093_复原IP地址](./LeetCode/code000/M093_复原IP地址.java)
  - [M695_岛屿的最大面积](./LeetCode/code600/M695_岛屿的最大面积.java)
- 
+ - **[M046_全排列](./LeetCode/code000/M046_全排列.java)**
+ - [M047_全排列2](./LeetCode/code000/M047_全排列2.java)
+ - [H051_N皇后](./LeetCode/code000/H051_N皇后.java)
+
+## BFS
+ - [E104_二叉树的最大深度](./LeetCode/code100/E104_二叉树的最大深度.java) 
+ - [E111_二叉树的最小深度](./LeetCode/code100/E111_二叉树的最小深度.java) 
  
 ## 用HashSet / hash表
  - [H128_最长连续序列](./LeetCode/code100/H128_最长连续序列.java)

@@ -44,6 +44,9 @@ public class ConstructBinaryTree {
         queue.add(head);
         while (!queue.isEmpty() && count < bfsArray.length) {
             TreeNode pop = queue.pop();
+            if (pop.val == null) {
+                continue;
+            }
             Integer leftValue = bfsArray[count++];
             pop.left = new TreeNode(leftValue);
             queue.add(pop.left);

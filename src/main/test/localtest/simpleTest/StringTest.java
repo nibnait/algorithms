@@ -1,5 +1,7 @@
 package localtest.simpleTest;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -9,6 +11,14 @@ import java.util.Stack;
  * Created by nibnait on 2020-01-06
  */
 public class StringTest extends TestCase {
+
+    @Test
+    public void testGetLong() {
+        String str = "{\"bizNo\":\"111\"}";
+        JSONObject result = JSON.parseObject(str);
+        Long bizNo = result.getLong("bizNo");
+        System.out.println(bizNo);
+    }
 
     @Test
     public void testCase() {
