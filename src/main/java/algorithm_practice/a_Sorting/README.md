@@ -9,7 +9,3 @@
     选择排序、希尔排序、快速排序和堆排序不是稳定的排序算法，
     冒泡排序、插入排序、归并排序、基数排序是稳定的排序算法。
     
-
-![](http://7xr7ju.com1.z0.glb.clouddn.com/leanote/img/sort.png)
-    
-    
