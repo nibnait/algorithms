@@ -4,9 +4,7 @@ import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /*
 给定一个可包含重复数字的序列，返回所有不重复的全排列。
@@ -43,16 +41,16 @@ public class M047_全排列2 {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        List<Integer> path = new ArrayList<>();
+        Deque<Integer> path = new LinkedList<>();
         boolean[] used = new boolean[nums.length];
 
         return backTrack(result, path, nums, used);
     }
 
-    private List<List<Integer>> backTrack(List<List<Integer>> result, List<Integer> path, int[] nums, boolean[] used) {
+    private List<List<Integer>> backTrack(List<List<Integer>> result, Deque<Integer> path, int[] nums, boolean[] used) {
         if (path.size() == nums.length) {
             if (!result.contains(path)) {
-                result.add(newArrayList(path.iterator()));
+                result.add(new ArrayList(path));
             }
             return result;
         }
@@ -74,11 +72,4 @@ public class M047_全排列2 {
         return result;
     }
 
-    private List<Integer> newArrayList(Iterator<Integer> iterator) {
-        List<Integer> result = new ArrayList<>();
-        while (iterator.hasNext()) {
-            result.add(iterator.next());
-        }
-        return result;
-    }
 }

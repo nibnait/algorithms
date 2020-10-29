@@ -60,6 +60,10 @@ public class M416_分割等和子集 extends TestCase {
 
     }
 
+    /*
+    ==> 给定数组 nums，每个元素只能选1次，问：能否凑成和为 sum / 2
+     */
+
     /**
      * 一维数组
      */

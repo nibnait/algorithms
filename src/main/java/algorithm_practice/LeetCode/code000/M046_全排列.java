@@ -4,10 +4,7 @@ import com.google.common.collect.Lists;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /*
 给定一个 没有重复 数字的序列，返回其所有可能的全排列。
@@ -71,14 +68,14 @@ public class M046_全排列 {
 
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
-        List<Integer> path = new ArrayList<>();
+        Deque<Integer> path = new LinkedList<>();
 
         return backTrack(result, path, nums);
     }
 
-    private List<List<Integer>> backTrack(List<List<Integer>> result, List<Integer> path, int[]nums) {
+    private List<List<Integer>> backTrack(List<List<Integer>> result, Deque<Integer> path, int[]nums) {
         if (path.size() == nums.length) {
-            result.add(newArrayList(path.iterator()));
+            result.add(new ArrayList<>(path));
             return result;
         }
 
@@ -88,24 +85,15 @@ public class M046_全排列 {
                 continue;
             }
 
-            path.add(num);
+            path.addLast(num);
 
             backTrack(result, path, nums);
 
-            path.remove(path.size()-1);
+            path.removeLast();
         }
 
         return result;
     }
 
-    private List<Integer> newArrayList(Iterator<Integer> iterator) {
-        ArrayList list = new ArrayList<>();
-
-        while(iterator.hasNext()) {
-            list.add(iterator.next());
-        }
-
-        return list;
-    }
 
 }

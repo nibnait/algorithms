@@ -46,8 +46,22 @@ split、正则匹配、
 
 
 ## 动态规划
+1. 基本问题：
+ - [M300_最长上升子序列](./LeetCode/code300/M300_最长上升子序列.java)
  - [M096_不同的二叉搜索树的数量](./LeetCode/code000/M096_不同的二叉搜索树的数量.java)
+ 
+ 
+2. 最优子结构：
+ - [M322_零钱兑换](./LeetCode/code300/M322_零钱兑换.java)
+ 
+ 
+4. 经典问题 
+ - [H072_编辑距离](./LeetCode/code000/H072_编辑距离.java) (可空间优化)
  - [H887_鸡蛋掉落](./LeetCode/code800/H887_鸡蛋掉落.java)
+
+### [背包问题](./LeetCode/动态规划/背包问题.md)
+### [股票买卖问题](./LeetCode/动态规划/股票买卖问题.md)
+
  
 ## 回溯（递归+剪枝）
  - [M093_复原IP地址](./LeetCode/code000/M093_复原IP地址.java)
@@ -55,6 +69,9 @@ split、正则匹配、
  - **[M046_全排列](./LeetCode/code000/M046_全排列.java)**
  - [M047_全排列2](./LeetCode/code000/M047_全排列2.java)
  - [H051_N皇后](./LeetCode/code000/H051_N皇后.java)
+ - [M039_组合总和](./LeetCode/code000/M039_组合总和.java)
+ - [M040_组合总和2](./LeetCode/code000/M040_组合总和2.java)
+ - [M216_组合总和3](./LeetCode/code200/M216_组合总和3.java)
 
 ## BFS
  - [E104_二叉树的最大深度](./LeetCode/code100/E104_二叉树的最大深度.java) 
