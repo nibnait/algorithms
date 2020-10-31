@@ -15,6 +15,10 @@
 ## 滑动窗口
  - [M567_字符串的排列](./LeetCode/code500/M567_字符串的排列.java) 
 
+### 单调栈
+ - [E496_下一个更大元素1](./LeetCode/code400/E496_下一个更大元素1.java)
+ - [M503_下一个更大元素2](./LeetCode/code500/M503_下一个更大元素2.java)
+
 ## 字符串操作
 split、正则匹配、
  - [M014_最长公共前缀](./LeetCode/code000/M014_最长公共前缀.java)
@@ -46,18 +50,26 @@ split、正则匹配、
 
 
 ## 动态规划
-1. 基本问题：
+1. 基本问题
  - [M300_最长上升子序列](./LeetCode/code300/M300_最长上升子序列.java)
  - [M096_不同的二叉搜索树的数量](./LeetCode/code000/M096_不同的二叉搜索树的数量.java)
  
- 
-2. 最优子结构：
  - [M322_零钱兑换](./LeetCode/code300/M322_零钱兑换.java)
  
+ - [E198_打家劫舍](./LeetCode/code100/E198_打家劫舍.java)
+ - [M213_打家劫舍2](./LeetCode/code200/M213_打家劫舍2.java) 
+ - [M337_打家劫舍3](./LeetCode/code300/M337_打家劫舍3.java) 
+ 
+ - [M062_不同路径](./LeetCode/code000/M062_不同路径.java)
+ - [M063_不同路径2](./LeetCode/code000/M063_不同路径2.java)
+ - [H980_不同路径3](./LeetCode/code900/H980_不同路径3.java)
  
 4. 经典问题 
+ - [M062_不同路径](./LeetCode/code000/M062_不同路径.java)
+ - [M063_不同路径2](./LeetCode/code000/M063_不同路径2.java)
  - [H072_编辑距离](./LeetCode/code000/H072_编辑距离.java) (可空间优化)
  - [H887_鸡蛋掉落](./LeetCode/code800/H887_鸡蛋掉落.java)
+ 
 
 ### [背包问题](./LeetCode/动态规划/背包问题.md)
 ### [股票买卖问题](./LeetCode/动态规划/股票买卖问题.md)
@@ -72,6 +84,8 @@ split、正则匹配、
  - [M039_组合总和](./LeetCode/code000/M039_组合总和.java)
  - [M040_组合总和2](./LeetCode/code000/M040_组合总和2.java)
  - [M216_组合总和3](./LeetCode/code200/M216_组合总和3.java)
+ - [H980_不同路径3](./LeetCode/code900/H980_不同路径3.java)
+
 
 ## BFS
  - [E104_二叉树的最大深度](./LeetCode/code100/E104_二叉树的最大深度.java) 
