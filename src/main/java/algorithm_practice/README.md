@@ -69,7 +69,8 @@ split、正则匹配、
  - [M063_不同路径2](./LeetCode/code000/M063_不同路径2.java)
  - [H072_编辑距离](./LeetCode/code000/H072_编辑距离.java) (可空间优化)
  - [H887_鸡蛋掉落](./LeetCode/code800/H887_鸡蛋掉落.java)
- 
+ - [M516_最长回文子序列](./LeetCode/code500/M516_最长回文子序列.java)
+ - [M005_最长回文子串](./LeetCode/code000/M005_最长回文子串.java)
 
 ### [背包问题](./LeetCode/动态规划/背包问题.md)
 ### [股票买卖问题](./LeetCode/动态规划/股票买卖问题.md)

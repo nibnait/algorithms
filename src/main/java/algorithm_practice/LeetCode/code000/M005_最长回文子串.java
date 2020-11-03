@@ -1,6 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
 import junit.framework.TestCase;
+import org.junit.Assert;
 import org.junit.Test;
 
 /*
@@ -24,24 +25,83 @@ public class M005_最长回文子串 extends TestCase {
 
     @Test
     public void testCase() {
-        String str = "cabaddabacdd";
-        System.out.println(maxLcpsLength(str));
+        String s = "cabaddabacdd";
+        String excepted = "cabaddabac";
+        Assert.assertEquals(excepted, longestPalindrome(s));
 
-        String str2 = "tattarrattat";
-        System.out.println(maxLcpsLength(str2));
+        s = "tattarrattat";
+        excepted = "tattarrattat";
+        Assert.assertEquals(excepted, longestPalindrome(s));
 
-        String str3 = "babad";
-        System.out.println(maxLcpsLength(str3));
+        s = "babad";
+        excepted = "aba";
+        Assert.assertEquals(excepted, longestPalindrome(s));
 
-        String str4 = "cbbd";
-        System.out.println(maxLcpsLength(str4));
+        s = "cbbd";
+        excepted = "bb";
+        Assert.assertEquals(excepted, longestPalindrome(s));
 
     }
 
+    /*
+        @See M516_最长回文子序列.java
+
+        还是动态规划
+        dp[i][j]：s[i...j] 是不是回文子串
+        是的话，记下beginIndex, maxLength
+
+        if (s[i-1] == s[j+1]) {
+            if (j-i <= 2) {
+                dp[i][j] == true;
+                continue;
+            }
+            dp[i][j] = dp[i+1][j-1];
+        } else {
+            dp[i][j] = false;
+        }
+
+
+        retrun s.subString(beginIndex, beginIndex + maxLength);
+
+     */
     public String longestPalindrome(String s) {
+        int length = s.length();
 
+        boolean[][] dp = new boolean[length][length];
 
-        return "";
+        for (int i = 0; i < length; i++) {
+            for (int j = 0; j < length; j++) {
+                if (i == j) {
+                    dp[i][j] = true;
+                }
+                if (i > j) {
+                    dp[i][j] = false;
+                }
+            }
+        }
+
+        int beginIndex = 0;
+        int maxLength = 1;
+        for (int i = length-2; i >= 0; i--) {
+            for (int j = i+1; j < length; j++) {
+                if (s.charAt(i) != s.charAt(j)) {
+                    dp[i][j] = false;
+                } else {
+                    if (j - i <= 2) {
+                        dp[i][j] = true;
+                    } else {
+                        dp[i][j] = dp[i+1][j-1];
+                    }
+                }
+
+                if (dp[i][j] && j-i+1 > maxLength) {
+                    beginIndex = i;
+                    maxLength = j-i+1;
+                }
+            }
+        }
+
+        return s.substring(beginIndex, beginIndex+maxLength);
     }
 
     /**

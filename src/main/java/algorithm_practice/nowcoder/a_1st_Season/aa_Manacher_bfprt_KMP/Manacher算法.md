@@ -34,7 +34,7 @@
         
         b. 以j为对称轴的回文串很长，这么长：
         
-        ![Manacher-2](../../image/Manacher算法-1.png)
+        ![Manacher-2](../../image/Manacher算法-2.png)
         
         这时 我们只能确定以i为轴时，绿框里面的部分（即不超过maxRight部分）是回文的，于是我们就可以将maxRight-i赋给pArr[i]，从i+pArr[i]位置继续扩展
         
