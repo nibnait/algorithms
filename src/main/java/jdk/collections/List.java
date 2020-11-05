@@ -20,7 +20,7 @@ public class List {
         AbstractQueue abstractQueue;
         PriorityQueue priorityQueue;
 
-
+        ArrayList arrayList;
 
 
     }
