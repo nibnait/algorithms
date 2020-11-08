@@ -1,4 +1,4 @@
-package jdk.concurrent.互斥同步.reentrantLock;
+package jdk.concurrent.悲观锁vs乐观锁.reentrantLock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

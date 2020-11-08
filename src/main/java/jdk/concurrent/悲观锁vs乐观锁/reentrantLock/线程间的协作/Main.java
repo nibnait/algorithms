@@ -1,4 +1,4 @@
-package jdk.concurrent.线程间的协作;
+package jdk.concurrent.悲观锁vs乐观锁.reentrantLock.线程间的协作;
 
 import org.junit.Test;
 

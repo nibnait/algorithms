@@ -1,4 +1,4 @@
-package jdk.concurrent.互斥同步.synchronize;
+package jdk.concurrent.悲观锁vs乐观锁.synchronize;
 
 public class SynchronizedExample {
 

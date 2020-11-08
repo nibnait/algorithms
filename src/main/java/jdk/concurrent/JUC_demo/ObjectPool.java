@@ -1,6 +1,5 @@
 package jdk.concurrent.JUC_demo;
 
-import jdk.concurrent.JUC_AQS.源码阅读.Semaphore;
 import junit.framework.TestCase;
 import org.junit.Test;
 

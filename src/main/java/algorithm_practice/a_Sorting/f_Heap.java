@@ -20,7 +20,7 @@ public class f_Heap {
     public static int[] Heap_Sort(int[] a) {
 
         int N = a.length - 1;
-        //建立一支 二叉大根堆，先序遍历
+        //建立一支 二叉大根堆，后序遍历
         for (int k = N / 2; k >= 0; k--) {    //从右像左数 第一个含有子结点的非叶子结点开始调整
             sink(a, k, N);
             SysOut.printArray(a);

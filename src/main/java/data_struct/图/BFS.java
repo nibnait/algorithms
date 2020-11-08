@@ -23,8 +23,8 @@ public class BFS extends TestCase {
 
     @Test
     public void testBreadthFirstSearch() throws IOException {
-        Path digitGraphfilePath = Paths.get("/Users/nibnait/Downloads/github/algorithms/src/Algorithm/algorithm_practice.Algorithms_4thEdition/图/data/digitGraph.txt");
-        Path characterGraphfilePath = Paths.get("/Users/nibnait/Downloads/github/algorithms/src/Algorithm/algorithm_practice.Algorithms_4thEdition/图/data/characterGraphfilePath.txt");
+        Path digitGraphfilePath = Paths.get("./data/digitGraph.txt");
+        Path characterGraphfilePath = Paths.get("./data/characterGraphfilePath.txt");
         Graph graph = new Graph(digitGraphfilePath);
 //        Graph graph = new Graph(characterGraphfilePath);
 

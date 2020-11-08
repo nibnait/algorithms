@@ -1,7 +1,7 @@
 package localtest.simpleTest;
 
 import junit.framework.TestCase;
-import localtest.Person;
+import common.model.Person;
 import org.junit.Test;
 
 import java.util.HashMap;

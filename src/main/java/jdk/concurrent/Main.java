@@ -25,8 +25,18 @@ public class Main {
 
 
         //线程池
+        ArrayBlockingQueue<Runnable> workQueue = new ArrayBlockingQueue<>(10);
+        ThreadPoolExecutor.AbortPolicy handler = new ThreadPoolExecutor.AbortPolicy();
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                2, 2,
+                0L, TimeUnit.MILLISECONDS,
+                workQueue, handler);
+
 
         FutureTask futureTask;
         CompletableFuture completableFuture;
+
+
+
     }
 }

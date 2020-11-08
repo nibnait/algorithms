@@ -1,11 +1,19 @@
-package jdk.concurrent.互斥同步.reentrantLock;
+package jdk.concurrent.悲观锁vs乐观锁.reentrantLock;
 
 import org.junit.Test;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class Main {
+
+    public static void main(String[] args) {
+        ReentrantLock reentrantLock;
+
+        ReentrantReadWriteLock reentrantReadWriteLock;
+    }
 
     @Test
     public void testCase1() {

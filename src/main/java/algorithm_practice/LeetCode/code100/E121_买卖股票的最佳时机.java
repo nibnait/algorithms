@@ -59,7 +59,7 @@ public class E121_买卖股票的最佳时机 {
             dp[i][1] = Math.max(dp[i-1][1], -prices[i]);
         }
 
-        return Math.max(dp[n - 1][0], 0);
+        return dp[n - 1][0];
     }
 
 }
