@@ -87,6 +87,8 @@ split、正则匹配、
  - [M216_组合总和3](./LeetCode/code200/M216_组合总和3.java)
  - [H980_不同路径3](./LeetCode/code900/H980_不同路径3.java)
 
+## 动态规划 + 回溯
+ - [H140_单词拆分2](./LeetCode/code100/H140_单词拆分2.java)
 
 ## BFS
  - [E104_二叉树的最大深度](./LeetCode/code100/E104_二叉树的最大深度.java) 
