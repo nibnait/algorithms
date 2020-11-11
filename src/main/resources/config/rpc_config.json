@@ -1,0 +1,6 @@
+{
+    "nevermore.service": {
+        "protocol": "json",
+        "group": "channel-stable-1"
+    }
+}

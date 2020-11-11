@@ -11,6 +11,8 @@
  - [M015_三数之和](./LeetCode/code000/M015_三数之和.java)
  - [E674_最长连续递增序列](./LeetCode/code600/E674_最长连续递增序列.java)
  - [E876_链表的中间结点](./LeetCode/code800/E876_链表的中间结点.java)
+ - [E905_按奇偶排序数组](./LeetCode/code900/E905_按奇偶排序数组.java)
+ - [E922_按奇偶排序数组2](./LeetCode/code900/E922_按奇偶排序数组2.java)
  
 ## 滑动窗口
  - [M567_字符串的排列](./LeetCode/code500/M567_字符串的排列.java) 
@@ -64,13 +66,16 @@ split、正则匹配、
  - [M063_不同路径2](./LeetCode/code000/M063_不同路径2.java)
  - [H980_不同路径3](./LeetCode/code900/H980_不同路径3.java)
  
-4. 经典问题 
+2. 经典问题 
  - [M062_不同路径](./LeetCode/code000/M062_不同路径.java)
  - [M063_不同路径2](./LeetCode/code000/M063_不同路径2.java)
  - [H072_编辑距离](./LeetCode/code000/H072_编辑距离.java) (可空间优化)
  - [H887_鸡蛋掉落](./LeetCode/code800/H887_鸡蛋掉落.java)
  - [M516_最长回文子序列](./LeetCode/code500/M516_最长回文子序列.java)
  - [M005_最长回文子串](./LeetCode/code000/M005_最长回文子串.java)
+
+3. 有点难度
+ - [H514_自由之路](./LeetCode/code500/H514_自由之路.java)
 
 ### [背包问题](./LeetCode/动态规划/背包问题.md)
 ### [股票买卖问题](./LeetCode/动态规划/股票买卖问题.md)
