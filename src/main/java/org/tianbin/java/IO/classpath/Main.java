@@ -2,6 +2,7 @@ package org.tianbin.java.IO.classpath;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.io.ByteStreams;
 import org.junit.Test;
 import org.tianbin.java.IO.FileReaderTest;
 
@@ -36,7 +37,7 @@ public class Main {
 
         try {
             InputStream inputStream = new ResourcesReaderUtil().getResource(jsonFilePath);
-            String rpcConfigJson = FileReaderTest.readFromInputStream(inputStream);
+            String rpcConfigJson = new String(ByteStreams.toByteArray(inputStream));
 
             HashMap hashMap = JSON.parseObject(rpcConfigJson, HashMap.class);
             Object config = hashMap.get(appId);

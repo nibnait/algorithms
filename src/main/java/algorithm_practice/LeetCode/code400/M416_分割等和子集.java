@@ -39,7 +39,7 @@ public class M416_分割等和子集 extends TestCase {
     public void testCase() {
         int[] nums = new int[]{1, 5, 11, 5};
         boolean canPartition = canPartition(nums);
-        Assert.assertEquals(true, canPartition);
+        Assert.assertTrue(canPartition);
 
         nums = new int[]{1, 2, 3, 5};
         canPartition = canPartition(nums);
@@ -47,7 +47,7 @@ public class M416_分割等和子集 extends TestCase {
 
         nums = new int[]{2, 2, 1, 1};
         canPartition = canPartition(nums);
-        Assert.assertEquals(true, canPartition);
+        Assert.assertTrue(canPartition);
 
         nums = new int[]{2, 2, 3, 5};
         canPartition = canPartition(nums);
@@ -55,7 +55,7 @@ public class M416_分割等和子集 extends TestCase {
 
         nums = new int[]{1, 1, 1, 1};
         canPartition = canPartition(nums);
-        Assert.assertEquals(true, canPartition);
+        Assert.assertTrue(canPartition);
 
 
     }

@@ -78,7 +78,7 @@ public class M146_LRU缓存机制 extends TestCase {
                 }
                 addToHead(node);
             } else {
-                // update the val. !!!啊啊啊 此处为考虑到。。。
+                // update the val. !!!啊啊啊 此处未考虑到。。。
                 cacheNode.value = value;
                 moveToHead(cacheNode);
             }

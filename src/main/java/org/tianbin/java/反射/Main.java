@@ -1,68 +1,82 @@
 package org.tianbin.java.反射;
 
-import junit.framework.TestCase;
+import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.junit.Test;
 
-import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 
-/*
-
+/**
+ * Created by nibnait on 2020/11/11
  */
-public class Main extends TestCase {
+public class Main {
+
+    @Test
+    public void test01() {
+        Order left = getLeftValue();
+
+        Order right = getRightValue();
+
+        Map<String, String> errorMap = new HashMap<>();
+        left.compareTo(right, errorMap);
+
+        System.out.println(JSON.toJSONString(errorMap));
+    }
+
+    private Order getRightValue() {
+        Order order = new Order(2, "456");
+        Map<String, String> detailJson = new HashMap<>();
+
+
+        order.setDetailJson(detailJson);
+        return order;
+    }
+
+    private Order getLeftValue() {
+        Order order = new Order(1, "123");
+        Map<String, String> detailJson = new HashMap<>();
+
+
+        order.setDetailJson(detailJson);
+        return order;
+    }
+
 
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
-    class Person {
-        public int age;
+    class Order {
+        private long orderId;
+        private String phone;
 
-        public String phone;
+        private Map<String, String> detailJson;
 
-        String getName() {
-            return "xxx";
+        public Order(long orderId, String phone) {
+            this.orderId = orderId;
+            this.phone = phone;
         }
 
-        String getAddress() {
-            return "lll";
-        }
+        public boolean compareTo(Object that, Map<String, String> errorMap) {
+            if (that == null) {
+                errorMap.put("比对", "当前右值为空");
+            }
 
+            if (!(that instanceof Order)) {
+                errorMap.put("比对", "右值类型不对");
+            }
+
+            // 校验 本次比对是否跳过
+            // 初始化白名单
+            // 初始化黑名单
+
+            CompareUtil.compare(this, that, errorMap);
+
+            return errorMap.size() == 0;
+        }
     }
 
-    @Test
-    public void testCase() throws IllegalAccessException {
-        Field[] fields = null;
-        Class[] declaredClasses = null;
-        try {
-            Class clz = Class.forName(Person.class.getName());
-            fields = clz.getDeclaredFields();
-            declaredClasses = clz.getDeclaredClasses();
-        } catch (Exception e) {
 
-        }
-
-        if (declaredClasses != null) {
-            for (int i = 0; i < declaredClasses.length; i++) {
-                String name = declaredClasses[i].getName();
-                System.out.println(name);
-            }
-        }
-
-
-        Person person = new Person();
-        person.setAge(1);
-        if (fields != null) {
-            for (int i = 0; i < fields.length; i++) {
-                String name = fields[i].getName();
-                System.out.println(name);
-                String age = String.valueOf(fields[i].get(person));
-                System.out.println(age);
-//                fields[i].setInt(person, 2);
-//                fields[i].setAccessible(true);
-            }
-        }
-
-    }
 }

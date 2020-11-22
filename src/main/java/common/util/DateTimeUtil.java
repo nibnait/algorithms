@@ -14,6 +14,8 @@ public class DateTimeUtil {
     private static ZoneId zone = ZoneId.systemDefault();
     public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
     public static final String DATE_FORMAT = "yyyy-MM-dd";
+    public static final String TIME_FORMAT = "HH:mm:ss";
+    public static final String TIME_MILLISECOND_FORMAT = "HH:mm:ss SSS";
 
     public static LocalDate string2Date(String dateString) {
         if (dateString == null) {
@@ -194,5 +196,10 @@ public class DateTimeUtil {
      */
     public static Long durationDays(LocalDateTime startTime, LocalDateTime endTime) {
         return Duration.between(startTime, endTime).toDays();
+    }
+
+    public static void main(String[] args) {
+        String s = localDateTimeToString(LocalDateTime.now(), TIME_MILLISECOND_FORMAT);
+        System.out.println(s);
     }
 }

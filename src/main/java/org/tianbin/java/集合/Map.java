@@ -1,4 +1,4 @@
-package org.tianbin.java.集合.collections;
+package org.tianbin.java.集合;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

@@ -5,8 +5,6 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
 
 /**
@@ -23,8 +21,8 @@ public class BFS extends TestCase {
 
     @Test
     public void testBreadthFirstSearch() throws IOException {
-        Path digitGraphfilePath = Paths.get("./data/digitGraph.txt");
-        Path characterGraphfilePath = Paths.get("./data/characterGraphfilePath.txt");
+        String digitGraphfilePath = "/data/graph/digitGraph.txt";
+        String characterGraphfilePath = "/data/graph/characterGraphfilePath.txt";
         Graph graph = new Graph(digitGraphfilePath);
 //        Graph graph = new Graph(characterGraphfilePath);
 

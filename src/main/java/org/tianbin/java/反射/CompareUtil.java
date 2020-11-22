@@ -1,4 +1,4 @@
-package org.tianbin.java.反射.compare;
+package org.tianbin.java.反射;
 
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;

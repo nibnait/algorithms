@@ -1,4 +1,4 @@
-package org.tianbin.jvm;
+package org.tianbin.jvm.引用;
 
 import com.caucho.hessian.io.SerializerFactory;
 import org.junit.Test;

@@ -5,8 +5,6 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,8 +20,8 @@ public class DFS extends TestCase {
 
     @Test
     public void testDepthFirstSearch() throws IOException {
-        Path digitGraphfilePath = Paths.get("/Users/nibnait/Downloads/github/algorithms/src/Algorithm/algorithm_practice.Algorithms_4thEdition/图/data/digitGraph.txt");
-        Path characterGraphfilePath = Paths.get("/Users/nibnait/Downloads/github/algorithms/src/Algorithm/algorithm_practice.Algorithms_4thEdition/图/data/characterGraphfilePath.txt");
+        String digitGraphfilePath = "/data/graph/digitGraph.txt";
+        String characterGraphfilePath = "/data/graph/characterGraphfilePath.txt";
         Graph graph = new Graph(digitGraphfilePath);
 
         DepthFirstSearch(graph, startVertex);
