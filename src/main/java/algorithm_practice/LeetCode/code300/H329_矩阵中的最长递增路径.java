@@ -57,18 +57,53 @@ public class H329_矩阵中的最长递增路径 {
 
     }
 
+    /**
+     * dfs + memo
+     */
+
+    private int[][] direction = new int[][]{{-1,0},{1,0},{0,1},{0,-1}};
+    private int maxLen = 0;
+    private int[][] matrix;
+    private int[][] memo;
+    int m, n;
+
     public int longestIncreasingPath(int[][] matrix) {
-        int m = matrix.length;
-        int n = matrix[0].length;
+        this.matrix = matrix;
+        this.m = matrix.length;
+        this.n = m==0 ? 0 : matrix[0].length;
 
-        // dp[i][j]: matrix[i][j]位置的最长递增格数
-        int[][] dp = new int[m][n];
-        int res = 1;
+        memo = new int[m][n];
 
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                dfs(i, j);
+            }
+        }
 
+        return maxLen;
+    }
 
+    private int dfs(int x, int y) {
+        if (memo[x][y] != 0) {
+            return memo[x][y];
+        }
 
-        return res;
+        memo[x][y] = 1;
+
+        for (int[] dir : direction) {
+            int newX = x + dir[0];
+            int newY = y + dir[1];
+            if (inRange(newX, newY) && matrix[newX][newY] > matrix[x][y]) {
+                memo[x][y] = Math.max(memo[x][y], dfs(newX, newY) + 1);
+            }
+        }
+
+        maxLen = Math.max(maxLen, memo[x][y]);
+        return memo[x][y];
+    }
+
+    private boolean inRange(int newX, int newY) {
+        return newX >= 0 && newX < m && newY >= 0 && newY < n;
     }
 
 }

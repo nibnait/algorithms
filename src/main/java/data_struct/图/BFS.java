@@ -5,6 +5,7 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.*;
 
 /**
@@ -21,10 +22,9 @@ public class BFS extends TestCase {
 
     @Test
     public void testBreadthFirstSearch() throws IOException {
-        String digitGraphfilePath = "/data/graph/digitGraph.txt";
-        String characterGraphfilePath = "/data/graph/characterGraphfilePath.txt";
-        Graph graph = new Graph(digitGraphfilePath);
-//        Graph graph = new Graph(characterGraphfilePath);
+        String filePath = "/data/graph/digitGraph.txt";
+//        String filePath = "/data/graph/characterGraphfilePath.txt";
+        Graph graph = new Graph(filePath);
 
         BreadthFirstSearch(graph, startVertex);
         System.out.println("\n递归法：");

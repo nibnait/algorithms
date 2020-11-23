@@ -101,4 +101,22 @@ split、正则匹配、
  
 ## 用HashSet / hash表
  - [H128_最长连续序列](./LeetCode/code100/H128_最长连续序列.java)
- - [E1160_拼写单词](./LeetCode/code1100/E1160_拼写单词.java) 
+ - [E1160_拼写单词](./LeetCode/code1100/E1160_拼写单词.java)
+ 
+# 图
+
+## bfs
+
+## dfs
+ -[H329_矩阵中的最长递增路径](./LeetCode/code300/H329_矩阵中的最长递增路径.java)
+
+## 有向图 检测是否有环
+
+bfs（拓扑排序）  
+dfs 
+
+ - [M207_课程表](./LeetCode/code200/M207_课程表.java)
+ - [M210_课程表2](./LeetCode/code200/M210_课程表2.java)
+## 无向图 检测是否有环
+并查集
+ - []()

@@ -2,7 +2,9 @@ package data_struct.图;
 
 import lombok.Getter;
 
-import java.io.*;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -28,7 +30,7 @@ public class Graph {
      * @throws IOException
      */
     public Graph(String filePath) throws IOException {
-        InputStream inputStream = this.getClass().getResourceAsStream(filePath);
+        InputStream inputStream = this.getClass().getResourceAsStream(filePath );
         Scanner scanner = new Scanner(new BufferedInputStream(inputStream));
         this.init(scanner.nextInt());
         scanner.nextLine();
