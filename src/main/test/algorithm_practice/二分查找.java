@@ -1,4 +1,4 @@
-package org.tianbin.practice;
+package algorithm_practice;
 
 import junit.framework.TestCase;
 import org.junit.Test;

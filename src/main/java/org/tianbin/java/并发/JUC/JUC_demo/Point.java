@@ -1,4 +1,4 @@
-package org.tianbin.java.并发.JUC_demo;
+package org.tianbin.java.并发.JUC.JUC_demo;
 
 import java.util.concurrent.locks.LockSupport;
 import java.util.concurrent.locks.StampedLock;

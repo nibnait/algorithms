@@ -1,7 +1,10 @@
-package org.tianbin.java.proxy.jdk;
+package org.tianbin.java.proxy.jdk.动态代理;
 
 import junit.framework.TestCase;
 import org.junit.Test;
+import org.tianbin.java.proxy.jdk.HelloService;
+import org.tianbin.java.proxy.jdk.HelloServiceImpl;
+import org.tianbin.java.proxy.jdk.动态代理.handler.MyInvocationHandler;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationHandler;
@@ -23,7 +26,22 @@ public class Main extends TestCase {
 
     @Test
     public void testMain() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-        // =========================第一种==========================
+
+        /**
+         * @Param  loader  代理类的类加载器
+         * @Param  interfaces  代理类要实现的接口列表
+         * @Param  h  自定义的InvocationHandler，给方法分派的处理器
+         * Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)
+         */
+        HelloService Jerry = (HelloService) Proxy.newProxyInstance(
+                HelloService.class.getClassLoader(),
+                new Class[]{HelloService.class},
+                new MyInvocationHandler(new HelloServiceImpl())
+        );
+        Jerry.sayHello();
+
+
+        /*************************源码解析：************************************/
         // 1、生成$Proxy0的class文件
 //        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         // 2、获取动态代理类
@@ -34,16 +52,5 @@ public class Main extends TestCase {
         HelloService Tom = (HelloService) constructor.newInstance(new MyInvocationHandler(new HelloServiceImpl()));
         // 5、通过代理对象调用目标方法
         Tom.sayHello();
-
-        // ==========================第二种=============================
-        /**
-         * Proxy类中还有个将2~4步骤封装好的简便方法来创建动态代理对象，
-         *其方法签名为：newProxyInstance(ClassLoader loader,Class<?>[] instance, InvocationHandler h)
-         */
-        HelloService Jerry = (HelloService) Proxy.newProxyInstance(HelloService.class.getClassLoader(), // 加载接口的类加载器
-                new Class[]{HelloService.class}, // 一组接口
-                new MyInvocationHandler(new HelloServiceImpl())); // 自定义的InvocationHandler
-        Jerry.sayHello();
-
     }
 }

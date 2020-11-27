@@ -1,4 +1,4 @@
-package org.tianbin.java.并发.JUC_other;
+package org.tianbin.java.并发.JUC.JUC_other;
 
 import org.junit.Test;
 

@@ -40,7 +40,12 @@ public class ConstructBinaryTree {
         }
         LinkedList<TreeNode> queue = new LinkedList<>();
         int count = 0;
-        TreeNode head = new TreeNode(bfsArray[count++]);
+        Integer val = bfsArray[count++];
+        if (val == null) {
+            return null;
+        }
+        TreeNode head = new TreeNode(val);
+
         queue.add(head);
         while (!queue.isEmpty() && count < bfsArray.length) {
             TreeNode pop = queue.pop();
@@ -48,12 +53,12 @@ public class ConstructBinaryTree {
                 continue;
             }
             Integer leftValue = bfsArray[count++];
-            pop.left = new TreeNode(leftValue);
+            pop.left = leftValue == null ? null : new TreeNode(leftValue);
             queue.add(pop.left);
 
             if (count + 1 <= bfsArray.length) {
                 Integer rightValue = bfsArray[count++];
-                pop.right = new TreeNode(rightValue);
+                pop.right = rightValue == null ? null : new TreeNode(rightValue);
                 queue.add(pop.right);
             }
         }

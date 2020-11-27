@@ -1,4 +1,4 @@
-package org.tianbin.java.并发.JUC_AQS;
+package org.tianbin.java.并发.JUC.JUC_AQS;
 
 import org.junit.Test;
 

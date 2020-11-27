@@ -1,4 +1,4 @@
-package org.tianbin.java.proxy.jdk;
+package org.tianbin.java.proxy.jdk.动态代理.handler;
 
 import com.alibaba.fastjson.JSON;
 

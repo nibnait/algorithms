@@ -1,15 +1,27 @@
-package org.tianbin.java.并发.JUC_other;
+package org.tianbin.java.并发.JUC.JUC_other;
 
 import org.junit.Test;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * Created by nibnait on 2020/11/5
  */
 public class Main {
+    
+    @Test
+    public void testReadWriteLock() {
+        ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+
+        Lock readLock = readWriteLock.readLock();
+
+        Lock writeLock = readWriteLock.writeLock();
+    }
 
     /**
      * ForkJoin 使用 ForkJoinPool 来启动，它是一个特殊的线程池，线程数量取决于 CPU 核数。

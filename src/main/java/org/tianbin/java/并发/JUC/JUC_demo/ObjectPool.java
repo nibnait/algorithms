@@ -1,4 +1,4 @@
-package org.tianbin.java.并发.JUC_demo;
+package org.tianbin.java.并发.JUC.JUC_demo;
 
 import junit.framework.TestCase;
 import org.junit.Test;

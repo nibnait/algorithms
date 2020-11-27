@@ -1,4 +1,4 @@
-package org.tianbin.practice;
+package algorithm_practice;
 
 import common.util.SysOut;
 import junit.framework.TestCase;
@@ -17,12 +17,12 @@ public class 堆排序 extends TestCase {
         int[] nums = new int[]{73, 98, 27, 36, 77, 22, 6, 32, 83, 69};
         SysOut.printArray(nums);
 
-        nums = heapSort(nums);
+        heapSort(nums);
         SysOut.printArray(nums);
 
     }
 
-    private int[] heapSort(int[] nums) {
+    private void heapSort(int[] nums) {
         int lastIndex = nums.length - 1;
 
         for (int i = lastIndex / 2; i >= 0; i--) {
@@ -38,7 +38,6 @@ public class 堆排序 extends TestCase {
             sink(nums, 0, lastIndex);
         }
 
-        return nums;
     }
 
     private void sink(int[] nums, int rootIndex, int lastIndex) {

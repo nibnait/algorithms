@@ -19,20 +19,20 @@ public class g_基数排序 {
     public static void main(String[] args) {
         int[] A = new int[]{227,123,278,38,242,229,202,269,76,197,12,32,235,23,266,124,253,179,216,250,123,106,284,250,44,225,36,25,144,123,264,70,287,244,123,89,21,258,203,97,188,295,211,302,177,80,258,267,164,58,0,76,63,222,6,114,5,128,256,173,191,157,50,181,152,18,302,135,108};
 
-        A = Radix_Sort(A, 69);
+        A = Radix_Sort(A);
 
         for (int i = 0; i < A.length; i++) {
             System.out.print(A[i]+" ");
         }
     }
 
-    public static int[] Radix_Sort(int[] A, int n) {
+    public static int[] Radix_Sort(int[] A) {
 
         int max = getMax(A);
 
         int k = getBit(max);	//最大数字位数
 
-        int[][] bucket = new int[10][n];
+        int[][] bucket = new int[10][A.length];
         int cnt = 0;
         int[] bucket_cnt = new int[10];
         for (int i = 0; i < k; i++) {

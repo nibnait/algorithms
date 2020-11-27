@@ -22,18 +22,18 @@ package algorithm_practice.a_Sorting;
  * Created by nibnait on 2016/9/23.
  */
 
-public class g_计数排序 {
+public class g_计数排序_桶排序 {
     public static void main(String[] args) {
-        int[] A = new int[]{54,35,48,36,27,12,44,44,8,14,26,17,28};
+        int[] A = new int[]{54,35,48,36,27,12,44,44,8,14,26,17,28,8};
 
-        A = Counting_Sort(A, 13);
+        A = Counting_Sort(A);
 
         for (int i = 0; i < A.length; i++) {
             System.out.print(A[i]+" ");
         }
     }
 
-    public static int[] Counting_Sort(int[] A, int n) {
+    public static int[] Counting_Sort(int[] A) {
 
         int max = A[0];
         int min = A[0];
@@ -48,11 +48,11 @@ public class g_计数排序 {
 
         //建立一个（max-min）这么大的数组
         int[] bucket = new int[max-min+1];
-        int cnt=0;
-
         for (int i = 0; i < A.length; i++) {
             bucket[A[i]-min]++;
         }
+
+        int cnt=0;
         for (int i = 0; i < bucket.length; i++) {
             while(bucket[i]>0){
                 A[cnt++] = i+min;

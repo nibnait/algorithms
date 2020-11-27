@@ -1,4 +1,4 @@
-package org.tianbin.java.并发.JUC_demo;
+package org.tianbin.java.并发.JUC.JUC_demo;
 
 import com.lmax.disruptor.BlockingWaitStrategy;
 import com.lmax.disruptor.EventFactory;
