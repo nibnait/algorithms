@@ -1,10 +1,13 @@
 package org.tianbin.java.集合;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import common.util.StringUtil;
 import junit.framework.TestCase;
 import org.apache.commons.collections4.CollectionUtils;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -13,7 +16,16 @@ import java.util.stream.Stream;
 
 Created by nibnait on 2020-01-14
  */
-public class SetTest extends TestCase {
+public class SetTest {
+
+    @Test
+    public void test01() {
+        ArrayList list1 = Lists.newArrayList(1, 2, 3);
+        ArrayList list2 = Lists.newArrayList(2, 3, 4);
+
+        System.out.println(Lists.newArrayList(Sets.difference(Sets.newHashSet(list1), Sets.newHashSet(list2))));
+        System.out.println(Lists.newArrayList(Sets.intersection(Sets.newHashSet(list1), Sets.newHashSet(list2))));
+    }
 
     @Test
     public void testCase() {

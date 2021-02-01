@@ -40,7 +40,43 @@ public class M034_在排序数组中查找元素的第一个和最后一个位�
         System.out.println(JSON.toJSONString(searchRange(nums2, target2)));
     }
 
+    /**
+     * 标准的二分查找
+     */
     public int[] searchRange(int[] nums, int target) {
+        int[] res = new int[]{-1, -1};
+        if (nums.length == 0) {
+            return res;
+        }
+
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] > target) {
+                right = mid - 1;
+            } else if (nums[mid] == target) {
+                res[0] = res[1] = mid;
+                while (res[0]-1 >= 0 && nums[res[0]-1] == target) {
+                    res[0]--;
+                }
+
+                while (res[1]+1 < nums.length && nums[res[1]+1] == target) {
+                    res[1]++;
+                }
+
+                return res;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return res;
+    }
+
+    public int[] searchRange2(int[] nums, int target) {
         int lo = 0;
         int hi = nums.length - 1;
         int[] result = {-1, -1};

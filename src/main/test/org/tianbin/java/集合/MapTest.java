@@ -12,7 +12,7 @@ import java.util.Map;
 
 Created by nibnait on 2020-01-15
  */
-public class MapTest extends TestCase {
+public class MapTest {
 
 
     @Test

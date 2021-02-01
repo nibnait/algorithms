@@ -3,25 +3,38 @@ package org.tianbin.java.集合;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
-import junit.framework.TestCase;
+import common.util.CommonBeanUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /*
 
 Created by nibnait on 2020-01-09
  */
-public class ListTest extends TestCase {
+public class ListTest {
 
     @Test
-    public void testCase02() {
-        List<Integer> eveList = new ArrayList<>();
-        List<Integer> oddList = new ArrayList<>();
+    public void copyListProperties() {
+        List<Integer> list = Lists.newArrayList(2,1,3);
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
+    }
 
+    @Test
+    public void testSubList() {
+        List<Integer> list = Lists.newArrayList(1,2,3);
+        System.out.println(list.subList(0,0));
+    }
 
-
+    @Test
+    public void sort() {
+        List<Integer> list = Lists.newArrayList(2,3,1);
+        Collections.sort(list);
+        System.out.println(list);
     }
 
 
