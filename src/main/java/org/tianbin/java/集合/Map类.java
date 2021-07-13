@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * @author nibnait
  * @version $Id: Map.java, v 0.1 2019-08-12 下午2:16 nibnait Exp $$
  */
-public class Map {
+public class Map类 {
     public static void main(String[] args) {
         Hashtable hashtable;
 

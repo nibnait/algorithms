@@ -17,6 +17,15 @@ public class Person {
 
     private String name;
     private Integer age;
+    private Byte gender;
+    private String phone;
+    private Boolean isBigBoolean;
+    private boolean isSmallBoolean;
+
+    public Person(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 
     @Override
     public boolean equals(Object o) {

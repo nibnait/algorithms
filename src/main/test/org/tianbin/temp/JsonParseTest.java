@@ -1,5 +1,6 @@
 package org.tianbin.temp;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import junit.framework.TestCase;
 import org.apache.commons.lang3.StringUtils;
@@ -9,6 +10,12 @@ import org.junit.Test;
  * Created by nibnait on 2020-02-25
  */
 public class JsonParseTest extends TestCase {
+
+    @Test
+    public void test() {
+        String s = JSON.toJSONString(null);
+        System.out.println(s);
+    }
 
     @Test
     public void testCase() {

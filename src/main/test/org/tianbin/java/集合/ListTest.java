@@ -3,18 +3,39 @@ package org.tianbin.java.集合;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
-import common.util.CommonBeanUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*
 
 Created by nibnait on 2020-01-09
  */
 public class ListTest {
+
+    @Test
+    public void testContains() {
+        Integer i = null;
+        List<Integer> list = Lists.newArrayList(1);
+        System.out.println(list.contains(i));
+    }
+
+    @Test
+    public void test03() {
+        List<String> strList = Lists.newArrayList("1","2");
+        System.out.println(strList.stream().collect(Collectors.joining(",")));
+    }
+
+    @Test
+    public void test02() {
+        List<Integer> list = Lists.newArrayList();
+        for (Integer integer : list) {
+            System.out.println(integer.intValue());
+        }
+    }
 
     @Test
     public void copyListProperties() {
