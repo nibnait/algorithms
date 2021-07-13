@@ -21,11 +21,11 @@ public class b1_FutureTaskDemo extends TestCase {
        烧水泡茶 分工：
     T1：   洗水壶（1min） -->  烧开水（15min） --> 泡茶
                                                  /\
-    T2：                      洗茶壶（1min）       |
+    T2：                      洗茶壶（1min）        |
                                  |                |
-                              洗茶杯（2min）       |
+                              洗茶杯（2min）        |
                                  |                |
-                              拿茶叶（1min）————————
+                              拿茶叶（1min）————————-
 
      */
     @Test

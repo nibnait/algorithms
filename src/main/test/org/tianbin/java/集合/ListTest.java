@@ -3,7 +3,6 @@ package org.tianbin.java.集合;
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
-import common.util.CommonBeanUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;

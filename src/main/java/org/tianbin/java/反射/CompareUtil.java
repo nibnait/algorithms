@@ -1,50 +1,85 @@
 package org.tianbin.java.反射;
 
-import java.beans.IntrospectionException;
+import cn.hutool.log.Log;
+import cn.hutool.log.LogFactory;
+import com.alibaba.fastjson.JSON;
+import org.apache.commons.collections4.MapUtils;
+import org.springframework.beans.BeanUtils;
+
 import java.beans.PropertyDescriptor;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
  * Created by nibnait on 2020/11/11
  */
+@Deprecated
 public class CompareUtil {
 
-    public static void compare(Object thisObj, Object thatObj, Map<String, String> errorMap) {
+    private static final Log log = LogFactory.get(CompareUtil.class);
 
+    /**
+     * 返回 true/false
+     * @param whiteFiledList 不需要核对的字段
+     */
+    public static boolean compareBool(Object leftObj, Object rightObj, List<String> whiteFiledList) {
+        Map<String, String> errorMap = compare(leftObj, rightObj, whiteFiledList);
+
+        if (MapUtils.isNotEmpty(errorMap)) {
+            log.info("CompareUtils.errorMap: {}, leftObj: {}, rightObj: {}",
+                    JSON.toJSONString(errorMap),
+                    JSON.toJSONString(leftObj), JSON.toJSONString(rightObj));
+        }
+        return MapUtils.isEmpty(errorMap);
+    }
+
+    /**
+     * 返回 errorMap
+     * @param whiteFiledList 不需要核对的字段
+     */
+    public static Map<String, String> compare(Object leftObj, Object rightObj, List<String> whiteFiledList) {
+        Map<String, String> errorMap = new HashMap<>();
         try {
-            Class<?> clazz = thisObj.getClass();
-            Field[] fields = clazz.getDeclaredFields();
+            PropertyDescriptor[] propertyDescriptors = BeanUtils.getPropertyDescriptors(leftObj.getClass());
 
-            for (Field field : fields) {
-                if (field.getModifiers() != Modifier.PRIVATE) {
+            if (propertyDescriptors == null || propertyDescriptors.length <= 1) {
+                return errorMap;
+            }
+
+            for (int i = 1; i < propertyDescriptors.length; i++) {
+                PropertyDescriptor propertyDescriptor = propertyDescriptors[i];
+                String fieldName = propertyDescriptor.getName();
+
+                if (whiteFiledList.contains(fieldName)) {
                     continue;
                 }
 
-                // 排除静态字段
-                PropertyDescriptor propertyDescriptor = new PropertyDescriptor(field.getName(), clazz);
                 // 获得get方法
-                Method getMethod = propertyDescriptor.getReadMethod();
+                Method readMethod = propertyDescriptor.getReadMethod();
 
-                Object leftProperty = getMethod.invoke(thisObj);
-                Object rightProperty = getMethod.invoke(thatObj);
+                if (!Modifier.isPublic(readMethod.getDeclaringClass().getModifiers())) {
+                    readMethod.setAccessible(true);
+                }
+
+                Object leftProperty = readMethod.invoke(leftObj);
+                Object rightProperty = readMethod.invoke(rightObj);
 
                 boolean pass = compareObject(leftProperty, rightProperty);
                 if (!pass) {
-                    addToErrMap(errorMap, leftProperty, rightProperty, thisObj.getClass().getSimpleName(), getMethod.getName());
+                    addToErrMap(errorMap, leftProperty, rightProperty, leftObj.getClass().getSimpleName(), fieldName);
                 }
+
             }
-        } catch (IntrospectionException e) {
-            errorMap.put("比对", "核对发生IntrospectionException异常");
-        } catch (IllegalAccessException e) {
-            errorMap.put("比对", "核对发生IllegalAccessException异常");
-        } catch (InvocationTargetException e) {
-            errorMap.put("比对", "核对发生InvocationTargetException异常");
+
+        } catch (Exception e) {
+            log.error(e, "CompareUtils error " + e.getMessage());
+            errorMap.put("比对", "核对发生异常");
         }
 
+        return errorMap;
     }
 
     private static void addToErrMap(Map<String, String> errorMap, Object leftProperty, Object rightProperty, String className, String fieldName) {
@@ -66,7 +101,7 @@ public class CompareUtil {
             return false;
         }
 
-        if (thisObj == null && thatObj == null) {
+        if (thisObj == null) {
             return true;
         }
 

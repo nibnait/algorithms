@@ -1,6 +1,10 @@
 package common.util;
 
+import com.alibaba.fastjson.JSON;
+import com.google.common.collect.Lists;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -8,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 
 public class DateTimeUtil {
 
@@ -108,9 +113,9 @@ public class DateTimeUtil {
     }
 
     /**
-     *  Date
-     *  LocalDate       ==>     java.util.Date
-     *  LocalDateTime  ( Date.from(ZonedDateTime.toInstant) )
+     * Date
+     * LocalDate       ==>     java.util.Date
+     * LocalDateTime  ( Date.from(ZonedDateTime.toInstant) )
      */
     public static Date toUtilDate(Object date) {
         if (date == null) {
@@ -140,8 +145,8 @@ public class DateTimeUtil {
 
     /**
      * Date ==> LocalDate
-     *  .toIns
-     *   (ZonedDateTime)
+     * .toIns
+     * (ZonedDateTime)
      */
     public static LocalDate dateToLocalDate(Date date) {
         ZonedDateTime zonedDateTime = date.toInstant().atZone(defaultZoneId);
@@ -150,14 +155,13 @@ public class DateTimeUtil {
 
     /**
      * Date ==> LocalDateTime
-     *   (ZonedDateTime)
+     * (ZonedDateTime)
      */
     public static LocalDateTime dateToLocalDateTime(Date date) {
         ZonedDateTime zonedDateTime = date.toInstant().atZone(defaultZoneId);
         return zonedDateTime.toLocalDateTime();
     }
 
-    public static final String LONG_TIME_VALID = "长期有效";
     /**
      * 获取当前时间戳
      */
@@ -166,23 +170,40 @@ public class DateTimeUtil {
     }
 
     /**
+     * LocalDateTime ==> 秒timestamp
+     */
+    public static Long LocalDateTimeToSecond() {
+        return LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8"));
+    }
+
+    /**
+     * LocalDateTime ==> 毫秒timestamp
+     */
+    public static Long LocalDateTimeToMillSecond() {
+        return LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli();
+    }
+
+    public static final String LONG_TIME_VALID = "长期有效";
+
+    /**
      * 判断是否在有效期内
+     *
      * @param expireDate
      * @return
      */
     public static boolean isValidDate(String expireDate) {
-        if(StringUtils.isBlank(expireDate)){
+        if (StringUtils.isBlank(expireDate)) {
             return false;
         }
-        if(LONG_TIME_VALID.equals(expireDate)){
+        if (LONG_TIME_VALID.equals(expireDate)) {
             return true;
         }
-        try{
+        try {
             LocalDate expireLocalDate = DateTimeUtil.string2Date(expireDate);
-            if(LocalDate.now().compareTo(expireLocalDate) < 0){
+            if (LocalDate.now().compareTo(expireLocalDate) < 0) {
                 return true;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
         return false;
@@ -190,6 +211,7 @@ public class DateTimeUtil {
 
     /**
      * 比较两个日期相差多少天
+     *
      * @param startTime
      * @param endTime
      * @return
@@ -198,8 +220,83 @@ public class DateTimeUtil {
         return Duration.between(startTime, endTime).toDays();
     }
 
+    public static Long durationMillis(LocalDateTime startTime, LocalDateTime endTime) {
+        return Duration.between(startTime, endTime).toMillis();
+    }
+
+    /**
+     * 校验时期合法性
+     */
+    public static boolean isDateValid(List<String> date) {
+        boolean isvalid = true;
+        if (CollectionUtils.isEmpty(date)) {
+            return false;
+        }
+
+        try {
+            if (date.size() == 1) {
+                return NumberUtils.isParsable(date.get(0));
+            }
+            if (date.size() == 2) {
+                LocalDate.of(Integer.parseInt(date.get(0)), Integer.parseInt(date.get(1)), 1);
+            }
+            if (date.size() == 3) {
+                if (NumberUtils.isParsable(date.get(2))) {
+                    LocalDate.of(Integer.parseInt(date.get(0)), Integer.parseInt(date.get(1)), Integer.parseInt(date.get(2)));
+                } else {
+                    LocalDate.of(Integer.parseInt(date.get(0)), Integer.parseInt(date.get(1)), 1);
+                    if (!Lists.newArrayList("上旬", "中上旬", "中旬", "中下旬", "下旬").contains(date.get(2))) {
+                        isvalid = false;
+                    }
+                }
+            }
+            if (date.size() > 3) {
+                isvalid = false;
+            }
+        } catch (Exception e) {
+            isvalid = false;
+        }
+        return isvalid;
+    }
+
     public static void main(String[] args) {
-        String s = localDateTimeToString(LocalDateTime.now(), TIME_MILLISECOND_FORMAT);
-        System.out.println(s);
+        List<String> date = Lists.newArrayList("2020", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2021", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2022", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2023", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2019", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2024", "02", "29");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2024", "04", "31");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2024", "05", "31");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2020", "02");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2020");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2020", "02", "上旬");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2020", "02", "xx");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
+
+        date = Lists.newArrayList("2020", "02", "中旬", "lj");
+        System.out.println(isDateValid(date) + "\t" + JSON.toJSONString(date));
     }
 }

@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import common.model.Person;
 import common.model.PersonDTO;
 import common.util.CommonBeanUtil;
+import net.sf.cglib.beans.BeanCopier;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -15,12 +16,33 @@ import java.util.List;
 public class CommonBeanUtilTest {
 
     @Test
+    public void testBeanCopier() {
+        Person person = new Person();
+        person.setName("123");
+        person.setAge(1);
+        person.setGender((byte)2);
+        person.setPhone("13288889999");
+        person.setIsBigBoolean(true);
+        person.setSmallBoolean(true);
+
+        person.getIsBigBoolean();
+
+        person.isSmallBoolean();
+
+        BeanCopier beanCopier = BeanCopier.create(Person.class, PersonDTO.class, false);
+        PersonDTO personDTO = new PersonDTO();
+        beanCopier.copy(person, personDTO, null);
+
+        System.out.println(JSON.toJSONString(personDTO));
+    }
+
+    @Test
     public void copyProperties() {
         Person source = new Person();
         source.setName("111");
         source.setAge(22);
 
-        PersonDTO personDTO = CommonBeanUtil.copyProperties(source, PersonDTO::new);
+        PersonDTO personDTO = CommonBeanUtil.copyProperties_methodInvoke(source, PersonDTO::new);
 
         System.out.println(JSON.toJSONString(personDTO));
     }

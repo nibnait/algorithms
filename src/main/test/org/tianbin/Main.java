@@ -8,7 +8,9 @@ import junit.framework.TestCase;
 public class Main extends TestCase {
 
     public static void main(String[] args) {
-        System.out.println(9/2);
+        Byte b = 1;
+        Byte i = null;
+        System.out.println(b.equals(i));
     }
 
 }

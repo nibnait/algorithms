@@ -11,5 +11,8 @@ public class PersonDTO {
 
     private String name;
     private Integer age;
-
+    private Byte gender;
+    private String phone;
+    private Boolean isBigBoolean;
+    private boolean isSmallBoolean;
 }
