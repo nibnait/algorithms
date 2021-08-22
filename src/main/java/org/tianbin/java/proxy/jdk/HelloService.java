@@ -6,4 +6,6 @@ package org.tianbin.java.proxy.jdk;
  */
 public interface HelloService {
     void sayHello();
+
+    void speak(String word);
 }

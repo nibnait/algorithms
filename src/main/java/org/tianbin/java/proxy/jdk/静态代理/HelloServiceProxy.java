@@ -5,7 +5,7 @@ import org.tianbin.java.proxy.jdk.HelloService;
 /**
  * Created by nibnait on 2020/11/23
  */
-public class HelloServiceProxy  implements HelloService {
+public class HelloServiceProxy implements HelloService {
     private HelloService helloService;
 
     public HelloServiceProxy(HelloService helloService) {
@@ -15,5 +15,10 @@ public class HelloServiceProxy  implements HelloService {
     @Override
     public void sayHello() {
         helloService.sayHello();
+    }
+
+    @Override
+    public void speak(String word) {
+        helloService.speak(word);
     }
 }

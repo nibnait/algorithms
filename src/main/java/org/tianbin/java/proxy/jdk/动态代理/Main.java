@@ -39,7 +39,7 @@ public class Main extends TestCase {
                 new MyInvocationHandler(new HelloServiceImpl())
         );
         Jerry.sayHello();
-
+        Jerry.speak("123");
 
         /*************************源码解析：************************************/
         // 1、生成$Proxy0的class文件

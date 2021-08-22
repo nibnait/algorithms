@@ -10,4 +10,9 @@ public class HelloServiceImpl implements HelloService {
     public void sayHello() {
         System.out.println("Hello world!");
     }
+
+    @Override
+    public void speak(String word) {
+        System.out.println("speak" + word);
+    }
 }
