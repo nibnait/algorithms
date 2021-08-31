@@ -9,6 +9,7 @@ public class LocalDateTimeUtil {
 
     public static void main(String[] args) {
         LocalDateTime start = LocalDateTime.now().minusMinutes(1);
+        start = LocalDateTime.now().plusDays(1);
         LocalDateTime end = LocalDateTime.now();
         TimeBetween timeBetween = calcTimeBetween(start, end);
         System.out.println(timeBetween.toString());

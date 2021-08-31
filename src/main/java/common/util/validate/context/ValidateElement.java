@@ -1,6 +1,5 @@
 package common.util.validate.context;
 
-import common.util.validate.Validator;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -10,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public class ValidateElement {
+public class ValidateElement<V> {
     /**
      * 待验证对象
      */
@@ -19,6 +18,6 @@ public class ValidateElement {
     /**
      * 验证器
      */
-    private Validator validator;
+    private Class<V> validator;
 
 }

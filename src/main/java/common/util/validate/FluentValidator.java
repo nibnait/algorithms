@@ -1,5 +1,6 @@
 package common.util.validate;
 
+import common.context.ApplicationContextHelper;
 import common.util.validate.context.ValidateContext;
 import common.util.validate.context.ValidateContextAttrKey;
 import common.util.validate.context.ValidateElement;
@@ -19,7 +20,7 @@ public class FluentValidator {
     /**
      * 验证器链，惰性求值期间就是不断的改变这个链表，及时求值期间就是遍历链表依次执行验证
      */
-    private List<ValidateElement> ValidateElementList = new ArrayList<>();
+    private List<ValidateElement> validateElementList = new ArrayList<>();
 
     /**
      * 验证器上下文
@@ -47,8 +48,8 @@ public class FluentValidator {
      * @param validator 验证器
      * @return
      */
-    public <T> FluentValidator on(Validator<T> validator) {
-        ValidateElementList.add(new ValidateElement(null, validator));
+    public <T> FluentValidator on(Class<T> validator) {
+        validateElementList.add(new ValidateElement(null, validator));
         return this;
     }
 
@@ -59,8 +60,8 @@ public class FluentValidator {
      * @param validator 验证器
      * @return
      */
-    public <T> FluentValidator on(T t, Validator<T> validator) {
-        ValidateElementList.add(new ValidateElement(t, validator));
+    public <T, V> FluentValidator on(T t, Class<V> validator) {
+        validateElementList.add(new ValidateElement(t, validator));
         return this;
     }
 
@@ -72,9 +73,9 @@ public class FluentValidator {
      * @param condition 条件，为true时才会将验证器加入验证器列表中
      * @return
      */
-    public <T> FluentValidator on(T t, Validator<T> validator, boolean condition) {
+    public <T, V> FluentValidator on(T t, Class<V> validator, boolean condition) {
         if (condition) {
-            ValidateElementList.add(new ValidateElement(t, validator));
+            validateElementList.add(new ValidateElement(t, validator));
         }
         return this;
     }
@@ -85,14 +86,14 @@ public class FluentValidator {
      * @return
      */
     public FluentValidator doValidate() {
-        if (CollectionUtils.isEmpty(ValidateElementList)) {
+        if (CollectionUtils.isEmpty(validateElementList)) {
             log.info("Nothing to validate");
             return null;
         }
         try {
-            for (ValidateElement element : ValidateElementList) {
+            for (ValidateElement element : validateElementList) {
                 Object target = element.getTarget();
-                Validator validator = element.getValidator();
+                Validator validator = (Validator) ApplicationContextHelper.getBean(element.getValidator());
                 validator.validate(context, target);
             }
         } catch (Exception e) {
