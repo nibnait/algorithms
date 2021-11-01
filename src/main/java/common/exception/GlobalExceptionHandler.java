@@ -1,5 +1,6 @@
 package common.exception;
 
+import common.enums.ErrorCode;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

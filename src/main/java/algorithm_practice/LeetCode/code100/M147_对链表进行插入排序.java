@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code100;
 
 import common.datastruct.ListNode;
-import common.util.compare.CompareUtil;
+import common.util.compare.CompareUtils;
 import common.util.ConstructListNode;
 import common.util.SysOut;
 import org.junit.Assert;
@@ -46,13 +46,13 @@ public class M147_对链表进行插入排序 {
         ListNode excepted = ConstructListNode.construct(new int[]{1, 2, 3, 4, 5});
         ListNode actual = insertionSortList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
         head = ConstructListNode.construct(new int[]{-1,5,3,4,0});
         excepted = ConstructListNode.construct(new int[]{-1,0,3,4,5});
         actual = insertionSortList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
     }
 
     /**

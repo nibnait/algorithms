@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code200;
 
 import common.datastruct.ListNode;
-import common.util.compare.CompareUtil;
+import common.util.compare.CompareUtils;
 import common.util.ConstructListNode;
 import common.util.SysOut;
 import org.junit.Assert;
@@ -32,7 +32,7 @@ public class E206_反转链表 {
         ListNode excepted = ConstructListNode.construct(new int[]{5, 4, 3, 2, 1});
         ListNode actual = reverseList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
     }
 

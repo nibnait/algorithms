@@ -31,9 +31,29 @@ public class IntegerTest {
     }
 
     @Test
-    public void test01() {
-        String s = "xxx";
-        int i = Integer.parseInt(s);
+    public void testParseInt() {
+        try {
+            String s = "xxx";
+            int i = Integer.parseInt(s);
+            System.out.println(i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            String s = "1234567890123";
+            int i = Integer.parseInt(s);
+            System.out.println(i);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test
+    public void valueOf() {
+        Long l = 1234567890123L;
+        Integer i = Integer.valueOf(l.toString());
         System.out.println(i);
     }
 

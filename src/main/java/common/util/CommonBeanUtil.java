@@ -1,7 +1,9 @@
 package common.util;
 
 import com.esotericsoftware.reflectasm.MethodAccess;
+import com.google.common.collect.Lists;
 import net.sf.cglib.beans.BeanCopier;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 
@@ -126,10 +128,35 @@ public class CommonBeanUtil extends BeanUtils {
         return target;
     }
 
-    public static <S, T> List<T> copyListProperties(List<S> sources, Supplier<T> targetSupplier) {
+    public static <S, T> List<T> copyListProperties_methodInvoke(List<S> sources, Supplier<T> targetSupplier) {
         List<T> list = new ArrayList<>(sources.size());
         for (S source : sources) {
             T target = copyProperties_methodInvoke(source, targetSupplier);
+            list.add(target);
+        }
+        return list;
+    }
+
+    /**************** 最佳实践 **************/
+
+    public static <S, T> T copyProperties(S source, Supplier<T> targetSupplier) {
+        if (source == null) {
+            return null;
+        }
+        T target = targetSupplier.get();
+
+        BeanUtils.copyProperties(source, target);
+
+        return target;
+    }
+
+    public static <S, T> List<T> copyListProperties(List<S> sources, Supplier<T> targetSupplier) {
+        if (CollectionUtils.isEmpty(sources)) {
+            return Lists.newArrayList();
+        }
+        List<T> list = new ArrayList<>(sources.size());
+        for (S source : sources) {
+            T target = copyProperties(source, targetSupplier);
             list.add(target);
         }
         return list;

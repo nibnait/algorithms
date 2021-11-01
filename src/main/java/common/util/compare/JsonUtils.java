@@ -35,7 +35,7 @@ public class JsonUtils {
         for (String key : focusFields) {
             String actual = actualObject.getString(key);
             String expect = expectObject.getString(key);
-            if (!CompareUtil.compareObject(expect, actual)) {
+            if (!CompareUtils.matchObject(actual, expect)) {
                 addModifyFields(key, actual, expect, modifiedFields);
             }
         }

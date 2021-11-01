@@ -3,7 +3,7 @@ package org.tianbin.java.反射;
 import common.model.Person;
 import common.model.PersonDTO;
 import common.util.CommonBeanUtil;
-import common.util.DateTimeUtil;
+import common.util.DateTimeCalcUtils;
 import org.junit.Test;
 
 import java.time.LocalDateTime;
@@ -47,7 +47,7 @@ public class CopyProperties_性能测试 {
         }
         LocalDateTime endTime = LocalDateTime.now();
 
-        System.out.println("copyProperties_BeanCopier " + DateTimeUtil.durationMillis(startTime, endTime) + "ms");
+        System.out.println("copyProperties_BeanCopier " + DateTimeCalcUtils.calcTimeBetween(startTime, endTime).getMillis() + "ms");
 
     }
 
@@ -65,7 +65,7 @@ public class CopyProperties_性能测试 {
         }
         LocalDateTime endTime = LocalDateTime.now();
 
-        System.out.println("copyProperties_BeanUtils " + DateTimeUtil.durationMillis(startTime, endTime) + "ms");
+        System.out.println("copyProperties_BeanUtils " + DateTimeCalcUtils.calcTimeBetween(startTime, endTime).getMillis() + "ms");
 
     }
 
@@ -83,7 +83,7 @@ public class CopyProperties_性能测试 {
         }
         LocalDateTime endTime = LocalDateTime.now();
 
-        System.out.println("copyProperties_fieldGetSet " + DateTimeUtil.durationMillis(startTime, endTime) + "ms");
+        System.out.println("copyProperties_fieldGetSet " + DateTimeCalcUtils.calcTimeBetween(startTime, endTime).getMillis() + "ms");
 
     }
 
@@ -101,7 +101,7 @@ public class CopyProperties_性能测试 {
         }
         LocalDateTime endTime = LocalDateTime.now();
 
-        System.out.println("copyProperties_methodInvoke " + DateTimeUtil.durationMillis(startTime, endTime) + "ms");
+        System.out.println("copyProperties_methodInvoke " + DateTimeCalcUtils.calcTimeBetween(startTime, endTime).getMillis() + "ms");
 
     }
 
@@ -119,7 +119,7 @@ public class CopyProperties_性能测试 {
         }
         LocalDateTime endTime = LocalDateTime.now();
 
-        System.out.println("copyProperties_methodInvoke_V2 " + DateTimeUtil.durationMillis(startTime, endTime) + "ms");
+        System.out.println("copyProperties_methodInvoke_V2 " + DateTimeCalcUtils.calcTimeBetween(startTime, endTime).getMillis() + "ms");
 
     }
 }

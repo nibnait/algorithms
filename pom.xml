@@ -62,7 +62,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>8.5.14</version>
+            <version>8.5.63</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/cglib/cglib -->
@@ -148,6 +148,7 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- CompareUtils -->
         <dependency>
             <groupId>com.json.comparison</groupId>
             <artifactId>comparison-core</artifactId>
@@ -162,6 +163,19 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.11.2</version>
+        </dependency>
+
+        <!-- PageUtils -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
         </dependency>
 
     </dependencies>

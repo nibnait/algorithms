@@ -41,7 +41,7 @@ public class RedisRateLimiterTest {
             pool.execute(() -> {
                 double acquire = limiter.acquire(1);
                 System.out.println(index + " \t" + acquire + " \t"
-                        + DateTimeUtil.localDateTimeToString(LocalDateTime.now(), DateTimeUtil.TIME_MILLISECOND_FORMAT));
+                        + DateTimeUtil.localDateTime2String(LocalDateTime.now()));
             });
         }
 
@@ -56,7 +56,7 @@ public class RedisRateLimiterTest {
             pool.execute(() -> {
                 boolean acquire = limiter.tryAcquire();
                 System.out.println(index + " \t" + acquire + " \t"
-                        + DateTimeUtil.localDateTimeToString(LocalDateTime.now(), DateTimeUtil.TIME_MILLISECOND_FORMAT));
+                        + DateTimeUtil.localDateTime2String(LocalDateTime.now()));
             });
         }
 
@@ -71,7 +71,7 @@ public class RedisRateLimiterTest {
             pool.execute(() -> {
                 boolean acquire = limiter.tryAcquire(1000L, TimeUnit.MILLISECONDS);
                 System.out.println(index + " \t" + acquire + " \t"
-                        + DateTimeUtil.localDateTimeToString(LocalDateTime.now(), DateTimeUtil.TIME_MILLISECOND_FORMAT));
+                        + DateTimeUtil.localDateTime2String(LocalDateTime.now()));
             });
         }
 
@@ -93,7 +93,7 @@ public class RedisRateLimiterTest {
             pool.execute(() -> {
                 double acquire = redisRateLimiter.acquireLazy(10);
                 System.out.println(index + " \t" + acquire + " \t"
-                        + DateTimeUtil.localDateTimeToString(LocalDateTime.now(), DateTimeUtil.TIME_MILLISECOND_FORMAT));
+                        + DateTimeUtil.localDateTime2String(LocalDateTime.now()));
             });
         }
 

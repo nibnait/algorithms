@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code300;
 
 import common.datastruct.ListNode;
-import common.util.compare.CompareUtil;
+import common.util.compare.CompareUtils;
 import common.util.ConstructListNode;
 import common.util.SysOut;
 import org.junit.Assert;
@@ -39,31 +39,31 @@ public class M328_奇偶链表 {
         ListNode excepted = ConstructListNode.construct(new int[]{1, 3, 5, 2, 4});
         ListNode actual = oddEvenList(head);
 //        SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
         head = ConstructListNode.construct(new int[]{2, 1, 3, 5, 6, 4, 7});
         excepted = ConstructListNode.construct(new int[]{2, 3, 6, 7, 1, 5, 4});
         actual = oddEvenList(head);
 //        SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
         head = ConstructListNode.construct(new int[]{2, 1, 3, 5, 6, 4, 7});
         excepted = ConstructListNode.construct(new int[]{1, 3, 5, 7, 2, 6, 4});
         actual = oddEvenValList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
         head = ConstructListNode.construct(new int[]{1, 2, 3, 4, 5});
         excepted = ConstructListNode.construct(new int[]{1, 3, 5, 2, 4});
         actual = oddEvenValList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
         head = ConstructListNode.construct(new int[]{2, 1});
         excepted = ConstructListNode.construct(new int[]{1, 2});
         actual = oddEvenValList(head);
         SysOut.printList(actual);
-        Assert.assertTrue(CompareUtil.compareListNode(excepted, actual));
+        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
 
     }
 

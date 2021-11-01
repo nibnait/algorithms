@@ -1,4 +1,4 @@
-package common.exception;
+package common.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

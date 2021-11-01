@@ -1,5 +1,7 @@
 package common.exception;
 
+import common.enums.ErrorCode;
+
 import java.io.Serializable;
 
 /**
