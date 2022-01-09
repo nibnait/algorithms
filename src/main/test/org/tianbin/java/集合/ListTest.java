@@ -19,6 +19,13 @@ import java.util.stream.Collectors;
 public class ListTest {
 
     @Test
+    public void sum() {
+        List<Person> list = Lists.newArrayList();
+        int sum = list.stream().mapToInt(Person::getAge).sum();
+        System.out.println(sum);
+    }
+
+    @Test
     public void sorted() {
         List<Person> people = new ArrayList<>();
         Person p1 = new Person();
@@ -59,6 +66,8 @@ public class ListTest {
         Integer i = null;
         List<Integer> list = Lists.newArrayList(1);
         System.out.println(list.contains(i));
+
+        System.out.println(list.contains(null));
     }
 
     @Test
@@ -91,7 +100,7 @@ public class ListTest {
 
     @Test
     public void sort() {
-        List<Integer> list = Lists.newArrayList(2, 3, 1);
+        List<Integer> list = Lists.newArrayList(2293, 2304, 2313, 2408, 2419, 2421, 2066, 2273, 2278, 2312, 2418, 2274, 2331, 2273);
         Collections.sort(list);
         System.out.println(list);
     }

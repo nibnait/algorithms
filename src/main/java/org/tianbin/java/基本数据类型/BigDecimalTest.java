@@ -11,6 +11,12 @@ import java.math.RoundingMode;
 public class BigDecimalTest {
 
     @Test
+    public void divide() {
+        BigDecimal divide = new BigDecimal("1").divide(new BigDecimal("3"), RoundingMode.HALF_UP);
+        System.out.println(divide);
+    }
+
+    @Test
     public void test04() {
         int i = 1;
         BigDecimal bigDecimal1 = new BigDecimal(i);
