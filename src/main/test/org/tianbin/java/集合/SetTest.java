@@ -2,9 +2,8 @@ package org.tianbin.java.集合;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
-import common.util.StringUtil;
-import junit.framework.TestCase;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -34,7 +33,7 @@ public class SetTest {
 
     private static boolean isRestaurantInGray(long restaurantId, String grayRestaurantIdStr) {
 
-        if (StringUtil.isBlank(grayRestaurantIdStr)) {
+        if (StringUtils.isBlank(grayRestaurantIdStr)) {
             return false;
         }
 

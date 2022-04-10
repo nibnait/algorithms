@@ -1,7 +1,7 @@
 package org.tianbin.redis.RateLimiter;
 
 import com.google.common.io.ByteStreams;
-import common.util.StringUtil;
+import io.github.nibnait.common.constants.CommonConstants;
 import org.tianbin.java.IO.classpath.ResourcesReaderUtil;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisCluster;
@@ -106,7 +106,7 @@ public class RedisRateLimiter {
             e.printStackTrace();
         }
 
-        return StringUtil.EMPTY_STRING;
+        return CommonConstants.EMPTY_STRING;
     }
 
     public static RedisRateLimiter create(String key, double qps, JedisPool jedisPool) {

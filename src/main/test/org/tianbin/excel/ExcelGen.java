@@ -1,10 +1,11 @@
 package org.tianbin.excel;
 
 import com.google.common.collect.Lists;
-import common.bo.EmailBO;
-import common.util.EmailUtils;
-import common.bo.excel.SheetBO;
-import common.bo.excel.WorkBookBO;
+import io.github.nibnait.common.bo.email.EmailAccount;
+import io.github.nibnait.common.bo.email.EmailBO;
+import io.github.nibnait.common.bo.excel.SheetBO;
+import io.github.nibnait.common.bo.excel.WorkBookBO;
+import io.github.nibnait.common.utils.EmailUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
@@ -26,7 +27,7 @@ public class ExcelGen {
     public static final String DATE_TIME_FORMAT = "yyyyMMdd-HHmm";
 
     @Test
-    public void excelGen() {
+    public void excelGen() throws Exception {
 
         String targetFileName = String.format(DELAY_DELIVERY_REPORT_FILE_NAME,
                 getNowDateTime(DATE_TIME_FORMAT));
@@ -36,16 +37,11 @@ public class ExcelGen {
 
         xiegehanshu(sheet);
 
-        File delay_delivery_report = workBookBO.writeToFile(targetFileName);
+        File delay_delivery_report = workBookBO.writeToDefaultLocalPath(targetFileName);
 
         System.out.println(delay_delivery_report.getName());
 
-        EmailUtils.sendEmail(new EmailBO("111",
-                "tianbin@bilibili.com",
-                null,
-                "222",
-                getEmailContent(),
-                Lists.newArrayList(delay_delivery_report)));
+        EmailUtils.sendEmailThrowException(new EmailAccount(), new EmailBO());
     }
 
     public static String getNowDateTime(String dateFormat) {

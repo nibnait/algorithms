@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
 import common.util.SysOut;
-import common.util.StringUtil;
+import io.github.nibnait.common.constants.CommonConstants;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -145,7 +145,7 @@ public class M003_无重复字符的最长子串 extends TestCase {
      * 玩转字符串
      */
     private int lengthOfLongestSubstring2(String s) {
-        String longestSubString = StringUtil.EMPTY_STRING;
+        String longestSubString = CommonConstants.EMPTY_STRING;
         StringBuilder currentStringBuilder = new StringBuilder("");
         for (int i = 0; i < s.length(); i++) {
             Character currentChar = s.charAt(i);

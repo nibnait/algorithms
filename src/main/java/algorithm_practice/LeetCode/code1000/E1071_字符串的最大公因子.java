@@ -1,6 +1,5 @@
 package algorithm_practice.LeetCode.code1000;
 
-import common.util.StringUtil;
 import junit.framework.TestCase;
 import org.junit.Test;
 

@@ -6,7 +6,7 @@ import com.google.common.base.Functions;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import common.model.Person;
-import common.util.DataUtils;
+import io.github.nibnait.common.utils.DataUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;

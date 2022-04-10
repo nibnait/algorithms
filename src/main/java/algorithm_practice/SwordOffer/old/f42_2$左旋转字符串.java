@@ -1,7 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-
-import common.util.StringUtil;
+import org.apache.commons.lang3.StringUtils;
 
 import static algorithm_practice.SwordOffer.old.f42_1$翻转单词顺序.Reverse;
 
@@ -34,7 +33,7 @@ public class f42_2$左旋转字符串 {
     }
 
     private static String leftRotateString(String str, int n) {
-        if (StringUtil.isBlank(str) || n<=0 || n>=str.length()){    //n==0，n==str.length 都不用翻转！
+        if (StringUtils.isBlank(str) || n<=0 || n>=str.length()){    //n==0，n==str.length 都不用翻转！
             return str;
         }
         char[] chars = str.toCharArray();

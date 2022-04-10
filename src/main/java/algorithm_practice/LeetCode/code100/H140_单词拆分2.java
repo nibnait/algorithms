@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code100;
 
 import com.google.common.collect.Lists;
-import common.util.StringUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -135,7 +135,7 @@ public class H140_单词拆分2 {
      */
     public List<String> wordBreak2(String s, List<String> wordDict) {
         List<String> result = new ArrayList<>();
-        if (StringUtil.isBlank(s)) {
+        if (StringUtils.isBlank(s)) {
             return result;
         }
 

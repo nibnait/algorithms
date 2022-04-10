@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code300;
 
 import common.datastruct.ListNode;
-import common.util.compare.CompareUtils;
+import common.util.CompareUtils;
 import common.util.ConstructListNode;
 import common.util.SysOut;
 import org.junit.Assert;

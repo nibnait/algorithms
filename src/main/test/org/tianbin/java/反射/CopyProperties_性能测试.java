@@ -3,7 +3,7 @@ package org.tianbin.java.反射;
 import common.model.Person;
 import common.model.PersonDTO;
 import common.util.CommonBeanUtil;
-import common.util.DateTimeCalcUtils;
+import io.github.nibnait.common.utils.date.DateTimeCalcUtils;
 import org.junit.Test;
 
 import java.time.LocalDateTime;

@@ -1,10 +1,10 @@
 package common.util.validate.validator;
 
-import common.exception.ClientViewException;
 import common.model.Person;
-import common.util.StringUtil;
 import common.util.validate.Validator;
 import common.util.validate.context.ValidateContext;
+import io.github.nibnait.common.exception.ClientViewException;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by nibnait on 2021/08/22
@@ -22,7 +22,7 @@ public class OperatorValidator implements Validator<Person> {
      */
     @Override
     public void validate(ValidateContext context, Person person) {
-        if (StringUtil.isBlank(person.getName())) {
+        if (StringUtils.isBlank(person.getName())) {
             throw new ClientViewException("用户名 不能为空");
         }
     }
