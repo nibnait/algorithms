@@ -13,7 +13,9 @@ import java.util.Date;
 public class DateTimeConvertUtils {
 
     public static final String DATE_FORMAT = "yyyy-MM-dd";
+    public static final String DATE_FORMAT1 = "yyyyMMdd";
     public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
+    public static final String DATE_TIME_MILLI_FORMAT = "yyyy-MM-dd HH:mm:ss:SSS";
 
     private static ZoneId DEFAULT_ZONE_ID = ZoneId.systemDefault();
     private static ZoneOffset BEIJING_ZONE_OFFSET = ZoneOffset.of("+8");
@@ -34,7 +36,18 @@ public class DateTimeConvertUtils {
         throw new ClientViewException("{} 非10位/13位时间戳", timeStamp);
     }
 
+    public static Long toSecondTimeStamp(Date date) {
+        if (date == null) {
+            return 0L;
+        }
+
+        return toSecondTimeStamp(date.getTime());
+    }
+
     public static Long toSecondTimeStamp(long timeStamp) {
+        if (timeStamp == 0) {
+            return 0L;
+        }
         int length = String.valueOf(timeStamp).length();
         if (MILLI_TIMESTAMP_LENGTH == length) {
             return timeStamp / 1000;
@@ -46,15 +59,27 @@ public class DateTimeConvertUtils {
     }
 
     /************************** String <==> timestamp ******************************/
+    public static String timeStamp2String(long timeStamp) {
+        return new SimpleDateFormat(DATE_TIME_FORMAT).format(toMilliTimeStamp(timeStamp));
+    }
+
     public static String timeStamp2String(long timeStamp, String format) {
         return new SimpleDateFormat(format).format(toMilliTimeStamp(timeStamp));
+    }
+
+    public static String timeStamp2DateString(long timeStamp) {
+        return new SimpleDateFormat(DATE_FORMAT).format(toMilliTimeStamp(timeStamp));
+    }
+
+    public static String timeStamp2DateTimeString(long timeStamp) {
+        return new SimpleDateFormat(DATE_TIME_FORMAT).format(toMilliTimeStamp(timeStamp));
     }
 
     public static Long string2MilliSecond(String time) {
         try {
             return new SimpleDateFormat(DATE_TIME_FORMAT).parse(time).getTime();
         } catch (ParseException e) {
-            throw new ClientViewException("timeStr:{}, format:{} DateTimeConvertUtils.转时间戳失败", time, DATE_TIME_FORMAT);
+            throw new ClientViewException("timeStr:{}, format:{} DateTimeConvertUtils.string2MilliSecond 转时间戳失败", time, DATE_TIME_FORMAT);
         }
     }
 
@@ -62,7 +87,7 @@ public class DateTimeConvertUtils {
         try {
             return new SimpleDateFormat(format).parse(time).getTime();
         } catch (ParseException e) {
-            throw new ClientViewException("timeStr:{}, format:{} 转时间戳失败", time, format);
+            throw new ClientViewException("timeStr:{}, format:{} DateTimeConvertUtils.string2MilliSecond 转时间戳失败", time, format);
         }
     }
 
@@ -154,7 +179,7 @@ public class DateTimeConvertUtils {
         return zonedDateTime.toLocalDateTime();
     }
 
-    /******************* java.sql.Date, LocalDate, LocalDateTime ==> Date ********************/
+    /******************* timestamp, java.sql.Date, LocalDate, LocalDateTime ==> Date ********************/
     public static Date toUtilDate(Object date) {
         if (date == null) {
             return null;

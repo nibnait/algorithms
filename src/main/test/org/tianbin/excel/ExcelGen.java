@@ -36,7 +36,7 @@ public class ExcelGen {
 
         xiegehanshu(sheet);
 
-        File delay_delivery_report = workBookBO.writeToFile("report", targetFileName);
+        File delay_delivery_report = workBookBO.writeToFile(targetFileName);
 
         System.out.println(delay_delivery_report.getName());
 
