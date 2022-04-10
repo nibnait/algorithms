@@ -3,8 +3,6 @@ package algorithm_practice.LeetCode.code000;
 import junit.framework.TestCase;
 import org.junit.Test;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /*

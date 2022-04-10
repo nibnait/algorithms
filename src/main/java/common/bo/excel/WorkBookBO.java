@@ -1,20 +1,17 @@
 package common.bo.excel;
 
 
+import common.CommonConstants;
+import common.util.DateUtils;
+import common.util.EnhanceFileUtils;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,7 +31,7 @@ public class WorkBookBO {
         sheetList.add(new SheetBO(workbook.createSheet("Sheet1")));
     }
 
-    public WorkBookBO(int sheetSize, List<List<String>> sheetTitle, String... sheetName) {
+    public WorkBookBO(List<List<String>> sheetTitle, String... sheetName) {
         workbook = new HSSFWorkbook();
         if (CollectionUtils.isEmpty(sheetTitle) || sheetName == null
                 || sheetTitle.size() != sheetName.length) {
@@ -43,7 +40,7 @@ public class WorkBookBO {
             return;
         }
 
-        for (int i = 0; i < sheetSize; i++) {
+        for (int i = 0; i < sheetTitle.size(); i++) {
             HSSFSheet sheet = workbook.createSheet(sheetName[i]);
             SheetBO sheetBO = new SheetBO(sheet);
             sheetBO.appendRow(sheetTitle.get(i));
@@ -53,35 +50,25 @@ public class WorkBookBO {
 
     /**
      * 将 workbook 写成文件
-     * @param sourceFileName resources/excel 目录下的文件名
-     * @param targetFileName targetFileName 重命名文件（可以为空）
+     * @param fileName fileName 重命名文件（可以为空）
      */
-    public File writeToFile(String sourceFileName, String targetFileName) {
-
-        if (StringUtils.isBlank(sourceFileName)) {
-            return null;
+    public File writeToFile(String fileName) {
+        if (StringUtils.isBlank(fileName)) {
+            fileName = String.valueOf(DateUtils.currentTimeMillis());
         }
 
-        File sourceFile = null;
-        String sourceFilePathName = "/excel/" + sourceFileName + ".xls";
+//        fileName = CommonConstants.FILE_PATH + CommonConstants.SLASH_SEPARATOR + fileName + CommonConstants.SUFFIX_XLS;
+        fileName = "/Users/nibnait/data/file" + CommonConstants.SLASH_SEPARATOR + fileName + CommonConstants.SUFFIX_XLS;
+        File file = new File(fileName);
+
         try {
-            ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-            Resource[] resources = resolver.getResources(sourceFilePathName);
-            sourceFile = resources[0].getFile();
-            workbook.write(sourceFile);
+            file = EnhanceFileUtils.createIfNecessary(fileName);
+            workbook.write(file);
             workbook.close();
-            resources = resolver.getResources(sourceFilePathName);
-            sourceFile = resources[0].getFile();
-
-            if (StringUtils.isNotBlank(targetFileName) && sourceFile != null) {
-                String path = sourceFile.getPath();
-                Path copy = Files.copy(Paths.get(path), Paths.get(path.replaceAll(sourceFileName, targetFileName)));
-                return copy.toFile();
-            }
         } catch (Exception e) {
-            log.error("fail to write excel sourceFile", e);
+            log.error("WorkBookBO writeToFile error ", e);
         }
 
-        return sourceFile;
+        return file;
     }
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -21,6 +22,7 @@ public class Person {
     private String phone;
     private Boolean isBigBoolean;
     private boolean isSmallBoolean;
+    private List<Integer> children;
 
     public Person(String name, Integer age) {
         this.name = name;
