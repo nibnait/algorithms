@@ -3,7 +3,7 @@
 [数据结构](src/main/java/data_struct/README.md)
 
 # 操作系统
-[jvm](src/main/java/org/tianbin/jvm)
+[jvm](src/main/java/cc/tianbin/jvm)
 
 # 网络编程
-[org.tianbin.netty](src/main/java/org/tianbin/netty/README.md)
+[org.tianbin.netty](src/main/java/cc/tianbin/netty/README.md)

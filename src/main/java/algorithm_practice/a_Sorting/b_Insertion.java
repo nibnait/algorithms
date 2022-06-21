@@ -9,8 +9,7 @@ import common.util.SysRandom;
  */
 public class b_Insertion {
     public static void main(String[] args) {
-        int[] a = new int[10];
-        a = SysRandom.random(a);
+        int[] a = SysRandom.randomArr();
         SysOut.printArray(a);
 
         a = Insertion_Sort(a);

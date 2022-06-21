@@ -10,8 +10,7 @@ import common.util.SysRandom;
 public class d_Merge {
 
     public static void main(String[] args) {
-        int[] a = new int[7];
-        a = SysRandom.random(a);
+        int[] a = SysRandom.randomArr();
         SysOut.printArray(a);
 
         divide(a, 0, a.length - 1);

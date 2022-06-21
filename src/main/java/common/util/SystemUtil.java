@@ -23,4 +23,12 @@ public class SystemUtil {
         } catch (InterruptedException e) {
         }
     }
+
+    public static void printCuttingLine() {
+        System.out.println("================================================");
+    }
+
+    public static void printLiteCuttingLine() {
+        System.out.println("--------------------------------------------------");
+    }
 }

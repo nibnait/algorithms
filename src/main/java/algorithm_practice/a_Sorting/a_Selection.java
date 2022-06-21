@@ -15,11 +15,10 @@ import common.util.SysRandom;
  */
 public class a_Selection {
     public static void main(String[] args) {
-        int[] a = new int[10];
-        a = SysRandom.random(a);
+        int[] a = SysRandom.randomArr();
         SysOut.printArray(a);
 
-        a = Selection_Sort(a);
+        Selection_Sort(a);
         SysOut.printArray(a);
     }
 
