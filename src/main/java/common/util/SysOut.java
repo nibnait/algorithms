@@ -14,6 +14,10 @@ public final class SysOut {
         System.out.print(String.format(format, args));
     }
 
+    public static void println(Object o) {
+        System.out.println(o);
+    }
+
     public static void println(String format, Object... args) {
         System.out.println(String.format(format, args));
     }

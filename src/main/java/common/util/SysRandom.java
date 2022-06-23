@@ -1,5 +1,7 @@
 package common.util;
 
+import io.github.nibnait.common.utils.DataUtils;
+
 import java.util.Random;
 
 /**
@@ -7,10 +9,13 @@ import java.util.Random;
  */
 public class SysRandom {
 
-    private static Random random = new Random();   //伪随机数发生器
+    private static final Random random = new Random();   //伪随机数发生器
 
-    private static double random(){
-        return random.nextDouble();
+    private static final Integer RANDOM_MAX_VALUE = 1000;
+    private static final String INVALID_RANGE = "Invalid range, a: {}, b: {}";
+
+    private static double random() {
+        return Math.random() * RANDOM_MAX_VALUE;
     }
 
     /**
@@ -28,9 +33,9 @@ public class SysRandom {
      */
     public static double randomDouble(double a, double b) {
         if (a >= b) {
-            throw new IllegalArgumentException("Invalid range");
+            throw new IllegalArgumentException(DataUtils.format(INVALID_RANGE, a, b));
         }
-        return a + random() * (b-a);
+        return a + random() * (b - a);
     }
 
     /**
@@ -38,10 +43,10 @@ public class SysRandom {
      */
     public static int randomInt(int a, int b) {
         if (b <= a) {
-            throw new IllegalArgumentException("Invalid range");
+            throw new IllegalArgumentException(DataUtils.format(INVALID_RANGE, a, b));
         }
         if ((long) b - a >= Integer.MAX_VALUE) {
-            throw new IllegalArgumentException("Invalid range");
+            throw new IllegalArgumentException(DataUtils.format(INVALID_RANGE, a, b));
         }
         return a + random(b - a);
     }

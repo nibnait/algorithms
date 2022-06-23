@@ -1,5 +1,6 @@
 package algorithm_practice.algorithmzuo.a_primary.class01;
 
+import common.CommonConstants;
 import common.util.CompareUtils;
 import common.util.SysOut;
 import common.util.SysRandom;
@@ -15,7 +16,7 @@ public class Code05_InsertionSort {
 
     @Test
     public void testCase() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < CommonConstants.TEST_CASE_COUNT; i++) {
             int arr[] = SysRandom.randomArr();
             SysOut.printArray(arr);
             int[] tmp = CompareUtils.copyArray(arr);
