@@ -1,4 +1,4 @@
-package algorithm_practice.algorithmzuo.b_algorithm_basic.class02;
+package algorithm_practice.algorithmzuo.b_体系学习班.class02;
 
 import common.CommonConstants;
 import common.util.SysOut;

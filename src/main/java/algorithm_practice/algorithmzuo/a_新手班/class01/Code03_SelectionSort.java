@@ -1,4 +1,4 @@
-package algorithm_practice.algorithmzuo.a_primary.class01;
+package algorithm_practice.algorithmzuo.a_新手班.class01;
 
 import common.CommonConstants;
 import common.util.CompareUtils;

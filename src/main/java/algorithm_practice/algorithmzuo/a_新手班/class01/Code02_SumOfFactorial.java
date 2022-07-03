@@ -1,4 +1,4 @@
-package algorithm_practice.algorithmzuo.a_primary.class01;
+package algorithm_practice.algorithmzuo.a_新手班.class01;
 
 public class Code02_SumOfFactorial {
 
