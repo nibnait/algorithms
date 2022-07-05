@@ -1,7 +1,7 @@
 package algorithm_practice;
 
-import common.datastruct.ListNode;
-import common.util.ConstructListNode;
+import common.datastruct.LinkedNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import org.junit.Test;
 
@@ -12,19 +12,19 @@ public class TempTest {
 
     @Test
     public void testCase() {
-        ListNode head = ConstructListNode.construct(new int[]{1, 2, 3, 4, 5});
-        SysOut.printList(head);
+        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        SysOut.printLinkedNode(head);
 
         head = reverseK(head, 2);
-        SysOut.printList(head);
+        SysOut.printLinkedNode(head);
     }
 
-    private ListNode reverseK(ListNode head, int k) {
+    private LinkedNode reverseK(LinkedNode head, int k) {
         if (head == null) {
             return null;
         }
 
-        ListNode dummyHead = new ListNode();
+        LinkedNode dummyHead = new LinkedNode();
         dummyHead.next = head;
 
         while (dummyHead.next != null) {
@@ -43,12 +43,12 @@ public class TempTest {
         return dummyHead.next;
     }
 
-    private ListNode reverseN(ListNode head, int n) {
+    private LinkedNode reverseN(LinkedNode head, int n) {
         if (n == 1) {
             return head;
         }
 
-        ListNode last = reverseN(head.next, n-1);
+        LinkedNode last = reverseN(head.next, n-1);
         head.next.next = head;
         head.next = null;
 

@@ -1,8 +1,8 @@
 package algorithm_practice.LeetCode.code200;
 
-import common.datastruct.ListNode;
+import common.datastruct.LinkedNode;
 import common.util.CompareUtils;
-import common.util.ConstructListNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,23 +28,23 @@ public class E206_反转链表 {
 
     @Test
     public void testCase() {
-        ListNode head = ConstructListNode.construct(new int[]{1, 2, 3, 4, 5});
-        ListNode excepted = ConstructListNode.construct(new int[]{5, 4, 3, 2, 1});
-        ListNode actual = reverseList(head);
-        SysOut.printList(actual);
-        Assert.assertTrue(CompareUtils.compareListNode(excepted, actual));
+        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{5, 4, 3, 2, 1});
+        LinkedNode actual = reverseList(head);
+        SysOut.printLinkedNode(actual);
+        Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
     }
 
     /**
      * labuladong 递归
      */
-    public ListNode reverseList(ListNode head) {
+    public LinkedNode reverseList(LinkedNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode last = reverseList(head.next);
+        LinkedNode last = reverseList(head.next);
         head.next.next = head;
         head.next = null;
 
@@ -54,13 +54,13 @@ public class E206_反转链表 {
     /**
      * 递归
      */
-    public ListNode reverseList3(ListNode head) {
+    public LinkedNode reverseList3(LinkedNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode prev = reverseList(head.next);
-        ListNode p = prev;
+        LinkedNode prev = reverseList(head.next);
+        LinkedNode p = prev;
         while (p.next != null) {
             p = p.next;
         }
@@ -73,19 +73,19 @@ public class E206_反转链表 {
     /**
      * 非递归
      */
-    public ListNode reverseList2(ListNode head) {
+    public LinkedNode reverseList2(LinkedNode head) {
         if (head == null) {
             return null;
         }
 
-        ListNode dummyHead = new ListNode();
+        LinkedNode dummyHead = new LinkedNode();
         dummyHead.next = head;
 
-        ListNode cur = head.next;
+        LinkedNode cur = head.next;
         head.next = null;
 
         while (cur != null) {
-            ListNode next = cur.next;
+            LinkedNode next = cur.next;
 
             // 把 cur 插在 dummyHead.next
             cur.next = dummyHead.next;

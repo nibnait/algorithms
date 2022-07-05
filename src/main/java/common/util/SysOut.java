@@ -1,7 +1,8 @@
 package common.util;
 
 import common.datastruct.BinaryTreeNode;
-import common.datastruct.ListNode;
+import common.datastruct.LinkedNode;
+import io.github.nibnait.common.exception.ClientViewException;
 
 import java.util.Stack;
 
@@ -11,15 +12,23 @@ import java.util.Stack;
 public final class SysOut {
 
     public static void print(String format, Object... args) {
-        System.out.print(String.format(format, args));
+        print(String.format(format, args));
+    }
+
+    public static void print(String str) {
+        System.out.print(str);
+    }
+
+    public static void println(String format, Object... args) {
+        println(String.format(format, args));
     }
 
     public static void println(Object o) {
         System.out.println(o);
     }
 
-    public static void println(String format, Object... args) {
-        System.out.println(String.format(format, args));
+    public static void println() {
+        System.out.println();
     }
 
     public static void printSeparator() {
@@ -37,9 +46,9 @@ public final class SysOut {
         String digitFormat_Comma = "%3d, ";
         int n = a.length;
         int m = a[0].length;
-        System.out.println("{");
+        println("{");
         for (int i = 0; i < n; i++) {
-            System.out.print("\t{");
+            print("\t{");
             for (int j = 0; j < m; j++) {
                 if (j == m - 1) {
                     print(digitFormat, a[i][j]);
@@ -47,47 +56,76 @@ public final class SysOut {
                 }
                 print(digitFormat_Comma, a[i][j]);
             }
-            System.out.println("},");
+            println("},");
         }
-        System.out.println("}");
+        println("}");
     }
 
 
     public static void printArray(int[] a) {
         for (int i = 0; i < a.length; i++) {
             if (i == a.length - 1) {
-                System.out.print(a[i] + "\n");
+                print(a[i] + "\n");
             } else {
-                System.out.print(a[i] + ", ");
+                print(a[i] + ", ");
             }
         }
     }
 
     //*********** 打印链表 ************************************/
-    public static void printList(ListNode head) {
+    public static void printLinkedNode(String format, LinkedNode head) {
+        print(format);
+        printLinkedNode(head);
+    }
+
+    public static void printLinkedNode(LinkedNode head) {
         while (head != null) {
             String arrow = head != null ? " -> " : "";
-            System.out.print(head.val + arrow);
+            print(head.val + arrow);
             head = head.next;
         }
-        System.out.println("null");
+        println("null");
+    }
+
+    public static void printDoubleLinkedNode(String format, LinkedNode head) {
+        print(format);
+        printDoubleLinkedNode(head);
+    }
+
+    public static void printDoubleLinkedNode(LinkedNode head) {
+        print("NULL <- ");
+        Integer prevVal = null;
+        while (head != null) {
+            print(head.val + "");
+            if (head.prev != null && prevVal != null && !prevVal.equals(head.prev.val)) {
+                throw new ClientViewException("{}.prev 实际为: {}, 应该为: {}", head.val,head.prev.val, prevVal);
+            }
+
+            if (head.next != null) {
+                print(" <-> ");
+            }
+
+            prevVal = head.val;
+            head = head.next;
+        }
+
+        println(" -> NULL");
     }
 
     public static void printDoubleLinkedList(BinaryTreeNode head) {
-        System.out.println("Double Linked List: ");
+        println("Double Linked List: ");
         BinaryTreeNode end = null;
         while (head != null) {
-            System.out.print(head.value + " ");
+            print(head.value + " ");
             end = head;
             head = head.right;
         }
-        System.out.print("| ");
+        print("| ");
         while (end != null) {
-            System.out.print(end.value + " ");
+            print(end.value + " ");
             end = end.left;
         }
-        System.out.println();
-
+        println();
     }
 
     //*********** 二叉树的前中后需遍历 ************************************/
@@ -95,7 +133,7 @@ public final class SysOut {
         if (head == null) {
             return;
         }
-        System.out.print(head.value + " ");
+        print(head.value + " ");
         preOrderPrint(head.left);
         preOrderPrint(head.right);
     }
@@ -105,7 +143,7 @@ public final class SysOut {
             return;
         }
         inOrderPrint(head.left);
-        System.out.print(head.value + " ");
+        print(head.value + " ");
         inOrderPrint(head.right);
     }
 
@@ -115,7 +153,7 @@ public final class SysOut {
         }
         posOrderPrint(head.left);
         posOrderPrint(head.right);
-        System.out.print(head.value + " ");
+        print(head.value + " ");
     }
 
     //*********** 打印二叉树 ************************************/
@@ -123,9 +161,9 @@ public final class SysOut {
 
     public static void printBinaryTree(BinaryTreeNode head) {
 
-        System.out.println("Binary Tree：");
+        println("Binary Tree：");
         printInOrder(head, 0, "*");
-        System.out.println();
+        println();
     }
 
     private static void printInOrder(BinaryTreeNode head, int height, String to) {
@@ -138,7 +176,7 @@ public final class SysOut {
         int lenL = (NODE_LENGTH - lenM) / 2;
         int lenR = NODE_LENGTH - lenL - lenM;
         val = getSpace(height * NODE_LENGTH + lenL) + val + getSpace(lenR);
-        System.out.println(val);
+        println(val);
         printInOrder(head.right, height + 1, "_");
     }
 
@@ -156,7 +194,7 @@ public final class SysOut {
         while (!stack.isEmpty()) {
             Integer pop = stack.pop();
             originStack.push(pop);
-            System.out.println(pop);
+            println(pop);
         }
 
         while (!originStack.isEmpty()) {

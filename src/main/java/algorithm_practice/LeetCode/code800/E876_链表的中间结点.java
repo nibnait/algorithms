@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code800;
 
-import common.datastruct.ListNode;
-import common.util.ConstructListNode;
+import common.datastruct.LinkedNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -46,10 +46,10 @@ public class E876_链表的中间结点 extends TestCase {
     public void testCase() {
 
         int[] nums = new int[]{1, 2, 3, 4, 5};
-        SysOut.printList(middleNode(ConstructListNode.construct(nums)));
+        SysOut.printLinkedNode(middleNode(ConstructLinkedNode.constructSingleLinkedNode(nums)));
 
         int[] nums1 = new int[]{1, 2, 3, 4, 5, 6};
-        SysOut.printList(middleNode(ConstructListNode.construct(nums1)));
+        SysOut.printLinkedNode(middleNode(ConstructLinkedNode.constructSingleLinkedNode(nums1)));
 
     }
 
@@ -59,13 +59,13 @@ public class E876_链表的中间结点 extends TestCase {
      * @return
      */
 
-    public ListNode middleNode(ListNode head) {
+    public LinkedNode middleNode(LinkedNode head) {
 
         if (head == null) {
             return null;
         }
 
-        List<ListNode> nodeList = new ArrayList<>();
+        List<LinkedNode> nodeList = new ArrayList<>();
 
         while (head != null) {
             nodeList.add(head);

@@ -1,8 +1,9 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.ListNode;
+import common.datastruct.LinkedNode;
+import common.util.SysOut;
 
-import static common.util.SysOut.printList;
+import static common.util.SysOut.printLinkedNode;
 
 /**
  * 给定单向链表的头指针和一个结点指针，定义一个函数在0(1)时间删除该结点,
@@ -22,35 +23,35 @@ import static common.util.SysOut.printList;
 public class c13_删除链表结点 {
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        ListNode middle = head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        ListNode last = head.next.next.next.next.next = new ListNode(6);
+        LinkedNode head = new LinkedNode(1);
+        head.next = new LinkedNode(2);
+        LinkedNode middle = head.next.next = new LinkedNode(3);
+        head.next.next.next = new LinkedNode(4);
+        head.next.next.next.next = new LinkedNode(5);
+        LinkedNode last = head.next.next.next.next.next = new LinkedNode(6);
 
         head = deleteNodeInList(head, head); // 删除头结点
-        printList(head);
+        SysOut.printLinkedNode(head);
         head = deleteNodeInList(head, last); // 删除尾结点
-        printList(head);
+        SysOut.printLinkedNode(head);
         head = deleteNodeInList(head, middle); // 删除中间结点
-        printList(head);
+        SysOut.printLinkedNode(head);
     }
 
-    private static ListNode deleteNodeInList(ListNode head, ListNode nodeToBeDeleted) {
+    private static LinkedNode deleteNodeInList(LinkedNode head, LinkedNode nodeToBeDeleted) {
         if (head==null || nodeToBeDeleted==null){
             return head;
         }
 
         if (nodeToBeDeleted.next != null){  //只要删除的不是尾结点
-            ListNode tmp = nodeToBeDeleted.next;
+            LinkedNode tmp = nodeToBeDeleted.next;
             nodeToBeDeleted.val = tmp.val;
             nodeToBeDeleted.next = tmp.next;
             tmp = null;
         } else if (head == nodeToBeDeleted){    //链表中就这么一个结点
             nodeToBeDeleted = null;
         } else {    //多个结点的情况下，删除尾结点
-            ListNode tmp = head;
+            LinkedNode tmp = head;
             while (tmp.next != nodeToBeDeleted){
                 tmp = tmp.next;
             }

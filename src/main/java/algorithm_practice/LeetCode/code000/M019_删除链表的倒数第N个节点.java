@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.ListNode;
-import common.util.ConstructListNode;
+import common.datastruct.LinkedNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -32,19 +32,19 @@ public class M019_删除链表的倒数第N个节点 extends TestCase {
     public void testCase() {
         int[] list1 = {1,2,3,4,5};
         int n = 2;
-        ListNode before = ConstructListNode.construct(list1);
-        before.print();
+        LinkedNode before = ConstructLinkedNode.constructSingleLinkedNode(list1);
+        before.printListNode();
         System.out.println();
-        ListNode after = removeNthFromEnd(before, n);
-        after.print();
+        LinkedNode after = removeNthFromEnd(before, n);
+        after.printListNode();
 
         System.out.println();
 
         int[] list2 = {1};
         int n2 = 1;
-        ListNode listNode2 = ConstructListNode.construct(list2);
-        SysOut.printList(listNode2);
-        SysOut.printList(removeNthFromEnd(listNode2, n2));
+        LinkedNode linkedNode2 = ConstructLinkedNode.constructSingleLinkedNode(list2);
+        SysOut.printLinkedNode(linkedNode2);
+        SysOut.printLinkedNode(removeNthFromEnd(linkedNode2, n2));
     }
 
     /**
@@ -53,14 +53,14 @@ public class M019_删除链表的倒数第N个节点 extends TestCase {
      * @param n
      * @return
      */
-    public ListNode removeNthFromEnd(ListNode head, int n) {
+    public LinkedNode removeNthFromEnd(LinkedNode head, int n) {
         //指向最后一个结点
-        ListNode lastNode = head;
+        LinkedNode lastNode = head;
         for (int i = 0; i < n-1; i++) {
             lastNode = lastNode.next;
         }
-        ListNode preNode = head;
-        ListNode curNode = head.next;
+        LinkedNode preNode = head;
+        LinkedNode curNode = head.next;
         if (lastNode == null || lastNode.next == null) {
             return curNode;
         }

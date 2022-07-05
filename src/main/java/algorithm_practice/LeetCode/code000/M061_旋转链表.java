@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.ListNode;
-import common.util.ConstructListNode;
+import common.datastruct.LinkedNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -50,28 +50,28 @@ public class M061_旋转链表 extends TestCase {
     }
 
     private void soutTest(int[] list, int k) {
-        ListNode before = ConstructListNode.construct(list);
-        SysOut.printList(before);
-        ListNode after = rotateRight(before, k);
-        SysOut.printList(after);
+        LinkedNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
+        SysOut.printLinkedNode(before);
+        LinkedNode after = rotateRight(before, k);
+        SysOut.printLinkedNode(after);
 
         System.out.println();
     }
 
-    public ListNode rotateRight(ListNode head, int k) {
+    public LinkedNode rotateRight(LinkedNode head, int k) {
         if (head == null) {
             return null;
         }
         if (k == 0) {
             return head;
         }
-        ListNode newHeadPreNode = findKthToTail(head, k);
-        ListNode newHead = newHeadPreNode.next;
+        LinkedNode newHeadPreNode = findKthToTail(head, k);
+        LinkedNode newHead = newHeadPreNode.next;
         if (newHead == null) {
             return head;
         }
         newHeadPreNode.next = null;
-        ListNode lastNode = newHead;
+        LinkedNode lastNode = newHead;
         while (lastNode.next != null) {
             lastNode = lastNode.next;
         }
@@ -86,9 +86,9 @@ public class M061_旋转链表 extends TestCase {
      * @param k
      * @return
      */
-    private ListNode findKthToTail(ListNode head, int k) {
-        ListNode p1 = head;
-        ListNode p2 = head;
+    private LinkedNode findKthToTail(LinkedNode head, int k) {
+        LinkedNode p1 = head;
+        LinkedNode p2 = head;
         int newK = 0;
         for (int i = 0; i < k; i++) {
             if (p2.next != null) {

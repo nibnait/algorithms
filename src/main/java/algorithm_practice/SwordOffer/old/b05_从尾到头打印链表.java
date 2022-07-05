@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.ListNode;
+import common.datastruct.LinkedNode;
 
 import java.util.Stack;
 
@@ -16,7 +16,7 @@ public class b05_从尾到头打印链表 {
      * 递归
      * @param head
      */
-    private static void printListInverselyUsingRecursion(ListNode head) {
+    private static void printListInverselyUsingRecursion(LinkedNode head) {
         if (head == null){
             return;
         }
@@ -28,7 +28,7 @@ public class b05_从尾到头打印链表 {
      * 栈
      * @param head
      */
-    private static void printListInverselyUsingStack(ListNode head) {
+    private static void printListInverselyUsingStack(LinkedNode head) {
         if (head == null){
             return;
         }
@@ -46,17 +46,17 @@ public class b05_从尾到头打印链表 {
      * 利用头插法插入链表
      * @param head
      */
-    public static void reverseNode(ListNode head) {
+    public static void reverseNode(LinkedNode head) {
         if (head == null) {
             return ;
         }
 
         //最终翻转之后的 Node
-        ListNode node ;
+        LinkedNode node ;
 
-        ListNode pre = head;
-        ListNode cur = head.next;
-        ListNode next                                                                     ;
+        LinkedNode pre = head;
+        LinkedNode cur = head.next;
+        LinkedNode next                                                                     ;
         while(cur != null){
             next = cur.next;
 
@@ -80,11 +80,11 @@ public class b05_从尾到头打印链表 {
 
 
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
+        LinkedNode head = new LinkedNode(1);
+        head.next = new LinkedNode(2);
+        head.next.next = new LinkedNode(3);
+        head.next.next.next = new LinkedNode(4);
+        head.next.next.next.next = new LinkedNode(5);
         printListInverselyUsingStack(head);
         System.out.println();
         printListInverselyUsingRecursion(head);

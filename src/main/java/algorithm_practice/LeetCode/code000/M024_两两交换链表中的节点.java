@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.ListNode;
-import common.util.ConstructListNode;
+import common.datastruct.LinkedNode;
+import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -28,12 +28,12 @@ public class M024_两两交换链表中的节点 extends TestCase {
     }
 
     private void soutTest(int[] list) {
-        ListNode before = ConstructListNode.construct(list);
-        SysOut.printList(before);
-        ListNode after_recursion = swapPairs_recursion(before);
-        SysOut.printList(after_recursion);
-        ListNode after = swapPairs(ConstructListNode.construct(list));
-        SysOut.printList(after);
+        LinkedNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
+        SysOut.printLinkedNode(before);
+        LinkedNode after_recursion = swapPairs_recursion(before);
+        SysOut.printLinkedNode(after_recursion);
+        LinkedNode after = swapPairs(ConstructLinkedNode.constructSingleLinkedNode(list));
+        SysOut.printLinkedNode(after);
 
         System.out.println();
     }
@@ -43,18 +43,18 @@ public class M024_两两交换链表中的节点 extends TestCase {
      * @param head
      * @return
      */
-    public ListNode swapPairs(ListNode head) {
+    public LinkedNode swapPairs(LinkedNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode next = head.next;
-        ListNode nextNext = next.next;
+        LinkedNode next = head.next;
+        LinkedNode nextNext = next.next;
         next.next = head;
         head.next = nextNext;
-        ListNode pre = head;
+        LinkedNode pre = head;
         while (nextNext != null && nextNext.next != null) {
-            ListNode next1 = nextNext.next;
-            ListNode nextNext1 = next1.next;
+            LinkedNode next1 = nextNext.next;
+            LinkedNode nextNext1 = next1.next;
             next1.next = nextNext;
             nextNext.next = nextNext1;
 
@@ -66,11 +66,11 @@ public class M024_两两交换链表中的节点 extends TestCase {
         return next;
     }
 
-    public ListNode swapPairs_recursion(ListNode head) {
+    public LinkedNode swapPairs_recursion(LinkedNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode next = head.next;
+        LinkedNode next = head.next;
         head.next = swapPairs_recursion(next.next);
         next.next = head;
         return next;
