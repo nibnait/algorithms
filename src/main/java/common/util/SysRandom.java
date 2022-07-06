@@ -61,7 +61,7 @@ public class SysRandom {
     public static int[] randomArr(int arrLength) {
         int[] a = new int[arrLength];
         for (int i = 0; i < a.length; i++) {
-            a[i] = random(100);
+            a[i] = randomInt(-100, 100);
         }
         return a;
     }

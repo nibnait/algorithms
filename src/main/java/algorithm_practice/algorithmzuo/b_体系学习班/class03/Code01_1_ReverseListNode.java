@@ -1,5 +1,6 @@
 package algorithm_practice.algorithmzuo.b_体系学习班.class03;
 
+import common.CommonConstants;
 import common.datastruct.LinkedNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
@@ -19,7 +20,7 @@ public class Code01_1_ReverseListNode {
 
     @Test
     public void loolTestCase() {
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
             testCase();
         }
     }
