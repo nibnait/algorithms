@@ -19,7 +19,7 @@ import java.util.List;
 public class Code01_1_ReverseListNode {
 
     @Test
-    public void loolTestCase() {
+    public void loopTestCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
             testCase();
         }

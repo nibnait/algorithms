@@ -5,6 +5,7 @@ import common.util.CompareUtils;
 import common.util.SysOut;
 import common.util.SysRandom;
 import common.util.SystemUtil;
+import org.junit.Assert;
 import org.junit.Test;
 
 import static common.util.SwapUtil.swap;
@@ -19,13 +20,12 @@ public class Code05_InsertionSort {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT; i++) {
             int arr[] = SysRandom.randomArr();
             SysOut.printArray(arr);
-            int[] tmp = CompareUtils.copyArray(arr);
 
             insertSort(arr);
             SysOut.printArray(arr);
             if (!CompareUtils.isSortAsc(arr)) {
-                System.out.println("！！！有问题：");
-                SysOut.printArray(tmp);
+                SysOut.println("。。。有问题❗️❗️❗️");
+                Assert.assertTrue(false);
             }
 
             SystemUtil.printLiteCuttingLine();

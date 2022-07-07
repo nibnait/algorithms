@@ -52,7 +52,7 @@ public class SysRandom {
     }
 
     /**
-     * 返回一个[0,100)范围的随机int型数组
+     * 返回一个[-100,100)范围的随机int型数组
      */
     public static int[] randomArr() {
         return randomArr(random(50));
@@ -62,6 +62,21 @@ public class SysRandom {
         int[] a = new int[arrLength];
         for (int i = 0; i < a.length; i++) {
             a[i] = randomInt(-100, 100);
+        }
+        return a;
+    }
+
+    /**
+     * 返回一个[0,100)范围的随机int型数组
+     */
+    public static int[] randomNaturalNumArr() {
+        return randomNaturalNumArr(random(50));
+    }
+
+    public static int[] randomNaturalNumArr(int arrLength) {
+        int[] a = new int[arrLength];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = randomInt(0, 100);
         }
         return a;
     }

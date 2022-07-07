@@ -13,7 +13,7 @@ import org.junit.Test;
 public class Code02_DeleteGivenValue {
 
     @Test
-    public void loolTestCase() {
+    public void loopTestCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
             testCase();
         }

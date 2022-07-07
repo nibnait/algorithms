@@ -19,7 +19,7 @@ import java.util.List;
 public class Code01_2_ReverseDoubleListNode {
 
     @Test
-    public void loolTestCase() {
+    public void loopTestCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT; i++) {
             testCase();
         }

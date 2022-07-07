@@ -1,10 +1,12 @@
+package algorithm_practice.algorithmzuo.b_体系学习班.class05;
+
 import common.CommonConstants;
 import org.junit.Test;
 
 /**
- * Created by nibnait on 2022/07/06
+ * Created by nibnait on 2022/07/22
  */
-public class UnitTestDemo {
+public class Code03_QuickSortRecursiveAndUnrecursive {
 
     @Test
     public void loopTestCase() {
@@ -12,7 +14,7 @@ public class UnitTestDemo {
             testCase();
         }
     }
-    
+
     @Test
     public void testCase() {
 
