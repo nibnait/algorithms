@@ -25,6 +25,9 @@ public class FileReaderTest extends TestCase {
         Path normalize = path.normalize();
         File file = path.toFile();
 
+        File absoluteFile = file.getAbsoluteFile();
+        System.out.println(absoluteFile);
+
         try {
 
             System.out.println("一次性读取所有的字节流：");

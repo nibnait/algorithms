@@ -1,8 +1,8 @@
 package algorithm_practice;
 
-import common.datastruct.LinkedNode;
-import common.util.ConstructLinkedNode;
-import common.util.SysOut;
+import common.CommonConstants;
+import common.util.*;
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -12,47 +12,33 @@ public class TempTest {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
-        SysOut.printLinkedNode(head);
-
-        head = reverseK(head, 2);
-        SysOut.printLinkedNode(head);
-    }
-
-    private LinkedNode reverseK(LinkedNode head, int k) {
-        if (head == null) {
-            return null;
-        }
-
-        LinkedNode dummyHead = new LinkedNode();
-        dummyHead.next = head;
-
-        while (dummyHead.next != null) {
-
-            dummyHead.next = reverseN(dummyHead.next, k);
-
-            for (int i = 0; i < k; i++) {
-                if (dummyHead.next == null) {
-                    break;
-                }
-                dummyHead = dummyHead.next;
+        for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
+            int arr[] = SysRandom.randomArr();
+            SysOut.printArray(arr);
+            selectSort(arr);
+            SysOut.printArray(arr);
+            if (!CompareUtils.isSortAsc(arr)) {
+                SysOut.println("。。。有问题❗️❗️❗️");
+                Assert.assertTrue(false);
             }
 
+            SystemUtil.printLiteCuttingLine();
         }
-
-        return dummyHead.next;
     }
 
-    private LinkedNode reverseN(LinkedNode head, int n) {
-        if (n == 1) {
-            return head;
+    private void selectSort(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return;
         }
 
-        LinkedNode last = reverseN(head.next, n-1);
-        head.next.next = head;
-        head.next = null;
-
-        return last;
+        for (int end = arr.length - 1; end > 0; end--) {
+            int maxValueIndex = 0;
+            for (int i = 1; i <= end; i++) {
+                maxValueIndex = arr[maxValueIndex] > arr[i] ? maxValueIndex : i;
+            }
+            SwapUtil.swap(arr, maxValueIndex, end);
+        }
     }
+
 
 }

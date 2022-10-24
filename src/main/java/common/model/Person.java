@@ -29,6 +29,12 @@ public class Person {
         this.age = age;
     }
 
+    public static Person buildByAge(int age) {
+        Person person = new Person();
+        person.setAge(age);
+        return person;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

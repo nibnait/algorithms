@@ -3,12 +3,8 @@ package algorithm_practice.LeetCode.code000;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
-import sun.jvm.hotspot.utilities.BitMap;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /*
 给出一个区间的集合，请合并所有重叠的区间。
@@ -104,25 +100,21 @@ public class M056_合并区间 extends TestCase {
      * 使用BitMap
      */
     public int[][] merge2(int[][] intervals) {
-        BitMap bitMap = new BitMap(100);
+        Map<Integer, Boolean> bitMap = new HashMap<>(100);
 
         for (int i = 0; i < intervals.length; i++) {
             int[] interval = intervals[i];
             for (int j = interval[0]; j < interval[1]; j++) {
-                if (j > bitMap.size()) {
-                    bitMap.set_size(j);
-                }
-
-                bitMap.atPut(j, true);
+                bitMap.put(j, true);
             }
         }
 
         int[][] result = new int[1][2];
         int count = 0;
         for (int i = 0; i < bitMap.size(); i++) {
-            if (bitMap.at(i)) {
+            if (bitMap.get(i)) {
                 result[count][0] = i;
-                while (bitMap.at(i)) {
+                while (bitMap.get(i)) {
                     i++;
                 }
 

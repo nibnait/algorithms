@@ -31,9 +31,7 @@ public class ListStreamTest {
                 .collect(Collectors.groupingBy(Person::getName, Collectors.mapping(Person::getAge, Collectors.toList())));
 
         log.info(DataUtils.toJsonStringObject(owner2ItemsIdMap));
-
     }
-
 
     @Test
     public void comparing() {

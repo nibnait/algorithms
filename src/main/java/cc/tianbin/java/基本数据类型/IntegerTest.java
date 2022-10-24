@@ -8,6 +8,17 @@ import org.junit.Test;
 public class IntegerTest {
 
     @Test
+    public void test04() {
+        System.out.println(-1/2);
+    }
+
+    @Test
+    public void test03() {
+        String s = Integer.toHexString("".hashCode());
+        System.out.println(s);
+    }
+
+    @Test
     public void max() {
         System.out.println(Integer.MAX_VALUE);
     }

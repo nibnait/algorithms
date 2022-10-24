@@ -22,8 +22,11 @@ public class SysRandom {
      * 随机返回 [0,n)之间的一个int值
      */
     public static int random(int n) {
-        if (n <= 0) {
-            throw new IllegalArgumentException("Parameter N must be positive");
+        if (n < 0) {
+            throw new IllegalArgumentException(DataUtils.format("Parameter {} must be positive", n));
+        }
+        if (n == 0) {
+            return 0;
         }
         return random.nextInt(n);
     }
@@ -69,11 +72,11 @@ public class SysRandom {
     /**
      * 返回一个[0,100)范围的随机int型数组
      */
-    public static int[] randomNaturalNumArr() {
-        return randomNaturalNumArr(random(50));
+    public static int[] randomArrNaturalNum() {
+        return randomArrNaturalNum(random(50));
     }
 
-    public static int[] randomNaturalNumArr(int arrLength) {
+    public static int[] randomArrNaturalNum(int arrLength) {
         int[] a = new int[arrLength];
         for (int i = 0; i < a.length; i++) {
             a[i] = randomInt(0, 100);
