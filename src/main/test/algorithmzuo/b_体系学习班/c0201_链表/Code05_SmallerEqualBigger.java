@@ -1,4 +1,4 @@
-package algorithmzuo.b_体系学习班.c0104_链表;
+package algorithmzuo.b_体系学习班.c0201_链表;
 
 import common.datastruct.ListNode;
 import org.junit.Test;

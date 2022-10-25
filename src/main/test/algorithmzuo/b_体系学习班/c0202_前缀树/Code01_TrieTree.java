@@ -1,4 +1,4 @@
-package algorithmzuo.b_体系学习班.c0106_前缀树;
+package algorithmzuo.b_体系学习班.c0202_前缀树;
 
 import java.util.HashMap;
 
