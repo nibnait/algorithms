@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 
 /*
 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个结点只能存储 一位 数字。
@@ -23,18 +23,18 @@ public class M002_两数相加 {
     public static void main(String[] args) {
         //1,8   0
         //1,    9,9
-        LinkedNode firstLinkedNode = new LinkedNode(2);
-        firstLinkedNode.next = new LinkedNode(7);
-        firstLinkedNode.next.next = new LinkedNode(1);
+        ListNode firstListNode = new ListNode(2);
+        firstListNode.next = new ListNode(7);
+        firstListNode.next.next = new ListNode(1);
 
-        LinkedNode secondLinkedNode = new LinkedNode(3);
-        secondLinkedNode.next = new LinkedNode(2);
-        secondLinkedNode.next.next = new LinkedNode(9);
-        secondLinkedNode.next.next.next = new LinkedNode(9);
+        ListNode secondListNode = new ListNode(3);
+        secondListNode.next = new ListNode(2);
+        secondListNode.next.next = new ListNode(9);
+        secondListNode.next.next.next = new ListNode(9);
 
-        addTwoNumbers(firstLinkedNode, secondLinkedNode).printListNode();
+        addTwoNumbers(firstListNode, secondListNode).printListNode();
         System.out.println();
-        addTwoNumbers_v2(firstLinkedNode, secondLinkedNode).printListNode();
+        addTwoNumbers_v2(firstListNode, secondListNode).printListNode();
 
     }
 
@@ -44,24 +44,24 @@ public class M002_两数相加 {
      * @param l2
      * @return
      */
-    private static LinkedNode addTwoNumbers_v2(LinkedNode l1, LinkedNode l2) {
+    private static ListNode addTwoNumbers_v2(ListNode l1, ListNode l2) {
         int carry = 0;
-        LinkedNode result = new LinkedNode(0);
+        ListNode result = new ListNode(0);
         result.next = sumListNode(l1, l2, carry);
         return result.next;
     }
 
     static int TEN = 10;
 
-    private static LinkedNode sumListNode(LinkedNode l1, LinkedNode l2, int carry) {
+    private static ListNode sumListNode(ListNode l1, ListNode l2, int carry) {
         if (l1 == null && l2 == null) {
-            return carry > 0 ? new LinkedNode(carry) : null;
+            return carry > 0 ? new ListNode(carry) : null;
         }
         int x = l1 == null ? 0 : l1.val;
         int y = l2 == null ? 0 : l2.val;
         int sum = x + y + carry;
         carry = sum / TEN;
-        LinkedNode sumNode = new LinkedNode(sum % TEN);
+        ListNode sumNode = new ListNode(sum % TEN);
         sumNode.next = sumListNode(l1 != null ? l1.next : null, l2 != null ? l2.next : null, carry);
         return sumNode;
     }
@@ -76,17 +76,17 @@ public class M002_两数相加 {
      * @param l2
      * @return
      */
-    private static LinkedNode addTwoNumbers(LinkedNode l1, LinkedNode l2) {
+    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int TEN = 10;
-        LinkedNode result = null;
+        ListNode result = null;
         int carry = 0;
-        LinkedNode valNode = new LinkedNode(0);
+        ListNode valNode = new ListNode(0);
         while (l1 != null || l2 != null) {
             int x = l1 == null ? 0 : l1.val;
             int y = l2 == null ? 0 : l2.val;
             int sum = x + y + carry;
             carry = sum / TEN;
-            valNode.next = new LinkedNode(sum % TEN);
+            valNode.next = new ListNode(sum % TEN);
             if (result == null) {
                 result = valNode.next;
             }
@@ -95,7 +95,7 @@ public class M002_两数相加 {
             l2 = l2 != null ? l2.next : null;
         }
         if (carry > 0) {
-            valNode.next = new LinkedNode(carry);
+            valNode.next = new ListNode(carry);
         }
         return result;
     }
@@ -109,23 +109,23 @@ public class M002_两数相加 {
      * @param l2
      * @return
      */
-    private static LinkedNode daan(LinkedNode l1, LinkedNode l2) {
+    private static ListNode daan(ListNode l1, ListNode l2) {
         int TEN = 10;
         int carry = 0;
-        LinkedNode currentNode = new LinkedNode(0);
-        LinkedNode dummyHead = currentNode;
+        ListNode currentNode = new ListNode(0);
+        ListNode dummyHead = currentNode;
         while (l1 != null || l2 != null) {
             int x = l1 == null ? 0 : l1.val;
             int y = l2 == null ? 0 : l2.val;
             int sum = x + y + carry;
             carry = sum / TEN;
-            currentNode.next = new LinkedNode(sum % TEN);
+            currentNode.next = new ListNode(sum % TEN);
             currentNode = currentNode.next;
             l1 = l1 != null ? l1.next : null;
             l2 = l2 != null ? l2.next : null;
         }
         if (carry > 0) {
-            currentNode.next = new LinkedNode(carry);
+            currentNode.next = new ListNode(carry);
         }
         return dummyHead.next;
     }

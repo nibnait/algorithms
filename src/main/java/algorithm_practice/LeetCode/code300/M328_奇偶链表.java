@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code300;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
@@ -35,9 +35,9 @@ public class M328_奇偶链表 {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
-        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 3, 5, 2, 4});
-        LinkedNode actual = oddEvenList(head);
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        ListNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 3, 5, 2, 4});
+        ListNode actual = oddEvenList(head);
 //        SysOut.printList(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
@@ -73,21 +73,21 @@ public class M328_奇偶链表 {
      *
      * 双指针  屡试不爽
      */
-    public LinkedNode oddEvenValList(LinkedNode head) {
+    public ListNode oddEvenValList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        LinkedNode dummyHead = new LinkedNode();
+        ListNode dummyHead = new ListNode();
         dummyHead.next = head;
 
         // p1 指向奇数val 的节点
-        LinkedNode p1 = dummyHead;
+        ListNode p1 = dummyHead;
         while (p1.next != null && p1.next.val % 2 == 0) {
             p1 = p1.next;
         }
         // p1.next 是 第一个奇数节点，把他挪到 dummyHead.next
-        LinkedNode cur = p1.next;
+        ListNode cur = p1.next;
         p1.next = cur.next;
 
         cur.next = dummyHead.next;
@@ -96,7 +96,7 @@ public class M328_奇偶链表 {
         p1 = cur;
 
         // p2 指向偶数val 的节点
-        LinkedNode p2 = dummyHead.next;
+        ListNode p2 = dummyHead.next;
         while (p2.next != null && p2.next.val % 2 == 1) {
             p2 = p2.next;
         }
@@ -112,7 +112,7 @@ public class M328_奇偶链表 {
         cur = cur.next;
         while (cur != null) {
             if (cur.val % 2 == 1) {
-                LinkedNode next = cur.next;
+                ListNode next = cur.next;
 
                 p2.next = cur.next;
 
@@ -139,18 +139,18 @@ public class M328_奇偶链表 {
      *             把第2、4、6...个节点放到后面
      * 跟节点值的奇偶性无关。。。
      */
-    public LinkedNode oddEvenList(LinkedNode head) {
+    public ListNode oddEvenList(ListNode head) {
 
         if (head == null) {
             return null;
         }
 
         // 奇数编号 Node
-        LinkedNode p1 = head;
+        ListNode p1 = head;
 
         // 偶数编号 Node
-        LinkedNode evenHead = head.next;
-        LinkedNode p2 = head.next;
+        ListNode evenHead = head.next;
+        ListNode p2 = head.next;
 
         while (p2 != null && p2.next != null) {
             p1.next = p2.next;

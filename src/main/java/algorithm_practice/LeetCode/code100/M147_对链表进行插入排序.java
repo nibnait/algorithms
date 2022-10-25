@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code100;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
@@ -42,9 +42,9 @@ public class M147_对链表进行插入排序 {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 3, 5, 2, 4});
-        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
-        LinkedNode actual = insertionSortList(head);
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 3, 5, 2, 4});
+        ListNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        ListNode actual = insertionSortList(head);
         SysOut.printLinkedNode(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
@@ -58,23 +58,23 @@ public class M147_对链表进行插入排序 {
     /**
      * 双指针
      */
-    public LinkedNode insertionSortList(LinkedNode head) {
+    public ListNode insertionSortList(ListNode head) {
         if (head == null) {
             return null;
         }
 
-        LinkedNode dummyHead = new LinkedNode();
+        ListNode dummyHead = new ListNode();
         dummyHead.next = head;
 
         // 已排好序的最后一个节点
-        LinkedNode p1 = head;
+        ListNode p1 = head;
 
         /**
          * p1的下一个节点
          * 1. p1.val <= p2.val: 正常，已排好序，依次往后移动
          * 2. p1.val > p2.val: p2应该从头开始找 第一个比p2大的值，把p2插在它前面
          */
-        LinkedNode p2 = p1.next;
+        ListNode p2 = p1.next;
 
         while (p2 != null) {
 
@@ -82,7 +82,7 @@ public class M147_对链表进行插入排序 {
                 p1 = p1.next;
             } else {
                 // 从头开始找 第一个比p2大的值，把p2插在它前面
-                LinkedNode prev = dummyHead;
+                ListNode prev = dummyHead;
                 while (prev.next.val < p2.val) {
                     prev = prev.next;
                 }

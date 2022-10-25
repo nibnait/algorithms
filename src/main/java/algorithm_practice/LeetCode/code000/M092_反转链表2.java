@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
@@ -28,10 +28,10 @@ public class M092_反转链表2 {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
         int m = 2, n = 4;
-        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 4, 3, 2, 5});
-        LinkedNode actual = reverseBetween(head, m, n);
+        ListNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 4, 3, 2, 5});
+        ListNode actual = reverseBetween(head, m, n);
         SysOut.printLinkedNode(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
@@ -47,7 +47,7 @@ public class M092_反转链表2 {
     /**
      * 递归
      */
-    public LinkedNode reverseBetween(LinkedNode head, int m, int n) {
+    public ListNode reverseBetween(ListNode head, int m, int n) {
         if (m == 1) {
             return reverseN(head, n);
         }
@@ -57,17 +57,17 @@ public class M092_反转链表2 {
         return head;
     }
 
-    LinkedNode lastNext = null;
+    ListNode lastNext = null;
     /**
      * reverse 前n个节点
      */
-    private LinkedNode reverseN(LinkedNode head, int n) {
+    private ListNode reverseN(ListNode head, int n) {
         if (n == 1) {
             lastNext = head.next;
             return head;
         }
 
-        LinkedNode last = reverseN(head.next, n-1);
+        ListNode last = reverseN(head.next, n-1);
 
         head.next.next = head;
         head.next = lastNext;
@@ -78,13 +78,13 @@ public class M092_反转链表2 {
     /**
      * 非递归
      */
-    public LinkedNode reverseBetween2(LinkedNode head, int m, int n) {
+    public ListNode reverseBetween2(ListNode head, int m, int n) {
 
         if (head == null) {
             return null;
         }
 
-        LinkedNode dummyHead = new LinkedNode();
+        ListNode dummyHead = new ListNode();
         dummyHead.next = head;
 
         int index = 1;
@@ -98,11 +98,11 @@ public class M092_反转链表2 {
         }
 
         // indexNode的前驱节点
-        LinkedNode prev = dummyHead.next;
-        LinkedNode indexNode = prev.next;
+        ListNode prev = dummyHead.next;
+        ListNode indexNode = prev.next;
         while (indexNode != null && index+1 <= n) {
             // 把 indexNode 插在dummyHead 的后面。
-            LinkedNode cur = new LinkedNode(indexNode.val);
+            ListNode cur = new ListNode(indexNode.val);
 
             prev.next = indexNode.next;
 

@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
@@ -28,11 +28,11 @@ public class M024_两两交换链表中的节点 extends TestCase {
     }
 
     private void soutTest(int[] list) {
-        LinkedNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
+        ListNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
         SysOut.printLinkedNode(before);
-        LinkedNode after_recursion = swapPairs_recursion(before);
+        ListNode after_recursion = swapPairs_recursion(before);
         SysOut.printLinkedNode(after_recursion);
-        LinkedNode after = swapPairs(ConstructLinkedNode.constructSingleLinkedNode(list));
+        ListNode after = swapPairs(ConstructLinkedNode.constructSingleLinkedNode(list));
         SysOut.printLinkedNode(after);
 
         System.out.println();
@@ -43,18 +43,18 @@ public class M024_两两交换链表中的节点 extends TestCase {
      * @param head
      * @return
      */
-    public LinkedNode swapPairs(LinkedNode head) {
+    public ListNode swapPairs(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        LinkedNode next = head.next;
-        LinkedNode nextNext = next.next;
+        ListNode next = head.next;
+        ListNode nextNext = next.next;
         next.next = head;
         head.next = nextNext;
-        LinkedNode pre = head;
+        ListNode pre = head;
         while (nextNext != null && nextNext.next != null) {
-            LinkedNode next1 = nextNext.next;
-            LinkedNode nextNext1 = next1.next;
+            ListNode next1 = nextNext.next;
+            ListNode nextNext1 = next1.next;
             next1.next = nextNext;
             nextNext.next = nextNext1;
 
@@ -66,11 +66,11 @@ public class M024_两两交换链表中的节点 extends TestCase {
         return next;
     }
 
-    public LinkedNode swapPairs_recursion(LinkedNode head) {
+    public ListNode swapPairs_recursion(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        LinkedNode next = head.next;
+        ListNode next = head.next;
         head.next = swapPairs_recursion(next.next);
         next.next = head;
         return next;

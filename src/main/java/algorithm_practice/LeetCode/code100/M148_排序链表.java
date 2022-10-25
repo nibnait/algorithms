@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code100;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
@@ -36,9 +36,9 @@ public class M148_排序链表 {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{4,2,1,3});
-        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4});
-        LinkedNode actual = sortList(head);
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{4,2,1,3});
+        ListNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4});
+        ListNode actual = sortList(head);
         SysOut.printLinkedNode(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
@@ -53,17 +53,17 @@ public class M148_排序链表 {
     /**
      * 双指针
      */
-    public LinkedNode sortList(LinkedNode head) {
+    public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        LinkedNode dummyHead = new LinkedNode();
+        ListNode dummyHead = new ListNode();
         dummyHead.next = head;
         // 指向当前 val最小的节点
-        LinkedNode p1 = head;
+        ListNode p1 = head;
         // 指向当前 val最大的节点
-        LinkedNode p2 = head.next;
+        ListNode p2 = head.next;
         if (p1.val > p2.val) {
             // 把 p2 挪到 p1 前面
             p1.next = p2.next;
@@ -74,7 +74,7 @@ public class M148_排序链表 {
             p2 = dummyHead.next.next;
         }
 
-        LinkedNode cur = p2.next;
+        ListNode cur = p2.next;
         while (cur != null) {
             if (cur.val <= p1.val) {
                 // 把 cur 挪到 p1 前面

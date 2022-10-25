@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "f8f8bf0084662b96",
+    "type": "split",
+    "children": [
+      {
+        "id": "562a022d8d3f23de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de478e1350dcc63b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "39d6ad5f24ea0a47",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6ba68a27e126ae7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b088549f8ef430b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8bd04676dcbd4227",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0652bac4a6ad5994",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "231a88f74a7f3619",
+    "type": "split",
+    "children": [
+      {
+        "id": "005aafd8648043fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f76efae53043d7b8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3f29cc4d01c84d4b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1eda0b327a762bc3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7d949761d7385226",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "f76efae53043d7b8",
+  "lastOpenFiles": []
+}

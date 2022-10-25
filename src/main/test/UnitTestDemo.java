@@ -27,6 +27,7 @@ public class UnitTestDemo {
         if (!CompareUtils.isSortAsc(arr)) {
             log.error("原数组: {}", copyArr);
             log.error("排序后: {}", arr);
+            throw new RuntimeException();
         }
     }
 

@@ -1,6 +1,6 @@
 package common.util;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 
 /**
  * 构造链表
@@ -8,27 +8,27 @@ import common.datastruct.LinkedNode;
  */
 public class ConstructLinkedNode {
 
-    public static LinkedNode constructSingleLinkedNode(int[] nums) {
-        LinkedNode head = new LinkedNode();
-        LinkedNode curNode = head;
+    public static ListNode constructSingleLinkedNode(int[] nums) {
+        ListNode head = new ListNode();
+        ListNode curNode = head;
         for (int i = 0; i < nums.length; i++) {
             curNode.val = nums[i];
             if (i != nums.length - 1) {
-                curNode.next = new LinkedNode();
+                curNode.next = new ListNode();
                 curNode = curNode.next;
             }
         }
         return head;
     }
 
-    public static LinkedNode copySingleLinkedNode(LinkedNode head) {
-        LinkedNode newHead = new LinkedNode();
-        LinkedNode next = new LinkedNode();
+    public static ListNode copySingleLinkedNode(ListNode head) {
+        ListNode newHead = new ListNode();
+        ListNode next = new ListNode();
         newHead.next = next;
         while (head != null) {
             next.val = head.val;
             if (head.next != null) {
-                next.next = new LinkedNode();
+                next.next = new ListNode();
             }
             next = next.next;
             head = head.next;
@@ -36,17 +36,17 @@ public class ConstructLinkedNode {
         return newHead.next;
     }
 
-    public static LinkedNode constructDoubleLinkedNode(int[] nums) {
-        LinkedNode head = new LinkedNode();
-        LinkedNode prevNode = null;
+    public static ListNode constructDoubleLinkedNode(int[] nums) {
+        ListNode head = new ListNode();
+        ListNode prevNode = null;
 
-        LinkedNode next = new LinkedNode();
+        ListNode next = new ListNode();
         head.next = next;
         for (int i = 0; i < nums.length; i++) {
             next.val = nums[i];
             next.prev = prevNode;
             if (i != nums.length - 1) {
-                next.next = new LinkedNode();
+                next.next = new ListNode();
             }
 
             prevNode = next;
@@ -55,15 +55,15 @@ public class ConstructLinkedNode {
         return head.next;
     }
 
-    public static LinkedNode copyDoubleLinkedNode(LinkedNode head) {
-        LinkedNode newHead = new LinkedNode();
-        LinkedNode next = new LinkedNode();
+    public static ListNode copyDoubleLinkedNode(ListNode head) {
+        ListNode newHead = new ListNode();
+        ListNode next = new ListNode();
         newHead.next = next;
-        LinkedNode prevNode = null;
+        ListNode prevNode = null;
         while (head != null) {
             next.val = head.val;
             if (head.next != null) {
-                next.next = new LinkedNode();
+                next.next = new ListNode();
             }
             next.prev = prevNode;
 

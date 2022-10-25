@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.SysOut;
 
 /**
@@ -20,16 +20,16 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    public static LinkedNode mergeSortedLists(LinkedNode head1, LinkedNode head2) {
+    public static ListNode mergeSortedLists(ListNode head1, ListNode head2) {
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
             return head1;
         }
-        LinkedNode head = new LinkedNode();
-        LinkedNode head1tmp = new LinkedNode(); //永远指向head1.next
-        LinkedNode head1ttmp = new LinkedNode(); //永远指向head1.next.next
-        LinkedNode head2tmp = new LinkedNode(); //永远指向head2.next
+        ListNode head = new ListNode();
+        ListNode head1tmp = new ListNode(); //永远指向head1.next
+        ListNode head1ttmp = new ListNode(); //永远指向head1.next.next
+        ListNode head2tmp = new ListNode(); //永远指向head2.next
         //不管怎样，都让head2往head1上合并！
         if (head2.val < head1.val) {
             head = head1;
@@ -76,14 +76,14 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    private static LinkedNode mergeSortedLists2(LinkedNode head1, LinkedNode head2){
+    private static ListNode mergeSortedLists2(ListNode head1, ListNode head2){
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
             return head1;
         }
-        LinkedNode head = new LinkedNode();
-        LinkedNode tail = head;   //永远指向root链的末尾
+        ListNode head = new ListNode();
+        ListNode tail = head;   //永远指向root链的末尾
         while (head1!=null && head2!=null){
             if (head1.val <= head2.val){
                 tail.next = head1;
@@ -111,14 +111,14 @@ public class c17_合并两个排序的链表 {
      * @param head2
      * @return
      */
-    private static LinkedNode mergeSortedLists3(LinkedNode head1, LinkedNode head2) {
+    private static ListNode mergeSortedLists3(ListNode head1, ListNode head2) {
         if (head1 == null) {
             return head2;
         } else if (head2 == null) {
             return head1;
         }
 
-        LinkedNode tmp = new LinkedNode();
+        ListNode tmp = new ListNode();
         if (head1.val <= head2.val){
             tmp = head1;    //head1.next = head2;
             tmp.next = mergeSortedLists3(head1.next, head2);
@@ -132,32 +132,32 @@ public class c17_合并两个排序的链表 {
 
 
     public static void main(String[] args) {
-        LinkedNode head = new LinkedNode(2);
-        head.next = new LinkedNode(2);
-        head.next.next = new LinkedNode(3);
-        head.next.next.next = new LinkedNode(4);
-        head.next.next.next.next = new LinkedNode(5);
+        ListNode head = new ListNode(2);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
         SysOut.printLinkedNode(head);
 
-        LinkedNode head2 = new LinkedNode(1);
-        head2.next = new LinkedNode(3);
-        head2.next.next = new LinkedNode(5);
-        head2.next.next.next = new LinkedNode(6);
-        head2.next.next.next.next = new LinkedNode(7);
+        ListNode head2 = new ListNode(1);
+        head2.next = new ListNode(3);
+        head2.next.next = new ListNode(5);
+        head2.next.next.next = new ListNode(6);
+        head2.next.next.next.next = new ListNode(7);
         SysOut.printLinkedNode(head2);
         head = mergeSortedLists2(head, head2);
         SysOut.printLinkedNode(head);
         System.out.println();
 
         //1. head2插在head1和head1tmp中间
-        LinkedNode head3 = new LinkedNode(1);
-        head3.next = new LinkedNode(6);
-        head3.next.next = new LinkedNode(7);
+        ListNode head3 = new ListNode(1);
+        head3.next = new ListNode(6);
+        head3.next.next = new ListNode(7);
         SysOut.printLinkedNode(head3);
 
-        LinkedNode head4 = new LinkedNode(2);
-        head4.next = new LinkedNode(3);
-        head4.next.next = new LinkedNode(4);
+        ListNode head4 = new ListNode(2);
+        head4.next = new ListNode(3);
+        head4.next.next = new ListNode(4);
         SysOut.printLinkedNode(head4);
 
         head3 = mergeSortedLists(head3, head4);

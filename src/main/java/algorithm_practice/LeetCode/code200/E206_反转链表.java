@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code200;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
@@ -28,9 +28,9 @@ public class E206_反转链表 {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
-        LinkedNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{5, 4, 3, 2, 1});
-        LinkedNode actual = reverseList(head);
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{1, 2, 3, 4, 5});
+        ListNode excepted = ConstructLinkedNode.constructSingleLinkedNode(new int[]{5, 4, 3, 2, 1});
+        ListNode actual = reverseList(head);
         SysOut.printLinkedNode(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
 
@@ -39,12 +39,12 @@ public class E206_反转链表 {
     /**
      * labuladong 递归
      */
-    public LinkedNode reverseList(LinkedNode head) {
+    public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        LinkedNode last = reverseList(head.next);
+        ListNode last = reverseList(head.next);
         head.next.next = head;
         head.next = null;
 
@@ -54,13 +54,13 @@ public class E206_反转链表 {
     /**
      * 递归
      */
-    public LinkedNode reverseList3(LinkedNode head) {
+    public ListNode reverseList3(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        LinkedNode prev = reverseList(head.next);
-        LinkedNode p = prev;
+        ListNode prev = reverseList(head.next);
+        ListNode p = prev;
         while (p.next != null) {
             p = p.next;
         }
@@ -73,19 +73,19 @@ public class E206_反转链表 {
     /**
      * 非递归
      */
-    public LinkedNode reverseList2(LinkedNode head) {
+    public ListNode reverseList2(ListNode head) {
         if (head == null) {
             return null;
         }
 
-        LinkedNode dummyHead = new LinkedNode();
+        ListNode dummyHead = new ListNode();
         dummyHead.next = head;
 
-        LinkedNode cur = head.next;
+        ListNode cur = head.next;
         head.next = null;
 
         while (cur != null) {
-            LinkedNode next = cur.next;
+            ListNode next = cur.next;
 
             // 把 cur 插在 dummyHead.next
             cur.next = dummyHead.next;

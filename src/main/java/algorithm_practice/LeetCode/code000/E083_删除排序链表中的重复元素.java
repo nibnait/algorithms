@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
@@ -39,9 +39,9 @@ public class E083_删除排序链表中的重复元素 extends TestCase {
     }
 
     private void soutTest(int[] list) {
-        LinkedNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
+        ListNode before = ConstructLinkedNode.constructSingleLinkedNode(list);
         SysOut.printLinkedNode(before);
-        LinkedNode after = deleteDuplicates(before);
+        ListNode after = deleteDuplicates(before);
         SysOut.printLinkedNode(after);
         System.out.println();
     }
@@ -51,8 +51,8 @@ public class E083_删除排序链表中的重复元素 extends TestCase {
      * @param head
      * @return
      */
-    public LinkedNode deleteDuplicates(LinkedNode head) {
-        LinkedNode currentNode = head;
+    public ListNode deleteDuplicates(ListNode head) {
+        ListNode currentNode = head;
         while (currentNode != null && currentNode.next != null) {
             if (currentNode.val == currentNode.next.val) {
                 currentNode.next = currentNode.next.next;

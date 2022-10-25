@@ -4,16 +4,21 @@ package common.datastruct;
  * LeetCode 链表结点
  * Created by nibnait on 2016/9/20.
  */
-public class LinkedNode {
+public class ListNode {
     public int val;
-    public LinkedNode prev = null;
-    public LinkedNode next = null;
+    public ListNode prev = null;
+    public ListNode next = null;
 
-    public LinkedNode() {
+    public ListNode() {
     }
 
-    public LinkedNode(int data){
+    public ListNode(int data){
         this.val = data;
+    }
+
+    public ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 
     public void printListNode() {

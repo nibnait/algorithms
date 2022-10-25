@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 
 /**
  * 题目：输入一个链表，输出该链表中倒数第k 个结点．
@@ -31,12 +31,12 @@ import common.datastruct.LinkedNode;
 public class c15_链表中倒数第k个结点 {
 
 
-    public static LinkedNode findKthToTail(LinkedNode head, int k) {
+    public static ListNode findKthToTail(ListNode head, int k) {
         if (head==null || k<=0){
            return null;
         }
-        LinkedNode p1 = head;
-        LinkedNode p2 = head;
+        ListNode p1 = head;
+        ListNode p2 = head;
         for (int i = 1; i < k; i++) {
             if (p2.next != null){
                 p2 = p2.next;
@@ -53,12 +53,12 @@ public class c15_链表中倒数第k个结点 {
     }
 
     public static void main(String[] args) {
-        LinkedNode head = new LinkedNode(1);
-        head.next = new LinkedNode(2);
-        head.next.next = new LinkedNode(3);
-        head.next.next.next = new LinkedNode(4);
-        head.next.next.next.next = new LinkedNode(5);
-        head.next.next.next.next.next = new LinkedNode(6);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
 
         System.out.println(findKthToTail(head, 1).val);   //倒数第1个
         System.out.println(findKthToTail(head, 3).val);   //中间的一个

@@ -1,6 +1,6 @@
 package algorithmzuo.b_体系学习班.c0104_链表;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import org.junit.Test;
 
 import java.util.Stack;
@@ -12,7 +12,7 @@ public class Code04_IsPalindromeList {
 	 */
 	@Test
 	public void test() {
-		LinkedNode head = null;
+		ListNode head = null;
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -20,7 +20,7 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
+		head = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -28,8 +28,8 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -37,8 +37,8 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(1);
+		head = new ListNode(1);
+		head.next = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -46,9 +46,9 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
-		head.next.next = new LinkedNode(3);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(3);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -56,9 +56,9 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
-		head.next.next = new LinkedNode(1);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -66,10 +66,10 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
-		head.next.next = new LinkedNode(3);
-		head.next.next.next = new LinkedNode(1);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(3);
+		head.next.next.next = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -77,10 +77,10 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
-		head.next.next = new LinkedNode(2);
-		head.next.next.next = new LinkedNode(1);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(2);
+		head.next.next.next = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -88,11 +88,11 @@ public class Code04_IsPalindromeList {
 		printLinkedList(head);
 		System.out.println("=========================");
 
-		head = new LinkedNode(1);
-		head.next = new LinkedNode(2);
-		head.next.next = new LinkedNode(3);
-		head.next.next.next = new LinkedNode(2);
-		head.next.next.next.next = new LinkedNode(1);
+		head = new ListNode(1);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(3);
+		head.next.next.next = new ListNode(2);
+		head.next.next.next.next = new ListNode(1);
 		printLinkedList(head);
 		System.out.print(isPalindrome1(head) + " | ");
 		System.out.print(isPalindrome2(head) + " | ");
@@ -103,9 +103,9 @@ public class Code04_IsPalindromeList {
 	}
 
 	// need n extra space
-	public static boolean isPalindrome1(LinkedNode head) {
-		Stack<LinkedNode> stack = new Stack<LinkedNode>();
-		LinkedNode cur = head;
+	public static boolean isPalindrome1(ListNode head) {
+		Stack<ListNode> stack = new Stack<ListNode>();
+		ListNode cur = head;
 		while (cur != null) {
 			stack.push(cur);
 			cur = cur.next;
@@ -120,17 +120,17 @@ public class Code04_IsPalindromeList {
 	}
 
 	// need n/2 extra space
-	public static boolean isPalindrome2(LinkedNode head) {
+	public static boolean isPalindrome2(ListNode head) {
 		if (head == null || head.next == null) {
 			return true;
 		}
-		LinkedNode right = head.next;
-		LinkedNode cur = head;
+		ListNode right = head.next;
+		ListNode cur = head;
 		while (cur.next != null && cur.next.next != null) {
 			right = right.next;
 			cur = cur.next.next;
 		}
-		Stack<LinkedNode> stack = new Stack<LinkedNode>();
+		Stack<ListNode> stack = new Stack<ListNode>();
 		while (right != null) {
 			stack.push(right);
 			right = right.next;
@@ -145,12 +145,12 @@ public class Code04_IsPalindromeList {
 	}
 
 	// need O(1) extra space
-	public static boolean isPalindrome3(LinkedNode head) {
+	public static boolean isPalindrome3(ListNode head) {
 		if (head == null || head.next == null) {
 			return true;
 		}
-		LinkedNode n1 = head;
-		LinkedNode n2 = head;
+		ListNode n1 = head;
+		ListNode n2 = head;
 		while (n2.next != null && n2.next.next != null) { // find mid LinkedNode
 			n1 = n1.next; // n1 -> mid
 			n2 = n2.next.next; // n2 -> end
@@ -160,7 +160,7 @@ public class Code04_IsPalindromeList {
 		
 		n2 = n1.next; // n2 -> right part first LinkedNode
 		n1.next = null; // mid.next -> null
-		LinkedNode n3 = null;
+		ListNode n3 = null;
 		while (n2 != null) { // right part convert
 			n3 = n2.next; // n3 -> save next LinkedNode
 			n2.next = n1; // next of right LinkedNode convert
@@ -189,11 +189,11 @@ public class Code04_IsPalindromeList {
 		return res;
 	}
 
-	public static void printLinkedList(LinkedNode LinkedNode) {
+	public static void printLinkedList(ListNode ListNode) {
 		System.out.print("Linked List: ");
-		while (LinkedNode != null) {
-			System.out.print(LinkedNode.val + " ");
-			LinkedNode = LinkedNode.next;
+		while (ListNode != null) {
+			System.out.print(ListNode.val + " ");
+			ListNode = ListNode.next;
 		}
 		System.out.println();
 	}

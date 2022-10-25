@@ -1,7 +1,7 @@
 package algorithmzuo.b_体系学习班.c0104_链表;
 
 import common.CommonConstants;
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.CompareUtils;
 import common.util.ConstructLinkedNode;
 import common.util.SysRandom;
@@ -26,13 +26,13 @@ public class Code01_2_ReverseDoubleListNode {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructDoubleLinkedNode(SysRandom.randomArr());
+        ListNode head = ConstructLinkedNode.constructDoubleLinkedNode(SysRandom.randomArr());
 //        SysOut.printDoubleLinkedNode("origin: ", head);
-        LinkedNode copyHead = ConstructLinkedNode.copyDoubleLinkedNode(head);
+        ListNode copyHead = ConstructLinkedNode.copyDoubleLinkedNode(head);
 
-        LinkedNode actual = reverseList(head);
+        ListNode actual = reverseList(head);
 //        SysOut.printDoubleLinkedNode("reverse: ", actual);
-        LinkedNode excepted = expectReverseListNode(copyHead);
+        ListNode excepted = expectReverseListNode(copyHead);
 //        SysOut.printDoubleLinkedNode("excepted: ", excepted);
         Assert.assertTrue(CompareUtils.compareDoubleListNode(excepted, actual));
     }
@@ -40,9 +40,9 @@ public class Code01_2_ReverseDoubleListNode {
     /**
      * 反转双向链表
      */
-    private LinkedNode reverseList(LinkedNode head) {
-        LinkedNode pre = null;
-        LinkedNode next = null;
+    private ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+        ListNode next = null;
         while (head != null) {
             next = head.next;
             head.next = pre;
@@ -57,8 +57,8 @@ public class Code01_2_ReverseDoubleListNode {
     /**
      * 用数组对数器，验证反转链表
      */
-    private LinkedNode expectReverseListNode(LinkedNode head) {
-        List<LinkedNode> list = new ArrayList<>();
+    private ListNode expectReverseListNode(ListNode head) {
+        List<ListNode> list = new ArrayList<>();
         while (head != null) {
             list.add(head);
             head = head.next;

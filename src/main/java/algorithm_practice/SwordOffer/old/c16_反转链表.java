@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.SysOut;
 
 /**
@@ -14,13 +14,13 @@ import common.util.SysOut;
 public class c16_反转链表 {
 
 
-    private static LinkedNode reverseList(LinkedNode head) {
+    private static ListNode reverseList(ListNode head) {
         if (head == null) {
             return null;
         }
-        LinkedNode root = new LinkedNode(); //逻辑头结点
+        ListNode root = new ListNode(); //逻辑头结点
         root.next = null;
-        LinkedNode next;
+        ListNode next;
         while (head != null){
             next = head.next;
             head.next = root.next;
@@ -35,15 +35,15 @@ public class c16_反转链表 {
      * @param head
      * @return
      */
-    private static LinkedNode reverseList2(LinkedNode head) {
+    private static ListNode reverseList2(ListNode head) {
         if (head == null) {
             return null;
         }
-        LinkedNode reverseHead = null;
-        LinkedNode cur = head;    //当前结点
-        LinkedNode pre = null;    //当前结点的前一个结点
+        ListNode reverseHead = null;
+        ListNode cur = head;    //当前结点
+        ListNode pre = null;    //当前结点的前一个结点
             // pre = null, 因为反转后，head.next = null;
-        LinkedNode next = null;
+        ListNode next = null;
         while (cur != null) {
             next = cur.next;
             if (next == null) {
@@ -57,12 +57,12 @@ public class c16_反转链表 {
     }
 
     public static void main(String[] args) {
-        LinkedNode head = new LinkedNode(1);
-        head.next = new LinkedNode(2);
-        head.next.next = new LinkedNode(3);
-        head.next.next.next = new LinkedNode(4);
-        head.next.next.next.next = new LinkedNode(5);
-        head.next.next.next.next.next = new LinkedNode(6);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
 
         SysOut.printLinkedNode(head);
         head = reverseList(head);
@@ -71,7 +71,7 @@ public class c16_反转链表 {
         SysOut.printLinkedNode(head);
 
         //当只有一个结点时
-        LinkedNode head2 = new LinkedNode(1);
+        ListNode head2 = new ListNode(1);
         SysOut.printLinkedNode(head2);
         head = reverseList(head2);
         SysOut.printLinkedNode(head2);

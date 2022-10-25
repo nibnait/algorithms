@@ -1,7 +1,7 @@
 package algorithmzuo.b_体系学习班.c0104_链表;
 
 import common.CommonConstants;
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.ConstructLinkedNode;
 import common.util.SysRandom;
 import org.junit.Test;
@@ -20,28 +20,28 @@ public class Code02_DeleteGivenValue {
 
     @Test
     public void testCase() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.randomArr(20));
-        LinkedNode copyHead = ConstructLinkedNode.copySingleLinkedNode(head);
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.randomArr(20));
+        ListNode copyHead = ConstructLinkedNode.copySingleLinkedNode(head);
 //        SysOut.printLinkedNode("before: ", head);
 
-        LinkedNode ans = deleteGivenValue(head, 11);
+        ListNode ans = deleteGivenValue(head, 11);
 //        SysOut.printLinkedNode("after: ", ans);
     }
 
     @Test
     public void test() {
-        LinkedNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{11,11,12,3,4,5});
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{11,11,12,3,4,5});
 //        head = ConstructLinkedNode.constructSingleLinkedNode(new int[]{3,4,5,11});
 //        SysOut.printLinkedNode("before: ", head);
 
-        LinkedNode ans = deleteGivenValue(head, 11);
+        ListNode ans = deleteGivenValue(head, 11);
 //        SysOut.printLinkedNode("after: ", ans);
     }
 
     /**
      * 在链表中删除指定值的所有节点
      */
-    private LinkedNode deleteGivenValue(LinkedNode head, int num) {
+    private ListNode deleteGivenValue(ListNode head, int num) {
         if (head == null) {
             return head;
         }
@@ -50,7 +50,7 @@ public class Code02_DeleteGivenValue {
             head = head.next;
         }
 
-        LinkedNode cursor = head;
+        ListNode cursor = head;
         while (cursor != null && cursor.next != null) {
             if (cursor.next.val == num) {
                 cursor.next = cursor.next.next;

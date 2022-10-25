@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code200;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.ConstructLinkedNode;
 import common.util.SysOut;
 import junit.framework.TestCase;
@@ -37,15 +37,15 @@ public class E237_删除链表中的结点 extends TestCase {
     @Test
     public void testCase() {
         int[] list1 = {4,5,1,9};
-        LinkedNode linkedNode1 = ConstructLinkedNode.constructSingleLinkedNode(list1);
-        SysOut.printLinkedNode(linkedNode1);
-        deleteNode(linkedNode1.next);
-        SysOut.printLinkedNode(linkedNode1);
+        ListNode listNode1 = ConstructLinkedNode.constructSingleLinkedNode(list1);
+        SysOut.printLinkedNode(listNode1);
+        deleteNode(listNode1.next);
+        SysOut.printLinkedNode(listNode1);
 
     }
 
-    public void deleteNode(LinkedNode node) {
-        LinkedNode nextNode = node.next;
+    public void deleteNode(ListNode node) {
+        ListNode nextNode = node.next;
         while (nextNode != null) {
             node.val = nextNode.val;
             nextNode = nextNode.next;

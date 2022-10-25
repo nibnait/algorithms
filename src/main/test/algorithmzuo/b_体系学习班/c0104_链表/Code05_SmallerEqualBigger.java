@@ -1,6 +1,6 @@
 package algorithmzuo.b_体系学习班.c0104_链表;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import org.junit.Test;
 
 public class Code05_SmallerEqualBigger {
@@ -10,13 +10,13 @@ public class Code05_SmallerEqualBigger {
 	 */
 	@Test
 	public void test() {
-		LinkedNode head1 = new LinkedNode(7);
-		head1.next = new LinkedNode(9);
-		head1.next.next = new LinkedNode(1);
-		head1.next.next.next = new LinkedNode(8);
-		head1.next.next.next.next = new LinkedNode(5);
-		head1.next.next.next.next.next = new LinkedNode(2);
-		head1.next.next.next.next.next.next = new LinkedNode(5);
+		ListNode head1 = new ListNode(7);
+		head1.next = new ListNode(9);
+		head1.next.next = new ListNode(1);
+		head1.next.next.next = new ListNode(8);
+		head1.next.next.next.next = new ListNode(5);
+		head1.next.next.next.next.next = new ListNode(2);
+		head1.next.next.next.next.next.next = new ListNode(5);
 		printLinkedList(head1);
 		// head1 = listPartition1(head1, 4);
 		head1 = listPartition2(head1, 5);
@@ -24,60 +24,60 @@ public class Code05_SmallerEqualBigger {
 	}
 
 
-	public static LinkedNode listPartition1(LinkedNode head, int pivot) {
+	public static ListNode listPartition1(ListNode head, int pivot) {
 		if (head == null) {
 			return head;
 		}
-		LinkedNode cur = head;
+		ListNode cur = head;
 		int i = 0;
 		while (cur != null) {
 			i++;
 			cur = cur.next;
 		}
-		LinkedNode[] LinkedNodeArr = new LinkedNode[i];
+		ListNode[] listNodeArr = new ListNode[i];
 		i = 0;
 		cur = head;
-		for (i = 0; i != LinkedNodeArr.length; i++) {
-			LinkedNodeArr[i] = cur;
+		for (i = 0; i != listNodeArr.length; i++) {
+			listNodeArr[i] = cur;
 			cur = cur.next;
 		}
-		arrPartition(LinkedNodeArr, pivot);
-		for (i = 1; i != LinkedNodeArr.length; i++) {
-			LinkedNodeArr[i - 1].next = LinkedNodeArr[i];
+		arrPartition(listNodeArr, pivot);
+		for (i = 1; i != listNodeArr.length; i++) {
+			listNodeArr[i - 1].next = listNodeArr[i];
 		}
-		LinkedNodeArr[i - 1].next = null;
-		return LinkedNodeArr[0];
+		listNodeArr[i - 1].next = null;
+		return listNodeArr[0];
 	}
 
-	public static void arrPartition(LinkedNode[] LinkedNodeArr, int pivot) {
+	public static void arrPartition(ListNode[] listNodeArr, int pivot) {
 		int small = -1;
-		int big = LinkedNodeArr.length;
+		int big = listNodeArr.length;
 		int index = 0;
 		while (index != big) {
-			if (LinkedNodeArr[index].val < pivot) {
-				swap(LinkedNodeArr, ++small, index++);
-			} else if (LinkedNodeArr[index].val == pivot) {
+			if (listNodeArr[index].val < pivot) {
+				swap(listNodeArr, ++small, index++);
+			} else if (listNodeArr[index].val == pivot) {
 				index++;
 			} else {
-				swap(LinkedNodeArr, --big, index);
+				swap(listNodeArr, --big, index);
 			}
 		}
 	}
 
-	public static void swap(LinkedNode[] LinkedNodeArr, int a, int b) {
-		LinkedNode tmp = LinkedNodeArr[a];
-		LinkedNodeArr[a] = LinkedNodeArr[b];
-		LinkedNodeArr[b] = tmp;
+	public static void swap(ListNode[] listNodeArr, int a, int b) {
+		ListNode tmp = listNodeArr[a];
+		listNodeArr[a] = listNodeArr[b];
+		listNodeArr[b] = tmp;
 	}
 
-	public static LinkedNode listPartition2(LinkedNode head, int pivot) {
-		LinkedNode sH = null; // small head
-		LinkedNode sT = null; // small tail
-		LinkedNode eH = null; // equal head
-		LinkedNode eT = null; // equal tail
-		LinkedNode mH = null; // big head
-		LinkedNode mT = null; // big tail
-		LinkedNode next = null; // save next LinkedNode
+	public static ListNode listPartition2(ListNode head, int pivot) {
+		ListNode sH = null; // small head
+		ListNode sT = null; // small tail
+		ListNode eH = null; // equal head
+		ListNode eT = null; // equal tail
+		ListNode mH = null; // big head
+		ListNode mT = null; // big tail
+		ListNode next = null; // save next LinkedNode
 		// every LinkedNode distributed to three lists
 		while (head != null) {
 			next = head.next;
@@ -124,11 +124,11 @@ public class Code05_SmallerEqualBigger {
 		return sH != null ? sH : (eH != null ? eH : mH);
 	}
 
-	public static void printLinkedList(LinkedNode LinkedNode) {
+	public static void printLinkedList(ListNode ListNode) {
 		System.out.print("Linked List: ");
-		while (LinkedNode != null) {
-			System.out.print(LinkedNode.val + " ");
-			LinkedNode = LinkedNode.next;
+		while (ListNode != null) {
+			System.out.print(ListNode.val + " ");
+			ListNode = ListNode.next;
 		}
 		System.out.println();
 	}

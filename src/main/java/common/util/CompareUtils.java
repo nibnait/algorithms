@@ -1,6 +1,6 @@
 package common.util;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 
 /**
  * Created by nibnait on 2022/04/11
@@ -10,7 +10,7 @@ public class CompareUtils {
     /**
      * 对比两个链表
      */
-    public static boolean compareSingleListNode(LinkedNode left, LinkedNode right) {
+    public static boolean compareSingleListNode(ListNode left, ListNode right) {
         while (left != null && right != null && left.val == right.val) {
             left = left.next;
             right = right.next;
@@ -18,7 +18,7 @@ public class CompareUtils {
         return left == right;
     }
 
-    public static boolean compareDoubleListNode(LinkedNode left, LinkedNode right) {
+    public static boolean compareDoubleListNode(ListNode left, ListNode right) {
         while (left != null && right != null && left.val == right.val) {
             left = left.next;
             right = right.next;

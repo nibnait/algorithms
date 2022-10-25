@@ -1,7 +1,7 @@
 package common.util;
 
 import common.datastruct.BinaryTreeNode;
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import io.github.nibnait.common.exception.ClientViewException;
 
 import java.util.Stack;
@@ -73,12 +73,12 @@ public final class SysOut {
     }
 
     //*********** 打印链表 ************************************/
-    public static void printLinkedNode(String format, LinkedNode head) {
+    public static void printLinkedNode(String format, ListNode head) {
         print(format);
         printLinkedNode(head);
     }
 
-    public static void printLinkedNode(LinkedNode head) {
+    public static void printLinkedNode(ListNode head) {
         while (head != null) {
             String arrow = head != null ? " -> " : "";
             print(head.val + arrow);
@@ -87,12 +87,12 @@ public final class SysOut {
         println("null");
     }
 
-    public static void printDoubleLinkedNode(String format, LinkedNode head) {
+    public static void printDoubleLinkedNode(String format, ListNode head) {
         print(format);
         printDoubleLinkedNode(head);
     }
 
-    public static void printDoubleLinkedNode(LinkedNode head) {
+    public static void printDoubleLinkedNode(ListNode head) {
         print("NULL <- ");
         Integer prevVal = null;
         while (head != null) {

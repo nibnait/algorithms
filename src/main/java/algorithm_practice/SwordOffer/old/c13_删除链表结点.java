@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 import common.util.SysOut;
 
 import static common.util.SysOut.printLinkedNode;
@@ -23,12 +23,12 @@ import static common.util.SysOut.printLinkedNode;
 public class c13_删除链表结点 {
 
     public static void main(String[] args) {
-        LinkedNode head = new LinkedNode(1);
-        head.next = new LinkedNode(2);
-        LinkedNode middle = head.next.next = new LinkedNode(3);
-        head.next.next.next = new LinkedNode(4);
-        head.next.next.next.next = new LinkedNode(5);
-        LinkedNode last = head.next.next.next.next.next = new LinkedNode(6);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        ListNode middle = head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        ListNode last = head.next.next.next.next.next = new ListNode(6);
 
         head = deleteNodeInList(head, head); // 删除头结点
         SysOut.printLinkedNode(head);
@@ -38,20 +38,20 @@ public class c13_删除链表结点 {
         SysOut.printLinkedNode(head);
     }
 
-    private static LinkedNode deleteNodeInList(LinkedNode head, LinkedNode nodeToBeDeleted) {
+    private static ListNode deleteNodeInList(ListNode head, ListNode nodeToBeDeleted) {
         if (head==null || nodeToBeDeleted==null){
             return head;
         }
 
         if (nodeToBeDeleted.next != null){  //只要删除的不是尾结点
-            LinkedNode tmp = nodeToBeDeleted.next;
+            ListNode tmp = nodeToBeDeleted.next;
             nodeToBeDeleted.val = tmp.val;
             nodeToBeDeleted.next = tmp.next;
             tmp = null;
         } else if (head == nodeToBeDeleted){    //链表中就这么一个结点
             nodeToBeDeleted = null;
         } else {    //多个结点的情况下，删除尾结点
-            LinkedNode tmp = head;
+            ListNode tmp = head;
             while (tmp.next != nodeToBeDeleted){
                 tmp = tmp.next;
             }

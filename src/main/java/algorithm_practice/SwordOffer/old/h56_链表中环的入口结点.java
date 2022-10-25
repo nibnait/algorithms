@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;
+import common.datastruct.ListNode;
 
 /**
  * 题目：一个链表中包含环，如何找出环的入口结点？
@@ -17,9 +17,9 @@ import common.datastruct.LinkedNode;
  * Created by nibnait on 2016/10/3.
  */
 public class h56_链表中环的入口结点 {
-    private static LinkedNode meetingNode(LinkedNode head) {
-        LinkedNode fast = head;
-        LinkedNode slow = head;
+    private static ListNode meetingNode(ListNode head) {
+        ListNode fast = head;
+        ListNode slow = head;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
@@ -46,12 +46,12 @@ public class h56_链表中环的入口结点 {
     }
     // 1->2->3->4->5->6
     private static void test01() {
-        LinkedNode n1 = new LinkedNode(1);
-        LinkedNode n2 = new LinkedNode(2);
-        LinkedNode n3 = new LinkedNode(3);
-        LinkedNode n4 = new LinkedNode(4);
-        LinkedNode n5 = new LinkedNode(5);
-        LinkedNode n6 = new LinkedNode(6);
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        ListNode n6 = new ListNode(6);
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
@@ -64,12 +64,12 @@ public class h56_链表中环的入口结点 {
     //       |        |
     //       +--------+
     private static void test02() {
-        LinkedNode n1 = new LinkedNode(1);
-        LinkedNode n2 = new LinkedNode(2);
-        LinkedNode n3 = new LinkedNode(3);
-        LinkedNode n4 = new LinkedNode(4);
-        LinkedNode n5 = new LinkedNode(5);
-        LinkedNode n6 = new LinkedNode(6);
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        ListNode n6 = new ListNode(6);
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;
@@ -82,12 +82,12 @@ public class h56_链表中环的入口结点 {
     //                |   |
     //                +---+
     private static void test03() {
-        LinkedNode n1 = new LinkedNode(1);
-        LinkedNode n2 = new LinkedNode(2);
-        LinkedNode n3 = new LinkedNode(3);
-        LinkedNode n4 = new LinkedNode(4);
-        LinkedNode n5 = new LinkedNode(5);
-        LinkedNode n6 = new LinkedNode(6);
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        ListNode n6 = new ListNode(6);
         n1.next = n2;
         n2.next = n3;
         n3.next = n4;

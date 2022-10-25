@@ -1,6 +1,6 @@
 package algorithm_practice.SwordOffer.old;
 
-import common.datastruct.LinkedNode;;
+import common.datastruct.ListNode;;
 
 /**
  * 题目：输入两个链表，找出它们的第一个公共结点。
@@ -34,12 +34,12 @@ import common.datastruct.LinkedNode;;
  */
 public class e37_两个单向链表的第一个公共结点 {
     
-    public static LinkedNode getIntersectListNode(LinkedNode head1, LinkedNode head2) {
+    public static ListNode getIntersectListNode(ListNode head1, ListNode head2) {
         if (head1 == null || head2 == null) {
             return null;
         }
-        LinkedNode loop1 = getLoopListNode(head1);
-        LinkedNode loop2 = getLoopListNode(head2);
+        ListNode loop1 = getLoopListNode(head1);
+        ListNode loop2 = getLoopListNode(head2);
         if (loop1 == null && loop2 == null) {
             return noLoop(head1, head2);
         }
@@ -55,12 +55,12 @@ public class e37_两个单向链表的第一个公共结点 {
      * @param head
      * @return
      */
-    public static LinkedNode getLoopListNode(LinkedNode head) {
+    public static ListNode getLoopListNode(ListNode head) {
         if (head == null || head.next == null || head.next.next == null) {
             return null;
         }
-        LinkedNode n1 = head.next; // n1 -> slow
-        LinkedNode n2 = head.next.next; // n2 -> fast	一次走两步
+        ListNode n1 = head.next; // n1 -> slow
+        ListNode n2 = head.next.next; // n2 -> fast	一次走两步
         while (n1 != n2) {
             if (n2.next == null || n2.next.next == null) {
                 return null;
@@ -83,12 +83,12 @@ public class e37_两个单向链表的第一个公共结点 {
      * @param head2
      * @return
      */
-    public static LinkedNode noLoop(LinkedNode head1, LinkedNode head2) {
+    public static ListNode noLoop(ListNode head1, ListNode head2) {
         if (head1 == null || head2 == null) {
             return null;
         }
-        LinkedNode cur1 = head1;
-        LinkedNode cur2 = head2;
+        ListNode cur1 = head1;
+        ListNode cur2 = head2;
         int n = 0;
         while (cur1.next != null) {
             n++;
@@ -124,9 +124,9 @@ public class e37_两个单向链表的第一个公共结点 {
      * @param loop2 链表2的 第一个入环结点
      * @return
      */
-    public static LinkedNode bothLoop(LinkedNode head1, LinkedNode loop1, LinkedNode head2, LinkedNode loop2) {
-        LinkedNode cur1 = null;
-        LinkedNode cur2 = null;
+    public static ListNode bothLoop(ListNode head1, ListNode loop1, ListNode head2, ListNode loop2) {
+        ListNode cur1 = null;
+        ListNode cur2 = null;
         if (loop1 == loop2) {
             cur1 = head1;
             cur2 = head2;
@@ -165,42 +165,42 @@ public class e37_两个单向链表的第一个公共结点 {
 
     public static void main(String[] args) {
         // 1->2->3->4->5->6->7->null
-        LinkedNode head1 = new LinkedNode(1);
-        head1.next = new LinkedNode(2);
-        head1.next.next = new LinkedNode(3);
-        head1.next.next.next = new LinkedNode(4);
-        head1.next.next.next.next = new LinkedNode(5);
-        head1.next.next.next.next.next = new LinkedNode(6);
-        head1.next.next.next.next.next.next = new LinkedNode(7);
+        ListNode head1 = new ListNode(1);
+        head1.next = new ListNode(2);
+        head1.next.next = new ListNode(3);
+        head1.next.next.next = new ListNode(4);
+        head1.next.next.next.next = new ListNode(5);
+        head1.next.next.next.next.next = new ListNode(6);
+        head1.next.next.next.next.next.next = new ListNode(7);
 
         // 0->9->8->6->7->null
-        LinkedNode head2 = new LinkedNode(0);
-        head2.next = new LinkedNode(9);
-        head2.next.next = new LinkedNode(8);
+        ListNode head2 = new ListNode(0);
+        head2.next = new ListNode(9);
+        head2.next.next = new ListNode(8);
         head2.next.next.next = head1.next.next.next.next.next; // 8->6
         System.out.println(getIntersectListNode(head1, head2).val);
 
         // 1->2->3->4->5->6->7->4...
-        head1 = new LinkedNode(1);
-        head1.next = new LinkedNode(2);
-        head1.next.next = new LinkedNode(3);
-        head1.next.next.next = new LinkedNode(4);
-        head1.next.next.next.next = new LinkedNode(5);
-        head1.next.next.next.next.next = new LinkedNode(6);
-        head1.next.next.next.next.next.next = new LinkedNode(7);
+        head1 = new ListNode(1);
+        head1.next = new ListNode(2);
+        head1.next.next = new ListNode(3);
+        head1.next.next.next = new ListNode(4);
+        head1.next.next.next.next = new ListNode(5);
+        head1.next.next.next.next.next = new ListNode(6);
+        head1.next.next.next.next.next.next = new ListNode(7);
         head1.next.next.next.next.next.next = head1.next.next.next; // 7->4
 
         // 0->9->8->2...
-        head2 = new LinkedNode(0);
-        head2.next = new LinkedNode(9);
-        head2.next.next = new LinkedNode(8);
+        head2 = new ListNode(0);
+        head2.next = new ListNode(9);
+        head2.next.next = new ListNode(8);
         head2.next.next.next = head1.next; // 8->2
         System.out.println(getIntersectListNode(head1, head2).val);
 
         // 0->9->8->6->4->5->6..
-        head2 = new LinkedNode(0);
-        head2.next = new LinkedNode(9);
-        head2.next.next = new LinkedNode(8);
+        head2 = new ListNode(0);
+        head2.next = new ListNode(9);
+        head2.next.next = new ListNode(8);
         head2.next.next.next = head1.next.next.next.next.next; // 8->6
         System.out.println(getIntersectListNode(head1, head2).val);
 
