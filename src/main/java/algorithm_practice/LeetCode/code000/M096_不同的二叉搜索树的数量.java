@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 /*
-给定一个整数 n，求以 1 ... n 为结点组成的二叉搜索树有多少种？
+给定一个整数 n，求以 1 ... n 为结点组成的二叉搜索树有多少种？
 
 示例:
 

@@ -6,9 +6,9 @@ import org.junit.Test;
 import java.util.Arrays;
 
 /*
-给定整数数组 A，每次 move 操作将会选择任意 A[i]，并将其递增 1。
+给定整数数组 A，每次 move 操作将会选择任意 A[i]，并将其递增 1。
 
-返回使 A 中的每个值都是唯一的最少操作次数。
+返回使 A 中的每个值都是唯一的最少操作次数。
 
 示例 1:
 

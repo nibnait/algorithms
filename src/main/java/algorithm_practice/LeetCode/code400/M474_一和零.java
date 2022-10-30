@@ -10,7 +10,7 @@ import org.junit.Test;
 
 如果 x 的所有元素也是 y 的元素，集合 x 是集合 y 的 子集 。
 
- 
+ 
 
 示例 1：
 
@@ -23,13 +23,13 @@ import org.junit.Test;
 输入：strs = ["10", "0", "1"], m = 1, n = 1
 输出：2
 解释：最大的子集是 {"0", "1"} ，所以答案是 2 。
- 
+ 
 
 提示：
 
 1 <= strs.length <= 600
 1 <= strs[i].length <= 100
-strs[i] 仅由 '0' 和 '1' 组成
+strs[i] 仅由 '0' 和 '1' 组成
 1 <= m, n <= 100
 
 

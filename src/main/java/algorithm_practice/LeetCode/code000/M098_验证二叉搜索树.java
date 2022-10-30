@@ -15,24 +15,24 @@ import java.util.Stack;
 结点的左子树只包含小于当前结点的数。
 结点的右子树只包含大于当前结点的数。
 所有左子树和右子树自身必须也是二叉搜索树。
-示例 1:
+示例 1:
 
 输入:
     2
    / \
   1   3
 输出: true
-示例 2:
+示例 2:
 
 输入:
     5
    / \
   1   4
-     / \
-    3   6
+     / \
+    3   6
 输出: false
 解释: 输入为: [5,1,4,null,null,3,6]。
-     根结点的值为 5 ，但是其右子结点值为 4 。
+     根结点的值为 5 ，但是其右子结点值为 4 。
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/validate-binary-search-tree

@@ -4,9 +4,9 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 /*
-给你一个整数数组 nums，请你将该数组升序排列。
+给你一个整数数组 nums，请你将该数组升序排列。
 
- 
+ 
 
 示例 1：
 
@@ -16,7 +16,7 @@ import org.junit.Test;
 
 输入：nums = [5,1,1,2,0,0]
 输出：[0,0,1,1,2,5]
- 
+ 
 
 提示：
 

@@ -31,7 +31,7 @@ import java.util.Set;
 
 输入：root = [2,null,3,null,4,null,5,null,6]
 输出：5
- 
+ 
 
 提示：
 

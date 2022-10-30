@@ -23,7 +23,7 @@ import java.util.Stack;
    3
 
 输出: [3,2,1]
-进阶: 递归算法很简单，你可以通过迭代算法完成吗？
+进阶: 递归算法很简单，你可以通过迭代算法完成吗？
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/binary-tree-postorder-traversal

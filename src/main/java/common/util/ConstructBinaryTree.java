@@ -3,11 +3,12 @@ package common.util;
 import common.datastruct.TreeNode;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
-/*
- 构造二叉树
- Created by nibnait on 2019-07-17
+/**
+ *  构造二叉树
+ *  Created by nibnait on 2019-07-17
  */
 public class ConstructBinaryTree {
 
@@ -34,6 +35,9 @@ public class ConstructBinaryTree {
         return head;
     }
 
+    /**
+     * 根据按层遍历的数组，生成一棵二叉树
+     */
     public static TreeNode constructByBFSArray(Integer[] bfsArray) {
         if (bfsArray == null || bfsArray.length == 0) {
             return null;
@@ -63,6 +67,47 @@ public class ConstructBinaryTree {
             }
         }
         return head;
+    }
+
+    /**
+     * 生成一个随机树
+     * @param maxLevel 指定最大的层数
+     * @param maxValue 指定树里节点的最大值
+     */
+    public static TreeNode generateRandomBinaryTree(int maxLevel, int maxValue) {
+        return generate(1, maxLevel, maxValue);
+    }
+
+    private static TreeNode generate(int level, int maxLevel, int maxValue) {
+        if (level > maxLevel || Math.random() < 0.5) {
+            return null;
+        }
+        TreeNode head = new TreeNode((int) (Math.random() * maxValue));
+        head.left = generate(level + 1, maxLevel, maxValue);
+        head.right = generate(level + 1, maxLevel, maxValue);
+        return head;
+    }
+
+    /**
+     * 随机 pick 树中的一个节点
+     */
+    public static TreeNode pickRandomOne(TreeNode head) {
+        if (head == null) {
+            return null;
+        }
+        ArrayList<TreeNode> arr = new ArrayList<>();
+        fillPrelist(head, arr);
+        int randomIndex = (int) (Math.random() * arr.size());
+        return arr.get(randomIndex);
+    }
+
+    private static void fillPrelist(TreeNode head, ArrayList<TreeNode> arr) {
+        if (head == null) {
+            return;
+        }
+        arr.add(head);
+        fillPrelist(head.left, arr);
+        fillPrelist(head.right, arr);
     }
 
     @Test

@@ -6,7 +6,7 @@ import common.datastruct.TreeNode;
 
 /**
  * 打印二叉树
- *
+ * <p>
  * Created by nibnait on 2016/9/15.
  */
 public class PrintBinaryTree {
@@ -15,7 +15,7 @@ public class PrintBinaryTree {
 
     /**
      * ‘*’ 代表根结点
-     * ‘~’ 代表左子结点
+     * ‘^’ 代表左子结点
      * ‘_’ 代表右子结点
      *
      * @param head 树的根结点
@@ -28,17 +28,17 @@ public class PrintBinaryTree {
     }
 
     private static void printInOrder(BinaryTreeNode head, int height, String to) {
-        if (head == null){
+        if (head == null) {
             return;
         }
-        printInOrder(head.left, height+1, "~");
+        printInOrder(head.left, height + 1, "^");
         String val = to + head.value + to;
         int lenM = val.length();
         int lenL = (NODE_LENGTH - lenM) / 2;
         int lenR = NODE_LENGTH - lenL - lenM;
-        val = getSpace(height*NODE_LENGTH + lenL) + val + getSpace(lenR);
+        val = getSpace(height * NODE_LENGTH + lenL) + val + getSpace(lenR);
         System.out.println(val);
-        printInOrder(head.right, height+1, "_");
+        printInOrder(head.right, height + 1, "_");
     }
 
     public static void print(TreeNode head) {
@@ -48,19 +48,19 @@ public class PrintBinaryTree {
     }
 
     private static void printInOrder(TreeNode head, int height, String to) {
-        if (head == null){
+        if (head == null) {
             return;
         }
-        printInOrder(head.left, height+1, "~");
+        printInOrder(head.left, height + 1, "^");
         String val = to + head.val + to;
         int lenM = val.length();
         int lenL = (NODE_LENGTH - lenM) / 2;
         int lenR = NODE_LENGTH - lenL - lenM;
-        val = getSpace(height*NODE_LENGTH + lenL) + val + getSpace(lenR);
-        if (!val.contains("null")){
+        val = getSpace(height * NODE_LENGTH + lenL) + val + getSpace(lenR);
+        if (!val.contains("null")) {
             System.out.println(val);
         }
-        printInOrder(head.right, height+1, "_");
+        printInOrder(head.right, height + 1, "_");
     }
 
     private static String getSpace(int n) {
@@ -69,6 +69,15 @@ public class PrintBinaryTree {
             sb.append(" ");
         }
         return sb.toString();
+    }
+
+    public static void printPreOrder(TreeNode head) {
+        if (head == null) {
+            return;
+        }
+        System.out.print(head.val + ", ");
+        printPreOrder(head.left);
+        printPreOrder(head.right);
     }
 
     public static void main(String[] args) {
