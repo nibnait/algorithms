@@ -1,4 +1,4 @@
-package data_struct.图;
+package data_struct.ds4_图;
 
 import common.util.SysOut;
 import junit.framework.TestCase;

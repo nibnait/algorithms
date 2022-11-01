@@ -37,9 +37,9 @@ public class P06_用栈来解决汉诺塔问题 extends TestCase {
     @Test
     public void testCase() {
         int nums = 2;
-        SysOut.printSeparator("递归");
+        SysOut.printSeparatorSuffixTitle("递归");
         SysOut.println("It will move %s steps.", hanoiUsingRecursive(nums));
-        SysOut.printSeparator("非递归（用栈）");
+        SysOut.printSeparatorSuffixTitle("非递归（用栈）");
         SysOut.println("It will move %s steps.", hanoiUsingStack(nums));
 //        SysOut.printSeparator("非递归（按照递归的思路转义，建立两个函数栈）");
 //        SysOut.println("It will move %s steps.", hanoiUsingStack(nums));

@@ -2,7 +2,7 @@ package algorithmzuo.b_体系学习班.c0203_树;
 
 import com.google.common.collect.Lists;
 import common.datastruct.TreeNode;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 import io.github.nibnait.common.utils.compare.CompareUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;

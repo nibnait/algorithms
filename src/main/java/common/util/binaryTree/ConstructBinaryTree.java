@@ -1,10 +1,12 @@
-package common.util;
+package common.util.binaryTree;
 
 import common.datastruct.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
 
 /**
  *  构造二叉树
@@ -109,6 +111,25 @@ public class ConstructBinaryTree {
         fillPrelist(head.left, arr);
         fillPrelist(head.right, arr);
     }
+
+    public static TreeNode pickOne(TreeNode head, int val) {
+        if (head == null) {
+            return null;
+        }
+        Map<Integer, TreeNode> map = new HashMap<>();
+        fillPreMap(head, map);
+        return map.get(val);
+    }
+
+    private static void fillPreMap(TreeNode head, Map<Integer, TreeNode> map) {
+        if (head == null) {
+            return;
+        }
+        map.put(head.val, head);
+        fillPreMap(head.left, map);
+        fillPreMap(head.right, map);
+    }
+
 
     @Test
     public void testCase() {

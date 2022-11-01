@@ -2,9 +2,12 @@ package algorithmzuo.b_体系学习班.c0204_树型DP;
 
 import common.CommonConstants;
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
+import common.util.SysOut;
 import common.util.SysRandom;
 import lombok.AllArgsConstructor;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -27,24 +30,23 @@ public class Code05_MaxSubBSTSize {
         int maxValue = SysRandom.random(100);
 
         TreeNode head = ConstructBinaryTree.generateRandomBinaryTree(maxLevel, maxValue);
-//        PrintBinaryTree.print(head);
-//        SysOut.printSeparator();
+        PrintBinaryTree.print(head);
+        SysOut.printSeparator();
 
         int result = maxSubBSTSize(head);
 
-//        Assert.assertEquals(result, maxSubBSTSize1(head));
+        Assert.assertEquals(result, maxSubBSTSize1(head));
     }
 
     /**
      * 给定一棵二叉树的头节点head，返回这颗二叉树中最大的二叉搜索子树的大小
      */
-    private int maxSubBSTSize(TreeNode head) {
+    protected int maxSubBSTSize(TreeNode head) {
         if (head == null) {
             return 0;
         }
         return 1;
     }
-
 
     @AllArgsConstructor
     private class Info {

@@ -1,7 +1,7 @@
 package algorithm_practice.nowcoder.b_2nd_Season.bi160914;
 
 import common.datastruct.BinaryTreeNode;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 
 /**
  * 二叉树的神级遍历

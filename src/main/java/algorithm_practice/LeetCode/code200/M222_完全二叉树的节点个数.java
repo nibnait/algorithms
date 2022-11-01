@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code200;
 
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
 import org.junit.Assert;
 import org.junit.Test;
 

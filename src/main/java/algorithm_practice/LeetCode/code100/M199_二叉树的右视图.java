@@ -1,9 +1,7 @@
 package algorithm_practice.LeetCode.code100;
 
-import com.alibaba.fastjson.JSON;
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
 import junit.framework.TestCase;
 import org.junit.Test;
 

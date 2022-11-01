@@ -2,8 +2,8 @@ package algorithmzuo.b_体系学习班.c0204_树型DP;
 
 import common.CommonConstants;
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 import common.util.SysOut;
 import common.util.SysRandom;
 import lombok.AllArgsConstructor;
@@ -37,7 +37,7 @@ public class Code04_IsFull {
     /**
      * 判断二叉树是不是满二叉树
      */
-    private boolean isFull1(TreeNode head) {
+    protected boolean isFull1(TreeNode head) {
         if (head == null) {
             return true;
         }
@@ -67,7 +67,7 @@ public class Code04_IsFull {
     /**
      * 法2: 只有满二叉树满足 : 2 ^ h - 1 == n
      */
-    private boolean isFull2(TreeNode head) {
+    protected boolean isFull2(TreeNode head) {
         if (head == null) {
             return true;
         }

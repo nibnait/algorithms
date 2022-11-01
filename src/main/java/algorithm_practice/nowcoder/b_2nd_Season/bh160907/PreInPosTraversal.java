@@ -1,7 +1,7 @@
 package algorithm_practice.nowcoder.b_2nd_Season.bh160907;
 
 import common.datastruct.BinaryTreeNode;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 
 import java.util.Stack;
 

@@ -1,7 +1,7 @@
 package algorithm_practice.SwordOffer.old;
 
 import common.datastruct.BinaryTreeNode;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 
 import java.util.HashMap;
 

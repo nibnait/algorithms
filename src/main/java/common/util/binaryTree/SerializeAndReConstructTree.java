@@ -1,4 +1,4 @@
-package algorithmzuo.b_体系学习班.c0203_树;
+package common.util.binaryTree;
 
 import common.datastruct.TreeNode;
 
@@ -7,7 +7,7 @@ import java.util.Queue;
 /**
  * Created by nibnait on 2022/10/27
  */
-public interface Code04_SerializeAndReconstructTree {
+public interface SerializeAndReConstructTree {
 
     Queue<String> preSerial(TreeNode head);
 

@@ -1,8 +1,8 @@
 package algorithm_practice.LeetCode.code200;
 
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 import junit.framework.TestCase;
 import org.junit.Test;
 

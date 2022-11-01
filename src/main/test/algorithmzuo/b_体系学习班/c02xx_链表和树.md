@@ -10,7 +10,7 @@
  - [Code01_先序、中序、后序遍历-递归](./c0203_树/Code01_RecursiveTraversalBT.java)
  - [Code02_先序、中序、后序遍历-非递归](./c0203_树/Code02_UnRecursiveTraversalBT.java)
  - [Code03_二叉树的按层遍历](./c0203_树/Code03_LevelTraversalBT.java)
- - [Code04_二叉树的序列化和反序列化](./c0203_树/Code04_SerializeAndReconstructTree.java)
+ - [Code04_二叉树的序列化和反序列化](../../../java/common/util/binaryTree/SerializeAndReConstructTree.java)
  - [Code05_N叉树如何通过二叉树来序列化、并完成反序列化](./c0203_树/Code05_EncodeNaryTreeToBinaryTree.java)
  - [Code06_求二叉树的最大宽度](./c0203_树/Code06_TreeMaxWidth.java)
 

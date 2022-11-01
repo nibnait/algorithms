@@ -2,7 +2,7 @@ package algorithmzuo.b_体系学习班.c0204_树型DP;
 
 import common.CommonConstants;
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
 import common.util.SysRandom;
 import lombok.AllArgsConstructor;
 import org.junit.Assert;
@@ -35,7 +35,7 @@ public class Code01_IsBalanced {
 	 * 判断二叉树是不是平衡二叉树
 	 * 即：任何一棵子树的 | 左高度 - 右高度 | <= 1
 	 */
-	private boolean isBalanced(TreeNode head) {
+	protected boolean isBalanced(TreeNode head) {
 		if (head == null) {
 			return true;
 		}

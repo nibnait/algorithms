@@ -3,6 +3,7 @@ package algorithmzuo.b_体系学习班.c0204_树型DP;
 import common.CommonConstants;
 import common.datastruct.TreeNode;
 import common.util.*;
+import common.util.binaryTree.ConstructBinaryTree;
 import lombok.AllArgsConstructor;
 import org.junit.Assert;
 import org.junit.Test;
@@ -39,7 +40,7 @@ public class Code02_IsBST {
      * 判断二叉树是不是搜索二叉树（整棵树无重复节点）
      * 即：任何一棵子树。都是搜索二叉树
      */
-    private boolean isBST(TreeNode head) {
+    protected boolean isBST(TreeNode head) {
         if (head == null) {
             return true;
         }

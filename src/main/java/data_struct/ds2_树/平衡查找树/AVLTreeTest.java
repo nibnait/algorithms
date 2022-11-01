@@ -1,4 +1,4 @@
-package data_struct.树.平衡查找树;
+package data_struct.ds2_树.平衡查找树;
 
 import junit.framework.TestCase;
 import org.junit.Test;

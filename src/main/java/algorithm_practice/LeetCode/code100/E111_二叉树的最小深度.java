@@ -1,15 +1,12 @@
 package algorithm_practice.LeetCode.code100;
 
 import common.datastruct.TreeNode;
-import common.util.ConstructBinaryTree;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.ConstructBinaryTree;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
-import java.util.Set;
 
 /*
 给定一个二叉树，找出其最小深度。

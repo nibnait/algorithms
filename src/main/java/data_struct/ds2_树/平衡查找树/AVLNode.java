@@ -1,6 +1,6 @@
-package data_struct.树.平衡查找树;
+package data_struct.ds2_树.平衡查找树;
 
-import data_struct.树.二叉查找树.BinarySearchTreeNode;
+import data_struct.ds2_树.二叉查找树.BinarySearchTreeNode;
 
 /**
  *  平衡查找树结点

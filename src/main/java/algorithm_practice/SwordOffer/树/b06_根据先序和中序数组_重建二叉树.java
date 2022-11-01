@@ -1,7 +1,7 @@
 package algorithm_practice.SwordOffer.树;
 
 import common.datastruct.BinaryTreeNode;
-import common.util.PrintBinaryTree;
+import common.util.binaryTree.PrintBinaryTree;
 import junit.framework.TestCase;
 import org.junit.Test;
 

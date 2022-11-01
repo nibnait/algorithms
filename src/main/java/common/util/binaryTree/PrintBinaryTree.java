@@ -1,8 +1,11 @@
-package common.util;
+package common.util.binaryTree;
 
 
 import common.datastruct.BinaryTreeNode;
 import common.datastruct.TreeNode;
+import common.util.SysOut;
+
+import java.util.Queue;
 
 /**
  * 打印二叉树
@@ -71,42 +74,4 @@ public class PrintBinaryTree {
         return sb.toString();
     }
 
-    public static void printPreOrder(TreeNode head) {
-        if (head == null) {
-            return;
-        }
-        System.out.print(head.val + ", ");
-        printPreOrder(head.left);
-        printPreOrder(head.right);
-    }
-
-    public static void main(String[] args) {
-        BinaryTreeNode head = new BinaryTreeNode(1);
-        head.left = new BinaryTreeNode(-222222222);
-        head.right = new BinaryTreeNode(3);
-        head.left.left = new BinaryTreeNode(Integer.MIN_VALUE);
-        head.right.left = new BinaryTreeNode(55555555);
-        head.right.right = new BinaryTreeNode(66);
-        head.left.left.right = new BinaryTreeNode(777);
-        print(head);
-
-        head = new BinaryTreeNode(1);
-        head.left = new BinaryTreeNode(2);
-        head.right = new BinaryTreeNode(3);
-        head.left.left = new BinaryTreeNode(4);
-        head.right.left = new BinaryTreeNode(5);
-        head.right.right = new BinaryTreeNode(6);
-        head.left.left.right = new BinaryTreeNode(7);
-        print(head);
-
-        head = new BinaryTreeNode(1);
-        head.left = new BinaryTreeNode(1);
-        head.right = new BinaryTreeNode(1);
-        head.left.left = new BinaryTreeNode(1);
-        head.right.left = new BinaryTreeNode(1);
-        head.right.right = new BinaryTreeNode(1);
-        head.left.left.right = new BinaryTreeNode(1);
-        print(head);
-
-    }
 }

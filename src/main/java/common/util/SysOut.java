@@ -35,7 +35,11 @@ public final class SysOut {
         println("===========================================");
     }
 
-    public static void printSeparator(String title) {
+    public static void printSeparator(String str) {
+        println(str + "===========================================");
+    }
+
+    public static void printSeparatorSuffixTitle(String title) {
         println("===========================================\n%s:\n", title);
     }
 

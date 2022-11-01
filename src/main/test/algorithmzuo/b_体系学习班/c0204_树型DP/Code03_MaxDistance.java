@@ -3,6 +3,7 @@ package algorithmzuo.b_体系学习班.c0204_树型DP;
 import common.CommonConstants;
 import common.datastruct.TreeNode;
 import common.util.*;
+import common.util.binaryTree.ConstructBinaryTree;
 import lombok.AllArgsConstructor;
 import org.junit.Assert;
 import org.junit.Test;
@@ -29,8 +30,8 @@ public class Code03_MaxDistance {
         int maxValue = SysRandom.random(100);
 
         TreeNode head = ConstructBinaryTree.generateRandomBinaryTree(maxLevel, maxValue);
-        PrintBinaryTree.print(head);
-        SysOut.printSeparator();
+//        PrintBinaryTree.print(head);
+//        SysOut.printSeparator();
 
         int result = maxDistance(head);
 
@@ -40,16 +41,31 @@ public class Code03_MaxDistance {
     /**
      * 给定一棵二叉树的头节点head，任何两个节点之间都存在距离，返回整棵二叉树的最大距离
      */
-    private int maxDistance(TreeNode head) {
+    protected int maxDistance(TreeNode head) {
         if (head == null) {
             return 0;
         }
-        return 0;
+        return process(head).maxDistance;
+    }
+
+    private Info process(TreeNode head) {
+        if (head == null) {
+            return new Info(0, 0);
+        }
+
+        Info left = process(head.left);
+        Info right = process(head.right);
+
+        int height = Math.max(left.height, right.height) + 1;
+        int maxDistance = CompareUtils.max(left.maxDistance, right.maxDistance, left.height + right.height + 1);
+
+        return new Info(height, maxDistance);
     }
 
     @AllArgsConstructor
     private class Info {
-
+        public int height;
+        public int maxDistance;
     }
 
     //-------------------------- 对数器 --------------------------//

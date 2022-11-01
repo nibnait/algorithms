@@ -1,4 +1,4 @@
-package data_struct.树.二叉查找树;
+package data_struct.ds2_树.二叉查找树;
 
 /**
  *  二叉搜索树

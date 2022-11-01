@@ -1,8 +1,10 @@
-package algorithmzuo.b_体系学习班.c0203_树;
+package common.util.binaryTree;
 
 import common.CommonConstants;
 import common.datastruct.TreeNode;
-import common.util.*;
+import common.util.CompareUtils;
+import common.util.SysOut;
+import common.util.SysRandom;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,7 +17,7 @@ import java.util.Stack;
  * Created by nibnait on 2022/10/27
  */
 @Slf4j
-public class Code04_SerializeAndReconstructTreeImpl implements Code04_SerializeAndReconstructTree {
+public class SerializeAndReConstructTreeImpl implements SerializeAndReConstructTree {
 
     @Test
     public void loopTestCase() {
@@ -96,9 +98,9 @@ public class Code04_SerializeAndReconstructTreeImpl implements Code04_SerializeA
         } else {
             travelArr.add(String.valueOf(head.val));
             Queue<TreeNode> queue = new LinkedList<>();
-            travelArr.add(String.valueOf(head.val));
             queue.add(head);
             while (!queue.isEmpty()) {
+                head = queue.poll();
                 if (head.left != null) {
                     queue.add(head.left);
                     travelArr.add(String.valueOf(head.left.val));
@@ -169,14 +171,14 @@ public class Code04_SerializeAndReconstructTreeImpl implements Code04_SerializeA
             queue.add(head);
         }
         while (!queue.isEmpty()) {
-            head = queue.poll();
-            head.left = generateNode(level.poll());
-            head.right = generateNode(level.poll());
-            if (head.left != null) {
-                queue.add(head.left);
+            TreeNode curHead = queue.poll();
+            curHead.left = generateNode(level.poll());
+            curHead.right = generateNode(level.poll());
+            if (curHead.left != null) {
+                queue.add(curHead.left);
             }
-            if (head.right != null) {
-                queue.add(head.right);
+            if (curHead.right != null) {
+                queue.add(curHead.right);
             }
         }
         return head;
