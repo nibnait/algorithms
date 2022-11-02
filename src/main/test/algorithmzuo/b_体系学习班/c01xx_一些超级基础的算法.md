@@ -8,7 +8,7 @@ Master 公式：
 - 如果 log(b,a) == d, 复杂度为 O(N^d * logN)
 
 ### 堆 和 加强堆
-[堆相关](../../../data_struct/堆)
+[堆相关](../../../java/data_struct/ds1_堆)
 
 ### 排序算法总结
 

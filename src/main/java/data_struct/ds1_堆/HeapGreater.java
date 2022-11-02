@@ -3,6 +3,7 @@ package data_struct.ds1_堆;
 import common.model.Person;
 import common.util.SysOut;
 import common.util.SysRandom;
+import data_struct.Node;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -23,7 +24,7 @@ public class HeapGreater {
         int limit = 10;
         MaxHeapGreater maxHeap = new MaxHeapGreater(new MyComparator());
         for (int i : arr) {
-            maxHeap.push(new Inner(Person.buildByAge(i)));
+            maxHeap.push(new Node(Person.buildByAge(i)));
         }
         for (int i = 0; i < limit; i++) {
             Person p = (Person) maxHeap.pop().value;
@@ -31,32 +32,24 @@ public class HeapGreater {
         }
     }
 
-    private class MyComparator implements Comparator<Inner> {
+    private class MyComparator implements Comparator<Node> {
 
         @Override
-        public int compare(Inner o1, Inner o2) {
+        public int compare(Node o1, Node o2) {
             Person p1 = (Person) o1.value;
             Person p2 = (Person) o2.value;
             return p1.getAge() - p2.getAge();
         }
     }
 
-    public class Inner<T> {
-        public T value;
+    public class MaxHeapGreater implements MyHeap<Node> {
 
-        public Inner(T v) {
-            value = v;
-        }
-    }
-
-    public class MaxHeapGreater implements MyHeap<Inner> {
-
-        private ArrayList<Inner> heap;
-        private HashMap<Inner, Integer> indexMap;
+        private ArrayList<Node> heap;
+        private HashMap<Node, Integer> indexMap;
         private int heapSize;
-        private Comparator<? super Inner> comparator;
+        private Comparator<? super Node> comparator;
 
-        public MaxHeapGreater(Comparator<? super Inner> comparator) {
+        public MaxHeapGreater(Comparator<? super Node> comparator) {
             this.heap = new ArrayList<>();
             this.indexMap = new HashMap<>();
             this.heapSize = 0;
@@ -74,12 +67,12 @@ public class HeapGreater {
         }
 
         @Override
-        public boolean contains(Inner obj) {
+        public boolean contains(Node obj) {
             return indexMap.containsKey(obj);
         }
 
         @Override
-        public void push(Inner obj) {
+        public void push(Node obj) {
             heap.add(obj);
 
             heapInsert(heapSize++);
@@ -98,8 +91,8 @@ public class HeapGreater {
         }
 
         private void swap(int i, int j) {
-            Inner o1 = heap.get(i);
-            Inner o2 = heap.get(j);
+            Node o1 = heap.get(i);
+            Node o2 = heap.get(j);
             heap.set(i, o2);
             heap.set(j, o1);
             indexMap.put(o2, i);
@@ -107,13 +100,13 @@ public class HeapGreater {
         }
 
         @Override
-        public Inner peek() {
+        public Node peek() {
             return heap.get(0);
         }
 
         @Override
-        public Inner pop() {
-            Inner heap0 = heap.get(0);
+        public Node pop() {
+            Node heap0 = heap.get(0);
             swap(0, heapSize - 1);
             heap.remove(--heapSize);
             indexMap.remove(heap0);
@@ -141,11 +134,11 @@ public class HeapGreater {
         }
 
         @Override
-        public void remove(Inner obj) {
+        public void remove(Node obj) {
             Integer index = indexMap.get(obj);
             indexMap.remove(obj);
 
-            Inner replace = heap.get(heapSize - 1);
+            Node replace = heap.get(heapSize - 1);
             heap.remove(--heapSize);
 
             if (comparator.compare(obj, replace) == 0) {
@@ -159,7 +152,7 @@ public class HeapGreater {
         }
 
         @Override
-        public void resign(Inner obj) {
+        public void resign(Node obj) {
             Integer index = indexMap.get(obj);
 
             heapInsert(index);
@@ -167,9 +160,9 @@ public class HeapGreater {
         }
 
         @Override
-        public List<Inner> getAllElements() {
-            List<Inner> allElements = new ArrayList<>();
-            for (Inner e : heap) {
+        public List<Node> getAllElements() {
+            List<Node> allElements = new ArrayList<>();
+            for (Node e : heap) {
                 allElements.add(e);
             }
             return allElements;

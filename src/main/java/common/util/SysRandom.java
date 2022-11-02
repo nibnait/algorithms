@@ -91,4 +91,17 @@ public class SysRandom {
         }
         return a;
     }
+
+    /**
+     * 返回一个 0 1 矩阵
+     */
+    public static char[][] randomMatrix(int row, int col) {
+        char[][] board = new char[row][col];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                board[i][j] = Math.random() < 0.5 ? '1' : '0';
+            }
+        }
+        return board;
+    }
 }

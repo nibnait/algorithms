@@ -31,4 +31,13 @@ public class UnitTestDemo {
         }
     }
 
+    @Test
+    public void test() {
+        boolean f1 = true;
+        boolean f2 = false;
+
+        f1 = f1 || f2;
+        System.out.println(f1);
+    }
+
 }

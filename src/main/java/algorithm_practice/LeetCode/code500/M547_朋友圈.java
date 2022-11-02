@@ -4,7 +4,6 @@ import junit.framework.TestCase;
 import org.junit.Test;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 /*
 班上有 N 名学生。其中有些人是朋友，有些则不是。他们的友谊具有是传递性。如果已知 A 是 B 的朋友，B 是 C 的朋友，那么我们可以认为 A 也是 C 的朋友。所谓的朋友圈，是指所有朋友的集合。
