@@ -85,7 +85,7 @@ public class Code02_IsBST {
         public boolean isBST;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private boolean comparator(TreeNode head) {
         if (head == null) {
             return true;

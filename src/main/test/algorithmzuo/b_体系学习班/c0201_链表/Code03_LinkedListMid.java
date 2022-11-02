@@ -112,7 +112,7 @@ public class Code03_LinkedListMid {
 		return slow;
 	}
 
-	//-------------------------- 对数器 --------------------------//
+	//-------------------------- 比较器 --------------------------//
 	public static ListNode right1(ListNode head) {
 		if (head == null) {
 			return null;

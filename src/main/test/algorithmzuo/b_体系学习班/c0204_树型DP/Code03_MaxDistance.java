@@ -68,7 +68,7 @@ public class Code03_MaxDistance {
         public int maxDistance;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(TreeNode head) {
         if (head == null) {
             return 0;

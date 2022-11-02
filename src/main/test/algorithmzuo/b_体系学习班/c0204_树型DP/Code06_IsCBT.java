@@ -82,7 +82,7 @@ public class Code06_IsCBT {
         public int height;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private boolean comparator(TreeNode head) {
         if (head == null) {
             return true;

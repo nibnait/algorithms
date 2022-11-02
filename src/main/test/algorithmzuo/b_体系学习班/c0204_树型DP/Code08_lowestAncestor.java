@@ -88,7 +88,7 @@ public class Code08_lowestAncestor {
     }
 
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private TreeNode comparator(TreeNode head, TreeNode a, TreeNode b) {
         if (head == null) {
             return null;

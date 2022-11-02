@@ -83,4 +83,12 @@ public class SysRandom {
         }
         return a;
     }
+
+    public static int[] randomArrNaturalNum(int arrLength, int maxValue) {
+        int[] a = new int[arrLength];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = randomInt(0, maxValue);
+        }
+        return a;
+    }
 }

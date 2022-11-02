@@ -62,7 +62,7 @@ public class Code01_IsBalanced {
 		public boolean isBalance;
 	}
 
-	//-------------------------- 对数器 --------------------------//
+	//-------------------------- 比较器 --------------------------//
 	private boolean comparator(TreeNode head) {
 		boolean[] ans = new boolean[1];
 		ans[0] = true;

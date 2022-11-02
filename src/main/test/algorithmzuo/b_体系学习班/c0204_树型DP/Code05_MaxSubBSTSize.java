@@ -52,7 +52,7 @@ public class Code05_MaxSubBSTSize {
     private class Info {
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int maxSubBSTSize1(TreeNode head) {
         if (head == null) {
             return 0;

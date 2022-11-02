@@ -68,7 +68,7 @@ public class Code06_2_SortArrayDistanceLessK {
 		}
 	}
 
-	//-------------------------- 对数器 --------------------------//
+	//-------------------------- 比较器 --------------------------//
 	private static int[] randomArrayNoMoveMoreK(int maxSize, int maxValue, int K) {
 		int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
 		for (int i = 0; i < arr.length; i++) {

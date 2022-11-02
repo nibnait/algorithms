@@ -54,7 +54,7 @@ public class Code07_MaxSubBSTHead {
 
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private TreeNode maxSubBSTHead1(TreeNode head) {
         if (head == null) {
             return null;

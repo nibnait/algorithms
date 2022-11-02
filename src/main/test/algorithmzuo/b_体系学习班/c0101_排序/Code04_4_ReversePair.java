@@ -88,7 +88,7 @@ public class Code04_4_ReversePair {
         return reversePairCount;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(int[] arr) {
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {

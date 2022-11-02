@@ -47,7 +47,7 @@ public class Code06_TreeMaxWidth {
         return 0;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(TreeNode head) {
         if (head == null) {
             return 0;

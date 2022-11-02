@@ -97,7 +97,7 @@ public class Code04_5_BiggerThanRightTwice {
         return res;
     }
     
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(int[] arr) {
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {

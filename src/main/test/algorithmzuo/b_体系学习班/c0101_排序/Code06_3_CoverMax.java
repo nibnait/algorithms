@@ -74,7 +74,7 @@ public class Code06_3_CoverMax {
         return ans;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(int[][] lines) {
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;

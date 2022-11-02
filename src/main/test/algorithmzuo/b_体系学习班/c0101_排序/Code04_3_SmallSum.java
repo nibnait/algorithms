@@ -95,7 +95,7 @@ public class Code04_3_SmallSum {
         return smallSum;
     }
 
-    //-------------------------- 对数器 --------------------------//
+    //-------------------------- 比较器 --------------------------//
     private int comparator(int[] arr) {
         if (arr == null || arr.length < 2) {
             return 0;
