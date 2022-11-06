@@ -41,7 +41,7 @@ public class Code05_1_PartitionAndQuickSort {
      * arr[L...R], 以 arr[R] 为标准将数组划分成
      * <= arr[R] || > arr[R] 两部分
      */
-    protected void quickSort1(int[] arr) {
+    public void quickSort1(int[] arr) {
         if (arr == null || arr.length == 1) {
             return;
         }
@@ -87,7 +87,7 @@ public class Code05_1_PartitionAndQuickSort {
      * arr[L...R], 以 arr[R] 为标准将数组划分为
      * < arr[R] || = arr[R] || > arr[R]  三部分
      */
-    protected void quickSort2(int[] arr) {
+    public void quickSort2(int[] arr) {
         if (arr == null || arr.length == 1) {
             return;
         }
@@ -135,7 +135,7 @@ public class Code05_1_PartitionAndQuickSort {
      * 快排3.0
      * 在快排2.0的基础上，随机选一个数组中的数，作为标准值。（不再指定 arr[R]）
      */
-    protected void quickSort3(int[] arr) {
+    public void quickSort3(int[] arr) {
         if (arr == null || arr.length == 1) {
             return;
         }

@@ -75,7 +75,7 @@ public class Code08_lowestAncestor {
     /**
      * 给定一棵二叉树的头节点head，和另外两个节点a和b，返回a和b的最低公共祖先
      */
-    protected TreeNode lowestAncestor(TreeNode head, TreeNode a, TreeNode b) {
+    public TreeNode lowestAncestor(TreeNode head, TreeNode a, TreeNode b) {
         if (head == null) {
             return null;
         }

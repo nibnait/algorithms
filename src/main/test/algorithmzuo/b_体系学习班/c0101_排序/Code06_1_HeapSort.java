@@ -45,20 +45,20 @@ public class Code06_1_HeapSort {
 //            heapInsert(arr, i);
 //        }
 
-        // sinkDown 构建一个堆。时间复杂度 O(N)
+        // heapify 构建一个堆。时间复杂度 O(N)
         for (int i = arr.length / 2; i >= 0; i--) {
-            sinkDown(arr, i, arr.length);
+            heapify(arr, i, arr.length);
         }
 
         int heapSize = arr.length;
         SwapUtil.swap(arr, 0, --heapSize);
         while (heapSize > 0) {
-            sinkDown(arr, 0, heapSize);
+            heapify(arr, 0, heapSize);
             SwapUtil.swap(arr, 0, --heapSize);
         }
     }
 
-    private void sinkDown(int[] arr, int curIndex, int heapSize) {
+    private void heapify(int[] arr, int curIndex, int heapSize) {
         int leftChildIndex = curIndex * 2 + 1;
         while (leftChildIndex < heapSize) {
             int largerChildIndex = leftChildIndex + 1 < heapSize && arr[leftChildIndex + 1] > arr[leftChildIndex] ? leftChildIndex + 1 : leftChildIndex;

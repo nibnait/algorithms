@@ -37,7 +37,7 @@ public class Code04_IsFull {
     /**
      * 判断二叉树是不是满二叉树
      */
-    protected boolean isFull1(TreeNode head) {
+    public boolean isFull1(TreeNode head) {
         if (head == null) {
             return true;
         }
@@ -67,7 +67,7 @@ public class Code04_IsFull {
     /**
      * 法2: 只有满二叉树满足 : 2 ^ h - 1 == n
      */
-    protected boolean isFull2(TreeNode head) {
+    public boolean isFull2(TreeNode head) {
         if (head == null) {
             return true;
         }

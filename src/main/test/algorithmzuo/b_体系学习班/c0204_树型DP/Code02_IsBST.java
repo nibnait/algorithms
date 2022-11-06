@@ -40,7 +40,7 @@ public class Code02_IsBST {
      * 判断二叉树是不是搜索二叉树（整棵树无重复节点）
      * 即：任何一棵子树。都是搜索二叉树
      */
-    protected boolean isBST(TreeNode head) {
+    public boolean isBST(TreeNode head) {
         if (head == null) {
             return true;
         }

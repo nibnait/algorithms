@@ -56,7 +56,7 @@ public class Code04_1_MergeSort_Recursion {
         merge(arr, left, mid, right);
     }
 
-    protected static void merge(int[] arr, int left, int mid, int right) {
+    public static void merge(int[] arr, int left, int mid, int right) {
         int[] help = new int[right - left + 1];
         int p1 = left;
         int p2 = mid + 1;

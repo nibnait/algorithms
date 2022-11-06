@@ -41,7 +41,7 @@ public class Code03_MaxDistance {
     /**
      * 给定一棵二叉树的头节点head，任何两个节点之间都存在距离，返回整棵二叉树的最大距离
      */
-    protected int maxDistance(TreeNode head) {
+    public int maxDistance(TreeNode head) {
         if (head == null) {
             return 0;
         }

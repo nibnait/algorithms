@@ -111,11 +111,11 @@ public class HeapGreater {
             heap.remove(--heapSize);
             indexMap.remove(heap0);
 
-            sinkDown(0);
+            heapify(0);
             return heap0;
         }
 
-        private void sinkDown(int curIndex) {
+        private void heapify(int curIndex) {
             int leftChildIndex = curIndex * 2 + 1;
             while (leftChildIndex < heapSize) {
                 int largerChildIndex = leftChildIndex + 1 < heapSize && comparator.compare(heap.get(leftChildIndex + 1), heap.get(leftChildIndex)) > 0
@@ -156,7 +156,7 @@ public class HeapGreater {
             Integer index = indexMap.get(obj);
 
             heapInsert(index);
-            sinkDown(index);
+            heapify(index);
         }
 
         @Override

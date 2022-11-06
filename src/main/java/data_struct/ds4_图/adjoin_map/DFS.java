@@ -1,4 +1,4 @@
-package data_struct.ds4_图;
+package data_struct.ds4_图.adjoin_map;
 
 import common.util.SysOut;
 import junit.framework.TestCase;

@@ -91,7 +91,7 @@ public class Heap {
         public Integer pop() {
             int heap0 = heap[0];
             SwapUtil.swap(heap, 0, --heapSize);
-            sinkDown(0);
+            heapify(0);
             return heap0;
         }
 
@@ -99,7 +99,7 @@ public class Heap {
          * 当前 heap[0] 为原来的 heap[heapSize-1]
          * 所以要把 heap[0] 往下调一调
          */
-        private void sinkDown(int curIndex) {
+        private void heapify(int curIndex) {
             int leftChildIndex = curIndex * 2 + 1;
             while (leftChildIndex < heapSize) {
                 int largerChildIndex = leftChildIndex + 1 < heapSize && heap[leftChildIndex] < heap[leftChildIndex + 1]

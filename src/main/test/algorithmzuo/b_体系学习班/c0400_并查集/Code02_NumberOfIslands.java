@@ -72,7 +72,7 @@ public class Code02_NumberOfIslands {
      * 岛屿总是被水包围，并且每座岛屿只能由水平方向和/或竖直方向上相邻的陆地连接形成。
      * 此外，你可以假设该网格的四条边均被水包围。
      */
-    protected int numIslands1(char[][] board) {
+    public int numIslands1(char[][] board) {
         int rows = board.length;
         int cols = board[0].length;
         Dot[][] dots = new Dot[rows][cols];
@@ -166,11 +166,11 @@ public class Code02_NumberOfIslands {
 
     }
 
-    protected int numIslands2(char[][] board) {
+    public int numIslands2(char[][] board) {
         return 1;
     }
 
-    protected int numIslands3(char[][] board) {
+    public int numIslands3(char[][] board) {
         int isLands = 0;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {

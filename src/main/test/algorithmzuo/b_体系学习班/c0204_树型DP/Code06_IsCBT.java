@@ -38,7 +38,7 @@ public class Code06_IsCBT {
     /**
      * 判断二叉树是不是完全二叉树（正在变成满二叉树的过程中）
      */
-    protected boolean isCBT(TreeNode head) {
+    public boolean isCBT(TreeNode head) {
         if (head == null) {
             return true;
         }

@@ -41,7 +41,7 @@ public class Code05_MaxSubBSTSize {
     /**
      * 给定一棵二叉树的头节点head，返回这颗二叉树中最大的二叉搜索子树的大小
      */
-    protected int maxSubBSTSize(TreeNode head) {
+    public int maxSubBSTSize(TreeNode head) {
         if (head == null) {
             return 0;
         }

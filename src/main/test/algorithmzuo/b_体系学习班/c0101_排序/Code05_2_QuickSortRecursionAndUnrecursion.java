@@ -39,7 +39,7 @@ public class Code05_2_QuickSortRecursionAndUnrecursion {
     /**
      * 手写快排3.0
      */
-    protected void quickSortRecursion(int[] arr) {
+    public void quickSortRecursion(int[] arr) {
         if (arr == null || arr.length == 1) {
             return;
         }
@@ -84,7 +84,7 @@ public class Code05_2_QuickSortRecursionAndUnrecursion {
      * 快排3.0 非递归
      * 用栈实现
      */
-    protected void quickSortWithStack(int[] arr) {
+    public void quickSortWithStack(int[] arr) {
         if (arr == null || arr.length == 1) {
             return;
         }

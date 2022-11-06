@@ -35,7 +35,7 @@ public class Code01_IsBalanced {
 	 * 判断二叉树是不是平衡二叉树
 	 * 即：任何一棵子树的 | 左高度 - 右高度 | <= 1
 	 */
-	protected boolean isBalanced(TreeNode head) {
+	public boolean isBalanced(TreeNode head) {
 		if (head == null) {
 			return true;
 		}
