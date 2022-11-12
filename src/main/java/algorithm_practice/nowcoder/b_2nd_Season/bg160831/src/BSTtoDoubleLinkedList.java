@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class BSTtoDoubleLinkedList {
 
-	public static class Node {
+	private static class Node {
 		public int value;
 		public Node left;
 		public Node right;
@@ -15,7 +15,7 @@ public class BSTtoDoubleLinkedList {
 		}
 	}
 
-	public static Node convert1(Node head) {
+	private static Node convert1(Node head) {
 		Queue<Node> queue = new LinkedList<Node>();
 		inOrderToQueue(head, queue);
 		if (queue.isEmpty()) {
@@ -35,7 +35,7 @@ public class BSTtoDoubleLinkedList {
 		return head;
 	}
 
-	public static void inOrderToQueue(Node head, Queue<Node> queue) {
+	private static void inOrderToQueue(Node head, Queue<Node> queue) {
 		if (head == null) {
 			return;
 		}
@@ -44,7 +44,7 @@ public class BSTtoDoubleLinkedList {
 		inOrderToQueue(head.right, queue);
 	}
 
-	public static Node convert2(Node head) {
+	private static Node convert2(Node head) {
 		if (head == null) {
 			return null;
 		}
@@ -54,7 +54,7 @@ public class BSTtoDoubleLinkedList {
 		return head;
 	}
 
-	public static Node process(Node head) {
+	private static Node process(Node head) {
 		if (head == null) {
 			return null;
 		}
@@ -85,7 +85,7 @@ public class BSTtoDoubleLinkedList {
 		}
 	}
 
-	public static void printBSTInOrder(Node head) {
+	private static void printBSTInOrder(Node head) {
 		System.out.print("BST in-order: ");
 		if (head != null) {
 			inOrderPrint(head);
@@ -93,7 +93,7 @@ public class BSTtoDoubleLinkedList {
 		System.out.println();
 	}
 
-	public static void inOrderPrint(Node head) {
+	private static void inOrderPrint(Node head) {
 		if (head == null) {
 			return;
 		}
@@ -102,7 +102,7 @@ public class BSTtoDoubleLinkedList {
 		inOrderPrint(head.right);
 	}
 
-	public static void printDoubleLinkedList(Node head) {
+	private static void printDoubleLinkedList(Node head) {
 		System.out.print("Double Linked List: ");
 		Node end = null;
 		while (head != null) {

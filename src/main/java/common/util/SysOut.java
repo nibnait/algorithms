@@ -3,7 +3,9 @@ package common.util;
 import common.datastruct.BinaryTreeNode;
 import common.datastruct.ListNode;
 import io.github.nibnait.common.exception.ClientViewException;
+import io.github.nibnait.common.utils.DataUtils;
 
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -21,6 +23,10 @@ public final class SysOut {
 
     public static void println(String format, Object... args) {
         println(String.format(format, args));
+    }
+
+    public static void printf(String format, Object... args) {
+        println(DataUtils.format(format, args));
     }
 
     public static void println(Object o) {
@@ -65,6 +71,21 @@ public final class SysOut {
         println("}");
     }
 
+    public static void printList(List<String> arr) {
+        for (int i = 0; i < arr.size(); i++) {
+            if (i == arr.size() - 1) {
+                print(arr.get(i) + "\n");
+            } else {
+                print(arr.get(i) + ", ");
+            }
+        }
+    }
+
+    public static void printListWrap(List<String> arr) {
+        for (String s : arr) {
+            println(s);
+        }
+    }
 
     public static void printArray(int[] a) {
         for (int i = 0; i < a.length; i++) {

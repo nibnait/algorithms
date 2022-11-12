@@ -7,9 +7,8 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/*
-
-Created by nibnait on 2020-01-15
+/**
+ * Created by nibnait on 2020-01-15
  */
 public class MapTest {
 

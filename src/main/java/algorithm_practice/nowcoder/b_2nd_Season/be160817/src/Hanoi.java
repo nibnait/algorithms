@@ -4,14 +4,14 @@ import java.util.Stack;
 
 public class Hanoi {
 
-    public static int hanoiProblem1(int num, String left, String mid, String right) {
+    private static int hanoiProblem1(int num, String left, String mid, String right) {
         if (num < 1) {
             return 0;
         }
         return process(num, left, mid, right, left, right);
     }
 
-    public static int process(int num, String left, String mid, String right, String from, String to) {
+    private static int process(int num, String left, String mid, String right, String from, String to) {
         if (num == 1) {        //只剩1个盘了
             if (from.equals(mid) || to.equals(mid)) {
                 System.out.println("Move 1 from " + from + " to " + to);
@@ -45,7 +45,7 @@ public class Hanoi {
         No, LToM, MToL, MToR, RToM
     }
 
-    public static int hanoiProblem2(int num, String left, String mid, String right) {
+    private static int hanoiProblem2(int num, String left, String mid, String right) {
         Stack<Integer> lS = new Stack<Integer>();
         Stack<Integer> mS = new Stack<Integer>();
         Stack<Integer> rS = new Stack<Integer>();
@@ -78,7 +78,7 @@ public class Hanoi {
      * @param to
      * @return
      */
-    public static int fStackTotStack(Action[] record, Action preNoAct, Action nowAct, Stack<Integer> fStack,
+    private static int fStackTotStack(Action[] record, Action preNoAct, Action nowAct, Stack<Integer> fStack,
                                      Stack<Integer> tStack, String from, String to) {
         if (record[0] == preNoAct || fStack.peek() >= tStack.peek()) {
             return 0;

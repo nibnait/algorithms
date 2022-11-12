@@ -34,7 +34,7 @@ public class Code02_LessMoneySplitGold {
     }
 
     //-------------------------- 比较器 --------------------------//
-    public static int comparator(int[] arr) {
+    private int comparator(int[] arr) {
         if (arr == null || arr.length == 0) {
             return 0;
         }
@@ -43,7 +43,7 @@ public class Code02_LessMoneySplitGold {
 
     // 等待合并的数都在arr里，pre之前的合并行为产生了多少总代价
     // arr中只剩一个数字的时候，停止合并，返回最小的总代价
-    public static int process(int[] arr, int pre) {
+    private int process(int[] arr, int pre) {
         if (arr.length == 1) {
             return pre;
         }
@@ -56,7 +56,7 @@ public class Code02_LessMoneySplitGold {
         return ans;
     }
 
-    public static int[] copyAndMergeTwo(int[] arr, int i, int j) {
+    private int[] copyAndMergeTwo(int[] arr, int i, int j) {
         int[] ans = new int[arr.length - 1];
         int ansi = 0;
         for (int arri = 0; arri < arr.length; arri++) {

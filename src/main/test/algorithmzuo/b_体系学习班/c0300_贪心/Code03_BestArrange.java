@@ -42,7 +42,7 @@ public class Code03_BestArrange {
     }
 
     //-------------------------- 比较器 --------------------------//
-    public static Program[] generatePrograms(int programSize, int timeMax) {
+    private Program[] generatePrograms(int programSize, int timeMax) {
         Program[] ans = new Program[(int) (Math.random() * (programSize + 1))];
         for (int i = 0; i < ans.length; i++) {
             int r1 = (int) (Math.random() * (timeMax + 1));
@@ -57,7 +57,7 @@ public class Code03_BestArrange {
     }
 
     // 暴力！所有情况都尝试！
-    public static int comparator(Program[] programs) {
+    private int comparator(Program[] programs) {
         if (programs == null || programs.length == 0) {
             return 0;
         }
@@ -70,7 +70,7 @@ public class Code03_BestArrange {
 
     // 目前来到timeLine的时间点，已经安排了done多的会议，剩下的会议programs可以自由安排
     // 返回能安排的最多会议数量
-    public static int process(Program[] programs, int done, int timeLine) {
+    private int process(Program[] programs, int done, int timeLine) {
         if (programs.length == 0) {
             return done;
         }
@@ -86,7 +86,7 @@ public class Code03_BestArrange {
         return max;
     }
 
-    public static Program[] copyButExcept(Program[] programs, int i) {
+    private Program[] copyButExcept(Program[] programs, int i) {
         Program[] ans = new Program[programs.length - 1];
         int index = 0;
         for (int k = 0; k < programs.length; k++) {

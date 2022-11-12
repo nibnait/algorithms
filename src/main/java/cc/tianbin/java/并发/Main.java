@@ -1,5 +1,7 @@
 package cc.tianbin.java.并发;
 
+import org.junit.Test;
+
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 import java.util.concurrent.locks.*;
@@ -38,5 +40,13 @@ public class Main {
 
 
 
+    }
+
+    @Test
+    public void testReentrantLook() throws InterruptedException {
+        ReentrantLock lock = new ReentrantLock();
+        lock.lock();
+        lock.tryLock();
+        lock.tryLock(0, null);
     }
 }
