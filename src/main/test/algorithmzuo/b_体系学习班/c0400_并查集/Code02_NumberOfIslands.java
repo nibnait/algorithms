@@ -23,7 +23,7 @@ public class Code02_NumberOfIslands {
 
         row = 1000;
         col = 1000;
-        board1 = SysRandom.randomMatrix(row, col);
+        board1 = SysRandom.generateMatrixZeroOneChar(row, col);
         board2 = CopyUtil.copy(board1);
         board3 = CopyUtil.copy(board1);
 
@@ -49,7 +49,7 @@ public class Code02_NumberOfIslands {
 
         row = 10000;
         col = 10000;
-        board1 = SysRandom.randomMatrix(row, col);
+        board1 = SysRandom.generateMatrixZeroOneChar(row, col);
         board3 = CopyUtil.copy(board1);
         System.out.println("感染方法、并查集(数组实现)的运行结果和运行时间");
         System.out.println("随机生成的二维矩阵规模 : " + row + " * " + col);

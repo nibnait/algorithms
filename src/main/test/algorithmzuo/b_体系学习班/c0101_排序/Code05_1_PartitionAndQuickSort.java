@@ -24,7 +24,7 @@ public class Code05_1_PartitionAndQuickSort {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArr();
+        int[] arr = SysRandom.generateArr();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         quickSort3(arr);
 

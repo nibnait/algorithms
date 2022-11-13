@@ -26,7 +26,7 @@ public class Code06_2_SortArrayDistanceLessK {
 	public void testCase() {
 		int maxSize = 100;
 		int maxValue = 100;
-		int k = SysRandom.random(maxSize);
+		int k = SysRandom.generateNaturalNum(maxSize);
 		int[] arr = randomArrayNoMoveMoreK(maxSize, maxValue, k);
 		int[] copyArr = Arrays.copyOf(arr, arr.length);
 		sortArrayDistanceLessK(arr, k);

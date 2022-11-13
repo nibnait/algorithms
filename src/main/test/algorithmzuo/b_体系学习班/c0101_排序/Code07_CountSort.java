@@ -24,7 +24,7 @@ public class Code07_CountSort {
     @Test
     public void testCase() {
         // 全是自然数，范围 [0-100)
-        int arr[] = SysRandom.randomArrNaturalNum();
+        int[] arr = SysRandom.generateArrNaturalNum();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         countSort(arr);
 

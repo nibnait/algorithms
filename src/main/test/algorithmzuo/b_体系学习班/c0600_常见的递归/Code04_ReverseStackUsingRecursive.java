@@ -27,7 +27,7 @@ public class Code04_ReverseStackUsingRecursive {
     /**
      * 使用递归，将栈逆序
      */
-    protected void reverse(Stack<Integer> stack) {
+    public void reverse(Stack<Integer> stack) {
        if (stack == null || stack.isEmpty()) {
            return;
        }

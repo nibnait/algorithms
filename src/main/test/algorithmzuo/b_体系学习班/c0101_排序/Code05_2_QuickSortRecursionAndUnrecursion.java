@@ -25,7 +25,7 @@ public class Code05_2_QuickSortRecursionAndUnrecursion {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArrNaturalNum(10);
+        int[] arr = SysRandom.generateArrNaturalNum(10);
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         quickSortWithStack(arr);
 
@@ -51,7 +51,7 @@ public class Code05_2_QuickSortRecursionAndUnrecursion {
             return;
         }
 
-        SwapUtil.swap(arr, right, SysRandom.random(right - left + 1));
+        SwapUtil.swap(arr, right, SysRandom.generateNaturalNum(right - left + 1));
         int[] equalArea = partition(arr, left, right);
         process(arr, left, equalArea[0] - 1);
         process(arr, equalArea[1] + 1, right);
@@ -91,14 +91,14 @@ public class Code05_2_QuickSortRecursionAndUnrecursion {
         int length = arr.length;
         Stack<SortArea> stack = new Stack<>();
 
-        SwapUtil.swap(arr, length - 1, SysRandom.random(length));
+        SwapUtil.swap(arr, length - 1, SysRandom.generateNaturalNum(length));
         int[] partition = partition(arr, 0, length - 1);
         stack.push(new SortArea(0, partition[0] - 1));
         stack.push(new SortArea(partition[1] + 1, length - 1));
         while (!stack.isEmpty()) {
             SortArea sortArea = stack.pop();
             if (sortArea.left < sortArea.right) {
-                SwapUtil.swap(arr, sortArea.right, sortArea.left + SysRandom.random(sortArea.right - sortArea.left + 1));
+                SwapUtil.swap(arr, sortArea.right, sortArea.left + SysRandom.generateNaturalNum(sortArea.right - sortArea.left + 1));
                 partition = partition(arr, sortArea.left, sortArea.right);
                 stack.push(new SortArea(sortArea.left, partition[0] - 1));
                 stack.push(new SortArea(partition[1] + 1, sortArea.right));

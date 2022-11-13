@@ -24,7 +24,7 @@ public class Code06_1_HeapSort {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArrNaturalNum();
+        int[] arr = SysRandom.generateArrNaturalNum();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         heapSort(arr);
 

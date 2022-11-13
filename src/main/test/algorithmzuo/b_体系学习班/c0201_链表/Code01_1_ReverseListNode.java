@@ -26,7 +26,7 @@ public class Code01_1_ReverseListNode {
 
     @Test
     public void testCase() {
-        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.randomArr());
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.generateArr());
         ListNode copyHead = ConstructLinkedNode.copySingleLinkedNode(head);
 //        SysOut.printLinkedNode("origin: ", head);
 

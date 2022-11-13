@@ -19,8 +19,8 @@ public class Code01_IsBalanced {
 
 	@Test
 	public void testCase() {
-		int maxLevel = SysRandom.randomInt(0, 6);
-		int maxValue = SysRandom.random(100);
+		int maxLevel = SysRandom.generateInt(0, 6);
+		int maxValue = SysRandom.generateNaturalNum(100);
 
 		TreeNode head = ConstructBinaryTree.generateRandomBinaryTree(maxLevel, maxValue);
 //		PrintBinaryTree.print(head);

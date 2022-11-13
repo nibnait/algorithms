@@ -24,8 +24,8 @@ public class Code02_IsBST {
 
     @Test
     public void testCase() {
-        int maxLevel = SysRandom.randomInt(1, 6);
-        int maxValue = SysRandom.random(100);
+        int maxLevel = SysRandom.generateInt(1, 6);
+        int maxValue = SysRandom.generateNaturalNum(100);
 
         TreeNode head = ConstructBinaryTree.generateRandomBinaryTree(maxLevel, maxValue);
 //        PrintBinaryTree.print(head);

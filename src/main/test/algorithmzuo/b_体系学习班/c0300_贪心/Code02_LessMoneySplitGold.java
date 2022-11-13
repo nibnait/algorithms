@@ -19,8 +19,8 @@ public class Code02_LessMoneySplitGold {
 
     @Test
     public void testCase() {
-        int arrLen = SysRandom.random(20);
-        int[] arr = SysRandom.randomArrNaturalNum(arrLen, 1000);
+        int arrLen = SysRandom.generateNaturalNum(20);
+        int[] arr = SysRandom.generateArrNaturalNum(arrLen, 1000);
 
         int result = lessMoney(arr);
         Assert.assertEquals(comparator(arr), result);

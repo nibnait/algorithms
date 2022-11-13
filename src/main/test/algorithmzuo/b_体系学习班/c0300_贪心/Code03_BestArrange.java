@@ -20,8 +20,8 @@ public class Code03_BestArrange {
 
     @Test
     public void testCase() {
-        int programSize = SysRandom.randomInt(5, 20);
-        int timeMax = SysRandom.randomInt(10, 30);
+        int programSize = SysRandom.generateInt(5, 20);
+        int timeMax = SysRandom.generateInt(10, 30);
         Program[] programs = generatePrograms(programSize, timeMax);
 
         int result = bestArrange(programs);

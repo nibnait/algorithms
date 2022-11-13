@@ -26,7 +26,7 @@ public class Code01_Hanoi {
 
     @Test
     public void testCase() {
-        int n = SysRandom.random(100);
+        int n = SysRandom.generateNaturalNum(100);
         List<String> hanoiRecur = hanoi1(n);
         List<String> hanoiNoRecur = hanoi2(n);
 

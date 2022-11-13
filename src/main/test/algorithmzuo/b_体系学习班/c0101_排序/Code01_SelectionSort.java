@@ -24,7 +24,7 @@ public class Code01_SelectionSort {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArr();
+        int[] arr = SysRandom.generateArr();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         selectSort(arr);
 

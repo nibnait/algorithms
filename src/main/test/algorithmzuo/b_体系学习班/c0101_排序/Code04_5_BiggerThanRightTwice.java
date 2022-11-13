@@ -23,7 +23,7 @@ public class Code04_5_BiggerThanRightTwice {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArrNaturalNum();
+        int[] arr = SysRandom.generateArrNaturalNum();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         int expectResult = comparator(arr);
 

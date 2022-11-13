@@ -24,7 +24,7 @@ public class Code03_InsertionSort {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArr();
+        int[] arr = SysRandom.generateArr();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         insertSort(arr);
 

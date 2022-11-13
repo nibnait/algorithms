@@ -26,7 +26,7 @@ public class Heap {
     @Test
     public void testCase() {
         int limit = 10;
-        int[] arr = SysRandom.randomArrNaturalNum(limit);
+        int[] arr = SysRandom.generateArrNaturalNum(limit);
         SysOut.printArray(arr);
 
         MapHeap maxHeap = new MapHeap(limit);

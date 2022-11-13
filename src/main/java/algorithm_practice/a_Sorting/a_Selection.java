@@ -15,7 +15,7 @@ import common.util.SysRandom;
  */
 public class a_Selection {
     public static void main(String[] args) {
-        int[] a = SysRandom.randomArr();
+        int[] a = SysRandom.generateArr();
         SysOut.printArray(a);
 
         Selection_Sort(a);

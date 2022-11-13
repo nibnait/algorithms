@@ -18,7 +18,7 @@ public class HeapGreater {
 
     @Test
     public void testCase() {
-        int[] arr = SysRandom.randomArr(10);
+        int[] arr = SysRandom.generateArr(10);
         SysOut.printArray(arr);
 
         int limit = 10;

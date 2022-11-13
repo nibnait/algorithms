@@ -16,7 +16,7 @@ public class Code02_BSNearLeft {
     @Test
     public void testCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
-            int[] arr = SysRandom.randomArr();
+            int[] arr = SysRandom.generateArr();
             Arrays.sort(arr);
             int num = 11;
             int ans = mostLeftNoLessNumIndex(arr, num);

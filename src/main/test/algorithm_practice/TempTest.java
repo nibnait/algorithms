@@ -13,7 +13,7 @@ public class TempTest {
     @Test
     public void testCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_1000; i++) {
-            int arr[] = SysRandom.randomArr();
+            int[] arr = SysRandom.generateArr();
             SysOut.printArray(arr);
             selectSort(arr);
             SysOut.printArray(arr);

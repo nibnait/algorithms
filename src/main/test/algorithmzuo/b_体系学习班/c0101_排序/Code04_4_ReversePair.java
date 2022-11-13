@@ -23,7 +23,7 @@ public class Code04_4_ReversePair {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArr();
+        int[] arr = SysRandom.generateArr();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         int expectResult = comparator(arr);
         int reversePairCount = mergeSort(arr);

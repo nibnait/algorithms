@@ -23,7 +23,7 @@ public class Code08_RadixSort {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArrNaturalNum();
+        int[] arr = SysRandom.generateArrNaturalNum();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         radixSort(arr);
 

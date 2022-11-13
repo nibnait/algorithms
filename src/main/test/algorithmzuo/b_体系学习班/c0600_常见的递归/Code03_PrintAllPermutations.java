@@ -28,7 +28,7 @@ public class Code03_PrintAllPermutations {
     /**
      * 打印一个字符串的全部排列
      */
-    protected List<String> permutation1(String s) {
+    public List<String> permutation1(String s) {
         List<String> allPermutation = Lists.newArrayList();
         if (s == null || s.length() == 0) {
             return allPermutation;
@@ -61,7 +61,7 @@ public class Code03_PrintAllPermutations {
     /**
      * 全排列，不重复
      */
-    protected List<String> permutation2(String s) {
+    public List<String> permutation2(String s) {
         List<String> allPermutation = Lists.newArrayList();
         if (s == null || s.length() == 0) {
             return allPermutation;

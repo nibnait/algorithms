@@ -21,7 +21,7 @@ public class Code01_Light {
 
     @Test
     public void testCase() {
-        int len = SysRandom.randomInt(0, 50);
+        int len = SysRandom.generateInt(0, 50);
         String road = randomString(len);
 
         int result = minLight(road);

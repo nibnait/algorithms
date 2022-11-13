@@ -21,26 +21,26 @@ public class Code03_KM {
     @Test
     public void testCase() {
         for (int i = 0; i < CommonConstants.TEST_CASE_COUNT_10; i++) {
-            int a = SysRandom.random(9) + 1;
-            int b = SysRandom.random(9) + 1;
+            int a = SysRandom.generateNaturalNum(9) + 1;
+            int b = SysRandom.generateNaturalNum(9) + 1;
             int k = Math.min(a, b);
             int m = Math.max(a, b);
             if (k == m) {
                 m++;
             }
 
-            int mTimeNumCount = SysRandom.random(9);
+            int mTimeNumCount = SysRandom.generateNaturalNum(9);
             int arrLength = k + m * mTimeNumCount;
             int[] arr = new int[arrLength];
 
             // 填充出现了 k 次的数
-            int kTimesNum = SysRandom.randomInt(-200, 200);
+            int kTimesNum = SysRandom.generateInt(-200, 200);
             for (int j = 0; j < k; j++) {
                 arr[j] = kTimesNum;
             }
             // 填充出现了 m 次的数
             int index = k;
-            int mTimesNum = SysRandom.randomInt(-200, 200);
+            int mTimesNum = SysRandom.generateInt(-200, 200);
             for (int l = 0; l < m; l++) {
                 for (int n = 0; n < mTimeNumCount; n++) {
                     arr[index++] = mTimesNum;
@@ -49,7 +49,7 @@ public class Code03_KM {
 
             // j 位置的数和 arr里任意位置的的一个数
             for (int j = 0; j < arrLength; j++) {
-                int randomIndex = SysRandom.random(arrLength);
+                int randomIndex = SysRandom.generateNaturalNum(arrLength);
                 swap(arr, j, randomIndex);
             }
 

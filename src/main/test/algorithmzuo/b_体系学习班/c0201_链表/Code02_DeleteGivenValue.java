@@ -20,7 +20,7 @@ public class Code02_DeleteGivenValue {
 
     @Test
     public void testCase() {
-        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.randomArr(20));
+        ListNode head = ConstructLinkedNode.constructSingleLinkedNode(SysRandom.generateArr(20));
         ListNode copyHead = ConstructLinkedNode.copySingleLinkedNode(head);
 //        SysOut.printLinkedNode("before: ", head);
 

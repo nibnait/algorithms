@@ -23,7 +23,7 @@ public class Code04_1_MergeSort_Recursion {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArr();
+        int[] arr = SysRandom.generateArr();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         mergeSort(arr);
 

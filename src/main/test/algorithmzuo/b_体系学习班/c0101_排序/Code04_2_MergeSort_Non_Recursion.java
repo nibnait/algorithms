@@ -23,7 +23,7 @@ public class Code04_2_MergeSort_Non_Recursion {
 
     @Test
     public void testCase() {
-        int arr[] = SysRandom.randomArrNaturalNum();
+        int[] arr = SysRandom.generateArrNaturalNum();
         int[] copyArr = Arrays.copyOf(arr, arr.length);
         mergeSort(arr);
 

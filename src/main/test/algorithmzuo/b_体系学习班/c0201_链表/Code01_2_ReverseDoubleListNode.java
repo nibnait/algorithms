@@ -26,7 +26,7 @@ public class Code01_2_ReverseDoubleListNode {
 
     @Test
     public void testCase() {
-        ListNode head = ConstructLinkedNode.constructDoubleLinkedNode(SysRandom.randomArr());
+        ListNode head = ConstructLinkedNode.constructDoubleLinkedNode(SysRandom.generateArr());
 //        SysOut.printDoubleLinkedNode("origin: ", head);
         ListNode copyHead = ConstructLinkedNode.copyDoubleLinkedNode(head);
 
