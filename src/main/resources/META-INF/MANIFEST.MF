@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Premain-Class: cc.tianbin.demo.agent.MyAgent
+Can-Redefine-Classes: true

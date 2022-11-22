@@ -5,7 +5,9 @@ import io.github.nibnait.common.constants.CommonConstants;
 import junit.framework.TestCase;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 /*
 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
@@ -98,6 +100,42 @@ public class M003_无重复字符的最长子串 extends TestCase {
         return Math.max(result, hashSet.size());
     }
 
+    public int lengthOfLongestSubstring4(String str) {
+        if (str == null || str.length() == 0) {
+            return 0;
+        }
+        if (str.length() == 1) {
+            return 1;
+        }
+        char[] chars = str.toCharArray();
+        if (str.length() == 2) {
+            return chars[0] == chars[1] ? 1 : 2;
+        }
+
+
+        int p1 = 0;
+        int p2 = 1;
+        int subLen = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        map.put(chars[p1], p1);
+        while (p2 < str.length()) {
+            char curChar = chars[p2];
+            if (!map.containsKey(curChar)) {
+                map.put(curChar, p2);
+                p2 ++;
+            } else {
+                subLen = Math.max(subLen, map.size());
+                Integer index = map.get(curChar);
+                for (int i = p1; i <= index; i++) {
+                    map.remove(chars[i]);
+                }
+                p1 = index + 1;
+            }
+        }
+
+        return Math.max(subLen, map.size());
+    }
+
     /**
        法2：滑动窗口   O (N)
          p1 = 0，指向滑动窗口的起点
@@ -107,7 +145,7 @@ public class M003_无重复字符的最长子串 extends TestCase {
          用HashSet来查询窗口内是否有当前最新字符arr[p2]，
           有则记下当前 p1++，并hashSet.remore(arr[p1])
           否则配hashSet.add(arr[p2])，result = Math.max(currentHashSet.size, result)，p2++
-         
+
          注意边界条件！
      */
     private int lengthOfLongestSubstring3(String s) {

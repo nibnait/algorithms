@@ -48,5 +48,13 @@ public class Main {
         lock.lock();
         lock.tryLock();
         lock.tryLock(0, null);
+
+
+        // 公平锁
+        ReentrantLock fairSync = new ReentrantLock(true);
+        // 非公平锁
+        ReentrantLock nonfairSync = new ReentrantLock(false);
+        // 指的是lock方法，发生抢占那一刻，是直接去后面排队，还是先跟当前排到的人 cas 一下
+
     }
 }

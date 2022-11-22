@@ -3,6 +3,8 @@ package algorithm_practice.LeetCode.code100;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.LinkedList;
+
 /**
  * 在一条环路上有 N 个加油站，其中第 i 个加油站有汽油 gas[i] 升。
  * <p>
@@ -70,6 +72,53 @@ public class M134_加油站 {
     }
 
     /**
+     * 窗口内最大值最小值的更新结构
+     */
+    public static int canCompleteCircuit(int[] gas, int[] cost) {
+        boolean[] good = goodArray(gas, cost);
+        for (int i = 0; i < gas.length; i++) {
+            if (good[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static boolean[] goodArray(int[] g, int[] c) {
+        int N = g.length;
+        int M = N << 1;
+        int[] arr = new int[M];
+        for (int i = 0; i < N; i++) {
+            arr[i] = g[i] - c[i];
+            arr[i + N] = g[i] - c[i];
+        }
+        for (int i = 1; i < M; i++) {
+            arr[i] += arr[i - 1];
+        }
+        LinkedList<Integer> w = new LinkedList<>();
+        for (int i = 0; i < N; i++) {
+            while (!w.isEmpty() && arr[w.peekLast()] >= arr[i]) {
+                w.pollLast();
+            }
+            w.addLast(i);
+        }
+        boolean[] ans = new boolean[N];
+        for (int offset = 0, i = 0, j = N; j < M; offset = arr[i++], j++) {
+            if (arr[w.peekFirst()] - offset >= 0) {
+                ans[i] = true;
+            }
+            if (w.peekFirst() == i) {
+                w.pollFirst();
+            }
+            while (!w.isEmpty() && arr[w.peekLast()] >= arr[j]) {
+                w.pollLast();
+            }
+            w.addLast(j);
+        }
+        return ans;
+    }
+
+    /**
      * 换个思路：只遍历一遍。
      * totalLeft = 总油量 - 总耗油量
      * totalLeft < 0，一定走不到。
@@ -80,7 +129,7 @@ public class M134_加油站 {
      *
      * 不用担心 i+1 = gas.length，因为如果这样的话 totalLeft 一定< 0
      */
-    public int canCompleteCircuit(int[] gas, int[] cost) {
+    public int canCompleteCircuit4(int[] gas, int[] cost) {
         int curLeft = 0;
         int start = 0;
         int totalLeft = 0;

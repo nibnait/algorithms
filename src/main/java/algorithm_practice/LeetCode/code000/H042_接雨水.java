@@ -1,5 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
+import cn.hutool.core.lang.Assert;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -25,36 +26,64 @@ public class H042_接雨水 extends TestCase {
     public void testCase() {
         // 6
         int[] height = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        System.out.println(trap(height));
+        Assert.equals(6, trap(height));
 
         // 2
         int[] height2 = new int[]{2, 0, 2};
-        System.out.println(trap(height2));
+        Assert.equals(2, trap(height2));
 
         // 1
         int[] height3 = new int[]{4, 2, 3};
-        System.out.println(trap(height3));
+        Assert.equals(1, trap(height3));
 
         // 10
         int[] height4 = new int[]{4, 2, 0, 3, 2, 4, 3, 4};
-        System.out.println(trap(height4));
+        Assert.equals(10, trap(height4));
 
         // 6
         int[] height5 = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        System.out.println(trap(height5));
+        Assert.equals(6, trap(height5));
 
         // 7
         int[] height6 = new int[]{0,7,1,4,6};
-        System.out.println(trap(height6));
+        Assert.equals(7, trap(height6));
 
 
     }
+
+    public int trap(int[] height) {
+        if (height == null || height.length == 0) {
+            return 0;
+        }
+
+        int len = height.length;
+
+        int leftMax = height[0];
+        int rightMax = height[len - 1];
+        int p1 = 1;
+        int p2 = len - 2;
+        int sum = 0;
+        while (p1 < p2) {
+            if (leftMax >= rightMax) {
+                // 右边更小
+                sum += Math.max(0, rightMax - height[p2]);
+                rightMax = Math.max(rightMax, height[p2--]);
+            } else {
+                // 左边更小
+                sum += Math.max(0, leftMax - height[p1]);
+                leftMax = Math.max(leftMax, height[p1++]);
+            }
+        }
+
+        return sum;
+    }
+
 
     /*
       单调栈结构：
 
      */
-    public int trap(int[] height) {
+    public int trap2(int[] height) {
         int length = height.length;
         if (length < 3) {
             return 0;
