@@ -40,6 +40,46 @@ public class M047_全排列2 {
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return new ArrayList();
+        }
+
+        List<List<Integer>> result = new ArrayList();
+        process(nums, 0, result);
+        return result;
+    }
+
+    private void process(int[] nums, int index, List<List<Integer>> result) {
+        if (index == nums.length) {
+            List<Integer> e = toArrayList(nums);
+            if (!result.contains(e)) {
+                result.add(e);
+            }
+            return;
+        }
+
+        for (int i = index; i < nums.length; i++) {
+            swap(nums, i, index);
+            process(nums, index + 1, result);
+            swap(nums, i, index);
+        }
+    }
+
+    private void swap(int[] nums, int a, int b) {
+        int tmp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = tmp;
+    }
+
+    private List<Integer> toArrayList(int[] nums) {
+        List<Integer> ans = new ArrayList(nums.length);
+        for (int i = 0; i < nums.length; i++) {
+            ans.add(nums[i]);
+        }
+        return ans;
+    }
+
+    public List<List<Integer>> permuteUnique2(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Deque<Integer> path = new LinkedList<>();
         boolean[] used = new boolean[nums.length];

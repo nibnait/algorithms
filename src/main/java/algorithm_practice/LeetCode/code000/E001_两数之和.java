@@ -1,7 +1,10 @@
 package algorithm_practice.LeetCode.code000;
 
-import com.alibaba.fastjson.JSON;
+import common.util.CompareUtils;
+import org.junit.Assert;
+import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -24,11 +27,24 @@ import java.util.Map;
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class E001_两数之和 {
-    public static void main(String[] args) {
+
+    @Test
+    public void test() {
         int[] nums = new int[]{3,2,4};
         int target = 6;
-        System.out.println(JSON.toJSONString(twoSum_v1(nums, target)));
-        System.out.println(JSON.toJSONString(twoSum_v2(nums, target)));
+        Assert.assertTrue(CompareUtils.compareArrayIgnoreOrder(twoSum_v2(nums, target), twoSum(nums, target)));
+
+        nums = new int[]{2,7,11,15};
+        target = 9;
+        Assert.assertTrue(CompareUtils.compareArrayIgnoreOrder(twoSum_v2(nums, target), twoSum(nums, target)));
+
+        nums = new int[]{3,3};
+        target = 6;
+
+        int[] arr1 = twoSum_v2(nums, target);
+        int[] arr2 = twoSum(nums, target);
+        Assert.assertTrue(CompareUtils.compareArrayIgnoreOrder(arr1, arr2));
+
     }
 
     /**
@@ -41,8 +57,32 @@ public class E001_两数之和 {
      *
      *     时间复杂度：O(n^2) + O(n)
      */
+    private int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for(int i=0; i<nums.length; i++) {
+            if (map.get(nums[i]) != null && nums[i] * 2 == target) {
+                return new int[]{map.get(nums[i]), i};
+            }
+            map.put(nums[i], i);
+        }
 
+        Arrays.sort(nums);
 
+        int p1 = 0;
+        int p2 = nums.length - 1;
+        while (p1 < p2) {
+            int sum = nums[p1] + nums[p2];
+            if (sum == target) {
+                return new int[]{map.get(nums[p1]), map.get(nums[p2])};
+            } else if (sum > target) {
+                p2 --;
+            } else {
+                p1 ++;
+            }
+        }
+
+        return new int[2];
+    }
 
     /**
      * 使用HashMap，来找 和为target的下一个数字。
@@ -67,22 +107,4 @@ public class E001_两数之和 {
         return result;
     }
 
-    /**
-     * 简单又暴力
-     *      时间复杂度：O(n^2)
-     * @param nums
-     * @param target
-     * @return
-     */
-    private static int[] twoSum_v1(int[] nums, int target) {
-        int[] result = new int[]{};
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 1; j < nums.length; j++) {
-                if (target == nums[i] + nums[j]) {
-                    result = new int[]{i, j};
-                }
-            }
-        }
-        return result;
-    }
 }

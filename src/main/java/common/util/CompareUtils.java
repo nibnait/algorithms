@@ -3,6 +3,9 @@ package common.util;
 import common.datastruct.ListNode;
 import common.datastruct.TreeNode;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
 /**
  * Created by nibnait on 2022/04/11
  */
@@ -82,5 +85,76 @@ public class CompareUtils {
      */
     public static int min(int a, int b, int c) {
         return Math.min(a, Math.min(b, c));
+    }
+
+    /**
+     * 比较两个数组
+     */
+    public static boolean compareArray(int[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length) {
+            return false;
+        }
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareArrayIgnoreOrder(int[] arr1, int[] arr2) {
+        if (arr1.length != arr2.length) {
+            return false;
+        }
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareListList(List<List<Integer>> expect, List<List<Integer>> actual) {
+        if (expect.size() != actual.size()) {
+            return false;
+        }
+
+        expect = expect.stream().sorted(comparator).collect(Collectors.toList());
+        actual = actual.stream().sorted(comparator).collect(Collectors.toList());
+
+        for (int i = 0; i < expect.size(); i++) {
+            List<Integer> expectList = expect.get(i).stream().sorted().collect(Collectors.toList());
+            if (!compareList(expectList, actual.get(i))) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    private static Comparator<List<Integer>> comparator = new Comparator<List<Integer>>() {
+        @Override
+        public int compare(List<Integer> o1, List<Integer> o2) {
+            return o1.hashCode() - o2.hashCode();
+        }
+    };
+
+    public static boolean compareList(List<Integer> expectList, List<Integer> actualList) {
+        if (expectList.size() != actualList.size()) {
+            return false;
+        }
+
+        expectList = expectList.stream().sorted().collect(Collectors.toList());
+        actualList = actualList.stream().sorted().collect(Collectors.toList());
+
+        for (int i = 0; i < expectList.size(); i++) {
+            if (!Objects.equals(expectList.get(i), actualList.get(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 }

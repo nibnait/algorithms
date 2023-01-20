@@ -1,6 +1,10 @@
 package algorithm_practice.LeetCode.code000;
 
+import com.google.common.collect.Lists;
 import common.datastruct.ListNode;
+import common.util.AssertUtils;
+import common.util.ConstructLinkedNode;
+import org.junit.Test;
 
 /*
 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个结点只能存储 一位 数字。
@@ -20,31 +24,74 @@ import common.datastruct.ListNode;
  */
 public class M002_两数相加 {
 
-    public static void main(String[] args) {
-        //1,8   0
-        //1,    9,9
-        ListNode firstListNode = new ListNode(2);
-        firstListNode.next = new ListNode(7);
-        firstListNode.next.next = new ListNode(1);
+    @Test
+    public void test() {
+        // 2 7 1
+        // 3 2 9 9
+        // 5 9 0 0 1
+        ListNode firstListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(2, 7, 1));
+        ListNode secondListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(3, 2, 9, 9));
+        ListNode expectSumListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(5, 9, 0, 0, 1));
 
-        ListNode secondListNode = new ListNode(3);
-        secondListNode.next = new ListNode(2);
-        secondListNode.next.next = new ListNode(9);
-        secondListNode.next.next.next = new ListNode(9);
+        AssertUtils.compareListNode(expectSumListNode, addTwoNumbers(firstListNode, secondListNode));
+        AssertUtils.compareListNode(expectSumListNode, addTwoNumbers_v2(firstListNode, secondListNode));
+        AssertUtils.compareListNode(expectSumListNode, addTwoNumbers_v3(firstListNode, secondListNode));
 
-        addTwoNumbers(firstListNode, secondListNode).printListNode();
-        System.out.println();
-        addTwoNumbers_v2(firstListNode, secondListNode).printListNode();
 
+        firstListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(3, 7));
+        secondListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(9, 2));
+        expectSumListNode = ConstructLinkedNode.constructSingleLinkedNode(Lists.newArrayList(2, 0, 1));
+        AssertUtils.compareListNode(expectSumListNode, addTwoNumbers(firstListNode, secondListNode));
+
+    }
+
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode();
+        ListNode p = head;
+        int carry = 0;
+
+        while (l1 != null && l2 != null) {
+            int val = (carry + l1.val + l2.val) % 10;
+            carry = (carry + l1.val + l2.val) / 10;
+
+            p.next = new ListNode(val);
+            p = p.next;
+
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        while (l1 != null) {
+            p.next = new ListNode((carry + l1.val) % 10);
+            carry = (carry + l1.val) / 10;
+
+            l1 = l1.next;
+            p = p.next;
+        }
+
+        while (l2 != null) {
+            p.next = new ListNode((carry + l2.val) % 10);
+            carry = (carry + l2.val) / 10;
+
+            l2 = l2.next;
+            p = p.next;
+        }
+
+        if (carry != 0) {
+            p.next = new ListNode(carry);
+        }
+
+        return head.next;
     }
 
     /**
      * 法2：递归
+     *
      * @param l1
      * @param l2
      * @return
      */
-    private static ListNode addTwoNumbers_v2(ListNode l1, ListNode l2) {
+    private ListNode addTwoNumbers_v2(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode result = new ListNode(0);
         result.next = sumListNode(l1, l2, carry);
@@ -53,7 +100,7 @@ public class M002_两数相加 {
 
     static int TEN = 10;
 
-    private static ListNode sumListNode(ListNode l1, ListNode l2, int carry) {
+    private ListNode sumListNode(ListNode l1, ListNode l2, int carry) {
         if (l1 == null && l2 == null) {
             return carry > 0 ? new ListNode(carry) : null;
         }
@@ -69,14 +116,15 @@ public class M002_两数相加 {
 
     /**
      * 法1：两大数相加
-     *      保留一个头
-     *      使用一个valNode，依次往后移动，
-     *      注意末尾二次进位
+     * 保留一个头
+     * 使用一个valNode，依次往后移动，
+     * 注意末尾二次进位
+     *
      * @param l1
      * @param l2
      * @return
      */
-    private static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    private ListNode addTwoNumbers_v3(ListNode l1, ListNode l2) {
         int TEN = 10;
         ListNode result = null;
         int carry = 0;
@@ -102,14 +150,15 @@ public class M002_两数相加 {
 
     /**
      * 标准答案，1. 注意命名规范。
-     *          dummyHead、currentNode
+     * dummyHead、currentNode
+     * <p>
+     * 2. dummyHead赋值的时机。
      *
-     *          2. dummyHead赋值的时机。
      * @param l1
      * @param l2
      * @return
      */
-    private static ListNode daan(ListNode l1, ListNode l2) {
+    private ListNode daan(ListNode l1, ListNode l2) {
         int TEN = 10;
         int carry = 0;
         ListNode currentNode = new ListNode(0);

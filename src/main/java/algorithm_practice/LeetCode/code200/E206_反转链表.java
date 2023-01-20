@@ -33,7 +33,6 @@ public class E206_反转链表 {
         ListNode actual = reverseList(head);
         SysOut.printLinkedNode(actual);
         Assert.assertTrue(CompareUtils.compareSingleListNode(excepted, actual));
-
     }
 
     /**
@@ -59,7 +58,7 @@ public class E206_反转链表 {
             return head;
         }
 
-        ListNode prev = reverseList(head.next);
+        ListNode prev = reverseList3(head.next);
         ListNode p = prev;
         while (p.next != null) {
             p = p.next;

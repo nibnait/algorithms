@@ -120,3 +120,10 @@ dfs
 ## 无向图 检测是否有环
 并查集
  - []()
+
+## 多线程相关
+
+ - [1114. 按序打印](https://leetcode.cn/problems/print-in-order/description/)
+ - [1115. 交替打印 FooBar](https://leetcode.cn/problems/print-foobar-alternately/description/)
+ - [1116. 打印零与奇偶数](https://leetcode.cn/problems/print-zero-even-odd/description/)
+ - [1195. 交替打印字符串](https://leetcode.cn/problems/fizz-buzz-multithreaded/)

@@ -2,11 +2,26 @@ package common.util;
 
 import common.datastruct.ListNode;
 
+import java.util.List;
+
 /**
  * 构造链表
  * Created by nibnait on 2019-08-08
  */
 public class ConstructLinkedNode {
+
+    public static ListNode constructSingleLinkedNode(List<Integer> nums) {
+        ListNode head = new ListNode();
+        ListNode curNode = head;
+        for (int i = 0; i < nums.size(); i++) {
+            curNode.val = nums.get(i);
+            if (i != nums.size() - 1) {
+                curNode.next = new ListNode();
+                curNode = curNode.next;
+            }
+        }
+        return head;
+    }
 
     public static ListNode constructSingleLinkedNode(int[] nums) {
         ListNode head = new ListNode();

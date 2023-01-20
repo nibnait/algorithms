@@ -1,5 +1,6 @@
 package algorithm_practice.LeetCode.code000;
 
+import common.util.AssertUtils;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -31,18 +32,108 @@ public class M043_字符串相乘 extends TestCase {
     public void testCase() {
         String num1 = "123";
         String num2 = "456";
-        System.out.println(multiply(num1, num2));
+        AssertUtils.compareString("56088", multiply(num1, num2));
+        AssertUtils.compareString("56088", multiply2(num1, num2));
 
-        String num3 = "123";
-        String num4 = "0";
-        System.out.println(multiply(num3, num4));
+        num1 = "123";
+        num2 = "0";
+        AssertUtils.compareString("0", multiply(num1, num2));
+        AssertUtils.compareString("0", multiply2(num1, num2));
 
-        String num5 = "123456789";
-        String num6 = "987654321";
-        // "121932631112635269"
-        System.out.println(multiply(num5, num6));
+        num1 = "123456789";
+        num2 = "987654321";
+        AssertUtils.compareString("121932631112635269", multiply(num1, num2));
+        AssertUtils.compareString("121932631112635269", multiply2(num1, num2));
 
+        num1 = "999";
+        num2 = "999";
+        AssertUtils.compareString("998001", multiply(num1, num2));
+        AssertUtils.compareString("998001", multiply2(num1, num2));
     }
+
+    public String multiply2(String num1, String num2) {
+        if ("0".equals(num1) || "0".equals(num2)) {
+            return "0";
+        }
+
+        // 长的数字
+        char[] n1 = num1.length() >= num2.length() ? num1.toCharArray() : num2.toCharArray();
+        // 短的数字
+        char[] n2 = num1.length() >= num2.length() ? num2.toCharArray() : num1.toCharArray();
+
+        int p2 = n2.length - 1;
+        int carry = 0;
+        String product = "";
+        while (p2 >= 0) {
+            StringBuilder curSum = new StringBuilder();
+            int p1 = n1.length - 1;
+            while (p1 >= 0) {
+                int val = (carry + (intVal(n1[p1]) * intVal(n2[p2]))) % 10;
+                carry = (carry + (intVal(n1[p1]) * intVal(n2[p2]))) / 10;
+
+                curSum.append(val);
+                p1--;
+            }
+
+            if (carry != 0) {
+                curSum.append(carry);
+            }
+            curSum = curSum.reverse();
+
+            for (int i = 0; i < n2.length - 1 - p2; i++) {
+                curSum.append("0");
+            }
+            product = sum(product, curSum.toString());
+
+            p2--;
+            carry = 0;
+        }
+
+        return product;
+    }
+
+    private String sum(String s1, String s2) {
+        int p1 = s1.length() - 1;
+        int p2 = s2.length() - 1;
+
+        StringBuilder sum = new StringBuilder();
+        int carry = 0;
+        while (p1 >= 0 && p2 >= 0) {
+            int val = (carry + intVal(s1.charAt(p1)) + intVal(s2.charAt(p2))) % 10;
+            carry = (carry + intVal(s1.charAt(p1)) + intVal(s2.charAt(p2))) / 10;
+
+            sum.append(val);
+            p1--;
+            p2--;
+        }
+
+        while (p1 >= 0) {
+            int val = (carry + intVal(s1.charAt(p1))) % 10;
+            carry = (carry + intVal(s1.charAt(p1))) / 10;
+
+            sum.append(val);
+            p1--;
+        }
+
+        while (p2 >= 0) {
+            int val = (carry + intVal(s2.charAt(p2))) % 10;
+            carry = (carry + intVal(s2.charAt(p2))) / 10;
+
+            sum.append(val);
+            p2--;
+        }
+
+        if (carry != 0) {
+            sum.append(carry);
+        }
+
+        return sum.reverse().toString();
+    }
+
+    private int intVal(char c) {
+        return c - '0';
+    }
+
 
     public String multiply(String num1, String num2) {
         char[] charsA = num1.toCharArray();
