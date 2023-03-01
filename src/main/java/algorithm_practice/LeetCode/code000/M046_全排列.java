@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
 import com.google.common.collect.Lists;
-import org.junit.Assert;
+import common.util.AssertUtils;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -35,7 +35,7 @@ public class M046_全排列 {
     @Test
     public void testCase() {
         int[] nums = new int[]{1,2,3};
-        List<List<Integer>> excepted = Lists.newArrayList(
+        List<List<Integer>> except = Lists.newArrayList(
                                             Lists.newArrayList(1,2,3),
                                             Lists.newArrayList(1,3,2),
                                             Lists.newArrayList(2,1,3),
@@ -43,8 +43,39 @@ public class M046_全排列 {
                                             Lists.newArrayList(3,1,2),
                                             Lists.newArrayList(3,2,1));
         List<List<Integer>> result = permute(nums);
-        Assert.assertEquals(excepted, result);
+        AssertUtils.compareListList(except, result, nums);
+    }
 
+    public List<List<Integer>> permute(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return new ArrayList<>();
+        }
+
+        List<List<Integer>> ans = new ArrayList<>();
+        process(nums, 0, ans);
+        return ans;
+    }
+
+    private void process(int[] nums, int index, List<List<Integer>> ans) {
+        if (index == nums.length) {
+            List<Integer> path = new ArrayList<>();
+            for (int num : nums) {
+                path.add(num);
+            }
+            ans.add(path);
+        } else {
+            for (int i = index; i < nums.length; i++) {
+                swap(nums, i, index);
+                process(nums, index + 1, ans);
+                swap(nums, i, index);
+            }
+        }
+    }
+
+    private void swap(int[] nums, int a, int b) {
+        int tmp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = tmp;
     }
 
     /*
@@ -69,7 +100,7 @@ public class M046_全排列 {
 
      */
 
-    public List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute2(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Deque<Integer> path = new LinkedList<>();
 

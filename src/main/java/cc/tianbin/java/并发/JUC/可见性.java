@@ -16,6 +16,14 @@ public class 可见性 {
     private Number number = new Number();
     private int loopCount = 100000;
 
+    private volatile Integer count = 0;
+
+    @Test
+    public void testVolatile() {
+        count = count + 1;
+        System.out.println(count);
+    }
+
     @Test
     public void test可见性() {
 
