@@ -1,4 +1,3 @@
-
 ## lock (sync.lock())
 
 ```java

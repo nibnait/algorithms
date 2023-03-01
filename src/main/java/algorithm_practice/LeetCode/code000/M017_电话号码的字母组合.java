@@ -21,7 +21,7 @@ public class M017_电话号码的字母组合 {
     }
 
 
-    private static final char[][] phone = new char[][]{
+    private static final char[][] phone = new char[][] {
             {'.'},
             {'.'},
             {'a', 'b', 'c'},

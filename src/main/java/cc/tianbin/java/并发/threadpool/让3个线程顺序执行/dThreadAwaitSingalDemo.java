@@ -13,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class dThreadAwaitSingalDemo {
 
     /**
-     * Condition（条件变量）:通常与一个锁关联。需要在多个Contidion中共享一个锁时，可以传递一个Lock/RLock实例给构造方法，否则它将自己生成一个RLock实例。
+     * Condition（条件变量）:通常与一个锁关联。需要在多个Condition中共享一个锁时，可以传递一个Lock/RLock实例给构造方法，否则它将自己生成一个RLock实例。
      *
      * Condition中await()方法类似于Object类中的wait()方法。
      *

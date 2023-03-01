@@ -9,7 +9,7 @@ import org.junit.Test;
 public class aThreadJoinDemo {
 
     /**
-     * join():是Theard的方法，作用是调用线程需等待该join()线程执行完成后，才能继续用下运行。
+     * join():是 Thread 的方法，作用是调用线程需等待该join()线程执行完成后，才能继续用下运行。
      *
      * 应用场景：当一个线程必须等待另一个线程执行完毕才能执行时可以使用join方法。
      */

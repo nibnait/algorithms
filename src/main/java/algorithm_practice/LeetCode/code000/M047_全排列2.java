@@ -1,7 +1,7 @@
 package algorithm_practice.LeetCode.code000;
 
 import com.google.common.collect.Lists;
-import org.junit.Assert;
+import common.util.AssertUtils;
 import org.junit.Test;
 
 import java.util.*;
@@ -28,15 +28,13 @@ public class M047_全排列2 {
 
     @Test
     public void testCase() {
-        int[] nums = new int[]{1,1,2};
-        List<List<Integer>> excepted = Lists.newArrayList(
-                Lists.newArrayList(1,1,2),
-                Lists.newArrayList(1,2,1),
-                Lists.newArrayList(2,1,1));
+        int[] nums = new int[]{1, 1, 2};
+        List<List<Integer>> except = Lists.newArrayList(
+                Lists.newArrayList(1, 1, 2),
+                Lists.newArrayList(1, 2, 1),
+                Lists.newArrayList(2, 1, 1));
         List<List<Integer>> result = permuteUnique(nums);
-        Assert.assertEquals(excepted, result);
-
-
+        AssertUtils.compareListList(except, result, nums);
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
@@ -52,16 +50,17 @@ public class M047_全排列2 {
     private void process(int[] nums, int index, List<List<Integer>> result) {
         if (index == nums.length) {
             List<Integer> e = toArrayList(nums);
-            if (!result.contains(e)) {
-                result.add(e);
+            result.add(e);
+        } else {
+            HashSet<Integer> set = new HashSet<>();
+            for (int i = index; i < nums.length; i++) {
+                if (!set.contains(nums[i])) {
+                    set.add(nums[i]);
+                    swap(nums, i, index);
+                    process(nums, index + 1, result);
+                    swap(nums, i, index);
+                }
             }
-            return;
-        }
-
-        for (int i = index; i < nums.length; i++) {
-            swap(nums, i, index);
-            process(nums, index + 1, result);
-            swap(nums, i, index);
         }
     }
 

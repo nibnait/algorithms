@@ -1,6 +1,5 @@
 package cc.tianbin.java.mybatis;
 
-import org.apache.ibatis.binding.MapperMethod;
 import org.junit.Test;
 
 /**
