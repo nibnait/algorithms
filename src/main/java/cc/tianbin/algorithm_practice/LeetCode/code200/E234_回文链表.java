@@ -51,7 +51,7 @@ public class E234_回文链表 {
         ListNode p2 = head;
         int count = 1;
         while (p2.next != null && p2.next.next != null) {
-            ListNode cur = p1.next;
+            p1 = p1.next;
             p2 = p2.next.next;
             count++;
         }
