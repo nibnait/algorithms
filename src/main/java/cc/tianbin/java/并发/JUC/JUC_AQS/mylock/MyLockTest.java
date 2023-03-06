@@ -1,6 +1,6 @@
 package cc.tianbin.java.并发.JUC.JUC_AQS.mylock;
 
-import common.util.LogUtil;
+import cc.tianbin.common.util.LogUtil;
 
 import static cc.tianbin.java.并发.JUC.JUC_AQS.mylock.MyLock.MY_LOCK_NAME;
 
