@@ -1,0 +1,3 @@
+dubbo=cc.tianbin.demo.java.spi.dubboSPI.impl.DubboImpl
+servicemesh=cc.tianbin.demo.java.spi.dubboSPI.impl.ServiceMeshImpl
+springcloud=cc.tianbin.demo.java.spi.dubboSPI.impl.SpringCloudImpl

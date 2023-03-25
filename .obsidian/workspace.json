@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "file": "src/main/java/cc/tianbin/demo/java/并发/thread_demo/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,12 +80,22 @@
         "type": "tabs",
         "children": [
           {
+            "id": "7d949761d7385226",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/main/java/cc/tianbin/demo/java/并发/thread_demo/README.md"
+              }
+            }
+          },
+          {
             "id": "f76efae53043d7b8",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "file": "src/main/java/cc/tianbin/demo/java/并发/thread_demo/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md",
+                "file": "src/main/java/cc/tianbin/demo/java/并发/thread_demo/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -120,13 +130,11 @@
             }
           },
           {
-            "id": "7d949761d7385226",
+            "id": "b9093f3c0f092f85",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "src/main/test/algorithmzuo/b_体系学习班/c01xx_summary.md"
-              }
+              "type": "advanced-tables-toolbar",
+              "state": {}
             }
           }
         ]
@@ -136,9 +144,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
   },
-  "active": "f76efae53043d7b8",
+  "active": "de478e1350dcc63b",
   "lastOpenFiles": []
 }

@@ -1,0 +1,7 @@
+cc.tianbin.demo.java.spi.springSPI.SpringXXXListener=\
+  cc.tianbin.demo.java.spi.springSPI.impl.SpringXXXListenerImpl01, \
+  cc.tianbin.demo.java.spi.springSPI.impl.SpringXXXListenerImpl02
+
+
+org.springframework.context.ApplicationContextInitializer=\
+  cc.tianbin.demo.java.spi.springSPI.SpringApplicationContextInitializer

@@ -1,14 +1,12 @@
 package cc.tianbin.demo.java.并发.JUC.JUC_demo;
 
-import com.lmax.disruptor.BlockingWaitStrategy;
-import com.lmax.disruptor.EventFactory;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.dsl.Disruptor;
-import com.lmax.disruptor.dsl.ProducerType;
+import com.lmax.disruptor.*;
+import com.lmax.disruptor.dsl.*;
 import junit.framework.TestCase;
 import lombok.Data;
 import org.junit.Test;
 
+import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
@@ -38,17 +36,30 @@ public class DisruptorDemo extends TestCase {
         int bufferSize = 16;
 
         // 创建disruptor，采用单生产者模式
+        /**
+         * @see RingBuffer#createMultiProducer(EventFactory, int, WaitStrategy)
+         */
         Disruptor<Event> disruptor = new Disruptor(factory, bufferSize,
                 Executors.newSingleThreadExecutor(), ProducerType.SINGLE,
                 new BlockingWaitStrategy());
 
         //注册事件处理器
+        /**
+         * 创建 SequenceBarrier 对象，用于接收 ringBuffer 中的可消费事件
+         * 创建 BatchEventProcessor，负责消费事件
+         * 绑定 BatchEventProcessor对象的异常处理类
+         * 调用 ringBuffer.addGatingSequences，将消费者的 Sequence 传给 ringBuffer
+         */
         disruptor.handleEventsWith(
                 (event, sequence, endOfBatch) -> {
                     System.out.println("Event: " + event.getValue());
                 });
 
         //启动Disruptor
+        /**
+         * @see ConsumerRepository#add(EventProcessor, EventHandler, SequenceBarrier)
+         * @see EventProcessorInfo#start(Executor)
+         */
         disruptor.start();
 
         //获取RingBuffer
