@@ -1,16 +1,9 @@
-package cc.tianbin;
-
-import junit.framework.TestCase;
+package cc.tianbin.demo;
 
 /**
  * Created by nibnait on 2020-01-08
  */
-public class Main extends TestCase {
+public class Main {
 
-    public static void main(String[] args) {
-        Byte b = 1;
-        Byte i = null;
-        System.out.println(b.equals(i));
-    }
 
 }

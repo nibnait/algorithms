@@ -1,0 +1,3 @@
+cc.tianbin.demo.java.spi.javaSPI.impl.Log4jImpl
+cc.tianbin.demo.java.spi.javaSPI.impl.LogbackImpl
+cc.tianbin.demo.java.spi.javaSPI.impl.Sfl4jImpl
