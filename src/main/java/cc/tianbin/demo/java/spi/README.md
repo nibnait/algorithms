@@ -6,7 +6,7 @@
 > ServiceLoader.load(Log.class);  
 > META-lNF/services/
 
-源码阅读：[Java_SPI_Main.java](./javaSPI/Java_SPI_Main.java)
+源码阅读：[Main_Java_SPI.java](./javaSPI/Main_Java_SPI.java)
 
 比如经典数据库驱动实例的获取 [JdbcDemo.java](./javaSPI/JdbcDemo.java)
 1. 接口是什么：JDK定义的java.sql.Driver
@@ -27,7 +27,7 @@
 >  - META-lNF/dubbo/internal
 >  - META-lNF/services/ 
 
-源码阅读: [Dubbo_SPI_Main.java](./dubboSPI/Dubbo_SPI_Main.java)
+源码阅读: [Main_Dubbo_SPI.java](./dubboSPI/Main_Dubbo_SPI.java)
 
 <https://cn.dubbo.apache.org/zh-cn/docsv2.7/dev/design/>
 
@@ -39,6 +39,6 @@
 > SpringFactoriesLoader.loadFactories(SpringXXXListener.class, classLoader);  
 > META-lNF/spring.factories
 
-源码阅读：[Spring_SPI_Main.java](./springSPI/Spring_SPI_Main.java)
+源码阅读：[Main_Spring_SPI.java](./springSPI/Main_Spring_SPI.java)
 
 业务代码，也可以实现一些 Spring 内部的接口，然后在 spring.factories 里添加下配置。即可被 spring 框架扫描到。

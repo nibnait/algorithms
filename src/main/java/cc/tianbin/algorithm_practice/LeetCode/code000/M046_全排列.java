@@ -35,7 +35,7 @@ public class M046_全排列 {
     @Test
     public void testCase() {
         int[] nums = new int[]{1,2,3};
-        List<List<Integer>> except = Lists.newArrayList(
+        List<List<Integer>> expect = Lists.newArrayList(
                                             Lists.newArrayList(1,2,3),
                                             Lists.newArrayList(1,3,2),
                                             Lists.newArrayList(2,1,3),
@@ -43,7 +43,7 @@ public class M046_全排列 {
                                             Lists.newArrayList(3,1,2),
                                             Lists.newArrayList(3,2,1));
         List<List<Integer>> result = permute(nums);
-        AssertUtils.compareListList(except, result, nums);
+        AssertUtils.compareListList(expect, result, nums);
     }
 
     public List<List<Integer>> permute(int[] nums) {

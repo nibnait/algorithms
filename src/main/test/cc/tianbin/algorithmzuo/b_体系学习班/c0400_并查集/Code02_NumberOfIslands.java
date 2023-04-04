@@ -79,8 +79,10 @@ public class Code02_NumberOfIslands {
         List<Dot> dotList = new ArrayList<>();
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                dots[i][j] = new Dot();
-                dotList.add(dots[i][j]);
+                if (board[i][j] == '1') {
+                    dots[i][j] = new Dot();
+                    dotList.add(dots[i][j]);
+                }
             }
         }
 

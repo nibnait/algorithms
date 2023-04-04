@@ -56,31 +56,32 @@
 ### 下面介绍nextArr[]的求法：
  - 对于str2[0]来说，在它之前没有字符，所以规定nextArr[0] = -1;
  - 因为前缀不包含最后一个字符，后缀不能包含第一个字符，所以 nextArr[1] = 0;
- - 当i>1时，就需要动笔算了：
-    引入一个cn变量：最长匹配前缀后面那个字符的位置。
+ - 当 cur > 1 时，就需要动笔算了：
+    引入一个 next 变量：最长匹配前缀后面那个字符的位置。
 
-    - 当遍历到i时，将str2[i-1]与str2[cn]相比较，如果相等，则正好nextArr[i]=nextArr[i-1]+1.
-    - 如果不相等，则比较str2[nextArr[cn]]与str2[i-1]，直到cn到达str2[0]的位置。如果还是不与str2[i-1]相等，则nextArr[i] = 0;
+    - 当遍历到i时，将str2[cur-1]与str2[next]相比较，如果相等，则正好nextArr[cur]=nextArr[next-1]+1.
+    - 如果不相等，则比较str2[nextArr[next]]与str2[cur-1]，直到cn到达str2[0]的位置。如果还是不与str2[cur-1]相等，则nextArr[cur] = 0;
 
 代码：
 
 ```
     private static int[] getNextArray(char[] s2) {
-        if (s2.length == 1){
+        if (s2.length == 1) {
             return new int[]{-1};
         }
         int[] nextArr = new int[s2.length];
         nextArr[0] = -1;
         nextArr[1] = 0;
-        int pos = 2;    //当前位置
-        int cn = 0;     //最长匹配前缀的下一个字符的位置
-        while (pos < s2.length){
-            if (s2[pos-1] == s2[cn]){   
-                nextArr[pos++] = nextArr[pos-1] + 1;
-            }else if (cn > 0){
-                cn = nextArr[cn];
-            }else {
-                nextArr[pos++] = 0;
+        int cur = 2;    //当前位置
+        int next = 0;     //最长匹配前缀的下一个字符的位置
+        while (cur < s2.length) {
+            if (s2[cur - 1] == s2[next]) {
+                nextArr[cur++] = nextArr[cur - 1] + 1;
+                next++;
+            } else if (next > 0) {
+                next = nextArr[next];
+            } else {
+                nextArr[cur++] = 0;
             }
         }
         return nextArr;

@@ -31,9 +31,11 @@ public class Code01_BFS {
 
             for (Node next : cur.nexts) {
                 if (!set.contains(next)) {
-                    queue.add(next);
-                    set.add(next);
+                    break;
                 }
+
+                queue.add(next);
+                set.add(next);
             }
         }
 

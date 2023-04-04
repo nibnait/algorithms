@@ -29,12 +29,12 @@ public class M047_全排列2 {
     @Test
     public void testCase() {
         int[] nums = new int[]{1, 1, 2};
-        List<List<Integer>> except = Lists.newArrayList(
+        List<List<Integer>> expect = Lists.newArrayList(
                 Lists.newArrayList(1, 1, 2),
                 Lists.newArrayList(1, 2, 1),
                 Lists.newArrayList(2, 1, 1));
         List<List<Integer>> result = permuteUnique(nums);
-        AssertUtils.compareListList(except, result, nums);
+        AssertUtils.compareListList(expect, result, nums);
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {

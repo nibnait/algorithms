@@ -57,7 +57,7 @@ public class H051_N皇后 {
         int n = 4;
         List<List<String>> excepted = Lists.newArrayList(
                 Lists.newArrayList(".Q..", "...Q", "Q...", "..Q."),
-                Lists.newArrayList(".Q..", "...Q", "Q...", "..Q.")
+                Lists.newArrayList("..Q.", "Q...", "...Q", ".Q..")
         );
 
         List<List<String>> result = solveNQueens(n);

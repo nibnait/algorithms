@@ -43,16 +43,16 @@ public class KMP {
         int[] nextArr = new int[s2.length];
         nextArr[0] = -1;
         nextArr[1] = 0;
-        int pos = 2;    //当前位置
-        int cn = 0;     //最长匹配前缀的下一个字符的位置
-        while (pos < s2.length) {
-            if (s2[pos - 1] == s2[cn]) {
-                nextArr[pos++] = nextArr[pos - 1] + 1;
-                cn++;
-            } else if (cn > 0) {
-                cn = nextArr[cn];
+        int cur = 2;    //当前位置
+        int next = 0;     //最长匹配前缀的下一个字符的位置
+        while (cur < s2.length) {
+            if (s2[cur - 1] == s2[next]) {
+                nextArr[cur++] = nextArr[cur - 1] + 1;
+                next++;
+            } else if (next > 0) {
+                next = nextArr[next];
             } else {
-                nextArr[pos++] = 0;
+                nextArr[cur++] = 0;
             }
         }
         return nextArr;
