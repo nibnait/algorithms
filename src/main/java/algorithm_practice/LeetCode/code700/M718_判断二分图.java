@@ -1,6 +1,6 @@
 package algorithm_practice.LeetCode.code700;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;

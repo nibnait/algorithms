@@ -3,7 +3,6 @@ package algorithm_practice.LeetCode.code000;
 import common.util.SysOut;
 import junit.framework.TestCase;
 import org.junit.Test;
-import sun.jvm.hotspot.utilities.BitMap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,8 +46,8 @@ public class M056_合并区间 extends TestCase {
 
         int[][] intervals5 = new int[][]{{1, 4}, {2, 3}};
         SysOut.printArray(merge(intervals5));
-        
-        int[][] intervals6 = new int[][]{{2,3},{2,2},{3,3},{1,3},{5,7},{2,2},{4,6}};
+
+        int[][] intervals6 = new int[][]{{2, 3}, {2, 2}, {3, 3}, {1, 3}, {5, 7}, {2, 2}, {4, 6}};
         SysOut.printArray(merge(intervals6));
 
     }
@@ -81,7 +80,7 @@ public class M056_合并区间 extends TestCase {
                 continue;
             }
 
-            int[] resultInterval = result.get(result.size()-1);
+            int[] resultInterval = result.get(result.size() - 1);
 
             if (interval[1] < resultInterval[1]) {
                 continue;
@@ -90,7 +89,7 @@ public class M056_合并区间 extends TestCase {
             if (interval[0] <= resultInterval[1]) {
                 resultInterval[1] = interval[1];
 
-                result.remove(result.size()-1);
+                result.remove(result.size() - 1);
                 result.add(resultInterval);
             } else {
                 result.add(interval);
@@ -98,40 +97,5 @@ public class M056_合并区间 extends TestCase {
         }
 
         return result.toArray(new int[0][]);
-    }
-
-    /**
-     * 使用BitMap
-     */
-    public int[][] merge2(int[][] intervals) {
-        BitMap bitMap = new BitMap(100);
-
-        for (int i = 0; i < intervals.length; i++) {
-            int[] interval = intervals[i];
-            for (int j = interval[0]; j < interval[1]; j++) {
-                if (j > bitMap.size()) {
-                    bitMap.set_size(j);
-                }
-
-                bitMap.atPut(j, true);
-            }
-        }
-
-        int[][] result = new int[1][2];
-        int count = 0;
-        for (int i = 0; i < bitMap.size(); i++) {
-            if (bitMap.at(i)) {
-                result[count][0] = i;
-                while (bitMap.at(i)) {
-                    i++;
-                }
-
-                result[count][1] = i;
-
-                count++;
-            }
-        }
-
-        return result;
     }
 }
